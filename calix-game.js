@@ -814,7 +814,7 @@
     if (!badge) return;
     var display = candidateDisplayName();
     badge.innerHTML =
-      '<span id="nav-identity-name"><strong>You are ' +
+      '<span id="nav-identity-name"><strong>You\'re ' +
       escapeHtml(display) +
       '</strong></span>';
   }
