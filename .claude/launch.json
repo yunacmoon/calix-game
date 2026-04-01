@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "CALIX Static Dev Server",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-c", "import http.server,os; os.chdir('/Users/yunamoon/Desktop/_Calix/Calix_files'); http.server.HTTPServer(('127.0.0.1',8080),http.server.SimpleHTTPRequestHandler).serve_forever()"],
+      "port": 8080
+    }
+  ]
+}
