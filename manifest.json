@@ -1,0 +1,16 @@
+{
+  "name": "CALIX",
+  "short_name": "CALIX",
+  "start_url": "calix-v6.html",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#c7a86e",
+  "icons": [
+    {
+      "src": "Images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
+
