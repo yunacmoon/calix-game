@@ -1334,7 +1334,7 @@
     var lastEp = gameState.lastGiftEpisode;
     var curEp = Number(gameState.currentEpisodeN || 0);
     if (lastEp != null && !isNaN(Number(lastEp))) {
-      if (curEp < Number(lastEp) + 2) return false;
+      if (curEp < Number(lastEp) + 4) return false;
     }
     return true;
   }
