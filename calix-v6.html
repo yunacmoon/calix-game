@@ -300,7 +300,7 @@ body::after {
 .scene-stream { flex:1; min-height:min(52vh,440px); max-height:calc(100vh - 152px); overflow-y:auto; overflow-x:hidden; padding:8px 4px 120px; -webkit-overflow-scrolling:touch; scroll-behavior:smooth; }
 .dialogue-box { background:rgba(255,255,255,0.55); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.4); border-radius:16px; padding:22px 26px; margin-bottom:14px; box-shadow:0 4px 24px rgba(0,0,61,0.08); }
 .character-name { font-size:10px; letter-spacing:0.35em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:10px; }
-.dialogue-text { font-size:clamp(15px, 2.6vw, 18px); line-height:1.8; color:var(--ink); min-height:1.5em; }
+.dialogue-text { font-size:clamp(18px, 4vw, 22px); line-height:1.8; color:var(--ink); min-height:1.5em; }
 .narration { font-style:italic; font-size:calc(15px + 1pt); line-height:1.75; color:var(--ink-soft); padding:14px 20px; border-left:2px solid var(--purple-light); background:rgba(151,125,255,0.07); border-radius:0 8px 8px 0; margin-bottom:14px; }
 .choice-btn { display:flex; align-items:flex-start; gap:10px; width:100%; padding:16px 20px; margin-bottom:10px; background:rgba(255,255,255,0.55); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.55); border-radius:12px; font-size:15px; letter-spacing:0.02em; text-transform:none; font-weight:500; color:var(--ink); text-align:left; cursor:pointer; transition:all 0.2s ease; line-height:1.45; }
 .choice-btn::before { content:'→'; flex-shrink:0; color:var(--purple-mid); font-weight:600; margin-top:1px; }
@@ -730,7 +730,7 @@ body::after {
     <p class="reward-label">Reward</p>
     <p id="rw-popup-type" style="font-size:52px;line-height:1;margin-bottom:8px;"></p>
     <p class="coin-amount" id="rw-popup-coins"></p>
-    <p class="body-text" style="font-size:15px;line-height:1.7;color:var(--ink-soft);margin-bottom:16px;" id="rw-popup-line"></p>
+    <p class="body-text" style="font-size:18px;line-height:1.7;color:var(--ink-soft);margin-bottom:16px;" id="rw-popup-line"></p>
     <p class="body-text" style="font-size:18px;color:var(--ink-muted);" id="rw-popup-item"></p>
     <button type="button" class="btn-solid" style="margin-top:8px" onclick="rewardPopupContinue()">Continue →</button>
   </div>
