@@ -27,6 +27,7 @@
     episodeChoices: {},
     unlockedThrough: 1,
     lastGiftMember: null,
+    lastGiftEpisode: null,
   };
 
   let flowQueue = [];
@@ -128,6 +129,9 @@
       if (o.episodeChoices && typeof o.episodeChoices === 'object') gameState.episodeChoices = o.episodeChoices;
       if (o.unlockedThrough) gameState.unlockedThrough = o.unlockedThrough;
       if (o.lastGiftMember != null && o.lastGiftMember !== '') gameState.lastGiftMember = o.lastGiftMember;
+      if (o.lastGiftEpisode != null && !isNaN(Number(o.lastGiftEpisode))) {
+        gameState.lastGiftEpisode = Number(o.lastGiftEpisode);
+      }
     } catch (e) { /* ignore */ }
   }
 
@@ -145,6 +149,7 @@
           episodeChoices: gameState.episodeChoices,
           unlockedThrough: gameState.unlockedThrough,
           lastGiftMember: gameState.lastGiftMember,
+          lastGiftEpisode: gameState.lastGiftEpisode,
         })
       );
     } catch (e) { /* ignore */ }
@@ -1286,6 +1291,7 @@
     gameState.unlockedThrough = 1;
     gameState.currentEpisodeN = 1;
     gameState.lastGiftMember = null;
+    gameState.lastGiftEpisode = null;
     saveGame();
     setTimeout(function () {
       if (typeof go === 'function') go(5);
@@ -1325,12 +1331,12 @@
   function shouldOfferGiftScreen() {
     if ((gameState.stats.COINS || 0) < GIFT_COST) return false;
     if (Math.random() >= 0.5) return false;
-    var last = gameState.lastGiftMember;
-    var members = ['KAIN', 'THEO', 'JAY', 'FINN'];
-    for (var i = 0; i < members.length; i++) {
-      if (members[i] !== last) return true;
+    var lastEp = gameState.lastGiftEpisode;
+    var curEp = Number(gameState.currentEpisodeN || 0);
+    if (lastEp != null && !isNaN(Number(lastEp))) {
+      if (curEp < Number(lastEp) + 2) return false;
     }
-    return false;
+    return true;
   }
 
   function updateGiftConfirmState() {
@@ -1391,6 +1397,9 @@
   }
 
   function openGiftScreen() {
+    gameState.lastGiftEpisode = Number(gameState.currentEpisodeN || gameState.lastGiftEpisode || 0) || 0;
+    try { saveGame(); } catch (e) { /* ignore */ }
+
     var pick = document.getElementById('gift-phase-select');
     var thx = document.getElementById('gift-phase-thanks');
     if (thx) thx.classList.add('gift-phase--hidden');
