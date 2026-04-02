@@ -20,7 +20,7 @@
   --gold: #C9A84C;
   --gold-light: #E8D5A3;
   --gold-dark: #9C7A2E;
-  /* Fixed nav: min-height 62 = vertical room for 34px controls + 14px bottom pad */
+  /* Fixed nav: 14px top + ~34px row + 14px bottom */
   --nav-bar-h: 62px;
 }
 html, body {
@@ -57,7 +57,7 @@ body::after {
   right:0;
   z-index:500;
   margin:0;
-  padding:0 24px 14px;
+  padding:14px 24px 14px;
   min-height:var(--nav-bar-h);
   box-sizing:border-box;
   display:flex;
@@ -731,7 +731,7 @@ body::after {
     <p id="rw-popup-type" style="font-size:52px;line-height:1;margin-bottom:8px;"></p>
     <p class="coin-amount" id="rw-popup-coins"></p>
     <p class="body-text" style="font-size:15px;line-height:1.7;color:var(--ink-soft);margin-bottom:16px;" id="rw-popup-line"></p>
-    <p class="body-text" style="font-size:13px;color:var(--ink-muted);" id="rw-popup-item"></p>
+    <p class="body-text" style="font-size:18px;color:var(--ink-muted);" id="rw-popup-item"></p>
     <button type="button" class="btn-solid" style="margin-top:8px" onclick="rewardPopupContinue()">Continue →</button>
   </div>
 </div>
