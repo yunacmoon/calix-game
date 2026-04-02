@@ -318,6 +318,61 @@
     return { ok: true, reason: '' };
   }
 
+  /** Remove writer-only script lines; strip ** only on flow beats (not raw md) so choice parsing stays valid. */
+  function filterEpisodeScriptForPlayer(md) {
+    if (!md || typeof md !== 'string') return md;
+    md = md.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    const lines = md.split('\n');
+    const kept = [];
+    for (let i = 0; i < lines.length; ) {
+      if (/^##\s*SCENE DIRECTION NOTES\s*$/i.test(lines[i].trim())) {
+        i++;
+        while (i < lines.length) {
+          const t = lines[i].trim();
+          if (t === '---') break;
+          if (/^##\s/.test(lines[i])) break;
+          i++;
+        }
+        continue;
+      }
+      kept.push(lines[i]);
+      i++;
+    }
+    md = kept.join('\n');
+    const blocks = md.split(/\n{2,}/);
+    const filteredBlocks = blocks.filter(function (block) {
+      if (/\*\*Act:\*\*/i.test(block)) return false;
+      if (/\*\*Featured:\*\*/i.test(block)) return false;
+      if (/\*\*Setting:\*\*/i.test(block)) return false;
+      return true;
+    });
+    return filteredBlocks.join('\n\n');
+  }
+
+  function stripMarkdownBoldFromFlowQueue(queue) {
+    return queue.map(function (beat) {
+      if (beat.type === 'narration' || beat.type === 'scene_header') {
+        return Object.assign({}, beat, { text: String(beat.text).replace(/\*\*/g, '') });
+      }
+      if (beat.type === 'dialogue') {
+        return Object.assign({}, beat, { text: String(beat.text).replace(/\*\*/g, '') });
+      }
+      if (beat.type === 'choice') {
+        return {
+          type: 'choice',
+          title: String(beat.title).replace(/\*\*/g, ''),
+          options: beat.options.map(function (o) {
+            return Object.assign({}, o, {
+              label: String(o.label).replace(/\*\*/g, ''),
+              body: String(o.body).replace(/\*\*/g, ''),
+            });
+          }),
+        };
+      }
+      return beat;
+    });
+  }
+
   function splitMarkdownSegments(md) {
     const lines = md.split('\n');
     const segments = [];
@@ -1104,7 +1159,7 @@
         }
       }
     }
-    return queue;
+    return stripMarkdownBoldFromFlowQueue(queue);
   }
 
   function startEpisode(n) {
@@ -1138,6 +1193,7 @@
   }
 
   function continueStartEpisode(n, md, entry) {
+    md = filterEpisodeScriptForPlayer(md);
     const titleLine = md.match(/^#\s*CALIX Episode \d+ — "([^"]+)"/m);
     currentEpisodeTitle = titleLine ? titleLine[1] : 'Episode ' + n;
     const epLabel = document.getElementById('ep-label-num');
@@ -1153,7 +1209,9 @@
 
     const setting = md.match(/\*\*Setting:\*\*\s*(.+)/);
     const eyebrow = document.getElementById('scene-eyebrow');
-    if (eyebrow && setting) eyebrow.textContent = setting[1].trim();
+    if (eyebrow) {
+      eyebrow.textContent = setting ? setting[1].trim().replace(/\*\*/g, '') : '';
+    }
 
     flowQueue = buildFlowFromMarkdown(md);
     flowIdx = 0;
