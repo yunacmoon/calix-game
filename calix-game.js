@@ -1321,11 +1321,13 @@
 
   let giftPickMember = null;
   let giftPickType = null;
-  let giftUiReady = false;
+  let giftUiInitialized = false;
 
   function proceedFromRewardPopupToRewardScreen() {
     if (typeof go === 'function') go(6);
     if (typeof window.initReward === 'function') window.initReward();
+    initGiftUi();
+    if (shouldOfferGiftScreen()) openGiftScreen();
   }
 
   function shouldOfferGiftScreen() {
@@ -1414,10 +1416,13 @@
   }
 
   function initGiftUi() {
-    if (giftUiReady) return;
+    if (window._giftUiInitialized) return;
+    window._giftUiInitialized = true;
+
+    if (giftUiInitialized) return;
     var ov = document.getElementById('gift-overlay');
     if (!ov) return;
-    giftUiReady = true;
+    giftUiInitialized = true;
     document.querySelectorAll('.gift-member-cell').forEach(function (el) {
       el.addEventListener('click', function () {
         if (el.disabled) return;
@@ -1489,12 +1494,7 @@
 
   window.rewardPopupContinue = function () {
     hideRewardPopup();
-    initGiftUi();
-    if (shouldOfferGiftScreen()) {
-      openGiftScreen();
-    } else {
-      proceedFromRewardPopupToRewardScreen();
-    }
+    proceedFromRewardPopupToRewardScreen();
   };
 
   window.pickEpisodeChoice = function () {};
