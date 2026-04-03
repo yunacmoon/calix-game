@@ -1305,6 +1305,7 @@
   window.initReward = initRewardCalix;
 
   window.claimNextEpisode = function () {
+    giftShownThisEpisode = false;
     const maxN = Math.max.apply(
       null,
       episodesIndex.map(function (e) {
