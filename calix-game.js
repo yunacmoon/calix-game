@@ -1395,14 +1395,7 @@
   }
 
   function shouldOfferGiftScreen() {
-    if ((gameState.stats.COINS || 0) < GIFT_COST) return false;
-    if (Math.random() >= 0.5) return false;
-    var lastEp = gameState.lastGiftEpisode;
-    var curEp = Number(gameState.currentEpisodeN || 0);
-    if (lastEp != null && !isNaN(Number(lastEp))) {
-      if (curEp < Number(lastEp) + 4) return false;
-    }
-    return true;
+    return false;
   }
 
   function updateGiftConfirmState() {
