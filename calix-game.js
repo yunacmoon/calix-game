@@ -1262,6 +1262,7 @@
   };
 
   function initRewardCalix() {
+    window._giftUiInitialized = false;
     const focus = gameState.candidateName || '—';
     const rwFocus = document.getElementById('rw-focus');
     if (rwFocus) rwFocus.textContent = '5th: ' + focus;
@@ -1386,9 +1387,9 @@
   function proceedFromRewardPopupToRewardScreen() {
     if (typeof go === 'function') go(6);
     if (typeof window.initReward === 'function') window.initReward();
-    initGiftUi();
     if (!giftShownThisEpisode && shouldOfferGiftScreen()) {
       giftShownThisEpisode = true;
+      initGiftUi();
       openGiftScreen();
     }
   }
