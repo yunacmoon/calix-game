@@ -1262,7 +1262,6 @@
   };
 
   function initRewardCalix() {
-    window._giftUiInitialized = false;
     const focus = gameState.candidateName || '—';
     const rwFocus = document.getElementById('rw-focus');
     if (rwFocus) rwFocus.textContent = '5th: ' + focus;
@@ -1386,12 +1385,12 @@
   let giftUiInitialized = false;
 
   function proceedFromRewardPopupToRewardScreen() {
-    if (typeof go === 'function') go(6);
-    if (typeof window.initReward === 'function') window.initReward();
     if (!giftShownThisEpisode && shouldOfferGiftScreen()) {
       giftShownThisEpisode = true;
-      initGiftUi();
       openGiftScreen();
+    } else {
+      if (typeof go === 'function') go(6);
+      if (typeof window.initReward === 'function') window.initReward();
     }
   }
 
@@ -1541,19 +1540,21 @@
         showGiftThanks(memberKey, giftKey);
       });
     }
-    var contBtn = document.getElementById('gift-btn-continue');
-    if (contBtn) {
-      contBtn.addEventListener('click', function () {
+    var skipEl = document.getElementById('gift-btn-skip');
+    if (skipEl) {
+      skipEl.onclick = function () {
         hideGiftOverlay();
-        proceedFromRewardPopupToRewardScreen();
-      });
+        if (typeof go === 'function') go(6);
+        if (typeof window.initReward === 'function') window.initReward();
+      };
     }
-    var skipBtn = document.getElementById('gift-btn-skip');
-    if (skipBtn) {
-      skipBtn.addEventListener('click', function () {
+    var contEl = document.getElementById('gift-btn-continue');
+    if (contEl) {
+      contEl.onclick = function () {
         hideGiftOverlay();
-        proceedFromRewardPopupToRewardScreen();
-      });
+        if (typeof go === 'function') go(6);
+        if (typeof window.initReward === 'function') window.initReward();
+      };
     }
   }
 
@@ -1840,6 +1841,7 @@
 
   window.initMembers = function () {};
 
+  initGiftUi();
   bootData();
   window.showScreen(0);
 })();
