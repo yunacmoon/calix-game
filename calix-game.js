@@ -47,6 +47,7 @@
   let candidateDetailCard = null;
   let candidateBackstories = {};
   let candidateProfilesPromise = null;
+  var giftShownThisEpisode = false;
 
   function escapeHtml(s) {
     return String(s)
@@ -1224,6 +1225,7 @@
   }
 
   window.initEpisode = function () {
+    giftShownThisEpisode = false;
     loadSave();
     syncNavIdentity();
     renderStatsSidebar();
@@ -1385,7 +1387,10 @@
     if (typeof go === 'function') go(6);
     if (typeof window.initReward === 'function') window.initReward();
     initGiftUi();
-    if (shouldOfferGiftScreen()) openGiftScreen();
+    if (!giftShownThisEpisode && shouldOfferGiftScreen()) {
+      giftShownThisEpisode = true;
+      openGiftScreen();
+    }
   }
 
   function shouldOfferGiftScreen() {
