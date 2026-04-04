@@ -2,152 +2,152 @@
   "episodes": [
     {
       "n": 1,
-      "file": "Context/scripts/ep01_five.md",
+      "file": "ep01_five.md",
       "gate": "None"
     },
     {
       "n": 2,
-      "file": "Context/scripts/ep02_the_call.md",
+      "file": "ep02_the_call.md",
       "gate": "None"
     },
     {
       "n": 3,
-      "file": "Context/scripts/ep03_first_day.md",
+      "file": "ep03_first_day.md",
       "gate": "None"
     },
     {
       "n": 4,
-      "file": "Context/scripts/ep04_the_room.md",
+      "file": "ep04_the_room.md",
       "gate": "None"
     },
     {
       "n": 5,
-      "file": "Context/scripts/ep05_positions.md",
+      "file": "ep05_positions.md",
       "gate": "None"
     },
     {
       "n": 6,
-      "file": "Context/scripts/ep06_after_practice.md",
+      "file": "ep06_after_practice.md",
       "gate": "None"
     },
     {
       "n": 7,
-      "file": "Context/scripts/ep07_the_showcase.md",
+      "file": "ep07_the_showcase.md",
       "gate": "None"
     },
     {
       "n": 8,
-      "file": "Context/scripts/ep08_before_the_show.md",
+      "file": "ep08_before_the_show.md",
       "gate": "None"
     },
     {
       "n": 9,
-      "file": "Context/scripts/ep09_the_show.md",
+      "file": "ep09_the_show.md",
       "gate": "None"
     },
     {
       "n": 10,
-      "file": "Context/scripts/ep10_what_theo_doesnt_say.md",
+      "file": "ep10_what_theo_doesnt_say.md",
       "gate": "None"
     },
     {
       "n": 11,
-      "file": "Context/scripts/ep11_kain_vs_everyone.md",
+      "file": "ep11_kain_vs_everyone.md",
       "gate": "None"
     },
     {
       "n": 12,
-      "file": "Context/scripts/ep12_finn_and_the_camera.md",
+      "file": "ep12_finn_and_the_camera.md",
       "gate": "None"
     },
     {
       "n": 13,
-      "file": "Context/scripts/ep13_jay_at_3am.md",
+      "file": "ep13_jay_at_3am.md",
       "gate": "None"
     },
     {
       "n": 14,
-      "file": "Context/scripts/ep14_the_label.md",
+      "file": "ep14_the_label.md",
       "gate": "None"
     },
     {
       "n": 15,
-      "file": "Context/scripts/ep15_theo_and_you.md",
+      "file": "ep15_theo_and_you.md",
       "gate": "None"
     },
     {
       "n": 16,
-      "file": "Context/scripts/ep16_the_vote.md",
+      "file": "ep16_the_vote.md",
       "gate": "None"
     },
     {
       "n": 17,
-      "file": "Context/scripts/ep17_kain_alone.md",
+      "file": "ep17_kain_alone.md",
       "gate": "None"
     },
     {
       "n": 18,
-      "file": "Context/scripts/ep18_the_leak.md",
+      "file": "ep18_the_leak.md",
       "gate": "None"
     },
     {
       "n": 19,
-      "file": "Context/scripts/ep19_finn_asks.md",
+      "file": "ep19_finn_asks.md",
       "gate": "None"
     },
     {
       "n": 20,
-      "file": "Context/scripts/ep20_the_decision.md",
+      "file": "ep20_the_decision.md",
       "gate": "None"
     },
     {
       "n": 21,
-      "file": "Context/scripts/ep21_before_debut.md",
+      "file": "ep21_before_debut.md",
       "gate": "None"
     },
     {
       "n": 22,
-      "file": "Context/scripts/ep22_finn_speaks_first.md",
+      "file": "ep22_finn_speaks_first.md",
       "gate": "None"
     },
     {
       "n": 23,
-      "file": "Context/scripts/ep23_the_fight.md",
+      "file": "ep23_the_fight.md",
       "gate": "None"
     },
     {
       "n": 24,
-      "file": "Context/scripts/ep24_comeback_stage.md",
+      "file": "ep24_comeback_stage.md",
       "gate": "None"
     },
     {
       "n": 25,
-      "file": "Context/scripts/ep25_after_the_stage.md",
+      "file": "ep25_after_the_stage.md",
       "gate": "None"
     },
     {
       "n": 26,
-      "file": "Context/scripts/ep26_kain_asks.md",
+      "file": "ep26_kain_asks.md",
       "gate": "None"
     },
     {
       "n": 27,
-      "file": "Context/scripts/ep27_all_five.md",
+      "file": "ep27_all_five.md",
       "gate": "None"
     },
     {
       "n": 28,
-      "file": "Context/scripts/ep28_what_finn_kept.md",
+      "file": "ep28_what_finn_kept.md",
       "gate": "None"
     },
     {
       "n": 29,
-      "file": "Context/scripts/ep29_jays_last_line.md",
+      "file": "ep29_jays_last_line.md",
       "gate": "None"
     },
     {
       "n": 30,
-      "file": "Context/scripts/ep30_calix.md",
+      "file": "ep30_calix.md",
       "gate": "None"
     }
   ]
