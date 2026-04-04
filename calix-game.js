@@ -1310,9 +1310,9 @@
       var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
       var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
       nudgeEl.style.display = '';
-      nudgeEl.innerHTML = '<div style="margin-top:24px;padding:20px;background:rgba(255,255,255,0.7);border:1.5px solid #7c6aed;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
+      nudgeEl.innerHTML = '<div style="margin-top:24px;padding:20px;background:rgba(255,255,255,0.65);border:1.5px solid #7c6aed;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
         + '<p style="margin:0 0 12px;font-size:14px;color:#3d2f8f;font-weight:500;">Buy ' + nudgeMember + ' ' + nudgeGift + '?</p>'
-        + '<div id="gift-nudge-img" style="width:100px;height:100px;border-radius:16px;background:rgba(124,106,237,0.08);border:1.5px solid #7c6aed;margin:0 auto 16px;"></div>'
+        + '<div id="gift-nudge-img" style="width:100px;height:100px;border-radius:16px;background:rgba(255,255,255,0.5);border:1.5px solid #7c6aed;margin:0 auto 16px;"></div>'
         + '<div id="gift-nudge-btns" style="display:flex;gap:10px;justify-content:center;">'
         + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#7c6aed;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Send it! 🎁</button>'
         + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#7c6aed;border:1.5px solid #7c6aed;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Maybe next time</button>'
