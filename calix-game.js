@@ -1332,7 +1332,7 @@
       document.getElementById('gift-nudge-yes').onclick = function() {
         if ((gameState.stats.COINS || 0) < 50) {
           document.getElementById('gift-nudge-thanks').style.display = '';
-          document.getElementById('gift-nudge-thanks').textContent = '코인이 부족해요 🥲';
+          document.getElementById('gift-nudge-thanks').textContent = 'Not enough coins 🥲';
           return;
         }
         gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - 50);
@@ -1341,14 +1341,14 @@
           gameState.stats[affinityKey] = Math.min(100, (gameState.stats[affinityKey] || 0) + 1);
         }
         var thanks = {
-          KAIN: '감사합니다. 잘 마실게요. 🙂',
-          THEO: '오 진짜요? 고마워요 ☺️',
-          JAY: 'Ayy thanks!! 완전 땡겼는데 🤙',
-          FINN: '헉 감사해요!! 제가 제일 좋아하는 거예요 😊'
+          KAIN: 'Thank you. I appreciate it. 🙂',
+          THEO: 'Oh wow, really? Thank you so much! ☺️',
+          JAY: 'Ayy thanks!! You already knew what I needed 🤙',
+          FINN: 'Oh my gosh, thank you!! This is literally my favorite 😊'
         };
         document.getElementById('gift-nudge-btns').style.display = 'none';
         document.getElementById('gift-nudge-thanks').style.display = '';
-        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + (thanks[nudgeMember] || '고마워요! ☺️');
+        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + (thanks[nudgeMember] || 'Thank you! ☺️');
         var coinEl = document.getElementById('rw-tokens');
         if (coinEl) coinEl.textContent = gameState.stats.COINS || 0;
         try { saveGame(); } catch(e) {}
