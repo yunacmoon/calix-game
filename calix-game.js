@@ -1298,15 +1298,6 @@
       }
     }
 
-    const notice = document.getElementById('rw-notice');
-    if (notice) {
-      notice.textContent =
-        'Coins: ' +
-        gameState.stats.COINS +
-        '. Candidate: ' +
-        (gameState.candidateName || '—') +
-        '.';
-    }
     const tok = document.getElementById('rw-tokens');
     if (tok) tok.textContent = String(gameState.stats.COINS);
     renderStatsSidebar();
@@ -1315,18 +1306,18 @@
     var nudgeEl = document.getElementById('reward-gift-nudge');
     if (nudgeEl) {
       var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
-      var nudgeGifts = ['아이스아메리카노 ☕', '프로틴바 💪', '사탕 🍬', '에너지드링크 ⚡', '비타민젤리 🌟'];
+      var nudgeGifts = ['an iced americano ☕', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
       var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
       var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
       nudgeEl.style.display = '';
-      nudgeEl.innerHTML = '<div style="margin-top:28px;padding:20px;background:#faf7f2;border:1px solid #c7a86e;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
-        + '<p style="margin:0 0 12px;font-size:14px;color:#5a4a3a;">' + nudgeMember + '한테 ' + nudgeGift + ' 쏠까?</p>'
-        + '<div id="gift-nudge-img" style="width:100px;height:100px;border-radius:16px;background:#f0ece3;border:1px solid #c7a86e;margin:0 auto 16px;"></div>'
+      nudgeEl.innerHTML = '<div style="margin-top:24px;padding:20px;background:rgba(255,255,255,0.7);border:1.5px solid #7c6aed;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
+        + '<p style="margin:0 0 12px;font-size:14px;color:#3d2f8f;font-weight:500;">Buy ' + nudgeMember + ' ' + nudgeGift + '?</p>'
+        + '<div id="gift-nudge-img" style="width:100px;height:100px;border-radius:16px;background:rgba(124,106,237,0.08);border:1.5px solid #7c6aed;margin:0 auto 16px;"></div>'
         + '<div id="gift-nudge-btns" style="display:flex;gap:10px;justify-content:center;">'
-        + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#c7a86e;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">쏜다! 🎁</button>'
-        + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#9a8878;border:1px solid #c7a86e;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">다음에</button>'
+        + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#7c6aed;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Send it! 🎁</button>'
+        + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#7c6aed;border:1.5px solid #7c6aed;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Maybe next time</button>'
         + '</div>'
-        + '<div id="gift-nudge-thanks" style="display:none;font-size:13px;color:#5a4a3a;margin-top:8px;"></div>'
+        + '<div id="gift-nudge-thanks" style="display:none;font-size:16px;color:#3d2f8f;margin-top:12px;"></div>'
         + '</div>';
 
       document.getElementById('gift-nudge-yes').onclick = function() {
