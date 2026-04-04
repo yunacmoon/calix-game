@@ -1012,7 +1012,18 @@
       appendOneBeatToStream(beat);
       flowIdx++;
     }
-    endEpisodeFlow();
+    const stream = document.getElementById('scene-stream');
+    if (stream) {
+      const endBtn = document.createElement('button');
+      endBtn.className = 'btn-solid choice-btn';
+      endBtn.style.marginTop = '2rem';
+      endBtn.textContent = 'Continue →';
+      endBtn.onclick = function() {
+        endBtn.remove();
+        endEpisodeFlow();
+      };
+      stream.appendChild(endBtn);
+    }
   }
 
   function renderChoiceInline(beat) {
