@@ -1310,6 +1310,55 @@
     const tok = document.getElementById('rw-tokens');
     if (tok) tok.textContent = String(gameState.stats.COINS);
     renderStatsSidebar();
+
+    // === GIFT NUDGE ===
+    var nudgeEl = document.getElementById('reward-gift-nudge');
+    if (nudgeEl) {
+      var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
+      var nudgeGifts = ['아이스아메리카노 ☕', '프로틴바 💪', '사탕 🍬', '에너지드링크 ⚡', '비타민젤리 🌟'];
+      var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
+      var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
+      nudgeEl.style.display = '';
+      nudgeEl.innerHTML = '<div style="margin-top:28px;padding:20px;background:#faf7f2;border:1px solid #c7a86e;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
+        + '<p style="margin:0 0 12px;font-size:14px;color:#5a4a3a;">' + nudgeMember + '한테 ' + nudgeGift + ' 쏠까?</p>'
+        + '<div id="gift-nudge-img" style="width:100px;height:100px;border-radius:16px;background:#f0ece3;border:1px solid #c7a86e;margin:0 auto 16px;"></div>'
+        + '<div id="gift-nudge-btns" style="display:flex;gap:10px;justify-content:center;">'
+        + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#c7a86e;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">쏜다! 🎁</button>'
+        + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#9a8878;border:1px solid #c7a86e;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">다음에</button>'
+        + '</div>'
+        + '<div id="gift-nudge-thanks" style="display:none;font-size:13px;color:#5a4a3a;margin-top:8px;"></div>'
+        + '</div>';
+
+      document.getElementById('gift-nudge-yes').onclick = function() {
+        if ((gameState.stats.COINS || 0) < 50) {
+          document.getElementById('gift-nudge-thanks').style.display = '';
+          document.getElementById('gift-nudge-thanks').textContent = '코인이 부족해요 🥲';
+          return;
+        }
+        gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - 50);
+        var affinityKey = nudgeMember + '_AFFINITY';
+        if (gameState.stats[affinityKey] !== undefined) {
+          gameState.stats[affinityKey] = Math.min(100, (gameState.stats[affinityKey] || 0) + 1);
+        }
+        var thanks = {
+          KAIN: '감사합니다. 잘 마실게요. 🙂',
+          THEO: '오 진짜요? 고마워요 ☺️',
+          JAY: 'Ayy thanks!! 완전 땡겼는데 🤙',
+          FINN: '헉 감사해요!! 제가 제일 좋아하는 거예요 😊'
+        };
+        document.getElementById('gift-nudge-btns').style.display = 'none';
+        document.getElementById('gift-nudge-thanks').style.display = '';
+        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + (thanks[nudgeMember] || '고마워요! ☺️');
+        var coinEl = document.getElementById('rw-tokens');
+        if (coinEl) coinEl.textContent = gameState.stats.COINS || 0;
+        try { saveGame(); } catch(e) {}
+      };
+
+      document.getElementById('gift-nudge-skip').onclick = function() {
+        nudgeEl.style.display = 'none';
+      };
+    }
+    // === END GIFT NUDGE ===
   }
 
   window.initReward = initRewardCalix;

@@ -495,6 +495,18 @@ body::after {
 .reward-bottombar .btn-solid { width:100%; background:var(--purple-mid); color:#fff; border-radius:999px; letter-spacing:0.22em; box-shadow:0 8px 28px rgba(107,79,216,0.28); }
 .reward-bottombar .btn-solid:hover { opacity:0.92; transform:translateY(-2px); }
 
+#reward-gift-nudge { margin-top: 24px; padding: 20px 18px; font-family: 'Rethink Sans', sans-serif; background: rgba(255, 252, 245, 0.88); border: 1px solid rgba(199, 168, 110, 0.45); border-radius: 18px; box-shadow: 0 8px 28px rgba(0, 0, 61, 0.06); }
+#reward-gift-nudge .gift-nudge-heading { font-size: 1rem; font-weight: 600; color: var(--ink); margin: 0 0 14px; line-height: 1.45; letter-spacing: -0.01em; }
+#gift-nudge-img { width: 120px; height: 120px; border-radius: 16px; background: #f0ece3; border: 1px solid #c7a86e; flex-shrink: 0; box-sizing: border-box; }
+#reward-gift-nudge .gift-nudge-row { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+#reward-gift-nudge .gift-nudge-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+#reward-gift-nudge .gift-nudge-btn { font-family: 'Rethink Sans', sans-serif; font-size: 14px; font-weight: 600; padding: 12px 20px; border-radius: 999px; cursor: pointer; border: 1px solid rgba(199, 168, 110, 0.55); transition: opacity 0.2s, transform 0.2s; }
+#reward-gift-nudge .gift-nudge-btn--yes { background: linear-gradient(135deg, var(--gold-light), #f5ead0); color: var(--ink); box-shadow: 0 4px 16px rgba(156, 122, 46, 0.2); }
+#reward-gift-nudge .gift-nudge-btn--skip { background: rgba(255, 255, 255, 0.75); color: var(--ink-soft); }
+#reward-gift-nudge .gift-nudge-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+#reward-gift-nudge .gift-nudge-err { font-size: 13px; color: #9c4a4a; margin: 0 0 8px; min-height: 1.2em; }
+#reward-gift-nudge .gift-nudge-thanks { font-size: 15px; line-height: 1.55; color: var(--ink); margin: 0; }
+
 /* OVERLAY */
 .overlay { position:fixed; inset:0; background:linear-gradient(135deg, #F2E6EE, #E4DAFA, #D0DAFF); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px; opacity:0; pointer-events:none; transition:opacity 0.7s; z-index:600; }
 .overlay.show { opacity:1; pointer-events:all; }
@@ -716,6 +728,8 @@ body::after {
 
       <p class="section-tag" style="margin-top:22px">Gifts</p>
       <div id="rw-gifts" class="rw-list"></div>
+
+      <div id="reward-gift-nudge" style="display:none"></div>
     </div>
 
     <footer class="reward-bottombar">
