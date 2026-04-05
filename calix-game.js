@@ -335,7 +335,7 @@
         i++;
         while (i < lines.length) {
           const t = lines[i].trim();
-          if (t === '---') break;
+          if (t === '---') { i++; break; }
           if (/^##\s/.test(lines[i])) break;
           i++;
         }
