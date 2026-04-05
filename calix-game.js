@@ -1102,6 +1102,7 @@
       Object.keys(gameState.stats).forEach(function (k) {
         prev[k] = gameState.stats[k];
       });
+      pendingReward.coins = 100;
       gameState.stats.COINS += pendingReward.coins;
       saveGame();
       renderStatsSidebar(prev);
