@@ -1141,6 +1141,15 @@
         typeEl.innerHTML = '<img src="' + imgSrc + '" alt="Photocard ' + (cardIndex + 1) + '" class="rw-photocard-img">';
         gameState.photocardCount += 1;
         saveGame();
+      } else if (pendingReward.typeKey === 'accessory') {
+        var accName = (mapParts.accessoryName || pendingReward.itemLabel || 'Accessory').trim();
+        var accMember = (mapParts.member || '').trim();
+        var accSeed = 'calix-acc-' + accName.toLowerCase().replace(/\s+/g, '-');
+        var accImg = 'https://picsum.photos/seed/' + encodeURIComponent(accSeed) + '/300/400';
+        var accCaption = accName + (accMember ? ' — from ' + accMember : '');
+        typeEl.innerHTML =
+          '<img src="' + accImg + '" alt="' + escapeHtml(accName) + '" class="rw-photocard-img">' +
+          '<p class="rw-accessory-label">' + escapeHtml(accCaption) + '</p>';
       } else {
         typeEl.innerHTML = '';
         typeEl.textContent = formatRewardPopupTypeLine(
