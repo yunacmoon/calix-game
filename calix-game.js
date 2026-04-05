@@ -1281,6 +1281,7 @@
     const BANNER_EPISODES = [1, 4, 7, 10, 13, 17, 20, 24, 27, 30];
     const BANNER_IMAGES = {
       1: 'Images/04_Banner/EP01_Banner.png',
+      4: 'Images/04_Banner/EP04_Banner.jpeg',
     };
     if (streamEl && BANNER_EPISODES.indexOf(n) !== -1) {
       var bannerWrap = document.createElement('div');
