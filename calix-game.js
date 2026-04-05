@@ -639,7 +639,7 @@
     if (/\bfan\s+gift\b/.test(blob)) return { key: 'fan_gift', label: 'Fan gift' };
     if (/\bnotebook\b/.test(blob)) return { key: 'notebook', label: 'Notebook' };
     if (/\bsnack\b|\bchips\b|\bfood\b|\btreat\b/.test(blob)) return { key: 'snack', label: 'Snack' };
-    if (/\baccessory\b|\bcharm\b|\bkeychain\b|\bbenie\b|\bhat\b|\bmerch\b/.test(blob)) {
+    if (/\baccessory\b|\bcharm\b|\bkeychain\b|\bbenie\b|\bhat\b|\bmerch\b|\bearring\b|\bnecklace\b|\bpendant\b|\bwristband\b|\bbracelet\b|\bring\b/.test(blob)) {
       return { key: 'accessory', label: 'Accessory' };
     }
     if (itemLabel) return { key: 'item', label: 'Item' };
@@ -1150,6 +1150,14 @@
         typeEl.innerHTML =
           '<img src="' + accImg + '" alt="' + escapeHtml(accName) + '" class="rw-photocard-img">' +
           '<p class="rw-accessory-label">' + escapeHtml(accCaption) + '</p>';
+      } else if (pendingReward.typeKey === 'fan_gift') {
+        var fgName = (pendingReward.itemLabel || mapParts.rightPlain || 'Gift').replace(/fan\s+gift/i, '').trim();
+        if (!fgName) fgName = 'Gift';
+        var fgSeed = 'calix-fangift-' + fgName.toLowerCase().replace(/\s+/g, '-');
+        var fgImg = 'https://picsum.photos/seed/' + encodeURIComponent(fgSeed) + '/300/400';
+        typeEl.innerHTML =
+          '<img src="' + fgImg + '" alt="' + escapeHtml(fgName) + '" class="rw-photocard-img">' +
+          '<p class="rw-accessory-label">Gift from a fan</p>';
       } else {
         typeEl.innerHTML = '';
         typeEl.textContent = formatRewardPopupTypeLine(
