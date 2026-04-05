@@ -297,6 +297,8 @@ body::after {
 .inv-empty { color:var(--ink-muted); font-size:12px; }
 .inv-item { padding:6px 0; border-bottom:1px solid var(--rule); }
 .scene-eyebrow { font-size:10px; letter-spacing:0.45em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:8px; }
+.ep-banner { width:100%; border-radius:14px; overflow:hidden; margin-bottom:16px; aspect-ratio:16/9; flex-shrink:0; }
+.ep-banner-img { width:100%; height:100%; object-fit:cover; display:block; }
 .scene-stream { flex:1; min-height:min(52vh,440px); max-height:calc(100vh - 152px); overflow-y:auto; overflow-x:hidden; padding:8px 4px 120px; -webkit-overflow-scrolling:touch; scroll-behavior:smooth; }
 .dialogue-box { background:rgba(255,255,255,0.55); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.4); border-radius:16px; padding:22px 26px; margin-bottom:14px; box-shadow:0 4px 24px rgba(0,0,61,0.08); }
 .character-name { font-size:10px; letter-spacing:0.35em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:10px; }
@@ -685,6 +687,9 @@ body::after {
           <span class="episode-num" id="ep-label-num">Episode 01</span>
         </div>
       </header>
+      <div id="ep-banner" class="ep-banner" style="display:none">
+        <img id="ep-banner-img" src="" alt="" class="ep-banner-img">
+      </div>
       <div class="scene-stream" id="scene-stream"></div>
       <footer class="episode-bottombar">
         <span id="ep-coins">0 coins</span>

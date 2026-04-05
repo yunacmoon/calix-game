@@ -1262,6 +1262,19 @@
       eyebrow.textContent = setting ? setting[1].trim().replace(/\*\*/g, '') : '';
     }
 
+    const BANNER_EPISODES = [1, 4, 7, 10, 13, 17, 20, 24, 27, 30];
+    const bannerEl = document.getElementById('ep-banner');
+    const bannerImg = document.getElementById('ep-banner-img');
+    if (bannerEl && bannerImg) {
+      if (BANNER_EPISODES.indexOf(n) !== -1) {
+        bannerImg.src = 'https://picsum.photos/seed/calix-ep' + n + '/800/450';
+        bannerImg.alt = 'Episode ' + n;
+        bannerEl.style.display = '';
+      } else {
+        bannerEl.style.display = 'none';
+      }
+    }
+
     flowQueue = buildFlowFromMarkdown(md);
     flowIdx = 0;
     lastNarrationFp = '';
