@@ -984,7 +984,6 @@
     }
 
     if (beat.type === 'separator') {
-      appendStreamBlock('<div class="scene-sep">—</div>', '');
       return;
     }
 
@@ -1263,19 +1262,6 @@
       eyebrow.textContent = setting ? setting[1].trim().replace(/\*\*/g, '') : '';
     }
 
-    const BANNER_EPISODES = [1, 4, 7, 10, 13, 17, 20, 24, 27, 30];
-    const bannerEl = document.getElementById('ep-banner');
-    const bannerImg = document.getElementById('ep-banner-img');
-    if (bannerEl && bannerImg) {
-      if (BANNER_EPISODES.indexOf(n) !== -1) {
-        bannerImg.src = 'https://picsum.photos/seed/calix-ep' + n + '/800/450';
-        bannerImg.alt = 'Episode ' + n;
-        bannerEl.style.display = '';
-      } else {
-        bannerEl.style.display = 'none';
-      }
-    }
-
     flowQueue = buildFlowFromMarkdown(md);
     flowIdx = 0;
     lastNarrationFp = '';
@@ -1283,6 +1269,18 @@
     episodeChoiceStatDelta = {};
     const streamEl = document.getElementById('scene-stream');
     if (streamEl) streamEl.scrollTop = 0;
+
+    const BANNER_EPISODES = [1, 4, 7, 10, 13, 17, 20, 24, 27, 30];
+    if (streamEl && BANNER_EPISODES.indexOf(n) !== -1) {
+      var bannerWrap = document.createElement('div');
+      bannerWrap.className = 'ep-banner';
+      var bannerImg = document.createElement('img');
+      bannerImg.src = 'https://picsum.photos/seed/calix-ep' + n + '/800/450';
+      bannerImg.alt = '';
+      bannerImg.className = 'ep-banner-img';
+      bannerWrap.appendChild(bannerImg);
+      streamEl.insertBefore(bannerWrap, streamEl.firstChild);
+    }
     flushContinuousSegment();
   }
 
