@@ -28,6 +28,7 @@
     unlockedThrough: 1,
     lastGiftMember: null,
     lastGiftEpisode: null,
+    photocardCount: 0,
   };
 
   let flowQueue = [];
@@ -133,6 +134,9 @@
       if (o.lastGiftEpisode != null && !isNaN(Number(o.lastGiftEpisode))) {
         gameState.lastGiftEpisode = Number(o.lastGiftEpisode);
       }
+      if (o.photocardCount != null && !isNaN(Number(o.photocardCount))) {
+        gameState.photocardCount = Number(o.photocardCount);
+      }
     } catch (e) { /* ignore */ }
   }
 
@@ -151,6 +155,7 @@
           unlockedThrough: gameState.unlockedThrough,
           lastGiftMember: gameState.lastGiftMember,
           lastGiftEpisode: gameState.lastGiftEpisode,
+          photocardCount: gameState.photocardCount,
         })
       );
     } catch (e) { /* ignore */ }
@@ -1124,11 +1129,26 @@
       (episodesMapMeta[gameState.currentEpisodeN] && episodesMapMeta[gameState.currentEpisodeN].rewardLine) || '';
     const mapParts = parseMapRewardParts(mapLine);
     if (typeEl) {
-      typeEl.textContent = formatRewardPopupTypeLine(
-        pendingReward.typeKey,
-        pendingReward.coins,
-        mapParts
-      );
+      if (pendingReward.typeKey === 'photocard') {
+        const PHOTOCARD_PLACEHOLDERS = [
+          'https://picsum.photos/seed/calix-card-1/300/400',
+          'https://picsum.photos/seed/calix-card-2/300/400',
+          'https://picsum.photos/seed/calix-card-3/300/400',
+          'https://picsum.photos/seed/calix-card-4/300/400',
+        ];
+        const cardIndex = gameState.photocardCount % PHOTOCARD_PLACEHOLDERS.length;
+        const imgSrc = PHOTOCARD_PLACEHOLDERS[cardIndex];
+        typeEl.innerHTML = '<img src="' + imgSrc + '" alt="Photocard ' + (cardIndex + 1) + '" class="rw-photocard-img">';
+        gameState.photocardCount += 1;
+        saveGame();
+      } else {
+        typeEl.innerHTML = '';
+        typeEl.textContent = formatRewardPopupTypeLine(
+          pendingReward.typeKey,
+          pendingReward.coins,
+          mapParts
+        );
+      }
     }
     if (lineEl) lineEl.textContent = reactionLineFromEpisodeChoices();
     const coinEl = document.getElementById('rw-popup-coins');
