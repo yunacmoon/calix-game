@@ -1144,8 +1144,17 @@
       } else if (pendingReward.typeKey === 'accessory') {
         var accName = (mapParts.accessoryName || pendingReward.itemLabel || 'Accessory').trim();
         var accMember = (mapParts.member || '').trim();
-        var accSeed = 'calix-acc-' + accName.toLowerCase().replace(/\s+/g, '-');
-        var accImg = 'https://picsum.photos/seed/' + encodeURIComponent(accSeed) + '/300/400';
+        var GIFT_IMAGES = {
+          14: 'Images/03_Gifts/EP14_Perfumebox.png',
+          16: 'Images/03_Gifts/EP16_Earring.png',
+          19: 'Images/03_Gifts/EP19_Necklace.png',
+          20: 'Images/03_Gifts/EP20_Band.png',
+          21: 'Images/03_Gifts/EP21_Ring.png',
+          22: 'Images/03_Gifts/EP22_Necklace.png',
+          29: 'Images/03_Gifts/EP29_Bracelet.png',
+        };
+        var accImg = GIFT_IMAGES[gameState.currentEpisodeN] ||
+          'https://picsum.photos/seed/calix-acc-' + accName.toLowerCase().replace(/\s+/g, '-') + '/300/400';
         var accCaption = accName + (accMember ? ' — from ' + accMember : '');
         typeEl.innerHTML =
           '<img src="' + accImg + '" alt="' + escapeHtml(accName) + '" class="rw-photocard-img">' +
@@ -1153,8 +1162,7 @@
       } else if (pendingReward.typeKey === 'fan_gift') {
         var fgName = (pendingReward.itemLabel || mapParts.rightPlain || 'Gift').replace(/fan\s+gift/i, '').trim();
         if (!fgName) fgName = 'Gift';
-        var fgSeed = 'calix-fangift-' + fgName.toLowerCase().replace(/\s+/g, '-');
-        var fgImg = 'https://picsum.photos/seed/' + encodeURIComponent(fgSeed) + '/300/400';
+        var fgImg = 'Images/03_Gifts/EP14_Perfumebox.png';
         typeEl.innerHTML =
           '<img src="' + fgImg + '" alt="' + escapeHtml(fgName) + '" class="rw-photocard-img">' +
           '<p class="rw-accessory-label">Gift from a fan</p>';
