@@ -1306,7 +1306,7 @@
     var nudgeEl = document.getElementById('reward-gift-nudge');
     if (nudgeEl) {
       var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
-      var nudgeGifts = ['an iced americano ☕', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
+      var nudgeGifts = ['an iced americano 🧋', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
       var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
       var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
       nudgeEl.style.display = '';
