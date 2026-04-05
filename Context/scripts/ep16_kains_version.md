@@ -4,7 +4,7 @@
 > **Act:** 2 — Friction
 > **Featured:** Kain
 > **Setting:** Kain's room. Door slightly open. Evening.
-> **Reward:** Earring (from Kain) — silver bar stud
+> **Reward:** Earring (from Kain) — silver bar
 > **Stat Gate:** KAIN_TRUST ≥ 7
 
 ---

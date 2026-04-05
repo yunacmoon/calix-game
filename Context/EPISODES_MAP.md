@@ -254,7 +254,7 @@
 - B) Tell him what you heard and what it meant to you. `[+4 KAIN_TRUST]` *(Long silence. Then a single nod.)*
 - C) *"Is that what you actually think?"* `[+3 KAIN_TRUST]` *(He doesn't deny it.)*
 **Stat Gate:** KAIN_TRUST ≥ 7
-**Reward:** `Kain's spare earring — simple silver bar, one stud. Left on your desk later with no note.` → **Accessory: earring (from Kain)**
+**Reward:** `Kain's spare earring — simple silver bar. Left on your desk later with no note.` → **Accessory: earring (from Kain)**
 **Mood:** Low light. A door that was already open. Words that can't be taken back, and shouldn't be.
 
 ---
