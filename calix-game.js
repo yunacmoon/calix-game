@@ -1302,8 +1302,9 @@
   };
 
   const CANDIDATE_ARCHETYPE = { ALEX: 'STRONG', YOOJIN: 'STRONG', GREY: 'SOFT' };
-  /** Fan layout: data-fan-pos 0 = left, 1 = center, 2 = right. */
-  const CANDIDATE_FAN_ORDER = ['ALEX', 'YOOJIN', 'GREY'];
+  /** Grid layout: pos 0 = top center, pos 1 = bottom left, pos 2 = bottom right. */
+  const CANDIDATE_FAN_ORDER = ['YOOJIN', 'ALEX', 'GREY'];
+  const CANDIDATE_FULL_NAMES = { YOOJIN: 'YooJin Min', ALEX: 'Alex Lee', GREY: 'Grey Woo' };
 
   window.confirmChoose = function () {
     if (!selectedCardEl) return;
@@ -1693,7 +1694,7 @@
       info.className = 'nc-card-info';
       info.innerHTML =
         '<span class="nc-card-name">' +
-        escapeHtml(name) +
+        escapeHtml(CANDIDATE_FULL_NAMES[name] || name) +
         '</span><button type="button" class="nc-card-readmore">READ MORE</button>';
       const readBtn = info.querySelector('.nc-card-readmore');
       readBtn.addEventListener('click', function (e) {
@@ -1737,7 +1738,7 @@
     candidateDetailCard = card;
     const name = card.dataset.name || '';
     const nameEl = document.getElementById('cd-name');
-    if (nameEl) nameEl.textContent = name;
+    if (nameEl) nameEl.textContent = CANDIDATE_FULL_NAMES[name] || name;
 
     var photoWrap = document.getElementById('candidate-detail-photo');
     var srcImg = card.querySelector('img');
@@ -1758,7 +1759,7 @@
     if (storyEl) storyEl.innerHTML = buildCandidateStoryHtml(prof);
 
     const chooseBtn = document.getElementById('candidate-choose-btn');
-    if (chooseBtn) chooseBtn.textContent = 'Choose ' + name;
+    if (chooseBtn) chooseBtn.textContent = 'Choose ' + (CANDIDATE_FULL_NAMES[name] || name);
 
     const ov = document.getElementById('candidate-detail-overlay');
     if (ov) {
