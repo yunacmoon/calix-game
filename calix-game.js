@@ -1490,14 +1490,14 @@
     },
     JAY: {
       coffee: [
-        "Oh. Thanks.",
-        "I'll drink it. Thank you.",
-        "Didn't expect this. Thanks.",
+        "Oh — thanks. You didn't have to.",
+        "I'll drink it. Really, thank you.",
+        "Didn't expect this. That was thoughtful.",
       ],
       snacks: [
-        "We should eat together sometime. For real.",
-        "I hadn't eaten yet. How'd you know.",
-        "Thanks. I mean it.",
+        "We should eat together sometime. I'm serious.",
+        "I hadn't eaten yet. How did you know that.",
+        "Thanks. And I mean that, not just saying it.",
       ],
     },
     FINN: {
