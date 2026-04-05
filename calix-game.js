@@ -1465,20 +1465,52 @@
   const GIFT_COST = 100;
   const GIFT_THANK_YOU = {
     KAIN: {
-      coffee: "Thanks. I'll enjoy it.",
-      snacks: "You didn't have to. I'll have it after practice.",
+      coffee: [
+        "Thanks. I'll enjoy it.",
+        "...You remembered I like this?",
+        "I was just thinking about coffee. Good timing.",
+      ],
+      snacks: [
+        "You didn't have to. I'll have it after practice.",
+        "I'll put some aside for you.",
+        "Thanks. Don't make it a habit, though.",
+      ],
     },
     THEO: {
-      coffee: "Wait, is this for me?? You're the best — honestly, thank you.",
-      snacks: "Snacks AND coffee?? Okay, you're officially my favorite person.",
+      coffee: [
+        "Wait, is this for me?? You're the best — honestly, thank you.",
+        "I NEEDED this. How did you know. You literally read my mind.",
+        "Okay I'm keeping you forever. Thank you, seriously.",
+      ],
+      snacks: [
+        "Snacks AND you? Best day.",
+        "Oh my god are these the ones I like?? You actually paid attention. I'm so happy.",
+        "Bro. BRO. Thank you. I was literally starving and didn't want to say anything.",
+      ],
     },
     JAY: {
-      coffee: '...Received.',
-      snacks: 'Thanks. We should eat together sometime.',
+      coffee: [
+        "...Received.",
+        "Thanks. I mean it.",
+        "You didn't have to. But — yeah. Thank you.",
+      ],
+      snacks: [
+        "Thanks. We should eat together sometime.",
+        "...How did you know I hadn't eaten?",
+        "Appreciated. Really.",
+      ],
     },
     FINN: {
-      coffee: 'Oh my god, thank you so much?? You just saved my entire day.',
-      snacks: 'How did you know I liked these?? This is so nice of you.',
+      coffee: [
+        "Oh my god, thank you so much?? You just saved my entire day.",
+        "Wait — you got this for ME? I'm genuinely touched right now.",
+        "Okay you're like. The kindest person. This is so nice.",
+      ],
+      snacks: [
+        "How did you know I liked these?? This is so nice of you.",
+        "You literally thought of me. I don't know what to say. Thank you.",
+        "I've been wanting these all day and I didn't tell anyone. Are you psychic??",
+      ],
     },
   };
   const GIFT_MEMBER_LABEL = { KAIN: 'Kain', THEO: 'Theo', JAY: 'Jay', FINN: 'Finn' };
@@ -1540,7 +1572,9 @@
     var thx = document.getElementById('gift-phase-thanks');
     if (nameEl) nameEl.textContent = GIFT_MEMBER_LABEL[memberKey] || memberKey;
     var row = GIFT_THANK_YOU[memberKey];
-    if (bodyEl) bodyEl.textContent = (row && row[giftKey]) || '';
+    var lines = row && row[giftKey];
+    var line = Array.isArray(lines) ? lines[Math.floor(Math.random() * lines.length)] : (lines || '');
+    if (bodyEl) bodyEl.textContent = line;
     if (pick) pick.classList.add('gift-phase--hidden');
     if (thx) thx.classList.remove('gift-phase--hidden');
   }
