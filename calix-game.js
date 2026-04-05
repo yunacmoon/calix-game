@@ -999,7 +999,7 @@
         '<div class="character-name">' +
           escapeHtml(beat.speaker) +
           '</div><div class="dialogue-text">' +
-          escapeHtml(trimmed).replace(/\n/g, '<br>') +
+          '\u201C' + escapeHtml(trimmed).replace(/\n/g, '<br>') + '\u201D' +
           '</div>',
         'dialogue-box'
       );
