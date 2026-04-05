@@ -1279,11 +1279,14 @@
     if (streamEl) streamEl.scrollTop = 0;
 
     const BANNER_EPISODES = [1, 4, 7, 10, 13, 17, 20, 24, 27, 30];
+    const BANNER_IMAGES = {
+      1: 'Images/04_Banner/EP01_Banner.png',
+    };
     if (streamEl && BANNER_EPISODES.indexOf(n) !== -1) {
       var bannerWrap = document.createElement('div');
       bannerWrap.className = 'ep-banner';
       var bannerImg = document.createElement('img');
-      bannerImg.src = 'https://picsum.photos/seed/calix-ep' + n + '/800/450';
+      bannerImg.src = BANNER_IMAGES[n] || 'https://picsum.photos/seed/calix-ep' + n + '/800/450';
       bannerImg.alt = '';
       bannerImg.className = 'ep-banner-img';
       bannerWrap.appendChild(bannerImg);
