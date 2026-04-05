@@ -1466,50 +1466,50 @@
   const GIFT_THANK_YOU = {
     KAIN: {
       coffee: [
-        "Thanks. I'll enjoy it.",
-        "...You remembered I like this?",
-        "I was just thinking about coffee. Good timing.",
+        "Thanks. I needed this.",
+        "...You didn't have to do that.",
+        "Good timing. I was running low.",
       ],
       snacks: [
-        "You didn't have to. I'll have it after practice.",
-        "I'll put some aside for you.",
-        "Thanks. Don't make it a habit, though.",
+        "I'll eat it after practice. Thanks.",
+        "Leaving some for you.",
+        "You keep doing this.",
       ],
     },
     THEO: {
       coffee: [
-        "Wait, is this for me?? You're the best — honestly, thank you.",
-        "I NEEDED this. How did you know. You literally read my mind.",
-        "Okay I'm keeping you forever. Thank you, seriously.",
+        "Wait — this is for me? Genuinely, thank you.",
+        "I was dying for this. How did you know.",
+        "You didn't have to. But I'm really glad you did.",
       ],
       snacks: [
-        "Snacks AND you? Best day.",
-        "Oh my god are these the ones I like?? You actually paid attention. I'm so happy.",
-        "Bro. BRO. Thank you. I was literally starving and didn't want to say anything.",
+        "You and snacks. Best combination.",
+        "These are my favorites. You actually noticed that.",
+        "I hadn't said anything but I was starving. Thank you.",
       ],
     },
     JAY: {
       coffee: [
-        "...Received.",
-        "Thanks. I mean it.",
-        "You didn't have to. But — yeah. Thank you.",
+        "Oh. Thanks.",
+        "I'll drink it. Thank you.",
+        "Didn't expect this. Thanks.",
       ],
       snacks: [
-        "Thanks. We should eat together sometime.",
-        "...How did you know I hadn't eaten?",
-        "Appreciated. Really.",
+        "We should eat together sometime. For real.",
+        "I hadn't eaten yet. How'd you know.",
+        "Thanks. I mean it.",
       ],
     },
     FINN: {
       coffee: [
-        "Oh my god, thank you so much?? You just saved my entire day.",
-        "Wait — you got this for ME? I'm genuinely touched right now.",
-        "Okay you're like. The kindest person. This is so nice.",
+        "This is so thoughtful. Thank you, seriously.",
+        "You got this for me? That actually means a lot.",
+        "I needed this more than you know. Thank you.",
       ],
       snacks: [
-        "How did you know I liked these?? This is so nice of you.",
-        "You literally thought of me. I don't know what to say. Thank you.",
-        "I've been wanting these all day and I didn't tell anyone. Are you psychic??",
+        "How did you know I liked these? This is really kind.",
+        "You thought of me. I don't take that lightly.",
+        "I'd been thinking about these all day. Did you just know?",
       ],
     },
   };
