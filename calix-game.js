@@ -289,7 +289,7 @@
     if (typeKey === 'coins') return '🪙 ' + (coins || 0) + ' coins';
     switch (typeKey) {
       case 'drink':
-        return '☕ Drink' + (m ? ' — from ' + m : '');
+        return '🥤 Drink' + (m ? ' — from ' + m : '');
       case 'snack':
         return '🍿 Snack' + (m ? ' — from ' + m : '');
       case 'candy':
