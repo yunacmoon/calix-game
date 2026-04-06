@@ -315,6 +315,10 @@
         return '🎁 Gift from a fan';
       case 'notebook':
         return '📓 Notebook' + (m ? ' — from ' + m : '');
+      case 'merch':
+        return '🖤 CALIX merch';
+      case 'album':
+        return '💿 Album';
       default:
         if (coins > 0) return '🪙 ' + coins + ' coins';
         return 'Reward';
@@ -640,7 +644,9 @@
     if (/\bfan\s+gift\b/.test(blob)) return { key: 'fan_gift', label: 'Fan gift' };
     if (/\bnotebook\b/.test(blob)) return { key: 'notebook', label: 'Notebook' };
     if (/\bsnack\b|\bchips\b|\bfood\b|\btreat\b/.test(blob)) return { key: 'snack', label: 'Snack' };
-    if (/\baccessory\b|\bcharm\b|\bkeychain\b|\bbenie\b|\bhat\b|\bmerch\b|\bearring\b|\bnecklace\b|\bpendant\b|\bwristband\b|\bbracelet\b|\bring\b/.test(blob)) {
+    if (/\bhoodie\b|\bcap\b|\bbeanie\b|\bmerch\b/.test(blob)) return { key: 'merch', label: 'Merch' };
+    if (/\balbum\b/.test(blob)) return { key: 'album', label: 'Album' };
+    if (/\baccessory\b|\bcharm\b|\bkeychain\b|\bhat\b|\bearring\b|\bnecklace\b|\bpendant\b|\bwristband\b|\bbracelet\b|\bring\b/.test(blob)) {
       return { key: 'accessory', label: 'Accessory' };
     }
     if (itemLabel) return { key: 'item', label: 'Item' };
@@ -1180,6 +1186,22 @@
         typeEl.innerHTML =
           '<img src="' + fgImg + '" alt="' + escapeHtml(fgName) + '" class="rw-photocard-img">' +
           '<p class="rw-accessory-label">Gift from a fan</p>';
+      } else if (pendingReward.typeKey === 'merch') {
+        var MERCH_IMAGES = {
+          12: 'Images/06_Merch/EP12_Hoodie.png',
+          24: 'Images/06_Merch/EP24_Cap.png',
+        };
+        var merchImg = MERCH_IMAGES[gameState.currentEpisodeN] ||
+          'https://picsum.photos/seed/calix-merch-' + gameState.currentEpisodeN + '/300/400';
+        var merchLabel = gameState.currentEpisodeN === 24 ? 'CALIX logo cap' : 'CALIX logo hoodie';
+        typeEl.innerHTML =
+          '<img src="' + merchImg + '" alt="' + escapeHtml(merchLabel) + '" class="rw-photocard-img">' +
+          '<p class="rw-accessory-label">' + escapeHtml(merchLabel) + '</p>';
+      } else if (pendingReward.typeKey === 'album') {
+        var albumImg = 'Images/06_Merch/EP30_Album.png';
+        typeEl.innerHTML =
+          '<img src="' + albumImg + '" alt="CALIX album" class="rw-photocard-img" onerror="this.src=\'https://picsum.photos/seed/calix-album/300/300\'">' +
+          '<p class="rw-accessory-label">CALIX — first pressing</p>';
       } else {
         typeEl.innerHTML = '';
         typeEl.textContent = formatRewardPopupTypeLine(

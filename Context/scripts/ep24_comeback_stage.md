@@ -134,34 +134,35 @@
 
 ---
 
-## SCENE 4 — THE PHOTOCARD
+## SCENE 4 — THE CAP
 
-*After the show. Staff hands you something at the merch table they're breaking down.*
+*After the show. A staff member at the merch table flags you down as they break it down.*
 
-*A stack. Official photocard — tonight's comeback print, first run. Five members.*
+*A cap. CALIX logo — embroidered, limited run for tonight's comeback. The kind they pull back before general merch.*
 
-*Your face on one of them.*
+*She holds it out.*
 
-*Just a card. Just a photo.*
+**STAFF:**
+"This one's for the members. Not the table."
 
-*Except:*
+*You take it.*
 
 **NARRATION:**
-> *It's your face, officially, as part of CALIX.*
+> *It's a cap. It's just a cap.*
 >
-> *Not the new member. Not the fifth position.*
+> *Except it has the logo on it, and it came from tonight, and she said for the members.*
 >
-> *CALIX.*
+> *You put it on walking back to the van.*
 >
-> *You hold the card for a while.*
+> *Nobody says anything. Theo notices and gives you a small nod.*
 >
-> *Then you go find the others.*
+> *That's enough.*
 
 ---
 
 ## EPISODE END
 
-**Reward unlocked:** 🃏 `Official photocard — first comeback print, all five members`
-**Type:** Photocard — official, first print
+**Reward unlocked:** 🧢 `CALIX logo cap — comeback limited run (members only)`
+**Type:** Merch — CALIX goods
 
 **Unlocks:** Episode 25 — "After the Stage"

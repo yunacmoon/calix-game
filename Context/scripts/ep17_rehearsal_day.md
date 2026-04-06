@@ -134,26 +134,28 @@
 
 *There are fans at the venue perimeter — not a crowd, maybe fifteen, twenty. Word got out. It always does.*
 
-*Security keeps them back. But one person, at the corner of the barrier, holds something out — reaching past the staff, not grabbing, just holding.*
+*Security keeps them back. But one person, at the corner of the barrier, holds something out — not grabbing, just holding. Reaching past the staff toward you specifically.*
 
-*A photocard. Extended toward you.*
+*A photocard. Kain. Solo. Pre-debut era — the sharp jawline, younger, still the same eyes.*
 
 *Security clears the path but doesn't stop you.*
 
 *You take it.*
 
-*CALIX original four. Pre-you. All four signatures, in different colors, from an event two years ago.*
-
 *The fan smiles.*
 
 **FAN:**
-"For you. Welcome to the group."
+"I thought you should have this one."
+
+*You look at the card. Then back at the fan.*
+
+*They're already stepping back into the crowd.*
 
 ---
 
 ## EPISODE END
 
-**Reward unlocked:** 🃏 `Photocard — CALIX original four, signed (fan gift at venue)`
-**Type:** Photocard — signed, original four
+**Reward unlocked:** 🃏 `Photocard — Kain, solo, pre-debut (fan gift at venue)`
+**Type:** Photocard — Kain solo
 
 **Unlocks:** Episode 18 — "The Night Before"

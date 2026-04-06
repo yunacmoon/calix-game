@@ -4,7 +4,7 @@
 > **Act:** 2 — Friction
 > **Featured:** Finn
 > **Setting:** Rooftop of the dorm building. Golden hour — the light is doing something unrepeatable.
-> **Reward:** Developed photo (Finn's, handmade photocard)
+> **Reward:** CALIX logo hoodie (merch, from Finn)
 > **Stat Gate:** FINN_TRUST ≥ 4
 
 ---
@@ -214,9 +214,24 @@
 
 ---
 
+## SCENE — COMING BACK IN
+
+*Walking back inside, Finn stops at the hallway closet by the stairwell. He reaches in without looking. Pulls out a folded black hoodie — CALIX logo on the chest, still creased from the bag.*
+
+**FINN:**
+"There are a few spares. You should have one."
+
+*He holds it out.*
+
+*You take it.*
+
+*He doesn't make anything of it. Already heading down the hall.*
+
+---
+
 ## EPISODE END
 
-**Reward unlocked:** 🃏 `Developed photo print (Finn's, handmade) — yours to keep`
-**Type:** Photocard — handmade
+**Reward unlocked:** 🖤 `CALIX logo hoodie — black, limited promo run (from Finn)`
+**Type:** Merch — CALIX goods
 
 **Unlocks:** Episode 13 — "Theo vs. You"

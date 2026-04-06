@@ -232,11 +232,11 @@
 
 *On your desk, when you go to bed:*
 
-*A photocard. Official. CALIX — five members. Limited first print, the kind that comes out with a new cycle.*
+*An album. CALIX — first pressing. Still in its sleeve. Someone left it there without saying anything.*
 
-*All five faces.*
+*You open it.*
 
-*Your face, there, in the group.*
+*The four of them, inside. Credits page. Track listing. Photos from the shoot you weren't there for, and one from a shoot you were.*
 
 **NARRATION:**
 > *You've been in this building for one year.*
@@ -247,7 +247,7 @@
 >
 > *That's not a small thing.*
 >
-> *You put the photocard on your desk, next to Finn's framed photo and the empty notebook from Jay and the weight of everything the year left behind.*
+> *You put the album on your desk, next to Finn's framed photo and the empty notebook from Jay and the weight of everything the year left behind.*
 >
 > *You lie down.*
 >
@@ -277,8 +277,8 @@
 
 ## EPISODE END
 
-**Reward unlocked:** 🃏 `CALIX Five official photocard — limited first print`
-**Type:** Photocard — CALIX Five, limited edition
+**Reward unlocked:** 💿 `CALIX official album — first pressing`
+**Type:** Album — CALIX first pressing
 
 **🎉 SERIES COMPLETE**
 

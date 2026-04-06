@@ -196,7 +196,7 @@
 - C) Ask to take one of him. `[+4 FINN_TRUST]` *(He's surprised. Hands you the camera.)*
 - D) Laugh it off. `[-1 FINN_TRUST]`
 **Stat Gate:** FINN_TRUST ≥ 4
-**Reward:** `Finn gives you the developed photo. It's the only copy.` → **Photocard (Finn's photo, handmade)**
+**Reward:** `Walking back inside, Finn pulls a folded black hoodie from the hallway closet — CALIX logo on the chest. He holds it out without a word.` → **Merch: CALIX logo hoodie (from Finn)**
 **Mood:** Warm light. City below. The click of a film camera. Something being kept.
 
 ---
@@ -269,7 +269,7 @@
 - C) Look for Theo — he's always good in these moments. `[+2 THEO_TRUST]`
 - D) Look away. `[+1 JAY_TRUST]` *(He's been doing that all day.)*
 **Stat Gate:** SKILL ≥ 7, GROUP_REP ≥ 6
-**Reward:** `A fan who snuck into the venue hands you a photocard through the barrier — original CALIX four, before you joined, signed by all of them.` → **Photocard (signed, original four)**
+**Reward:** `A fan at the barrier holds out a Kain photocard — solo, pre-debut era. Extended toward you, specifically.` → **Photocard: Kain solo (fan gift)**
 **Mood:** The gap between who you are and who you're learning to be, in HD.
 
 ---
@@ -375,7 +375,7 @@
 - B) Nod once. `[+2 KAIN_TRUST] [+2 GROUP_REP]`
 - C) Smile. `[+3 THEO_TRUST] [+2 GROUP_REP]`
 **Stat Gate:** GROUP_REP ≥ 10, SKILL ≥ 9
-**Reward:** `A photocard from tonight — official, first print. Your face on it. Distributed to fans.` → **Photocard (official, first)**
+**Reward:** `Staff at the merch table hands you a CALIX logo cap — tonight's comeback run, limited stock.` → **Merch: CALIX logo cap**
 **Mood:** Lights. The sound of ten thousand people. CALIX, all five.
 
 ---
@@ -464,7 +464,7 @@
 - B) Hold your glass up. Don't say anything. They know. `[+3 all members] [+5 GROUP_REP]`
 - C) Add: *"And everything after this."* `[+4 all members] [+6 GROUP_REP]`
 **Stat Gate:** GROUP_REP ≥ 15, SKILL ≥ 12, minimum 2 members at MAX TRUST
-**Reward:** `CALIX Official Photocard — all five members. Limited edition. First print.` → **Photocard: CALIX Five (limited)**
+**Reward:** `CALIX official album — first pressing. On your desk the next morning.` → **Album: CALIX (first pressing)**
 **Mood:** The end of the first year. The beginning of everything else. Credits roll over them laughing.
 
 ---
