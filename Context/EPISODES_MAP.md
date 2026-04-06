@@ -101,7 +101,7 @@
 - C) Ask if you can run the choreo with him. `[+3 KAIN_TRUST] [+1 SKILL]`
 - D) Leave without a word. `[+1 KAIN_TRUST]` *(He respects the read.)*
 **Stat Gate:** KAIN_TRUST ≥ 2
-**Reward:** `Kain says nothing but leaves the practice room light on when he goes. On the table: his spare energy drink.` → **Drink (from Kain)**
+**Reward:** `On the practice room shelf, pinned to the corner of the mirror: a Kain photocard, pre-debut. You look at it, then take it down. You're not sure if he left it intentionally.` → **Photocard: Kain solo**
 **Mood:** Mirror. Sweat. One fluorescent light buzzing. No music.
 
 ---
@@ -269,7 +269,7 @@
 - C) Look for Theo — he's always good in these moments. `[+2 THEO_TRUST]`
 - D) Look away. `[+1 JAY_TRUST]` *(He's been doing that all day.)*
 **Stat Gate:** SKILL ≥ 7, GROUP_REP ≥ 6
-**Reward:** `A fan at the barrier holds out a Kain photocard — solo, pre-debut era. Extended toward you, specifically.` → **Photocard: Kain solo (fan gift)**
+**Reward:** `Theo, on the way out, tucks a can of vitamin water into the top of your bag without stopping. Doesn't say anything.` → **Drink (from Theo)**
 **Mood:** The gap between who you are and who you're learning to be, in HD.
 
 ---

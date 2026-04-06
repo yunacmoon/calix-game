@@ -4,7 +4,7 @@
 > **Act:** 2 — Friction
 > **Featured:** All members
 > **Setting:** Rehearsal venue. Camera crews, stylists, full production for comeback behind-the-scenes content.
-> **Reward:** Photocard (signed original four, from a fan at the venue)
+> **Reward:** Vitamin water (from Theo)
 > **Stat Gate:** SKILL ≥ 7, GROUP_REP ≥ 6
 
 ---
@@ -134,28 +134,24 @@
 
 *There are fans at the venue perimeter — not a crowd, maybe fifteen, twenty. Word got out. It always does.*
 
-*Security keeps them back. But one person, at the corner of the barrier, holds something out — not grabbing, just holding. Reaching past the staff toward you specifically.*
+*Security keeps them back. You lift a hand toward the fans — not a wave, just an acknowledgment. Someone in the crowd calls your name.*
 
-*A photocard. Kain. Solo. Pre-debut era — the sharp jawline, younger, still the same eyes.*
+*It lands differently than you expected.*
 
-*Security clears the path but doesn't stop you.*
+*On the van, loading out. Theo drops into the seat beside you without comment. A minute later, he reaches into his bag and tucks a can of vitamin water into the pocket of your jacket.*
 
-*You take it.*
+*He doesn't look at you.*
 
-*The fan smiles.*
+**THEO:**
+"You looked tired in the third run."
 
-**FAN:**
-"I thought you should have this one."
-
-*You look at the card. Then back at the fan.*
-
-*They're already stepping back into the crowd.*
+*He's already on his phone.*
 
 ---
 
 ## EPISODE END
 
-**Reward unlocked:** 🃏 `Photocard — Kain, solo, pre-debut (fan gift at venue)`
-**Type:** Photocard — Kain solo
+**Reward unlocked:** 🥤 `Vitamin water (from Theo)`
+**Type:** Drink — from member
 
 **Unlocks:** Episode 18 — "The Night Before"

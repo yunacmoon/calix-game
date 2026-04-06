@@ -4,7 +4,7 @@
 > **Act:** 1 — Arrival
 > **Featured:** Kain
 > **Setting:** Practice room. Past midnight. You weren't supposed to be here.
-> **Reward:** Energy drink (from Kain)
+> **Reward:** Kain photocard — solo, pre-debut era
 > **Stat Gate:** KAIN_TRUST ≥ 2
 
 ---
@@ -266,12 +266,20 @@
 >
 > *That's small. Or it isn't. You're still figuring out Kain's scale.*
 
+*On your way out, you notice it — pinned to the corner of the practice room mirror. A photocard. Kain. Pre-debut era. Younger, same eyes.*
+
+*You look at it for a moment.*
+
+*Then you take it down.*
+
+*You're not sure if he left it there intentionally. You decide it doesn't matter.*
+
 ---
 
 ## EPISODE END
 
-**Reward unlocked:** ⚡ `Energy drink (from Kain)`
-**Type:** Drink — from member
+**Reward unlocked:** 🃏 `Photocard — Kain, solo, pre-debut`
+**Type:** Photocard — Kain solo
 
 **Stats updated** *(based on choices made)*
 
