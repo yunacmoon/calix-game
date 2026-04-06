@@ -1202,6 +1202,20 @@
         typeEl.innerHTML =
           '<img src="' + albumImg + '" alt="CALIX album" class="rw-photocard-img" onerror="this.src=\'https://picsum.photos/seed/calix-album/300/300\'">' +
           '<p class="rw-accessory-label">CALIX — first pressing</p>';
+      } else if (pendingReward.typeKey === 'drink') {
+        var DRINK_IMAGES = {
+          17: 'Images/07_Drinks/EP17_Vitaminwater.png',
+        };
+        var drinkImg = DRINK_IMAGES[gameState.currentEpisodeN] || null;
+        if (drinkImg) {
+          var drinkLabel = mapParts.leftPlain || pendingReward.itemLabel || 'Drink';
+          typeEl.innerHTML =
+            '<img src="' + drinkImg + '" alt="' + escapeHtml(drinkLabel) + '" class="rw-photocard-img">' +
+            '<p class="rw-accessory-label">' + escapeHtml(drinkLabel) + '</p>';
+        } else {
+          typeEl.innerHTML = '';
+          typeEl.textContent = formatRewardPopupTypeLine(pendingReward.typeKey, pendingReward.coins, mapParts);
+        }
       } else {
         typeEl.innerHTML = '';
         typeEl.textContent = formatRewardPopupTypeLine(
