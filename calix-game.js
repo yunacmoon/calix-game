@@ -41,6 +41,7 @@
   let firstAddressPrefixBySpeaker = {};
   const MEMBER_SPEAKERS = { THEO: true, KAIN: true, JAY: true, FINN: true };
   let currentEpisodeTitle = '';
+  let episodeFeaturedMember = null;
   let pendingReward = { coins: 0, itemLabel: null, rewardName: '', typeKey: 'coins', typeLabel: 'Coins' };
   /** Cumulative trust/skill deltas from choices this episode (for reward popup reaction). */
   let episodeChoiceStatDelta = {};
@@ -1078,6 +1079,19 @@
   }
 
   function endEpisodeFlow() {
+    // Determine which member had the most dialogue this episode
+    var speakerCount = { KAIN: 0, THEO: 0, JAY: 0, FINN: 0 };
+    flowQueue.forEach(function(beat) {
+      if (beat.type === 'dialogue' && speakerCount.hasOwnProperty(beat.speaker)) {
+        speakerCount[beat.speaker]++;
+      }
+    });
+    var topMember = null, topCount = 0;
+    Object.keys(speakerCount).forEach(function(k) {
+      if (speakerCount[k] > topCount) { topCount = speakerCount[k]; topMember = k; }
+    });
+    episodeFeaturedMember = topMember;
+
     const md = window.__calixLastEpisodeMd || '';
     const parsed = parseRewardFromScript(md);
     const mapLine =
@@ -1382,7 +1396,7 @@
         'an energy drink ⚡': 'Images/05_Item/Energy_drink.webp',
         'a vitamin jelly 🌟': 'Images/05_Item/Vitamin_jelly.jpg',
       };
-      var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
+      var nudgeMember = episodeFeaturedMember || nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
       var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
       var nudgeImgSrc = NUDGE_GIFT_IMAGES[nudgeGift] || '';
       nudgeEl.style.display = '';
@@ -1409,15 +1423,33 @@
         if (gameState.stats[affinityKey] !== undefined) {
           gameState.stats[affinityKey] = Math.min(100, (gameState.stats[affinityKey] || 0) + 1);
         }
-        var thanks = {
-          KAIN: 'Thank you. I appreciate it. 🙂',
-          THEO: 'Oh wow, really? Thank you so much! ☺️',
-          JAY: 'Ayy thanks!! You already knew what I needed 🤙',
-          FINN: 'Oh my gosh, thank you!! This is literally my favorite 😊'
+        var nudgeThanks = {
+          KAIN: [
+            "Thanks. I'll actually use this.",
+            "You didn't have to. But I'm not giving it back.",
+            "Good timing. I needed this."
+          ],
+          THEO: [
+            "Oh wow — really? You're too kind, seriously.",
+            "I wasn't expecting this at all. Thank you!",
+            "You always know exactly what I need. Thank you 🥹"
+          ],
+          JAY: [
+            "Ayy you already knew what I needed, let's go 🤙",
+            "This is literally perfect right now, thank you!!",
+            "You're the best for real. I needed this 😭"
+          ],
+          FINN: [
+            "Oh my gosh, this is my favorite!! Thank you so much 🥺",
+            "You remembered!! I'm so happy right now 😊",
+            "Ahhh you didn't have to — but I'm so glad you did 🌸"
+          ]
         };
+        var thankLines = nudgeThanks[nudgeMember] || ['Thank you! ☺️'];
+        var thankLine = thankLines[Math.floor(Math.random() * thankLines.length)];
         document.getElementById('gift-nudge-btns').style.display = 'none';
         document.getElementById('gift-nudge-thanks').style.display = '';
-        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + (thanks[nudgeMember] || 'Thank you! ☺️');
+        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + thankLine;
         var coinEl = document.getElementById('rw-tokens');
         if (coinEl) coinEl.textContent = gameState.stats.COINS || 0;
         try { saveGame(); } catch(e) {}
