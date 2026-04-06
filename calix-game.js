@@ -1284,6 +1284,7 @@
       4: 'Images/04_Banner/EP04_Banner.jpeg',
       6: 'Images/04_Banner/EP06_Banner.png',
       7: 'Images/04_Banner/EP07_Banner.jpeg',
+      13: 'Images/04_Banner/EP13_Banner.jpeg',
       17: 'Images/04_Banner/EP17_Banner.jpeg',
       24: 'Images/04_Banner/EP24_Banner.jpeg',
       27: 'Images/04_Banner/EP27_Banner.png',
