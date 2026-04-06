@@ -1375,12 +1375,22 @@
     if (nudgeEl) {
       var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
       var nudgeGifts = ['an iced americano 🧋', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
+      var NUDGE_GIFT_IMAGES = {
+        'an iced americano 🧋': 'Images/05_Item/Iced_americano.png',
+        'a protein bar 💪': 'Images/05_Item/Protein_bar.avif',
+        'some candy 🍬': 'Images/05_Item/Some_candy.png',
+        'an energy drink ⚡': 'Images/05_Item/Energy_drink.webp',
+        'a vitamin jelly 🌟': 'Images/05_Item/Vitamin_jelly.jpg',
+      };
       var nudgeMember = nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
       var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
+      var nudgeImgSrc = NUDGE_GIFT_IMAGES[nudgeGift] || '';
       nudgeEl.style.display = '';
       nudgeEl.innerHTML = '<div style="margin-top:24px;padding:20px;background:rgba(255,255,255,0.65);border:1.5px solid #7c6aed;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
         + '<p style="margin:0 0 12px;font-size:18px;color:#3d2f8f;font-weight:500;">Buy ' + nudgeMember + ' ' + nudgeGift + '?</p>'
-        + '<div id="gift-nudge-img" style="width:130px;height:130px;border-radius:16px;background:rgba(255,255,255,0.5);border:1.5px solid #7c6aed;margin:0 auto 16px;"></div>'
+        + '<div id="gift-nudge-img" style="width:130px;height:130px;border-radius:16px;overflow:hidden;margin:0 auto 16px;">'
+        + '<img src="' + nudgeImgSrc + '" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">'
+        + '</div>'
         + '<div id="gift-nudge-btns" style="display:flex;gap:10px;justify-content:center;">'
         + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#7c6aed;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Send it! 🎁</button>'
         + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#7c6aed;border:1.5px solid #7c6aed;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Maybe next time</button>'
