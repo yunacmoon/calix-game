@@ -1150,15 +1150,12 @@
     const mapParts = parseMapRewardParts(mapLine);
     if (typeEl) {
       if (pendingReward.typeKey === 'photocard') {
-        const PHOTOCARD_PLACEHOLDERS = [
-          'https://picsum.photos/seed/calix-card-1/300/400',
-          'https://picsum.photos/seed/calix-card-2/300/400',
-          'https://picsum.photos/seed/calix-card-3/300/400',
-          'https://picsum.photos/seed/calix-card-4/300/400',
-        ];
-        const cardIndex = gameState.photocardCount % PHOTOCARD_PLACEHOLDERS.length;
-        const imgSrc = PHOTOCARD_PLACEHOLDERS[cardIndex];
-        typeEl.innerHTML = '<img src="' + imgSrc + '" alt="Photocard ' + (cardIndex + 1) + '" class="rw-photocard-img">';
+        const PHOTOCARD_IMAGES = {
+          6: 'Images/08_Photocards/Kain_Photocard.png',
+        };
+        const imgSrc = PHOTOCARD_IMAGES[gameState.currentEpisodeN] ||
+          'https://picsum.photos/seed/calix-card-' + gameState.currentEpisodeN + '/300/400';
+        typeEl.innerHTML = '<img src="' + imgSrc + '" alt="Photocard" class="rw-photocard-img">';
         gameState.photocardCount += 1;
         saveGame();
       } else if (pendingReward.typeKey === 'accessory') {
