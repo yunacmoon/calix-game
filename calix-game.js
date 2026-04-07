@@ -297,7 +297,7 @@
       case 'drink':
         return '🥤 Drink' + (m ? ' — from ' + m : '');
       case 'snack':
-        return '🍿 Snack' + (m ? ' — from ' + m : '');
+        return '🍪 Snack' + (m ? ' — from ' + m : '');
       case 'candy':
         return '🍬 Candy' + (m ? ' — from ' + m : '');
       case 'photocard':
