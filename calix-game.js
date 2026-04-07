@@ -1152,6 +1152,7 @@
       if (pendingReward.typeKey === 'photocard') {
         const PHOTOCARD_IMAGES = {
           6: 'Images/08_Photocards/Kain_Photocard.png',
+          8: 'Images/08_Photocards/Four_Photocard.png',
         };
         const imgSrc = PHOTOCARD_IMAGES[gameState.currentEpisodeN] ||
           'https://picsum.photos/seed/calix-card-' + gameState.currentEpisodeN + '/300/400';
