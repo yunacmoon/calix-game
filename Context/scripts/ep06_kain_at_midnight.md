@@ -266,7 +266,7 @@
 >
 > *That's small. Or it isn't. You're still figuring out Kain's scale.*
 
-*On your way out, you notice it — pinned to the corner of the practice room mirror. A photocard. Kain. Pre-debut era. Younger, same eyes.*
+*On your way out, you notice it — pinned to the corner of the practice room mirror. A photocard. Kain's. Pre-debut era. Younger, same eyes.*
 
 *You look at it for a moment.*
 
