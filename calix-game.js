@@ -1425,9 +1425,9 @@
     var nudgeEl = document.getElementById('reward-gift-nudge');
     if (nudgeEl) {
       var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
-      var nudgeGifts = ['an iced americano 🧋', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
+      var nudgeGifts = ['an iced latte', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
       var NUDGE_GIFT_IMAGES = {
-        'an iced americano 🧋': 'Images/05_Item/Iced_americano.png',
+        'an iced latte': 'Images/05_Item/Iced_americano.png',
         'a protein bar 💪': 'Images/05_Item/Protein_bar.avif',
         'some candy 🍬': 'Images/05_Item/Some_candy.png',
         'an energy drink ⚡': 'Images/05_Item/Energy_drink.webp',
