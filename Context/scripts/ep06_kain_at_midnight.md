@@ -272,7 +272,11 @@
 
 *Then you take it down.*
 
-*You're not sure if he left it there intentionally. You decide it doesn't matter.*
+*You're not sure who left it there. Could be anyone. Could be no one — just something that got left behind and forgotten. The practice room collects things like that. There's something about the wear on the edges, the slightly faded print, that makes it look abandoned rather than placed.*
+
+*Former member, maybe. You don't know enough history yet to say.*
+
+*You take it anyway.*
 
 ---
 
