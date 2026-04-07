@@ -436,7 +436,7 @@
 - B) Ask if you can have it. `[+5 FINN_TRUST]` *(He takes it off the wall. Gives it to you.)*
 - C) Ask which is his favorite of you. `[+6 FINN_TRUST]` *(He points to a different one. You're looking at the others. Not the camera. Not him. Something else.)*
 **Stat Gate:** FINN_TRUST ≥ 12
-**Reward:** `Finn gives you a developed print — you, candid, real. He frames it for you.` → **Photocard (Finn's series, framed)**
+**Reward:** `Finn takes a print off the wall — a street somewhere in Sydney. Early morning light, before the city woke up. He gives it to you without explaining why he kept it.` → **Print: Sydney street (Finn's, from his wall)**
 **Mood:** Quiet room. Walls of kept moments. Being known without asking for it.
 
 ---

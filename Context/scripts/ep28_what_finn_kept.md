@@ -4,7 +4,7 @@
 > **Act:** 4 — Resolution
 > **Featured:** Finn
 > **Setting:** Finn's room. He invites you in for the first time.
-> **Reward:** Developed photo print, framed (Finn's series)
+> **Reward:** Sydney street print (Finn's, from his wall)
 > **Stat Gate:** FINN_TRUST ≥ 12
 
 ---
@@ -163,29 +163,28 @@
 
 ---
 
-## SCENE 4 — THE FRAME
+## SCENE 4 — THE PRINT
 
-*Before you leave, Finn goes to his desk drawer.*
+*Before you leave, Finn pauses at the wall.*
 
-*He pulls out a small frame — simple, wood, the right size.*
+*He looks at it for a moment — the whole of it, years of kept moments — then reaches up and unpins one print from the lower corner.*
 
-*He fits one of the prints into it. Carefully.*
+*A street. Somewhere unfamiliar. Early morning light, long shadows, nobody in frame. The kind of shot you take when you're alone in a city and it belongs to you for a second.*
 
 *He holds it out.*
 
 **FINN:**
-"For your room."
+"Sydney. Before all of this."
 
 *He says it simply.*
 
-**FINN:**
-"You should have something on your walls."
+*He doesn't explain why he's giving it to you. You don't ask.*
 
 ---
 
 ## EPISODE END
 
-**Reward unlocked:** 🖼️ `Developed photo print, framed (Finn's series)`
-**Type:** Photocard — Finn's series, framed
+**Reward unlocked:** 🖼️ `Sydney street print — Finn's, taken from his wall`
+**Type:** Print — Finn's photography, Sydney
 
 **Unlocks:** Episode 29 — "Jay's Last Line"
