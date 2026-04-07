@@ -318,7 +318,7 @@
 - B) Describe exactly what you noticed — specifically. `[+5 THEO_TRUST] [+1 GROUP_REP]`
 - C) Applaud. Slowly. Sincerely. `[+4 THEO_TRUST]`
 **Stat Gate:** THEO_TRUST ≥ 9
-**Reward:** `Theo gives you his practice wristband — worn, elastic, frayed at the edges. He ties it on you himself.` → **Accessory: wristband (from Theo)**
+**Reward:** `Theo gives you his practice wristband — worn, elastic, frayed at the edges. He gave it you himself.` → **Accessory: wristband (from Theo)**
 **Mood:** Arena reverb. One spotlight left on. This is what the work is actually for.
 
 ---
