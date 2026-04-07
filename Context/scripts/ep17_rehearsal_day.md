@@ -138,7 +138,7 @@
 
 *It lands differently than you expected.*
 
-*On the van, loading out. Theo drops into the seat beside you without comment. A minute later, he reaches into his bag and tucks a can of vitamin water into the pocket of your jacket.*
+*On the van, loading out. Theo drops into the seat beside you without comment. A minute later, he reaches into his bag and tucks a bottle of vitamin water into the pocket of your jacket.*
 
 *He doesn't look at you.*
 

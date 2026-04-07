@@ -269,7 +269,7 @@
 - C) Look for Theo — he's always good in these moments. `[+2 THEO_TRUST]`
 - D) Look away. `[+1 JAY_TRUST]` *(He's been doing that all day.)*
 **Stat Gate:** SKILL ≥ 7, GROUP_REP ≥ 6
-**Reward:** `Theo, on the way out, tucks a can of vitamin water into the top of your bag without stopping. Doesn't say anything.` → **Drink (from Theo)**
+**Reward:** `Theo, on the way out, tucks a bottle of vitamin water into the top of your bag without stopping. Doesn't say anything.` → **Drink (from Theo)**
 **Mood:** The gap between who you are and who you're learning to be, in HD.
 
 ---
