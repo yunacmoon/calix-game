@@ -1121,7 +1121,8 @@
       Object.keys(gameState.stats).forEach(function (k) {
         prev[k] = gameState.stats[k];
       });
-      pendingReward.coins = 100;
+      var COIN_POOL = [50, 60, 80, 100, 120];
+      pendingReward.coins = COIN_POOL[Math.floor(Math.random() * COIN_POOL.length)];
       gameState.stats.COINS += pendingReward.coins;
       saveGame();
       renderStatsSidebar(prev);
