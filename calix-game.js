@@ -1335,6 +1335,7 @@
       10: 'Images/04_Banner/EP10_Banner.jpeg',
       13: 'Images/04_Banner/EP13_Banner.jpeg',
       17: 'Images/04_Banner/EP17_Banner.jpeg',
+      20: 'Images/04_Banner/EP20_Banner.png',
       24: 'Images/04_Banner/EP24_Banner.jpeg',
       27: 'Images/04_Banner/EP27_Banner.png',
       30: 'Images/04_Banner/EP30_Banner.jpeg',
