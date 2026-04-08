@@ -424,8 +424,16 @@ body::after {
 .candidate-detail-overlay.open { background:rgba(0,0,61,0.38); backdrop-filter:blur(10px); pointer-events:all; }
 .candidate-detail-card { position:relative; width:100%; max-width:480px; max-height:min(92vh, 900px); border-radius:24px; overflow:hidden; display:flex; flex-direction:column; background:linear-gradient(165deg, #FDFBFF 0%, #F0ECFA 45%, #E8EEFC 100%); border:1px solid rgba(151,125,255,0.18); box-shadow:0 32px 80px rgba(0,0,61,0.18); transform:scale(0.92) translateY(24px); opacity:0; transition:transform 0.45s cubic-bezier(0.34,1.2,0.64,1), opacity 0.35s; }
 .candidate-detail-overlay.open .candidate-detail-card { transform:scale(1) translateY(0); opacity:1; }
-.candidate-detail-photo { flex-shrink:0; width:100%; aspect-ratio:2/3; max-height:min(52vh, 360px); overflow:hidden; background:#06061a; }
+.candidate-detail-photo { flex-shrink:0; width:100%; aspect-ratio:2/3; max-height:min(52vh, 360px); overflow:hidden; background:#06061a; position:relative; cursor:pointer; }
 .candidate-detail-photo img { width:100%; height:100%; object-fit:cover; object-position:center 10%; display:block; }
+.cd-photo-slider { position:relative; width:100%; height:100%; overflow:hidden; }
+.cd-photo-track { display:flex; height:100%; transition:transform 0.38s cubic-bezier(0.22,1,0.36,1); will-change:transform; }
+.cd-photo-slide { flex-shrink:0; width:100%; height:100%; }
+.cd-photo-slide img { width:100%; height:100%; object-fit:cover; object-position:center 10%; display:block; }
+.cd-photo-more { position:absolute; bottom:14px; right:14px; font-size:11px; letter-spacing:0.08em; color:#fff; display:flex; align-items:center; gap:5px; text-shadow:0 1px 6px rgba(0,0,0,0.5); pointer-events:none; }
+.cd-photo-dots { position:absolute; bottom:14px; left:50%; transform:translateX(-50%); display:flex; gap:6px; pointer-events:none; }
+.cd-photo-dot { width:5px; height:5px; border-radius:50%; background:rgba(255,255,255,0.4); transition:background 0.2s, transform 0.2s; }
+.cd-photo-dot.active { background:#fff; transform:scale(1.2); }
 .candidate-detail-body { flex:1; min-height:0; overflow-y:auto; padding:20px 22px 8px; -webkit-overflow-scrolling:touch; }
 .cd-panel-name { font-family:'Playfair Display',serif; font-size:clamp(28px,7vw,40px); font-weight:400; color:var(--ink); line-height:1.05; margin:0 0 20px; padding-right:44px; }
 .cd-panel-para { font-size:15px; line-height:1.75; color:var(--ink-soft); margin:0 0 18px; }

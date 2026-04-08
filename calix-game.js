@@ -1875,12 +1875,42 @@
     var photoWrap = document.getElementById('candidate-detail-photo');
     var srcImg = card.querySelector('img');
     if (photoWrap) {
-      photoWrap.innerHTML = '';
-      if (srcImg && srcImg.src) {
-        var hero = document.createElement('img');
-        hero.src = srcImg.src;
-        hero.alt = '';
-        photoWrap.appendChild(hero);
+      var CANDIDATE_EXTRA_PHOTOS = {
+        YOOJIN: ['Images/02_Candidates/Yoojin_Extra1.png', 'Images/02_Candidates/Yoojin_Extra2.png'],
+        ALEX:   ['Images/02_Candidates/Alex_Extra1.png',   'Images/02_Candidates/Alex_Extra2.png'],
+        GREY:   ['Images/02_Candidates/Grey_Extra1.png',   'Images/02_Candidates/Grey_Extra2.png'],
+      };
+      var mainSrc = srcImg && srcImg.src ? srcImg.src : '';
+      var extras = CANDIDATE_EXTRA_PHOTOS[name] || [];
+      var allPhotos = [mainSrc].concat(extras).filter(Boolean);
+      var slideIdx = 0;
+
+      var sliderHtml = '<div class="cd-photo-slider"><div class="cd-photo-track" id="cd-track">';
+      allPhotos.forEach(function(src) {
+        sliderHtml += '<div class="cd-photo-slide"><img src="' + src + '" alt=""></div>';
+      });
+      sliderHtml += '</div>';
+      if (allPhotos.length > 1) {
+        sliderHtml += '<div class="cd-photo-dots" id="cd-dots">';
+        allPhotos.forEach(function(_, i) {
+          sliderHtml += '<div class="cd-photo-dot' + (i === 0 ? ' active' : '') + '"></div>';
+        });
+        sliderHtml += '</div>';
+        sliderHtml += '<div class="cd-photo-more" id="cd-more-photos">more photos &rarr;</div>';
+      }
+      sliderHtml += '</div>';
+      photoWrap.innerHTML = sliderHtml;
+
+      if (allPhotos.length > 1) {
+        photoWrap.onclick = function() {
+          slideIdx = (slideIdx + 1) % allPhotos.length;
+          var track = document.getElementById('cd-track');
+          if (track) track.style.transform = 'translateX(-' + (slideIdx * 100) + '%)';
+          var dots = photoWrap.querySelectorAll('.cd-photo-dot');
+          dots.forEach(function(d, i) { d.classList.toggle('active', i === slideIdx); });
+          var moreEl = document.getElementById('cd-more-photos');
+          if (moreEl) moreEl.style.opacity = slideIdx === allPhotos.length - 1 ? '0' : '1';
+        };
       }
     }
 
