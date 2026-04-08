@@ -637,7 +637,7 @@
     if (mapLooksCoinOnly || (!hasMapArrow && coins > 0 && (!itemLabel || /coins?/.test(blob)))) {
       return { key: 'coins', label: 'Coins' };
     }
-    if (/\bphotocard|photo[\s-]?card|polaroid\b/.test(blob)) return { key: 'photocard', label: 'Photocard' };
+    if (/\bphotocard|photo[\s-]?card|polaroid\b|\bprint\b/.test(blob)) return { key: 'photocard', label: 'Photocard' };
     if (/\bdrink\b|\bcoffee\b|\blatte\b|\btea\b|\bsoda\b|\bjuice\b|\bwater\b|water bottle|energy drink/.test(blob))
       return { key: 'drink', label: 'Drink' };
     if (/\bcandy\b|candy bar/.test(blob)) return { key: 'candy', label: 'Candy' };
@@ -1154,6 +1154,7 @@
         const PHOTOCARD_IMAGES = {
           6: 'Images/08_Photocards/Kain_Photocard.png',
           8: 'Images/08_Photocards/Four_Photocard.png',
+          28: 'Images/08_Photocards/Sydney_Photocard.webp',
         };
         const imgSrc = PHOTOCARD_IMAGES[gameState.currentEpisodeN] ||
           'https://picsum.photos/seed/calix-card-' + gameState.currentEpisodeN + '/300/400';
