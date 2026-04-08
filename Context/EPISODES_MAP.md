@@ -101,7 +101,7 @@
 - C) Ask if you can run the choreo with him. `[+3 KAIN_TRUST] [+1 SKILL]`
 - D) Leave without a word. `[+1 KAIN_TRUST]` *(He respects the read.)*
 **Stat Gate:** KAIN_TRUST ≥ 2
-**Reward:** `On the practice room shelf, pinned to the corner of the mirror: a Kain photocard, pre-debut. You look at it, then take it down. You're not sure if he left it intentionally.` → **Photocard: Kain solo**
+**Reward:** `On the practice room shelf, pinned to the corner of the mirror: a Kain photocard, pre-debut. You're not sure who left it there — could be anyone, could be no one. The wear on the edges makes it look abandoned rather than placed. Former member, maybe. You take it anyway.` → **Photocard: Kain solo**
 **Mood:** Mirror. Sweat. One fluorescent light buzzing. No music.
 
 ---
