@@ -1198,7 +1198,7 @@
           '<img src="' + merchImg + '" alt="' + escapeHtml(merchLabel) + '" class="rw-photocard-img">' +
           '<p class="rw-accessory-label">' + escapeHtml(merchLabel) + '</p>';
       } else if (pendingReward.typeKey === 'album') {
-        var albumImg = 'Images/06_Merch/EP30_Album.png';
+        var albumImg = 'Images/06_Merch/EP30_Album.jpeg';
         typeEl.innerHTML =
           '<img src="' + albumImg + '" alt="CALIX album" class="rw-photocard-img" onerror="this.src=\'https://picsum.photos/seed/calix-album/300/300\'">' +
           '<p class="rw-accessory-label">CALIX — first pressing</p>';
