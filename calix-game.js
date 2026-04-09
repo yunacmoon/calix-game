@@ -1876,7 +1876,7 @@
     var srcImg = card.querySelector('img');
     if (photoWrap) {
       var CANDIDATE_EXTRA_PHOTOS = {
-        YOOJIN: ['Images/02_Candidates/Yoojin_Extra1.png', 'Images/02_Candidates/Yoojin_Extra2.png'],
+        YOOJIN: ['Images/02_Candidates/Yoojin_1.png', 'Images/02_Candidates/Yoojin_2.png'],
         ALEX:   ['Images/02_Candidates/Alex_Extra1.png',   'Images/02_Candidates/Alex_Extra2.png'],
         GREY:   ['Images/02_Candidates/Grey_Extra1.png',   'Images/02_Candidates/Grey_Extra2.png'],
       };
