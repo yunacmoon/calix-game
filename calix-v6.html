@@ -435,7 +435,8 @@ body::after {
 .cd-photo-dot { width:5px; height:5px; border-radius:50%; background:rgba(255,255,255,0.4); transition:background 0.2s, transform 0.2s; }
 .cd-photo-dot.active { background:#fff; transform:scale(1.2); }
 .candidate-detail-body { flex:1; min-height:0; overflow-y:auto; padding:20px 22px 8px; -webkit-overflow-scrolling:touch; }
-.cd-panel-name { font-family:'Playfair Display',serif; font-size:clamp(28px,7vw,40px); font-weight:400; color:var(--ink); line-height:1.05; margin:0 0 20px; padding-right:44px; }
+.cd-panel-name { font-family:'Playfair Display',serif; font-size:clamp(28px,7vw,40px); font-weight:400; color:var(--ink); line-height:1.05; margin:0 0 6px; padding-right:44px; }
+.cd-korean-name { font-size:12px; letter-spacing:0.12em; color:var(--ink-muted); text-transform:uppercase; margin:0 0 16px; }
 .cd-panel-para { font-size:15px; line-height:1.75; color:var(--ink-soft); margin:0 0 18px; }
 .cd-origin-line { font-size:14px; line-height:1.5; color:var(--ink-muted); margin:0 0 16px; }
 .cd-story .cd-panel-para:last-child { margin-bottom:8px; }
@@ -655,6 +656,7 @@ body::after {
       <div class="candidate-detail-photo" id="candidate-detail-photo"></div>
       <div class="candidate-detail-body">
         <h2 class="cd-panel-name" id="cd-name"></h2>
+        <p class="cd-korean-name" id="cd-korean-name"></p>
         <p class="cd-panel-para cd-origin-line" id="cd-origin"></p>
         <div class="cd-story" id="cd-story"></div>
       </div>

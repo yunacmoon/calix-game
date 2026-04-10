@@ -1871,6 +1871,9 @@
     const name = card.dataset.name || '';
     const nameEl = document.getElementById('cd-name');
     if (nameEl) nameEl.textContent = CANDIDATE_FULL_NAMES[name] || name;
+    var CANDIDATE_KOREAN_NAMES = { ALEX: 'Lee Tae Yoon', GREY: 'Woo Won Jin' };
+    var koreanNameEl = document.getElementById('cd-korean-name');
+    if (koreanNameEl) koreanNameEl.textContent = CANDIDATE_KOREAN_NAMES[name] || '';
 
     var photoWrap = document.getElementById('candidate-detail-photo');
     var srcImg = card.querySelector('img');
