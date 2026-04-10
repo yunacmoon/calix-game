@@ -1878,7 +1878,7 @@
       var CANDIDATE_EXTRA_PHOTOS = {
         YOOJIN: ['Images/02_Candidates/Yoojin_1.png', 'Images/02_Candidates/Yoojin_2.png'],
         ALEX:   ['Images/02_Candidates/Alex_1.png',   'Images/02_Candidates/Alex_2.png'],
-        GREY:   ['Images/02_Candidates/Grey_Extra1.png',   'Images/02_Candidates/Grey_Extra2.png'],
+        GREY:   ['Images/02_Candidates/Grey_1.png',   'Images/02_Candidates/Grey_2.png'],
       };
       var mainSrc = srcImg && srcImg.src ? srcImg.src : '';
       var extras = CANDIDATE_EXTRA_PHOTOS[name] || [];
