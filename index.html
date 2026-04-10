@@ -346,6 +346,17 @@ body::after {
 .reward-label { font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:12px; }
 .coin-amount { font-size:18px; font-weight:700; color:var(--purple-mid); margin-bottom:16px; }
 @keyframes holoReward { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+/* ── KO-FI ── */
+.kofi-overlay { position:fixed; inset:0; z-index:1300; background:rgba(10,6,30,0.72); backdrop-filter:blur(16px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.4s cubic-bezier(0.22,1,0.36,1); }
+.kofi-overlay.show { opacity:1; pointer-events:auto; }
+.kofi-card { background:#fff; border-radius:20px; padding:40px 32px 32px; max-width:380px; width:100%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.18); transform:translateY(24px); transition:transform 0.4s cubic-bezier(0.22,1,0.36,1); }
+.kofi-overlay.show .kofi-card { transform:translateY(0); }
+.kofi-eyebrow { font-size:13px; letter-spacing:0.12em; color:#a08060; text-transform:uppercase; margin:0 0 10px; }
+.kofi-headline { font-family:'Playfair Display',serif; font-size:28px; font-weight:400; color:#1a1030; margin:0 0 14px; line-height:1.15; }
+.kofi-body { font-size:15px; line-height:1.75; color:#6b6080; margin:0 0 28px; }
+.kofi-btn { display:block; width:100%; padding:15px 24px; background:#FF5E5B; color:#fff; border-radius:999px; font-size:14px; font-weight:700; letter-spacing:0.06em; text-decoration:none; margin-bottom:12px; transition:opacity 0.2s,transform 0.15s; box-sizing:border-box; }
+.kofi-btn:hover { opacity:0.9; transform:translateY(-1px); }
+.kofi-skip { background:none; border:none; font-size:13px; color:#aaa; cursor:pointer; padding:4px 8px; }
 .rw-photocard-img { display:block; width:180px; aspect-ratio:3/4; object-fit:cover; border-radius:12px; margin:0 auto 8px; box-shadow:0 8px 28px rgba(107,79,216,0.22), 0 2px 8px rgba(0,0,61,0.10); }
 .rw-accessory-label { font-family:'Playfair Display',serif; font-size:16px; color:var(--ink-soft); margin-top:10px; line-height:1.4; }
 .gift-overlay { position:fixed; inset:0; z-index:1250; background:rgba(253,251,255,0.82); backdrop-filter:blur(14px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.35s; }
@@ -725,6 +736,17 @@ body::after {
     <footer class="reward-bottombar">
       <button class="btn-solid" id="rw-btn-next" onclick="claimNextEpisode()">Next Episode →</button>
     </footer>
+  </div>
+</div>
+
+<!-- KO-FI INTERSTITIAL -->
+<div class="kofi-overlay" id="kofi-overlay">
+  <div class="kofi-card">
+    <p class="kofi-eyebrow">You're 3 episodes in ☕</p>
+    <h2 class="kofi-headline">Enjoying CALIX?</h2>
+    <p class="kofi-body">This game was made by one person — writing, designing, building. If it's been worth your time, a coffee means a lot.</p>
+    <a class="kofi-btn" href="https://ko-fi.com/tartgraphics" target="_blank" rel="noopener" onclick="closeKofiCard()">Buy me a coffee →</a>
+    <button type="button" class="kofi-skip" onclick="closeKofiCard()">Maybe later</button>
   </div>
 </div>
 

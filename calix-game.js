@@ -1787,6 +1787,18 @@
 
   window.rewardPopupContinue = function () {
     hideRewardPopup();
+    var KOFI_KEY = 'calix_kofi_shown';
+    if (gameState.currentEpisodeN === 3 && !localStorage.getItem(KOFI_KEY)) {
+      localStorage.setItem(KOFI_KEY, '1');
+      var ov = document.getElementById('kofi-overlay');
+      if (ov) { ov.classList.add('show'); return; }
+    }
+    proceedFromRewardPopupToRewardScreen();
+  };
+
+  window.closeKofiCard = function () {
+    var ov = document.getElementById('kofi-overlay');
+    if (ov) ov.classList.remove('show');
     proceedFromRewardPopupToRewardScreen();
   };
 
