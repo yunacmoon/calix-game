@@ -370,6 +370,12 @@ body::after {
 .mscene-cta {
   opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards;
 }
+.mscene-booth-line {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: 17px;
+  color: var(--ink-soft); margin-bottom: 20px;
+  letter-spacing: 0.01em;
+}
 
 /* ── PHASE 5: PHOTOCARD UNLOCK ── */
 #phase-photocard { text-align: center; }
@@ -666,7 +672,8 @@ body::after {
   </div>
 
   <div class="mscene-cta">
-    <button class="btn-solid" onclick="goPhase('phase-photocard')">Unlock your photocard →</button>
+    <p class="mscene-booth-line">"Let's get one to remember tonight."</p>
+    <button class="btn-solid" onclick="goPhase('phase-photocard')">Take a photo →</button>
   </div>
 </div>
 
