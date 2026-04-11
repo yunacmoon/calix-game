@@ -904,6 +904,20 @@ function loadFifthMember() {
 }
 loadFifthMember();
 
+// ── TEST MODE (?test=YOOJIN / ALEX / GREY) ──
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var testCandidate = (params.get('test') || '').toUpperCase();
+  if (['YOOJIN','ALEX','GREY'].indexOf(testCandidate) !== -1) {
+    try {
+      var existing = JSON.parse(localStorage.getItem('calix_save_v1') || '{}');
+      existing.candidateName = testCandidate;
+      localStorage.setItem('calix_save_v1', JSON.stringify(existing));
+    } catch(e) {}
+    setTimeout(function() { goPhase('phase-photocard'); fireConfetti(); }, 200);
+  }
+})();
+
 // ── MEMBER PICK ──
 function pickMember(name) {
   chosenMember = name;
