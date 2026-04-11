@@ -1,16 +1,24 @@
 {
   "name": "CALIX",
   "short_name": "CALIX",
-  "start_url": "calix-v6.html",
+  "description": "The fifth member of CALIX — a K-pop story game.",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f0e8",
-  "theme_color": "#c7a86e",
+  "orientation": "portrait",
+  "background_color": "#06061a",
+  "theme_color": "#977DFF",
   "icons": [
     {
-      "src": "Images/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
-
