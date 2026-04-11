@@ -17,7 +17,7 @@
 
 *Finn's door has always been a choice.*
 
-*Today he knocks on your door instead:*
+*Today he knocks on yours:*
 
 **FINN:**
 "Come see something."
@@ -28,9 +28,9 @@
 
 *His room is exactly what you expected and more specific than you imagined.*
 
-*Organized — not Kain-organized, but considered. Everything has a place because Finn thought about the place.*
+*Organized — not Kain-organized, but considered. Everything has a place because Finn thought about it.*
 
-*Books on the shelf by color and height, which seems aesthetic but you notice the spines are also roughly chronological — he has a system that looks like art.*
+*Books on the shelf by color and height, which looks aesthetic until you notice the spines are also roughly chronological — the system is disguised as decoration.*
 
 *The film camera on the desk. Extra rolls of film in a small dish beside it.*
 
@@ -44,14 +44,14 @@
 
 *You are in several of them.*
 
-*Not just one or two. A dozen, at least. Spread across the months — early, when you first arrived, when you were still figuring out where to stand; mid-period, the practice room shots and the van shots and one from the fansign that you don't remember him being present for; recent, clear-eyed, at home in the frame.*
+*Not just one or two. A dozen, at least, spread across the months — early, when you first arrived, still figuring out where to stand; mid-period, the practice room shots and the van shots and one from the fansign you don't remember him being present for; recent, clear-eyed, at home in the frame.*
 
 *You look at them.*
 
 **NARRATION:**
 > *He's been documenting this. All of it. The whole year.*
 >
-> *Not performing the documentation — not the behind-the-scenes camera, not the content, not the managed version. The actual version. What it looked like when nobody was deciding what it should look like.*
+> *Not the content version — not the behind-the-scenes camera the label runs. The actual version. What it looked like when nobody was deciding what it should look like.*
 
 **FINN:**
 "I develop them myself."
@@ -59,12 +59,12 @@
 *He's standing beside you, looking at the wall.*
 
 **FINN:**
-"It takes a while. I have rolls going back eight months that I'm still getting through."
+"I have rolls going back eight months that I'm still getting through. It takes a while."
 
-*He looks at a photo in the top corner — Theo on the practice room floor, the day of the knee episode. You didn't know Finn photographed that day.*
+*He looks at a photo in the top corner — Theo on the practice room floor, the day of the knee. You didn't know Finn had been there with a camera.*
 
 **FINN:**
-"I don't show people these usually. I showed Jay one. I showed Theo the ones of him because it felt wrong not to."
+"I don't usually show people these. I showed Jay one — he left a note asking for it before I'd offered. Theo I showed his because it felt wrong not to."
 
 *He looks at you.*
 
@@ -75,11 +75,9 @@
 
 ## SCENE 3 — THE PHOTO
 
-*He shows you one specifically — steps forward, touches the edge of a print in the lower section of the wall.*
+*He steps forward and touches the edge of one print in the lower section of the wall.*
 
-*You. Mid-performance. Stage lights. But you're not looking at the audience — you're looking at one of the others, and your expression is completely unperformed.*
-
-*It's the most real you've ever looked in a photograph.*
+*You. Mid-performance. Stage lights. But you're not looking at the audience — you're looking at one of the others, and your face is completely un-curated. It's the most real you've ever looked in a photograph.*
 
 **FINN:**
 "This one."
@@ -87,7 +85,7 @@
 *He looks at it.*
 
 **FINN:**
-"I almost didn't take it. It felt too private."
+"I almost didn't take it. It felt like it was yours, not mine."
 
 *He pauses.*
 
@@ -100,18 +98,18 @@
 
 ---
 
-**OPTION A:** *"I didn't know you took this."*
+**OPTION A:** *"I didn't know you were there."*
 > **YOU:** "I didn't know you were there."
 >
 > **FINN:** "I take a lot that people don't know about."
 >
 > *He says it without apology.*
 >
-> **FINN:** "Not surveillance — attention. I find that most people don't know they're being paid attention to until they see the evidence."
+> **FINN:** "Not surveillance — attention. Most people don't know they're being paid attention to until they see the evidence."
 >
 > *He looks at the photo.*
 >
-> **FINN:** "You look like yourself in this one."
+> **FINN:** "You look like yourself in this one. That's not as common as it should be."
 >
 > `[+4 FINN_TRUST]`
 
@@ -143,21 +141,17 @@
 >
 > *He scans the wall.*
 >
-> *He points to a different photo — not the performance shot, not the common room. Something you don't remember. You're looking somewhere off to the side, at something not in the frame. The light is late afternoon. Your expression is — thinking. Just thinking.*
+> *He points to a different photo — not the performance shot. Something you don't remember. You're looking off to the side at something not in frame, late afternoon light, your expression completely unguarded. Just thinking.*
 >
 > **FINN:** "This one."
 >
 > **YOU:** "Why?"
 >
-> **FINN:** "Because you're not aware of anything except whatever you're thinking about. There's no layer over it."
+> **FINN:** "Because you're not aware of being observed. Most people always are, even when they're alone. You have moments where you forget."
 >
 > *He looks at it.*
 >
-> **FINN:** "Most people can't do that. Most people are always aware of being observed. Even alone."
->
-> *He looks at you.*
->
-> **FINN:** "You have moments where you forget. I find those worth keeping."
+> **FINN:** "I find those worth keeping."
 >
 > `[+6 FINN_TRUST]`
 
@@ -167,18 +161,18 @@
 
 *Before you leave, Finn pauses at the wall.*
 
-*He looks at it for a moment — the whole of it, years of kept moments — then reaches up and unpins one print from the lower corner.*
+*He looks at it for a moment — the whole of it, years of kept moments, all the people he's been paying attention to — then reaches up and unpins one print from the lower corner.*
 
-*A street. Somewhere unfamiliar. Early morning light, long shadows, nobody in frame. The kind of shot you take when you're alone in a city and it belongs to you for a second.*
+*A street. Somewhere unfamiliar. Early morning light, long shadows, nobody in frame. The kind of shot you take when you're alone in a city and it belongs to you for a few seconds.*
 
 *He holds it out.*
 
 **FINN:**
 "Sydney. Before all of this."
 
-*He says it simply.*
+*He doesn't explain why he's giving it to you.*
 
-*He doesn't explain why he's giving it to you. You don't ask.*
+*You don't ask.*
 
 ---
 
@@ -188,3 +182,7 @@
 **Type:** Print — Finn's photography, Sydney
 
 **Unlocks:** Episode 29 — "Jay's Last Line"
+
+---
+
+*Next: ep29_jays_last_line.md*

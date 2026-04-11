@@ -4,7 +4,7 @@
 > **Act:** 3 — Depth
 > **Featured:** All members
 > **Setting:** Main stage. Second comeback. Sold out. This one is different.
-> **Reward:** Photocard — official first print, your face on it
+> **Reward:** CALIX logo cap — comeback limited run (members only)
 > **Stat Gate:** GROUP_REP ≥ 10, SKILL ≥ 9
 
 ---
@@ -13,9 +13,9 @@
 
 *The second comeback is different from the first.*
 
-*The first comeback you were new. The audience was curious. The group was adjusting.*
+*The first one you were new. The audience was curious. The group was adjusting.*
 
-*This one — you've been here a year. The audience knows your name. The group knows your weight on stage. And you know, finally, what it feels like when five people move like one.*
+*This one — you've been here a year. The audience knows your name. The group knows your weight on stage. And you know, finally, what it feels like when five people move like one thing.*
 
 *This is the show you've been building toward.*
 
@@ -25,15 +25,15 @@
 
 *The dressing room is quieter this time.*
 
-*Not because there's less at stake — because everyone knows what they're doing. The first comeback had the energy of people running toward something unknown. This has the energy of people who know exactly what they're about to do and are ready for it.*
+*Not because there's less at stake — because everyone knows what they're doing. The first comeback had the energy of people running toward something unknown. This has the energy of people who know exactly what they're about to do.*
 
 *Kain is not reviewing his checklist. He's sitting with his eyes closed.*
 
-*Theo is stretching, but slowly. Not the nervous-bounce kind. The deliberate kind.*
+*Theo is stretching slowly. Not the nervous-bounce kind — the deliberate kind.*
 
-*Jay is already in his stage clothes and has his headphones on, but one ear is off — he's half here, half somewhere else, balanced.*
+*Jay is already in his stage clothes, headphones on, one ear off. Half here, half somewhere else.*
 
-*Finn is doing the thing he does: existing in the corner, completely still, like he arrived at the place he needs to be before the performance even started.*
+*Finn is in the corner, completely still, like he arrived at the place he needs to be before the performance even started.*
 
 *You get into your stage clothes.*
 
@@ -47,13 +47,11 @@
 
 *T-minus two.*
 
-*The five of you in the wings.*
-
-*Same formation as always: Kain first, then Finn, then Jay, then Theo, then you.*
+*Five of you in the wings. Same formation as always: Kain first, then Finn, then Jay, then Theo, then you.*
 
 *Theo doesn't grab your wrist this time.*
 
-*He just looks at you and gives you one nod — slow, certain.*
+*He looks at you and gives you one nod — slow, certain.*
 
 *Jay has both ears out.*
 
@@ -67,7 +65,7 @@
 
 *He looks at you.*
 
-*One second. Just your eyes.*
+*One second.*
 
 ---
 
@@ -80,7 +78,7 @@
 >
 > *One full second. Two.*
 >
-> *Everything you've built this year — the midnight practice rooms, the arguments, the floor of the practice room at 10pm, the earring on your desk with no note — it's all in that second.*
+> *Everything you've built this year is in that second — the midnight practice rooms, the conference room, the floor with its fluorescent light, the earring on your desk with no note.*
 >
 > *Kain nods.*
 >
@@ -108,11 +106,11 @@
 **OPTION C:** Smile.
 > *You smile.*
 >
-> *Theo, beside you, sees it and his whole face lifts — he didn't know he needed that.*
+> *Theo, beside you, sees it and his whole face lifts.*
 >
 > *Kain turns back to front.*
 >
-> *But his shoulders are fractionally looser.*
+> *His shoulders are fractionally looser.*
 >
 > *The curtain opens.*
 >
@@ -128,7 +126,7 @@
 
 *Sold out.*
 
-*Your name in the chants — with the others, but yours there, yours earned.*
+*Your name in the chants — with the others, yours there, yours earned.*
 
 *CALIX. Five.*
 
@@ -138,7 +136,7 @@
 
 *After the show. A staff member at the merch table flags you down as they break it down.*
 
-*A cap. CALIX logo — embroidered, limited run for tonight's comeback. The kind they pull back before general merch.*
+*A cap. CALIX logo — embroidered, limited run for tonight's comeback. The kind they pull back before it goes to general merch.*
 
 *She holds it out.*
 
@@ -166,3 +164,7 @@
 **Type:** Merch — CALIX goods
 
 **Unlocks:** Episode 25 — "After the Stage"
+
+---
+
+*Next: ep25_after_the_stage.md*

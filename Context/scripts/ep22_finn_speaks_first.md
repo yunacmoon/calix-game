@@ -15,9 +15,9 @@
 
 *Specifically. By name. Tonight.*
 
-*He's been working toward something for weeks — you've felt it in the conversations that go slightly longer than usual, in the way he looks at you sometimes and then looks away like he changed his mind about what he was going to say.*
+*He's been working toward something for weeks — you've felt it in the conversations that go slightly longer than usual, in the way he looks at you sometimes and then looks away like he reconsidered what he was going to say.*
 
-*Tonight he doesn't change his mind.*
+*Tonight he doesn't reconsider.*
 
 ---
 
@@ -28,11 +28,11 @@
 **FINN:**
 "Thank you for coming."
 
-*He says it formally, which means he's been thinking about this.*
+*He says it formally, which means he prepared for this.*
 
 *You stand beside him.*
 
-*The city below is still moving. It never stops.*
+*The city below is still moving.*
 
 ---
 
@@ -48,24 +48,24 @@
 *He looks at his hands on the railing.*
 
 **FINN:**
-"I'm good at watching. I've always been better at watching than at speaking. And I've watched you — all of it. The first week, the practice room arguments, the fansign, the comeback. All of it."
+"I'm good at watching. I've always been better at watching than at speaking. And I've watched you — all of it. The first week, the practice room, the arguments, the fansign, the comeback. All of it."
 
 *He pauses.*
 
 **FINN:**
-"And the thing I've been trying to say is: I see you. Not the version of you that's performing. Not the fifth member of CALIX. You."
+"The thing I've been trying to say is: I see you. Not the version you bring to practice or to the stage. I mean I see how you actually work, what it costs you, what you've built here."
 
 *He turns to look at you directly.*
 
 **FINN:**
-"I think you came into this group not knowing what you had. I think you know now. And I think watching that happen has been one of the best things I've seen in this industry."
+"You came into this group not knowing what you had. I think you know now. And I think watching that happen has been one of the better things about this year."
 
 *He looks back at the city.*
 
 **FINN:**
-"I don't say things like that. I don't say things like that to anyone. I just wanted to say it to you."
+"I don't say things like this usually. But I wanted to say it to you."
 
-*His hands are shaking slightly. Just slightly.*
+*A pause.*
 
 **FINN:**
 "That's all."
@@ -76,12 +76,12 @@
 
 ---
 
-**OPTION A:** Tell him you've known. That you've been watching him back.
+**OPTION A:** Tell him you've been watching him back.
 > **YOU:** "I've been watching you too."
 >
 > *Finn looks at you.*
 >
-> **YOU:** "Since the first night in the common room. The way you pay attention to people. The way you notice Kain hasn't eaten and you leave something on the table. The way you sat next to Theo in the practice room when his knee was bad without saying a word about it."
+> **YOU:** "Since the first night in the common room. The way you leave something on the table when Kain hasn't eaten. The way you sat next to Theo in the practice room when his knee was bad without making anything of it."
 >
 > *A beat.*
 >
@@ -91,32 +91,30 @@
 >
 > **FINN:** "..."
 >
-> *His jaw moves.*
+> *He looks at the city.*
 >
 > **FINN:** "I didn't know."
 >
-> *He looks at the city.*
->
-> **FINN:** "That's — I didn't know."
+> **FINN:** "That's — I genuinely didn't know."
 >
 > `[+6 FINN_TRUST]`
 
 ---
 
 **OPTION B:** *"Why me? Why tonight?"*
-> **YOU:** "Why me? Why are you saying this to me?"
+> **YOU:** "Why are you telling me this?"
 >
 > *Finn looks at you.*
 >
 > **FINN:** "Because I trust you."
 >
-> *He says it simply. Like it doesn't need explanation.*
+> *He says it without preamble.*
 >
-> **FINN:** "I don't trust easily. I think you know that. But you've been — you've been consistent. You're the same person at midnight that you are in practice that you are on stage."
+> **FINN:** "I don't trust easily. I think you already know that. But you've been consistent — the same person at midnight that you are in practice that you are on stage. That's rarer than it sounds."
 >
 > *He looks at the city.*
 >
-> **FINN:** "I find that very rare. I wanted you to know that I notice it."
+> **FINN:** "I wanted you to know that I notice it."
 >
 > `[+5 FINN_TRUST]`
 
@@ -127,13 +125,13 @@
 >
 > *Finn looks at you.*
 >
-> **YOU:** "Genuinely. I don't think — I needed to hear that. I don't know if I knew I needed it."
+> **YOU:** "Genuinely. I needed to hear that. I don't know if I knew I needed it until right now."
 >
 > *A pause.*
 >
 > **FINN:** "I know."
 >
-> *He says it quietly, certainly.*
+> *He says it without making it bigger than it is.*
 >
 > **FINN:** "That's why I finally said it."
 >
@@ -164,7 +162,7 @@
 "Finn —"
 
 **FINN:**
-"I know who I am now. I didn't for a long time. But I do."
+"I know who I am now. I know what I'm doing here. It took a while but I know."
 
 *He places it in your hand.*
 
@@ -187,3 +185,7 @@
 **Type:** Accessory — pendant necklace
 
 **Unlocks:** Episode 23 — "The Fight"
+
+---
+
+*Next: ep23_the_fight.md*

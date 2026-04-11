@@ -21,13 +21,13 @@
 **KAIN:**
 "Sit somewhere."
 
-*There's no other chair. You sit on the ledge — safe distance from the edge, comfortable. He watches you settle without looking directly at you.*
+*There's no other chair. You sit on the ledge — safe distance from the edge. He watches you settle without looking directly at you.*
 
 *He pours from the thermos.*
 
 *He hands it to you first.*
 
-*That's new.*
+*You've been here a year and this is the first time he does that.*
 
 ---
 
@@ -35,9 +35,9 @@
 
 *He drinks from the cap of the thermos.*
 
-*The city below is doing its usual thing — moving, lit, indifferent.*
+*The city below is doing its usual thing.*
 
-*He lets the silence run for a while. Not the uncomfortable kind — Kain's silences never ask anything. They just are.*
+*He lets the silence run for a while — not the uncomfortable kind. Kain's silences don't ask anything of you. They just exist.*
 
 *Then:*
 
@@ -58,7 +58,7 @@
 *He holds the question open.*
 
 **KAIN:**
-"We have a renewal coming. A new cycle. I've been building a plan. But I've been building it alone and I —"
+"We have a renewal coming. A new cycle. I've been building a plan — but I've been building it alone again. And I —"
 
 *He stops.*
 
@@ -81,23 +81,21 @@
 **OPTION A:** Give your genuine vision. Something specific.
 > *You think about it. Really think.*
 >
-> **YOU:** "I think the next cycle should be the one where CALIX stops explaining itself. The first two years were about proving you belonged in the conversation. You're in the conversation. Now you can say something in it."
+> **YOU:** "I think the next cycle should be the one where CALIX stops explaining itself. The first two years were about proving you belonged in the conversation. You're in the conversation now. Start saying something in it."
 >
 > *Kain is listening.*
 >
-> **YOU:** "Jay has tracks he hasn't released because they didn't fit the format. I think the format should move toward Jay, not the other way around. Theo wants floor work on every stage — let him. Finn wants to be heard before he's seen — give him a track that does that."
+> **YOU:** "Jay has tracks he hasn't released because they didn't fit the format. Move the format toward Jay, not the other way around. Theo wants floor work on every stage — let him have it. Finn wants to be heard before he's seen — give him a track that does that."
 >
 > *You look at him.*
 >
-> **YOU:** "And you need to stop carrying the whole thing. You've been CALIX's spine for three years. Let it be a body."
+> **YOU:** "And you need to stop carrying the whole thing alone. You've been CALIX's spine for three years. Let it be a body."
 >
 > *A long silence.*
 >
 > *Kain looks at his thermos.*
 >
-> **KAIN:** "..."
->
-> *He writes something in the pocket notebook he carries.*
+> *He takes out the pocket notebook he carries and writes something.*
 >
 > **KAIN:** "Keep going."
 >
@@ -129,13 +127,11 @@
 ---
 
 **OPTION C:** *"What do you actually want?"*
-> **YOU:** "What do you want? Not what the plan needs. You."
+> **YOU:** "What do you want? Not what the plan needs. You, specifically."
 >
 > *Kain is very still.*
 >
 > *A long silence.*
->
-> *He doesn't answer immediately.*
 >
 > *He looks at the city.*
 >
@@ -143,15 +139,15 @@
 >
 > *His hand tightens around the thermos cap.*
 >
-> **KAIN:** "I want to make something that I'm still proud of in ten years. Not just successful. Proud."
+> **KAIN:** "I want to make something that I'm still proud of in ten years. Not just successful. Proud of it."
 >
 > *He exhales.*
 >
-> **KAIN:** "I've been so focused on not failing that I haven't — I haven't asked myself what winning actually looks like."
+> **KAIN:** "I've been so focused on not failing that I've never properly asked myself what winning looks like."
 >
 > *He looks at you.*
 >
-> **KAIN:** "That's the answer, I think."
+> **KAIN:** "That's the answer, I think. That's where it starts."
 >
 > `[+6 KAIN_TRUST]`
 
@@ -161,3 +157,7 @@
 
 **Reward unlocked:** `1200 coins`
 **Unlocks:** Episode 27 — "All Five"
+
+---
+
+*Next: ep27_all_five.md*

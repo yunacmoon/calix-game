@@ -19,9 +19,9 @@
 
 *That's the problem.*
 
-*The group chat has been quiet since it came out. Too quiet. Which means everyone is waiting for the room where it finally gets said.*
+*The group chat has been quiet all day. Too quiet. Which means everyone is waiting for the room where it finally gets said out loud.*
 
-*The room is the dorm, and it's tonight.*
+*The room is the dorm, and tonight is the night.*
 
 ---
 
@@ -42,17 +42,7 @@
 ## SCENE 2 — THE ARGUMENT
 
 **THEO:**
-"I want to know — was it a divided decision? Was it actually — were some of us not sure?"
-
-*A silence.*
-
-*Jay, from the corner:*
-
-**JAY:**
-"Does it matter now."
-
-**THEO:**
-"Yes. Because if it was — if any of us had doubts — we should have said it to each other instead of —"
+"I want to know — was it a divided decision? Because if any of us had doubts, we should have said it to each other instead of —"
 
 **KAIN:**
 "We did say it to each other. That conversation happened. It's done."
@@ -64,11 +54,11 @@
 
 *Finn is very still.*
 
-*You're in the room and you're the subject of this conversation. The only one in the room who the conversation is about.*
+*You're in the room and you're what the conversation is about. The only one it's about.*
 
 **THEO:**
 *(to the group, not to you)*
-"I'm not — I'm not saying I regret it. I'm saying it should have been a full conversation, all five, before it was decided."
+"I'm not saying I regret it. I'm saying it should have been all five of us, before anything was decided."
 
 **KAIN:**
 "The timeline didn't allow —"
@@ -95,11 +85,13 @@
 
 ## SCENE 3 — THE PEAK
 
-*The argument shifts — from the past decision to the current reality, to what was said to the press and who said it and why nobody caught it before it ran.*
+*The argument moves — from the past decision to what was said to the press, who said it, why nobody caught it before it ran.*
 
-*Kain's voice gets quieter which means he's more certain. Theo's voice goes higher which means he's hurt beneath the anger. Jay keeps cutting through with single sentences that land like punctuation.*
+*Kain's voice gets quieter. Theo's voice goes higher.*
 
-*Finn says nothing.*
+*Jay keeps cutting through with single sentences that land like punctuation marks.*
+
+*Finn says nothing the whole time.*
 
 *Finn is watching you.*
 
@@ -118,13 +110,11 @@
 >
 > *Everyone stops.*
 >
-> *You have the room.*
->
-> **YOU:** "I'm not a rumor. I'm here. I've been here. And whatever the decision looked like from outside — I know what it feels like from inside, and it feels like a group."
+> **YOU:** "I'm not a rumor. I'm here. I've been here. And whatever the decision looked like from outside — this is what it feels like from inside. It feels like a group."
 >
 > *A silence.*
 >
-> **YOU:** "So let's stop having the conversation about what happened six months ago and figure out what we say tomorrow."
+> **YOU:** "So let's stop having the conversation about six months ago and figure out what we say tomorrow."
 >
 > *Kain looks at you.*
 >
@@ -139,7 +129,7 @@
 **OPTION B:** Leave the room. Give it space.
 > *You stand. You walk to the hallway.*
 >
-> *You don't slam the door. You don't perform anything. You just leave the space for a minute.*
+> *Not storming out — just giving the room room.*
 >
 > *The conversation continues behind you, lower.*
 >
@@ -155,7 +145,7 @@
 >
 > *He leans against the wall beside you.*
 >
-> **FINN:** "They're not fighting about you. They're fighting about trust. You're just the clearest example of it tonight."
+> **FINN:** "They're not fighting about you. They're fighting about how they make decisions together. You're just the clearest example of it tonight."
 >
 > `[+2 JAY_TRUST] [+2 FINN_TRUST]`
 
@@ -164,7 +154,7 @@
 **OPTION C:** Go to the person who's hurting most. Say nothing. Just stand there.
 > *Theo.*
 >
-> *Under all of it — the anger, the volume — Theo is hurting. You can see it. He's not angry about the decision, he's hurt that it happened in a way that excluded people.*
+> *Under all of it — the anger, the volume — Theo is hurting. He's not angry about the decision; he's hurt that it happened in a way that cut people out.*
 >
 > *You cross the room.*
 >
@@ -174,7 +164,7 @@
 >
 > *Theo goes quiet.*
 >
-> *The argument runs out of steam around you.*
+> *The argument runs out of steam.*
 >
 > *Kain, after a moment:*
 >
@@ -189,11 +179,11 @@
 ---
 
 **OPTION D:** Say the thing nobody's saying out loud.
-> **YOU:** "The rumor landed because it was true once. Six months ago, coming in — it wasn't unanimous. I know that."
+> **YOU:** "The rumor landed because it was true once. Six months ago — it wasn't unanimous. I know that."
 >
-> *A complete silence.*
+> *Complete silence.*
 >
-> **YOU:** "And I spent six months trying to make it unanimous. I think I did. But I can't make that call — only you can."
+> **YOU:** "I spent six months trying to make it unanimous. I think I did. But I can't make that call. Only you can."
 >
 > *You look at each of them.*
 >
@@ -217,22 +207,19 @@
 
 ## SCENE 4 — AFTER
 
-*The argument ends not with resolution but with exhaustion — the kind that comes when everything has been said and the room needs to breathe.*
+*The argument ends the way all necessary arguments end — not with a resolution, but with exhaustion. Everything has been said and the room needs to breathe.*
 
-*Theo goes to make something to eat, which is how he recovers. Jay disappears with his notebook. Finn sits in the corner chair and reads.*
+*Theo goes to make something to eat. Jay disappears with his notebook. Finn sits in the corner chair and opens a book.*
 
 *Kain stands by the window for a while.*
 
 *Then he sits down.*
 
-*That's new.*
+*Kain sitting down without immediately moving to the next thing is not something you've seen before.*
 
-**NARRATION:**
-> *Groups don't become real when everything is going well. They become real when something breaks and they have to decide what to do with the broken pieces.*
->
-> *Tonight you had the fight that was overdue.*
->
-> *Tonight CALIX became something sturdier.*
+*The common room settles.*
+
+*The table still has the group chat open on someone's phone, the notifications going quiet one by one.*
 
 ---
 
@@ -240,3 +227,7 @@
 
 **Reward unlocked:** `900 coins`
 **Unlocks:** Episode 24 — "Comeback Stage"
+
+---
+
+*Next: ep24_comeback_stage.md*

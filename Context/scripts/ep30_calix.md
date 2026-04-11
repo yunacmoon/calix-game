@@ -14,9 +14,9 @@
 
 *One year.*
 
-*You know the date because your phone told you. You didn't plan anything. You didn't tell anyone.*
+*Your phone told you. You didn't plan anything. You didn't mention it to anyone.*
 
-*Apparently, neither did they.*
+*Neither did they.*
 
 *And yet.*
 
@@ -41,7 +41,7 @@
 *Theo arrives twenty minutes later with food — takeout, the kind you had the first night, the same place.*
 
 **THEO:**
-"I was going to get food and then I thought — it's been a year, right? Like approximately? So I got enough for everyone."
+"I was going to get food and then I thought — it's been a year, right? Like, approximately? So I got enough for everyone."
 
 *He sets it on the table.*
 
@@ -51,7 +51,7 @@
 *He says it like he needs you to know.*
 
 **THEO:**
-"It just felt like a night where we should all eat."
+"It just felt like a night where we should all eat together."
 
 ---
 
@@ -76,13 +76,13 @@
 
 *They eat.*
 
-*Theo talks about the next cycle — ideas he's been collecting, things he wants to try. He doesn't slow down for permission anymore. He just says them.*
+*Theo talks about the next cycle — ideas he's been collecting, things he wants to try. He doesn't slow down for permission anymore. He just says them and lets the room decide.*
 
-*Jay responds more than he used to. One or two words still, but more consistently. Like a door that's been opened stays open.*
+*Jay responds more than he used to. One or two words still, but consistently. A door that's been opened and stays open.*
 
-*Kain listens to Theo's ideas and writes two of them down in his notebook. He doesn't explain which two.*
+*Kain listens to Theo's ideas and writes two of them down in his notebook without explaining which two.*
 
-*Finn tells a story about something that happened at the film lab where he develops his photos — a dry story, delivered with a completely straight face — and it's so unexpectedly funny that Theo almost chokes.*
+*Finn tells a story about something that happened at the film lab where he develops his photos — a dry story, delivered completely straight — and it's so unexpectedly funny that Theo almost chokes.*
 
 **THEO:**
 "WHY do you always do that with zero warning —"
@@ -104,7 +104,7 @@
 
 *The table is still covered with containers. The light is warm. Nobody has moved to clean up.*
 
-*Theo picks up his drink — whatever was nearest, a glass of water.*
+*Theo picks up his drink — a glass of water, whatever was nearest.*
 
 *He looks around the table.*
 
@@ -152,13 +152,13 @@
 >
 > *Jay raises his glass. Doesn't say anything. Doesn't need to.*
 >
-> *Finn raises his. Looks at you with that specific look that means: I knew. From the beginning, I knew.*
+> *Finn raises his.*
 >
 > *Kain — last — raises the thermos he still has from the rooftop.*
 >
 > **KAIN:** "All five."
 >
-> *He says it like a fact he's decided to accept as permanent.*
+> *He says it like something he's decided to hold on to.*
 >
 > `[+5 all members] [+5 GROUP_REP]`
 
@@ -169,9 +169,7 @@
 >
 > *You don't say anything.*
 >
-> *You don't need to.*
->
-> *They know what a year of your silence and your presence and your work has meant.*
+> *A year of showing up, of learning the weight of this specific room — it doesn't need a sentence.*
 >
 > *Theo looks at you for a moment.*
 >
@@ -194,7 +192,7 @@
 >
 > *Theo makes a sound.*
 >
-> **THEO:** "Yes. And everything after this —"
+> **THEO:** "Yes — and everything after this —"
 >
 > *He looks at Kain.*
 >
@@ -212,15 +210,13 @@
 
 *Nobody cleans up immediately.*
 
-*The table stays as it is. The containers, the glasses, the notebook open where Kain left it.*
+*The table stays as it is. Containers, glasses, Kain's notebook open where he left it.*
 
-*At some point Finn takes another photo — just one.*
-
-*The common room. The five of them. The aftermath of a meal that wasn't planned.*
+*At some point Finn takes another photo — just one. The table, the five of them, the aftermath of a meal that wasn't planned.*
 
 *He doesn't show anyone what it looks like.*
 
-*But he keeps it.*
+*He keeps it.*
 
 ---
 
@@ -236,24 +232,22 @@
 
 *You open it.*
 
-*The four of them, inside. Credits page. Track listing. Photos from the shoot you weren't there for, and one from a shoot you were.*
+*The four of them, inside — credits, track listing, photos from the shoot you weren't there for, and one from a shoot you were.*
 
 **NARRATION:**
 > *You've been in this building for one year.*
 >
-> *You came in as the variable that didn't fit the system.*
+> *You came in as the fifth, the one who had to prove something. You spent twelve months learning this specific group of people — how Kain leads and what it costs him, how Theo carries the warmth of the room, how Jay puts things in writing that he can't say out loud, how Finn pays attention to everything and keeps the evidence on his wall.*
 >
-> *The system rebuilt itself around you.*
+> *You learned all of them. And somewhere in it, they learned you.*
 >
-> *That's not a small thing.*
+> *That's not a small thing. That's the whole thing.*
 >
-> *You put the album on your desk, next to Finn's framed photo and the empty notebook from Jay and the weight of everything the year left behind.*
+> *You put the album on your desk.*
 >
 > *You lie down.*
 >
-> *The city is outside, doing its thing.*
->
-> *In the other rooms: four people sleeping. Or not sleeping. Thinking about the next cycle, or the track that's almost done, or the thing they still want to say.*
+> *In the other rooms: four people sleeping, or not sleeping. Thinking about the next cycle, or the track that's almost done, or something that happened today that they want to hold on to.*
 >
 > *Five people in the same building.*
 >
@@ -267,7 +261,7 @@
 
 *The credits roll over images from the year:*
 
-*The practice room at midnight. The van with the aux cable. The rooftop at golden hour. The empty arena. The studio at 3am. The common room at 2am with one lamp on.*
+*The practice room at midnight. The van with the aux cable. The rooftop at golden hour. The empty arena. The studio at 4am. The common room with one lamp on.*
 
 *Five people becoming something.*
 

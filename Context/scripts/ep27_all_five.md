@@ -13,7 +13,7 @@
 
 *Making music together is different from performing together.*
 
-*Performing, you follow the structure. Making — you have to agree on the structure first, which means five people with five different ideas about what sounds right have to find the place where all five ideas fit.*
+*Performing: you follow the structure. Making: you have to agree on the structure first. Five people with five different ideas about what sounds right have to find the one place where all five ideas fit.*
 
 *This takes all day.*
 
@@ -25,10 +25,10 @@
 
 *Jay has a draft — he always has a draft. But this time he brought it in with gaps: places marked in the notebook as "needs something here" and "not mine to write."*
 
-*He explains this to the group with the specific awkwardness of someone who is being vulnerable in a technical language because that's the language he has.*
+*He explains this to the group with the particular awkwardness of someone being vulnerable in technical language because that's the language he has.*
 
 **JAY:**
-"Second verse. I need a melody. Third section — I need something that isn't a rap line. I can't write those."
+"Second verse. I need a melody. Third section — something that isn't a rap line. I can't write those."
 
 *He looks at Kain.*
 
@@ -42,17 +42,17 @@
 *When it ends:*
 
 **THEO:**
-"Okay. The second section — can I try something with the floor? Like, give me eight counts and I'll show you what I hear."
+"Okay. The second section — can I try something with the floor? Give me eight counts and I'll show you what I'm hearing."
 
-*He demonstrates. The way Theo hears music is physical first — he finds the sound in his body and works backward to the idea.*
+*He demonstrates. The way Theo hears music is always physical first — he finds the sound in his body and works backward to the idea.*
 
 *Finn, watching:*
 
 **FINN:**
-"If you're doing that on eight, I want to do something on sixteen that's the opposite. Stillness after movement."
+"If you do that on eight, I want to do the opposite on sixteen. Stillness after movement."
 
 **THEO:**
-"Yes. Yes, that's —"
+"Yes — that's —"
 
 **JAY:**
 "Write it down. Both of you."
@@ -63,7 +63,7 @@
 
 *The melody.*
 
-*Kain sits in the booth and runs it three times before he's satisfied. When he comes out:*
+*Kain sits in the booth and runs it three times before he comes out.*
 
 **KAIN:**
 "The second try."
@@ -78,7 +78,7 @@
 
 *Jay nods.*
 
-*Kain doesn't say anything. But he writes it down in his own notebook. Which means he knows it too.*
+*Kain doesn't say anything. But he writes it down in his own notebook — which means he knows it too.*
 
 ---
 
@@ -86,9 +86,9 @@
 
 *Your turn.*
 
-*The booth. Headphones. The track in your ears — all of it, everything they built today, Jay's verse and Kain's melody and Theo's energy and Finn's stillness.*
+*The booth. Headphones. The track in your ears — all of it, everything they built today. Jay's verse and Kain's melody and Theo's energy and Finn's stillness, all assembled into something that didn't exist this morning.*
 
-*Kain's voice in the monitor:*
+*Kain's voice through the monitor:*
 
 **KAIN:**
 "Don't perform it. Just mean it."
@@ -102,15 +102,15 @@
 **OPTION A:** One take. Mean it.
 > *You don't think about technique.*
 >
-> *You think about the year. The practice room at midnight. The floor with Kain. The rooftop with Finn. The studio with Jay. The empty arena with Theo.*
+> *You think about the year. The practice room at midnight. The floor with Kain. The rooftop with Finn. The studio with Jay. The empty arena with Theo. Everything the year built.*
 >
 > *You do it in one take.*
 >
-> *When it ends — silence from the monitor. Two seconds.*
+> *Silence from the monitor. Two full seconds.*
 >
 > **KAIN:** "That's it."
 >
-> *Jay, in the room: he clicks his pen once. That's his version of applause.*
+> *Jay, in the room, clicks his pen once.*
 >
 > **THEO:** *(through the glass, muffled but audible)* "YES —"
 >
@@ -142,17 +142,17 @@
 ---
 
 **OPTION C:** Ask to hear the full track first.
-> **YOU:** "Play the whole thing from the top."
+> **YOU:** "Play it from the top."
 >
 > *Jay looks at you.*
 >
-> *Then he plays it.*
+> *He plays it.*
 >
-> *You listen with your eyes closed.*
+> *You listen with your eyes closed — all of it, from Jay's first note to Kain's melody to the space Theo and Finn built.*
 >
 > *When it ends:*
 >
-> **YOU:** "Okay. Now I know where I am."
+> **YOU:** "Now I know where I am."
 >
 > *You go back in.*
 >
@@ -179,7 +179,7 @@
 **THEO:**
 "I'm going to remember today."
 
-*He says it simply.*
+*He says it simply, like a fact he's deciding to hold on to.*
 
 **FINN:**
 "Me too."
@@ -191,9 +191,7 @@
 **KAIN:**
 "Good work."
 
-*Two words. From Kain.*
-
-*In his language, that's a standing ovation.*
+*Two words. In the room they land like more.*
 
 ---
 
@@ -201,3 +199,7 @@
 
 **Reward unlocked:** `1500 coins`
 **Unlocks:** Episode 28 — "What Finn Kept"
+
+---
+
+*Next: ep28_what_finn_kept.md*

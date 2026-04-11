@@ -26,21 +26,19 @@
 
 ## SCENE 1 — THE PLAY
 
-*He doesn't explain what you're about to hear. He presses play.*
+*He doesn't say anything. He presses play.*
 
 *The track fills the room.*
 
-*It's finished now — what you heard in fragments months ago has become something complete. The pulse, the sample, the verses. Jay's voice moving through it like water finding the lowest point.*
+*It's finished now — what you heard in fragments months ago has become something complete. The pulse, the sample, the verses. Jay's voice moving through it like it has somewhere specific to go.*
 
 *You listen.*
 
-*Second verse. Something shifts in the cadence — a specific line, slowed, opened up. The words are about —*
+*Second verse. Something shifts in the cadence — a specific line, slowed, opened up. About staying. About choosing the hard thing. About the particular weight of someone being present when you're working something out and not making you explain it.*
 
-*They're about staying. About choosing something difficult over something easier. About a specific kind of attention that one person pays to another that changes the weight of everything.*
+*It's buried. You'd miss it if you weren't paying close attention.*
 
-*It's buried. If you weren't listening closely you'd miss it.*
-
-*You're listening closely.*
+*You're paying close attention.*
 
 *The track ends.*
 
@@ -55,7 +53,7 @@
 **OPTION A:** Say the specific line. Out loud.
 > *You hold it for a beat.*
 >
-> *Then you say the line. The one from the second verse. Quietly, just the words.*
+> *Then you say the line. The one from the second verse. Quietly, just the words back.*
 >
 > *Jay goes very still.*
 >
@@ -67,13 +65,9 @@
 >
 > **JAY:** "Yeah."
 >
-> *He doesn't deny it. He doesn't explain it.*
+> *He doesn't explain it. He doesn't qualify it.*
 >
-> **JAY:** "I wasn't going to say anything. I just wanted you to hear it."
->
-> *He looks at the wall.*
->
-> **JAY:** "I needed you to hear it."
+> **JAY:** "I just needed you to hear it finished. That's all."
 >
 > `[+6 JAY_TRUST]`
 
@@ -90,7 +84,7 @@
 >
 > **JAY:** "You heard it."
 >
-> *He means: the line. You don't have to confirm it. He can tell from the way you said it.*
+> *He doesn't say which part he means. He can tell from the way you said it.*
 >
 > **JAY:** "Okay."
 >
@@ -111,11 +105,9 @@
 >
 > *He looks at the console.*
 >
-> **JAY:** "Because you're in it."
+> **JAY:** "Because you were in the room when I was making it. It made sense to finish the loop."
 >
-> *He says it plainly. Like a technical fact.*
->
-> **JAY:** "It would be strange to play it to you last."
+> *He says it plainly. Like a technical answer. It is, for him.*
 >
 > `[+3 JAY_TRUST]`
 
@@ -149,23 +141,23 @@
 *He sets it in your hand.*
 
 **JAY:**
-"I wrote the song. That's enough. This is — something else."
+"I wrote the track. That's enough. This is just — something else."
 
 *He picks up his notebook. Stands.*
 
 **JAY:**
-"Don't read into it."
+"Don't make it weird."
 
 *He walks out.*
 
 *You look at the ring in your hand.*
 
 **NARRATION:**
-> *Don't read into it.*
+> *The track is finished. He made something out of a year of paying attention, and now it exists.*
 >
-> *You put it on.*
+> *You put the ring on.*
 >
-> *You read into it.*
+> *The studio is quiet.*
 
 ---
 
@@ -175,3 +167,7 @@
 **Type:** Accessory — ring
 
 **Unlocks:** Episode 22 — "Finn Speaks First"
+
+---
+
+*Next: ep22_finn_speaks_first.md*
