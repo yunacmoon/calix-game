@@ -23,9 +23,9 @@
 *Your bag is heavier than it needs to be. You've been standing here for forty seconds.*
 
 **NARRATION:**
-> This is the part they don't show in the documentaries. The forty seconds before the door opens, when you could still technically turn around. When everything you're about to walk into is still just a story someone told you.
+> The hallway is quieter than it should be. You've been standing here long enough that the elevator has come and gone twice — you heard the doors open, heard them close, didn't move.
 >
-> You've been a trainee for long enough to know that nothing about this industry is soft. You've watched groups form and dissolve and reform. You know what it costs.
+> Your bag digs into your shoulder. You packed too much. You always do, before something you're not sure about.
 >
 > You knock anyway.
 
@@ -35,83 +35,81 @@
 
 ## SCENE 1 — THE DOOR
 
-*THEO opens it. He's mid-sentence to someone behind him, phone in one hand, the other already reaching for the door handle like he's been waiting. When he sees you, his whole face rearranges.*
+*THEO opens it mid-sentence, phone pressed to his chest, his other hand already on the handle. He stops when he sees you. Something in his face opens — quick, unguarded — before he catches it.*
 
 **THEO:**
 "Oh — oh, hey! You're here. Okay, okay —"
 
-*He steps back, gesturing you in with the kind of easy momentum that makes small spaces feel bigger. He's taller than you expected.*
+*He steps back. He's taller than you expected. He fills doorways differently.*
 
 **THEO:**
-"Come in, come in — ignore the — Kain told Jay to move his stuff and Jay didn't move his stuff, so —"
+"Come in, come in — ignore the — Kain told Jay to move his stuff three days ago and Jay has not moved his stuff, so, the floor situation is — yeah, just step over it —"
 
-*He kicks something gently aside. It's a pair of headphones.*
+*He nudges something with his foot. A pair of headphones skids across the floor.*
 
 **THEO:**
-"I'm Theo. I know you know that, they probably told you everything, but — I'm Theo. Hi."
+"I'm Theo. I know you know that, they probably sent you a whole dossier, but — I'm Theo. Hi. It's good that you're here."
 
-*He extends his hand. It's an immediate handshake, the kind that says he's already decided you're going to be fine.*
+*He puts out his hand. His grip is immediate, warm, decided.*
 
 **THEO:**
 "You good? You look — "
 
-*He tilts his head, reading you.*
+*He tilts his head.*
 
 **THEO:**
-"Slightly terrified. That's normal. Come in."
+"You look exactly how I looked when I first walked in. Which means slightly terrified, and that's fine, that's actually the correct response. Come in."
 
 ---
 
 ## SCENE 2 — THE LIVING ROOM
 
-*The living room is bigger than you expected and smaller than it should be for five people. There's a couch with too many throw pillows, a low table covered in schedule sheets and takeout receipts, a practice speaker in the corner that someone left on — no music playing, just the soft hiss of standby.*
+*The room is bigger than you expected and smaller than it should be. A couch buried in throw pillows. A low table holding schedule printouts and a receipt from somewhere that got folded and refolded. A practice speaker in the corner, no music, just the faint hiss of standby — like the room is holding its breath.*
 
-*JAY is on the far end of the couch. He glances up when you come in — one look, top to bottom, efficient — and then returns to his phone. His headphones are around his neck. He doesn't take them off.*
+*JAY is at the far end of the couch. He looks up when you walk in — one pass, top to bottom, nothing wasted — and goes back to his phone. Headphones around his neck. He doesn't take them off.*
 
-*FINN is by the window, standing with a book in one hand and his other hand in his pocket. He's already looking at you when you find him. He doesn't look away.*
+*FINN is by the window with a book open in one hand. He's already looking at you when you find him. He doesn't shift. Doesn't pretend he wasn't.*
 
-*KAIN is standing at the whiteboard on the far wall. He has his back to you.*
+*KAIN is at the whiteboard on the far wall.*
 
-*He has not turned around.*
+*His back is to you.*
 
 **THEO:**
 "So — this is everyone. More or less. Kain, they're here."
 
-*A beat. Kain marks something on the whiteboard.*
+*Kain marks something on the board. The marker squeaks.*
 
 **KAIN:**
 "You're three minutes late."
 
-*He still hasn't turned around.*
+*Still facing the wall.*
 
 **THEO:**
 *(quietly, to you)*
-"He's been like this all day. It's not personal. Well — it's a little personal. He's like this with everyone."
+"He's been like this all day. It's not personal. Well — it's a little personal, but only because he's like this with everyone, so."
 
 ---
 
 ## SCENE 3 — KAIN
 
-*Kain sets the marker down. Caps it. Then, finally, turns.*
+*Kain sets the marker down. Caps it with one click. Then turns.*
 
-*He's exactly what the industry would call a leader — the kind of face that holds still when everything else is moving. His eyes find you immediately, and they don't soften when they do.*
-
-*He looks at you the way someone reads a document. Cataloguing.*
+*His face doesn't move when he looks at you. His eyes find you and stay there — not cold exactly, just unhurried. Like he has all the time in the world to decide what he thinks of you, and he's using it.*
 
 **KAIN:**
 "You've been briefed on the schedule."
 
-*Not a question.*
+*He doesn't wait for an answer.*
 
 **KAIN:**
-"Practice starts at nine. Call time for the shoot next week is six-thirty. If you need time to adjust to the routine, adjust quickly — we don't restructure the schedule for individual timelines."
+"Practice starts at nine. Shoot call time next week is six-thirty. If the routine is an adjustment — adjust quickly. We don't restructure for individual timelines."
 
 *He crosses his arms.*
 
 **KAIN:**
 "Any questions."
 
-*Also not a question.*
+*Theo opens his mouth.*
 
 **THEO:**
 "Kain, you could maybe — "
@@ -120,66 +118,64 @@
 "I'm being efficient."
 
 **THEO:**
-"You're being terrifying."
+"You're being terrifying. There's a difference."
 
 **KAIN:**
-*(a beat, to you)*
-"He's exaggerating."
+*(to you, a beat)*
+"He exaggerates. It's a habit."
 
 ---
 
 ## CHOICE 1 — How do you respond to Kain's welcome?
 
-*The room is watching. Not obviously — Jay is still on his phone, Finn is still by the window — but everyone is listening. This is the first impression. It will stick.*
+*The room is listening. Not obviously — Jay is still on his phone, Finn hasn't moved from the window — but the air has shifted. Everyone's waiting to see what you do with this.*
 
 ---
 
 **OPTION A:** Hold eye contact. Don't flinch.
-> *You look back at Kain and hold it. Steady. You don't smile, don't apologize, don't perform ease you don't have. You just look at him like you're not going anywhere.*
+> *You look at Kain and stay there. You don't apologize, don't explain, don't reach for a smile you don't have.*
 >
-> **YOU (internal):** *Three minutes late. Okay. File that.*
+> **YOU (internal):** *Three minutes. He counted. File that.*
 >
-> *A silence that stretches just long enough to be intentional.*
+> *The silence stretches — long enough that it stops being accidental.*
 >
-> **YOU:** "Understood. I won't be late again."
+> **YOU:** "Understood. It won't happen again."
 >
-> *Kain holds the eye contact a half-second longer than necessary. Then he turns back to the whiteboard.*
+> *Kain holds the eye contact one beat past where most people would let it go. Then he turns back to the whiteboard.*
 >
 > **KAIN:** "Good."
 >
-> *From the couch, without looking up:*
-> **JAY:** "..."
-> *(He almost says something. Decides not to.)*
+> *On the couch, Jay's thumb has gone still. He doesn't look up. Almost does.*
 >
 > `[+2 KAIN_TRUST] [+1 GROUP_REP]`
 
 ---
 
 **OPTION B:** Deflect with humor.
-> **YOU:** "Three minutes. I'll try to aim for two next time."
+> **YOU:** "Three minutes. I'll work on getting it down to two."
 >
-> *Theo makes a sound that is technically not a laugh.*
+> *From beside you, Theo makes a sound — somewhere between a laugh and a cough, like he caught himself.*
 >
-> *Kain does not make any sound.*
+> *Kain doesn't.*
 >
 > **KAIN:** "That's not — "
 >
-> **THEO:** *(already moving on)* "Okay! Great. Anyway —"
+> **THEO:** *(already pivoting)* "Okay! Great start. Anyway —"
 >
-> *Kain watches you for one more second. He's not offended. He's recalibrating.*
+> *Kain lets his eyes rest on you for one more second. He's not offended. He's just updating something.*
 >
 > `[+2 THEO_TRUST] [-1 KAIN_TRUST]`
 
 ---
 
 **OPTION C:** Say nothing. Just nod.
-> *You don't explain the three minutes. You don't apologize. You take in the room, take in Kain, and nod once. Deliberate.*
+> *You take in the room. You take in Kain. You nod once — deliberate, not a reflex.*
 >
-> *From the couch, almost imperceptibly, Jay raises his eyes from his phone.*
+> *On the couch, Jay's eyes lift from his phone. Just barely. Just enough.*
 >
-> *By the window, Finn's expression shifts — just slightly. Something that might be recognition.*
+> *By the window, Finn's expression shifts at the edges — like he recognized something.*
 >
-> *Kain's eyes stay on you for a long beat.*
+> *Kain holds your gaze for a long beat.*
 >
 > **KAIN:** "..."
 >
@@ -190,15 +186,15 @@
 ---
 
 **OPTION D:** Apologize for being late.
-> **YOU:** "I'm sorry — traffic was — I should have left earlier, I know, I'm sorry —"
+> **YOU:** "I'm sorry — the traffic was — I should have left earlier, I knew I should have, I'm sorry —"
 >
-> *Theo's smile gets slightly fixed. Encouraging but working for it.*
+> *Theo's smile holds its shape. It's working to.*
 >
-> *Kain looks at you.*
+> *Kain looks at you. He doesn't rush the silence.*
 >
 > **KAIN:** "It's three minutes."
 >
-> *He says it like you made it worse by explaining. Like the apology is more inconvenient than the lateness was.*
+> *Which somehow makes it worse.*
 >
 > **KAIN:** "Don't be late again."
 >
@@ -210,55 +206,55 @@
 
 ## SCENE 4 — JAY
 
-*Theo pulls you toward the kitchen — he's already talking about where things are, what's shared, what's Jay's and therefore don't touch it — when Jay speaks.*
+*Theo steers you toward the kitchen — already talking, cataloguing what's shared, what's labeled, what you don't touch — when Jay speaks.*
 
 *He doesn't move. Doesn't look up.*
 
 **JAY:**
 "Jay."
 
-*A pause.*
+*A beat.*
 
 **JAY:**
-"That's my name."
+"That's my name. In case nobody got to that part."
 
-*He goes back to his phone.*
+*Back to his phone.*
 
 **THEO:**
-*(quietly, to you)*
-"That's actually... a lot, for Jay. First day. He usually just nods."
+*(under his breath, to you)*
+"That's actually... a lot, for Jay. First day. Normally he just nods. You got words."
 
 ---
 
 ## SCENE 5 — FINN
 
-*You find Finn still by the window. He waited. He watches you approach without shifting his weight — just patient, still, like he's been here the whole time and the room arranged itself around him.*
+*Finn is still by the window. He watched you cross the room. Doesn't pretend otherwise — just stands there, book half-closed, patient in the way of someone who's good at waiting and knows it.*
 
 **FINN:**
 "Hi."
 
-*A short pause. He looks at you with the specific quality of someone actually looking — not at your outfit or your nerves or what you represent for the group's future, but at you, whatever that is.*
+*He looks at you. Not at what you're wearing or how nervous you are — at you, the actual thing. It lasts long enough to notice.*
 
 **FINN:**
 "I'm Finn."
 
-*Another pause.*
+*A pause.*
 
 **FINN:**
-"You don't have to pretend this isn't strange. It is strange."
+"You don't have to pretend this isn't strange. It is. Even for us — and we live here."
 
-*The faintest shift at the corner of his mouth. Not quite a smile. Something smaller.*
+*The corner of his mouth moves. Just barely. Disappears before it becomes anything.*
 
 **FINN:**
-"It gets less strange."
+"It gets less strange. I think around day four or five. You just stop noticing."
 
-*He offers his hand. His handshake is quieter than Theo's — present, not performed.*
+*He offers his hand. The grip is quieter than Theo's. Present, and then done.*
 
 ---
 
 ## SCENE 6 — THE TOUR
 
-*Theo gives the tour. It is comprehensive and slightly chaotic. He shows you the bathroom schedule ("we have a system"), the shared kitchen ("Kain's section of the fridge is labeled, don't let that intimidate you"), the practice space off the main room ("soundproofed, mostly"), and finally the hallway of bedrooms.*
+*Theo gives the tour. It is comprehensive and slightly chaotic. He shows you the bathroom schedule ("we have a system — it took three weeks to negotiate, please respect it"), the shared kitchen ("Kain's section of the fridge is labeled, don't let that intimidate you, it's just how he is"), the practice space off the main room ("soundproofed, mostly, enough that the neighbors stopped filing complaints"), and finally the hallway of bedrooms.*
 
 **THEO:**
 "So — yours is the last one on the right. It was Jay's old room before he moved."
@@ -266,7 +262,7 @@
 *A beat.*
 
 **THEO:**
-"He moved voluntarily. I want to be clear about that. It wasn't, like, a vote."
+"He moved voluntarily. I want to be very clear about that. It wasn't a vote."
 
 *From somewhere down the hall:*
 
@@ -274,12 +270,12 @@
 "It was a vote."
 
 **THEO:**
-"It was a conversation."
+"It was a group conversation."
 
 **JAY:**
-"It was a vote."
+"With a show of hands."
 
-*Theo gives you a look that says: this is every day.*
+*Theo gives you a look. This is every day.*
 
 ---
 
@@ -287,14 +283,14 @@
 
 *Your room.*
 
-*It's small. One window facing the side street, not the main road. A bed that's been made up fresh — you can tell someone did it recently, the pillow is still slightly crooked. A desk. A mirror. Empty shelf.*
+*Small. One window onto the side street — not the main road, not the view. The bed's been made up fresh; the pillow is still slightly crooked, like someone did it quickly and didn't go back. A desk. A mirror. A shelf with nothing on it yet.*
 
 *Theo leans in the doorway.*
 
 **THEO:**
-"It's not much. But it's yours now. We can — like, if you want to put stuff up, get stuff for the walls, whatever — that's allowed. Kain has a whole thing about keeping common spaces clear but the bedrooms are yours."
+"It's not much. But — like, if you want to put stuff up, the walls are yours. Kain has strong feelings about the common spaces but the rooms are yours, he's actually pretty clear about that."
 
-*He watches you stand in the middle of the empty room.*
+*He watches you stand in the middle of it.*
 
 **THEO:**
 "Hey."
@@ -302,14 +298,14 @@
 *You look at him.*
 
 **THEO:**
-"I know this is a lot. Today specifically. First days are always — there's a lot of information and everyone's watching and it's a lot."
+"I know today is a lot. There's a lot of information and everyone's watching and you haven't even unpacked and it's already been — a lot. I get it."
 
 *He's not performing easy anymore. He's just saying it.*
 
 **THEO:**
-"But you're here. That means something. They chose you."
+"But you're here. That's not nothing. They chose you out of — I don't even know how many people, and they chose you. So."
 
-*He pauses.*
+*He pauses, like he's deciding whether to finish the sentence.*
 
 **THEO:**
 "I'm glad they did."
@@ -322,14 +318,14 @@
 
 *Later. Dinner happens — takeout, at the low table. Nobody formally announces it, people just migrate. You sit where there's space.*
 
-*Kain sits at the end of the table and doesn't eat until he's done reviewing something on his tablet. Theo talks enough for everyone. Jay says maybe six words but accepts more food when Finn puts it in front of him without being asked. Finn eats slowly and watches the room in the specific way of someone taking notes.*
+*Kain sits at the end and doesn't eat until he's done reviewing something on his tablet. Theo talks enough for everyone. Jay says maybe six words but accepts more food when Finn puts it in front of him without being asked. Finn eats slowly and watches the room like he's keeping track of something.*
 
 *At some point the conversation — Theo's conversation, that everyone else is passengers in — lands on you.*
 
 **THEO:**
-"Okay but what's your — like, what do you actually want out of this? Not the PR answer. The real one."
+"Okay but — what do you actually want out of this? And I don't mean the audition answer, I mean the real one. The one you think about when you can't sleep."
 
-*The table gets slightly quieter. Even Kain's tablet dims.*
+*The table gets quieter. Even Kain's tablet dims.*
 
 ---
 
@@ -340,15 +336,15 @@
 ---
 
 **OPTION A:** Be honest. The real answer.
-> *You set down whatever you're holding.*
+> *You set down your chopsticks.*
 >
-> **YOU:** "I want to make something that lasts. Not — not just a moment or a cycle. I want to look back and know the work was real."
+> **YOU:** "I want to make something that actually lasts. Not just one good cycle and then — I want to look back at it and know it was real. That it meant something while it was happening."
 >
 > *A beat.*
 >
-> **THEO:** "Yeah. Yeah, okay. That's —"
+> **THEO:** "Yeah. Yeah — okay. That's the one."
 >
-> *He looks genuinely pleased, like you passed something without knowing there was a test.*
+> *He says it like you confirmed something he'd suspected. Like he's quietly relieved.*
 >
 > *Across the table, Finn is looking at you. When you catch his eye, he doesn't look away.*
 >
@@ -357,28 +353,28 @@
 ---
 
 **OPTION B:** Deflect — ask what they want.
-> **YOU:** "I'll tell you mine if you tell me yours."
+> **YOU:** "Tell me yours first and I'll tell you mine."
 >
-> *Theo lights up.*
+> *Theo's whole face changes.*
 >
-> **THEO:** "Okay, yes, finally, someone who does conversation right —"
+> **THEO:** "Okay — yes. Finally. Someone who knows how conversation works —"
 >
-> *Jay makes a quiet sound. It might be amusement.*
+> *From the end of the couch, Jay makes a quiet sound. Short. It might be amusement.*
 >
-> *Kain watches you from the end of the table.*
+> *At the end of the table, Kain is watching you. He hasn't looked away since you spoke.*
 >
 > `[+2 THEO_TRUST] [+1 JAY_TRUST] [+1 KAIN_TRUST]`
 
 ---
 
 **OPTION C:** Give the honest-but-short version.
-> **YOU:** "I just want to be good. Good enough that it means something."
+> **YOU:** "I just want to be good. Good enough that it actually means something."
 >
-> *A short silence.*
+> *A silence settles over the table.*
 >
-> **JAY:** *(without looking up)* "..."
+> **JAY:** *(not quite looking up)* "..."
 >
-> *He picks his phone back up. But the screen stays dark.*
+> *He picks up his phone. The screen stays dark in his hand.*
 >
 > `[+1 all members]`
 
@@ -388,29 +384,27 @@
 
 *You're the last one still up. You thought you were alone — but Kain is still at the table, now with coffee, now without the tablet. He looks up when you come back for water.*
 
-*He doesn't say anything at first.*
+*He doesn't say anything at first. Just waits, the way he seems to do everything — like he's already decided and he's letting you catch up.*
 
 **KAIN:**
 "You're settling in."
 
-*Not warmly. Not coldly. Just as information.*
-
-**YOU:** *(internal)* *Is he asking?*
+**YOU:** *(internal)* *Is that a question?*
 
 **KAIN:**
-"The first week is the hardest. After that it's just work."
+"The first week is the hardest. After that it becomes routine. Routine is manageable."
 
-*He turns his coffee cup once.*
-
-**KAIN:**
-"I'm not easy to work with. The others are — adjustable. I'm not."
-
-*He says it like he's disclosing a term of service. Not an apology.*
+*He turns his coffee cup once on the table.*
 
 **KAIN:**
-"But I'm fair. Everything I ask from you, I ask from myself first."
+"I should tell you — I'm not easy to work with. Theo will tell you I'm impossible, but that's not accurate. The others adjust. I don't, particularly. That's just how it is."
 
-*He holds the eye contact for exactly one second.*
+*He holds the eye contact for a moment.*
+
+**KAIN:**
+"But I'm fair. Whatever I ask from you, I'm already asking from myself. You'll see that."
+
+*A pause.*
 
 **KAIN:**
 "We'll see."
@@ -422,13 +416,15 @@
 **NARRATION:**
 > *We'll see.*
 >
-> You pour your water. The dorm is quiet now — the sound of four people sleeping in their separate rooms, in the space that just became five people's.
+> You pour your water. The dorm is quiet now — weight and breath behind four closed doors, in the space that just became five people's.
 >
 > You go to bed.
 >
-> You don't sleep for a while.
+> You lie there for a while, staring at the ceiling of a room that still smells like someone else's things.
 >
-> But eventually, you do.
+> The pillow is still slightly crooked.
+>
+> At some point, it becomes morning.
 
 ---
 
