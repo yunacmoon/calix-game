@@ -177,7 +177,7 @@
 
 *The kitchen light hums. Outside, the city is down to its nighttime register.*
 
-*At some point you're both leaning on the island — not intentionally, just the natural lean of a long 3am conversation — and you notice the distance across the counter is less than it was an hour ago.*
+*At some point you're both leaning on the island, the kitchen light steady above you.*
 
 **JAY:**
 "I haven't talked this much in a while."

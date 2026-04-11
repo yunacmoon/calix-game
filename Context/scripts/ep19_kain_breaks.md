@@ -83,7 +83,7 @@
 **OPTION A:** Sit down next to him. Don't say anything.
 > *You sit down.*
 >
-> *On the floor, beside him, back against the mirror. Close enough that your shoulder is near his.*
+> *On the floor, beside him, back against the mirror.*
 >
 > *You don't speak.*
 >
@@ -98,8 +98,6 @@
 > *He doesn't say anything.*
 >
 > *But his head drops very slightly. The kind of drop that happens when something releases.*
->
-> *He doesn't move away from the proximity.*
 >
 > `[+5 KAIN_TRUST]`
 

@@ -200,7 +200,7 @@
 
 *He pauses at the hallway.*
 
-*There's a moment where he's about to say something else, and you both know it. He looks at you across the room — the low light, the ambient track, the way the dorm gets when everyone's finally down.*
+*He looks at you across the room — the low light, the ambient track, the way the dorm gets when everyone's finally down.*
 
 *He doesn't say it.*
 

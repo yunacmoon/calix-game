@@ -162,7 +162,7 @@
 >
 > *The earring is the continuation of the same sentence.*
 >
-> *You're still standing at the mirror when you realize you've been there for three minutes.*
+> *You look at it in the mirror for a while before you go.*
 
 ---
 

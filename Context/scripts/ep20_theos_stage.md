@@ -179,8 +179,6 @@
 
 *He ties it on carefully, the way you'd tie something you've worn so long you know exactly how it goes. His thumbs press the knot flat.*
 
-*He doesn't let go right away.*
-
 **THEO:**
 "I got this at my first professional audition. I was seventeen."
 
@@ -189,7 +187,7 @@
 **THEO:**
 "I've never taken it off except for stages — I don't wear it on stage, I don't know why, it just always felt like the pre-stage thing. The thing I had before I went on."
 
-*He finally lets go.*
+*He lets go.*
 
 **THEO:**
 "I want you to have it."
