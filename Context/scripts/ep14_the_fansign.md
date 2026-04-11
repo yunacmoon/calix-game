@@ -19,22 +19,22 @@
 
 *Kain briefed you this morning: maintain eye contact, use their name if you can get it, don't make promises you can't keep, security handles anything that escalates.*
 
-*He said it like a checklist.*
+*He said it like a checklist. He has the same checklist for himself — he just runs it from memory.*
 
-*Theo said afterward: just be real. They can tell.*
+*Theo said afterward, on the way out of the briefing: just be real. They can tell.*
 
 ---
 
 ## SCENE 1 — THE TABLE
 
-*Five chairs. Five stations. Sharpies, standee signs, the specific setup that CALIX fans will recognize from two years of events — except now there are five chairs, not four.*
+*Five chairs. Five stations. Sharpies, standee signs, the setup that CALIX fans have seen from two years of events — except now there are five chairs, not four.*
 
 *The line outside is several hundred people long.*
 
 *Theo leans over:*
 
 **THEO:**
-"Okay. Tips. People will say things that feel very big — declarations, things they've been saving up. Receive it. Don't minimize it. But don't drown in it either. You have three minutes per person and there's a real person in every one of those minutes."
+"Tips. People will say things that feel very big — declarations, things they've been saving up for months. Receive it. Don't minimize it, don't wave it off. But don't drown in it either. You have about three minutes per person and there's a real person in every one of those minutes."
 
 *Jay, beside you:*
 
@@ -42,12 +42,12 @@
 "Don't make promises."
 
 **THEO:**
-"What he said."
+"What he said. That's the main one."
 
-*Finn, on your other side, quietly:*
+*Finn, on your other side:*
 
 **FINN:**
-"Some of them have been in line for hours. Remember that."
+"Some of them have been in line since early this morning. Just — remember that."
 
 ---
 
@@ -55,15 +55,21 @@
 
 *The event starts.*
 
-*Person one through twenty are a blur — names, expressions, things held out for signing, questions asked in the specific breathless way of someone who's been rehearsing. You learn quickly: some people need thirty seconds of calm, some people have one specific thing to say and will say it whether you give space for it or not, some people just want to be looked at and known they were there.*
+*People come in waves. Names, expressions, things held out for signing, questions asked in the specific breathless way of someone who's been rehearsing in line for two hours. You learn fast: some people need thirty seconds of calm first, some have one specific thing to say and will say it regardless of whether you give space for it, some just want to be looked at and know they were here.*
 
-*You watch Kain across the table — he's efficient and exact, but he makes real eye contact. Every person. That's the thing nobody told you: Kain takes every person for real.*
+*You watch Kain across the table — efficient, exact, but he makes real eye contact. Every single person. Full stop. Nobody told you to expect that from him and you notice it across the table: Kain takes every person for real.*
 
-*Theo is going to have hoarse-voice tomorrow. He's too enthusiastic. He can't help it.*
+*At one point he looks up from signing, across the table, and catches you watching him.*
 
-*Jay signs and asks names and says things that are short and specific, and somehow it lands completely.*
+*He holds it for one second.*
 
-*Finn — you look over at Finn and he's mid-conversation with someone, the kind of full-attention listening he does, and the fan across from him looks like they might float away.*
+*Then he goes back to the person in front of him.*
+
+*Theo is going to have a hoarse voice tomorrow. He can't help it — he's too in it.*
+
+*Jay signs, asks names, says things that are short and specific, and somehow it lands completely every time.*
+
+*Finn — you look over at Finn and he's mid-conversation with someone, that full-attention listening he does, and the fan across from him looks like they might float.*
 
 ---
 
@@ -71,11 +77,11 @@
 
 *Two thirds of the way through, someone sits across from you.*
 
-*They're holding a letter — folded, sealed, with your name on it in careful handwriting.*
+*They're holding a letter — folded, sealed, your name on it in careful handwriting.*
 
 *And a small wrapped gift.*
 
-*And they're crying a little. Not loudly. Just — the eyes.*
+*And they're crying a little. Not loudly. Just the eyes.*
 
 **FAN:**
 "I — sorry. I practiced this."
@@ -93,7 +99,7 @@
 *And the wrapped gift.*
 
 **FAN:**
-"I didn't know what you'd like. I just — I picked something I hoped."
+"I didn't know what you'd like. I just picked something I hoped."
 
 ---
 
@@ -102,9 +108,9 @@
 ---
 
 **OPTION A:** Hold eye contact. Read the first line of the letter to them.
-> *You break the seal. You read the first line — just the first — quietly, to yourself. Then:*
+> *You break the seal. You read the first line quietly, to yourself. Then:*
 >
-> **YOU:** *(to them)* "Can I read you this part?"
+> **YOU:** "Can I read you this part?"
 >
 > *They nod, surprised.*
 >
@@ -112,13 +118,13 @@
 >
 > *A pause.*
 >
-> **YOU:** "That's true. I felt that way about being here."
+> **YOU:** "That's true. That's how it felt to be here."
 >
 > *The fan looks like they've been given something back.*
 >
 > **YOU:** "Thank you for this."
 >
-> *Next to you, Finn has gone slightly still. He's listening.*
+> *To your left, Finn has gone slightly still. He's listening.*
 >
 > `[+3 GROUP_REP] [+2 FINN_TRUST]`
 
@@ -129,9 +135,9 @@
 >
 > *You hold the letter.*
 >
-> **YOU:** "Thank you for taking the time."
+> **YOU:** "Thank you for taking the time to write it. And for waiting in that line."
 >
-> *Simple. True. The fan exhales like they've been holding their breath for a while.*
+> *Simple. True. The fan exhales — the slow kind, like they've been holding it for a while.*
 >
 > `[+2 GROUP_REP]`
 
@@ -142,7 +148,7 @@
 >
 > *They tell you.*
 >
-> **YOU:** *[their name].* "I'm going to remember that. And this letter."
+> **YOU:** *[their name].* "I'm going to remember that. And I'm going to read this letter tonight."
 >
 > *You hold eye contact for three full seconds — not a performance, just presence.*
 >
@@ -155,21 +161,21 @@
 ---
 
 **OPTION D:** Panic slightly. Theo covers for you.
-> *The situation — the letter, the crying, the gift — is more than you're prepared for and your face shows it.*
+> *The letter, the crying, the gift — it's more than you're prepared for and it shows in your face.*
 >
 > *Theo, from beside you:*
 >
-> **THEO:** *(leaning over, warm, covering)* "Hey — this person made you something really special."
+> **THEO:** *(leaning over, warm, redirecting)* "Hey — this person brought you something really special. Look at this."
 >
-> *He smiles at the fan, gives you half a second to recover.*
+> *He smiles at the fan, gives you half a second.*
 >
 > *You find your footing.*
 >
 > **YOU:** "Thank you. Really."
 >
-> *After they leave, Theo, quietly:*
+> *After they move on, Theo, barely audible:*
 >
-> **THEO:** "You're okay. It's a lot. You're okay."
+> **THEO:** "You're okay. It's a lot the first time. You're okay."
 >
 > `[+2 THEO_TRUST]`
 
@@ -181,18 +187,18 @@
 
 *You open the small wrapped package.*
 
-*A bottle of perfume — small, glass, with a handwritten label on the bottom: "something for a new beginning."*
+*A bottle of perfume — small, glass, a handwritten label on the bottom: "something for a new beginning."*
 
 *You open the cap.*
 
-*It smells like — something specific. Clean but warm.*
+*Something clean but warm. The kind of scent that doesn't announce itself.*
 
 **NARRATION:**
-> *A stranger picked this for you. Spent time in a store, probably, weighing options, trying to decide what you'd like.*
+> *A stranger picked this for you. Stood in a store, probably, holding different bottles, trying to decide what you'd like.*
 >
-> *You don't know this person's name. You know they were in line for hours. You know they cried a little. You know they believed in you before you'd given them a reason to.*
+> *You don't know their name. You know they were in line for hours. You know they cried a little. You know they believed in you before you'd given them a reason.*
 >
-> *That's the weight of this job. That's the part nobody tells you about.*
+> *That's the weight of this job. The part nobody tells you in the briefing.*
 >
 > *You put the perfume in your bag.*
 >
@@ -206,3 +212,7 @@
 **Type:** Fan gift — perfume
 
 **Unlocks:** Episode 15 — "Jay at 3am"
+
+---
+
+*Next: ep15_jay_at_3am.md*

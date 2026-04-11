@@ -13,9 +13,9 @@
 
 *You're not eavesdropping.*
 
-*You were walking to the kitchen, and Kain's door was open the way doors are open when someone is in their room and the building is warm and they've left it ajar for air, and you hear his voice.*
+*You were walking to the kitchen, and Kain's door was open the way it gets when the building is warm and you want air, and you hear his voice.*
 
-*Not dramatic. A logistics call — schedule, timing, something about a venue.*
+*A logistics call — schedule, timing, something about a venue.*
 
 *But then:*
 
@@ -32,7 +32,7 @@
 **KAIN:**
 "They're good. I said what I said."
 
-*He says it the way Kain says things he means — quietly, without decoration.*
+*He says it the way he says things he means — quietly, with no decoration.*
 
 *And then, quieter:*
 
@@ -45,24 +45,24 @@
 
 *The door is still open.*
 
-*He steps out and finds you there.*
+*He steps out.*
 
 ---
 
 ## SCENE 1 — THE CONFRONTATION
 
-*Kain looks at you.*
+*He sees you immediately.*
 
-*He knows immediately — he can read the situation in your posture, in the fact that you're standing in the hallway with nowhere to be.*
+*He knows — he reads the situation from your position in the hallway, the fact that you're standing there with nowhere to be.*
 
 *He knows you heard.*
 
-*He doesn't apologize for it. He doesn't perform embarrassment.*
+*He doesn't apologize for it. He doesn't perform embarrassment. He holds the doorframe and looks at you.*
 
 **KAIN:**
 "What."
 
-*One word. Flat. Not angry — just: here we are, proceed.*
+*One word. Not angry. Just: here we are, proceed.*
 
 ---
 
@@ -75,9 +75,7 @@
 >
 > *You start to move.*
 >
-> *Kain says nothing.*
->
-> *But he steps back — not to block you, just to give you room to pass — and the gesture is deliberate in a way that says: I'm letting you have this exit. I could say something. I'm choosing not to.*
+> *Kain steps back — not to block you, just to give you room — and the gesture is deliberate. I could say something. I'm choosing not to.*
 >
 > *You pass him.*
 >
@@ -89,26 +87,26 @@
 
 ---
 
-**OPTION B:** Tell him what you heard and what it meant to you.
+**OPTION B:** Tell him what you heard and what it meant.
 > *You don't move.*
 >
-> **YOU:** "I heard what you said. About me making the group better."
+> **YOU:** "I heard what you said. About the group being better."
 >
 > *A silence.*
 >
-> **YOU:** "I've been working to earn that for months. And I didn't know if I had. So."
+> **YOU:** "I've been working to earn that for months. I didn't know if I had."
 >
 > *You hold his gaze.*
 >
-> **YOU:** "Thank you."
+> **YOU:** "So. Thank you."
 >
 > *Kain is very still.*
 >
-> *A long beat.*
+> *A long beat passes.*
 >
 > **KAIN:** "..."
 >
-> *He nods. Once. The way he does things he means without knowing how to say them.*
+> *He nods once.*
 >
 > **KAIN:** "Don't thank me for facts."
 >
@@ -119,17 +117,15 @@
 ---
 
 **OPTION C:** *"Is that what you actually think?"*
-> **YOU:** "Is that what you actually think? About me."
+> **YOU:** "Is that what you actually think. About me."
 >
 > *Kain looks at you.*
 >
-> **KAIN:** "..."
->
-> *He doesn't deny it. He doesn't qualify it.*
+> *A beat.*
 >
 > **KAIN:** "I said what I said."
 >
-> *He uses the same phrase from the phone call. Deliberate.*
+> *The same phrase from the call. Deliberate.*
 >
 > *He holds your gaze for one more second.*
 >
@@ -137,7 +133,7 @@
 >
 > *He closes his door.*
 >
-> *Not all the way. Leaves the gap.*
+> *Not all the way.*
 >
 > `[+3 KAIN_TRUST]`
 
@@ -147,22 +143,26 @@
 
 *The next morning.*
 
-*On your desk: a small item. Silver, small, bar-stud earring — simple, modern. One. Not a pair.*
+*On your desk: a small item. A silver bar-stud earring — simple, modern. One. Not a pair.*
 
 *No note.*
 
-*You pick it up.*
+*You pick it up and hold it.*
 
-*You've seen Kain wear this. The left ear, third piercing. He's had it since before CALIX — you can see it in old photos.*
+*You've seen this on Kain. Left ear, third piercing. He's had it since before CALIX — it shows up in the old photos, worn into photos from years ago, the same piece through every era.*
+
+*You put it in.*
+
+*You look in the mirror.*
+
+*It's small. It doesn't announce itself. It just sits there, the way things Kain gives always sit there — quiet, specific, permanent if you let it be.*
 
 **NARRATION:**
-> *There is no note because Kain doesn't write notes about things he's already said.*
+> *He said it on the phone, in the hallway, in the nod or the door left open an inch.*
 >
-> *He said it on the phone, in the hallway, in the single nod or the closed-but-not-closed door.*
+> *The earring is the continuation of the same sentence.*
 >
-> *The earring is the continuation of that sentence.*
->
-> *You put it on.*
+> *You're still standing at the mirror when you realize you've been there for three minutes.*
 
 ---
 
@@ -172,3 +172,7 @@
 **Type:** Accessory — earring
 
 **Unlocks:** Episode 17 — "Rehearsal Day"
+
+---
+
+*Next: ep17_rehearsal_day.md*

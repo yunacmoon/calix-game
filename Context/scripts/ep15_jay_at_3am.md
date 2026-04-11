@@ -15,7 +15,7 @@
 
 *The kitchen light is on.*
 
-*Jay is at the island, bowl of cereal, phone face-down, something on the counter that you can't see from the hallway. He's not doing anything except eating cereal and existing.*
+*Jay is at the island, bowl of cereal, phone face-down. He's not doing anything except eating and existing. He has the kitchen to himself and he looks like someone who's used to that.*
 
 *You came for water.*
 
@@ -24,9 +24,9 @@
 **JAY:**
 "Fridge."
 
-*He says it because he heard you hesitate at the door, figured out why.*
+*He heard you hesitate at the door.*
 
-*You get your water. You could leave. There's a clear exit.*
+*You get your water. There's a clear exit. The hallway is right there.*
 
 *You sit at the other end of the island.*
 
@@ -40,27 +40,24 @@
 
 ## SCENE 1 — THE QUESTION
 
-*It happens without warning:*
+*Without any lead-up:*
 
 **JAY:**
 "Do you think about what happens if this doesn't work."
 
 *He's looking at his bowl.*
 
-*He says it the way he says most things — flat, specific, not performing the question.*
+*He says it the way he says most things — flat, specific, no performance in the question itself.*
 
 **JAY:**
-"Like — not us specifically. Just the whole thing. The path."
+"Not us specifically. Just — the whole path. The direction."
 
 *He eats another spoonful.*
 
 **JAY:**
-"Sometimes I do."
+"Sometimes I do. Tonight's one of those nights."
 
-*He doesn't look up.*
-
-**JAY:**
-"Tonight's one of those nights."
+*He still doesn't look up.*
 
 ---
 
@@ -114,11 +111,11 @@
 >
 > *He nods.*
 >
-> **JAY:** "I can't do that. Things just get in."
+> **JAY:** "I can't do that. Things just get in. I don't know how to stop them."
 >
 > *He looks at his bowl.*
 >
-> **JAY:** "I think that's why I write."
+> **JAY:** "I think that's why I write. So they have somewhere to go."
 >
 > `[+2 JAY_TRUST]`
 
@@ -129,23 +126,21 @@
 >
 > *Jay is quiet for a long time.*
 >
-> **JAY:** "..."
+> *He sets his spoon down.*
 >
-> *He sets down his spoon.*
->
-> **JAY:** "I'd still write. That part doesn't — that's not contingent on anything. I'd write whether anyone heard it or not."
+> **JAY:** "I'd still write. That part isn't contingent on anything external. I'd write whether anyone heard it or not."
 >
 > *He looks at the counter.*
 >
-> **JAY:** "But CALIX — this specific thing — I don't know. I think I'd miss it more than I let myself know right now."
+> **JAY:** "But CALIX — this specific thing — I think I'd miss it more than I let myself know right now."
 >
 > *A beat.*
 >
-> **JAY:** "I don't think about that part usually."
+> **JAY:** "I don't usually think about that part."
 >
 > **YOU:** "Why not?"
 >
-> **JAY:** "Because it makes it harder to hold on to."
+> **JAY:** "Because it makes it harder to hold on to. If I know what I'd lose, I have to hold it more carefully. And I'm not good at careful."
 >
 > `[+3 JAY_TRUST]`
 
@@ -156,7 +151,7 @@
 >
 > *Jay looks at you.*
 >
-> *Something in his expression — not disbelief, not exactly. More like: you don't know that.*
+> *You don't know that. He doesn't say it. But it's there in the three seconds he looks at you.*
 >
 > **JAY:** "..."
 >
@@ -166,7 +161,7 @@
 >
 > *He goes back to his cereal.*
 >
-> *But the set of his shoulders is slightly different.*
+> *The set of his shoulders is slightly different.*
 >
 > `[+1 JAY_TRUST]`
 
@@ -174,11 +169,15 @@
 
 ## SCENE 2 — THE REST OF IT
 
-*The conversation goes longer than either of them planned.*
+*The conversation goes longer than either of them meant it to.*
 
-*Jay talks about LA. About the specific way being from there and being here makes you feel like you're from nowhere, the gap between the two places too wide to bridge cleanly. About his family — not in detail, but enough. About why he doesn't let people see the notebook until things are finished: because unfinished things feel like wounds that need to close before you show anyone.*
+*Jay talks about LA. The specific way being from there and being here puts you between two places and neither of them is quite home anymore. He talks about his family — not in detail, just enough to know the shape of it. He talks about why he keeps the notebook until things are finished: because unfinished things feel like something raw that needs to close before you show anyone.*
 
-*You don't fill the silences. You've learned that with Jay, the silence is where things happen.*
+*You don't fill the silences. You've learned — in the studio, in the hallway — that Jay's silences are not empty. They're where things finish forming.*
+
+*The kitchen light hums. Outside, the city is down to its nighttime register.*
+
+*At some point you're both leaning on the island — not intentionally, just the natural lean of a long 3am conversation — and you notice the distance across the counter is less than it was an hour ago.*
 
 **JAY:**
 "I haven't talked this much in a while."
@@ -191,12 +190,12 @@
 
 *He stands. Rinses his bowl.*
 
-*He picks up the bag of chips that was on the counter — the thing you couldn't see — and holds it in your direction without looking.*
+*He picks up the bag of chips that was on the counter — you didn't even notice it was there — and holds it out in your direction without looking.*
 
 **JAY:**
 "Take these."
 
-*He's already walking toward the hallway.*
+*He's already moving toward the hall.*
 
 **JAY:**
 "Goodnight."
@@ -211,3 +210,7 @@
 **Type:** Snack — from member
 
 **Unlocks:** Episode 16 — "Kain's Version"
+
+---
+
+*Next: ep16_kains_version.md*

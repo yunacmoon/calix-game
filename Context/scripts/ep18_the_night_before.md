@@ -31,31 +31,31 @@
 **KAIN:**
 "..."
 
-*He looks back at his pad. Not dismissing you — just: you're allowed to be here.*
+*He goes back to his pad. Not dismissing you — just: you're allowed to be here.*
 
-*Theo arrives ten minutes later in socks and a too-big sweatshirt.*
+*Theo arrives ten minutes later in socks and a too-big sweatshirt, still warm from bed.*
 
 **THEO:**
-"Oh thank god other people are awake. I thought I was the only one."
+"Oh thank god. Other people are awake. I thought I was the only one and I was about to spiral."
 
 *He drops onto the couch.*
 
 **THEO:**
-"My brain won't stop. It keeps running the setlist."
+"My brain keeps running the setlist on a loop. I know the setlist. I'd like it to stop now."
 
 **KAIN:**
-"That's the point."
+"That's the point of it."
 
 **THEO:**
-"Yeah but I know the setlist. I want it to stop."
+"Yeah but I'd like to sleep at some point before tomorrow."
 
-*Jay appears from his room — he never changed out of his clothes, he just went to lie down and failed to sleep. He doesn't explain this. He gets water.*
+*Jay appears from his room — he never changed out of his clothes. He doesn't explain this. He gets water and comes back.*
 
-*Finn is last. He comes in with his phone, checks it, sets it face-down, and sits.*
+*Finn is last. He comes in with his phone, checks it once, sets it face-down, and sits.*
 
 *Five people in the common room.*
 
-*For the first time, it's not a practice session or a van ride or a performance. It's just five people who can't sleep the night before something big.*
+*For the first time, there's no agenda. No practice session, no van ride, no performance. Just five people who can't sleep the night before something big, and the specific quiet of people who all know why.*
 
 ---
 
@@ -67,9 +67,9 @@
 
 *It fills the room without demanding anything.*
 
-*Kain keeps writing. Theo stretches, slowly, carefully. Jay sits at the other end of the couch with his water. Finn folds his legs under him in the chair.*
+*Kain keeps writing. Theo stretches, slowly, carefully, working around his knee. Jay sits at the far end of the couch with his water. Finn folds his legs under him in the chair.*
 
-*You're somewhere in the middle.*
+*You're somewhere in the middle of all of it.*
 
 ---
 
@@ -84,9 +84,9 @@
 >
 > *You just stay.*
 >
-> *And the room — this room that's been full of work and noise and argument and practice for months — becomes something else. Not quiet exactly. Just settled.*
+> *The room — this room that's been full of work and noise and argument and practice for months — becomes something else. Not quiet exactly. Just settled. The music underneath everything.*
 >
-> *Theo looks at you at some point and gives you a small nod. Like: yes. This is it. This is the thing.*
+> *Theo looks at you at some point and gives you a small nod. Like: yes. This is it. This is what the whole thing is for.*
 >
 > `[+1 all members] [+2 GROUP_REP]`
 
@@ -95,9 +95,9 @@
 **OPTION B:** Get up and make something for everyone.
 > *You go to the kitchen.*
 >
-> *Theo, from the couch:* "Oh — are you making something? Is there tea? Can there be tea?"
+> **THEO:** *(from the couch)* "Oh — are you making something? Is there tea? Can there be tea, please?"
 >
-> *You make tea. It takes ten minutes. You bring it out on whatever's available — mismatched mugs, two of them Theo's, one Finn's that he never bothers to reclaim.*
+> *You make tea. Ten minutes. You bring it out on whatever's available — mismatched mugs, two of them Theo's, one Finn's that never got returned.*
 >
 > *Nobody thanks you out loud.*
 >
@@ -114,7 +114,7 @@
 >
 > *Theo looks over.*
 >
-> **YOU:** "All of us. Like this. I didn't think it would feel like — this."
+> **YOU:** "All of us. Like this. Together. I didn't think it would feel like — this."
 >
 > *A pause.*
 >
@@ -128,7 +128,7 @@
 >
 > **KAIN:** "It took time."
 >
-> *He says it like a fact. But there's something in the way he says it.*
+> *He says it like a fact. But there's something underneath the fact.*
 >
 > `[+2 KAIN_TRUST]`
 
@@ -137,7 +137,7 @@
 **OPTION D:** Catch Jay's eye. He gives you a small nod.
 > *You look at Jay across the room.*
 >
-> *He's looking at you already.*
+> *He's already looking at you.*
 >
 > *He gives you a single, small nod.*
 >
@@ -147,7 +147,7 @@
 >
 > *Theo, who sees everything:*
 >
-> **THEO:** *(very quietly, to nobody)* "God, you two are the same person."
+> **THEO:** *(very quietly, to nobody in particular)* "God, you two are the same person."
 >
 > **JAY:** "We're not."
 >
@@ -167,11 +167,13 @@
 
 *People drift, eventually.*
 
-*Theo falls asleep on the couch and nobody wakes him. Finn goes to bed quietly. Jay disappears.*
+*Theo falls asleep on the couch. Nobody wakes him. Finn goes to bed quietly. Jay disappears.*
 
 *It's just you and Kain.*
 
-*He has the legal pad closed now. He's looking at the table.*
+*He has the legal pad closed. He's looking at the table — not at anything on it, just at the wood grain, like he's thinking something he hasn't found the words for yet.*
+
+*The ambient music is still on.*
 
 **KAIN:**
 "Tomorrow."
@@ -179,20 +181,28 @@
 **YOU:**
 "Tomorrow."
 
+*A beat.*
+
 **KAIN:**
 "You're ready."
 
-*He says it the way he says things he's certain of — flat, no decoration.*
+*He says it the way he says things he's certain of — flat, without decoration, meaning every syllable.*
 
 **KAIN:**
-"Whatever happens after the first song — you'll find it. You always do."
+"Whatever happens after the first song — after the first eight bars — you'll find it. You always do."
 
-*A pause.*
+*Another pause. The music goes on underneath everything.*
 
 **KAIN:**
-"Don't think about it. Just be there."
+"Don't think about it tonight. Just be there tomorrow."
 
 *He stands. Takes his legal pad.*
+
+*He pauses at the hallway.*
+
+*There's a moment where he's about to say something else, and you both know it. He looks at you across the room — the low light, the ambient track, the way the dorm gets when everyone's finally down.*
+
+*He doesn't say it.*
 
 **KAIN:**
 "Sleep."
@@ -200,13 +210,13 @@
 *He goes.*
 
 **NARRATION:**
-> *The common room is empty now, with the low music still going.*
+> *The common room is empty now, with the low music still running.*
 >
 > *"Don't think about it. Just be there."*
 >
-> *That's the best performance advice you've ever received.*
+> *You sit for another minute in the thing he left behind.*
 >
-> *You go to sleep.*
+> *Then you go to sleep.*
 
 ---
 
@@ -216,3 +226,7 @@
 
 **ACT 2 COMPLETE.**
 **Unlocks:** Episode 19 — "Kain Breaks" *(Act 3 begins)*
+
+---
+
+*Next: ep19_kain_breaks.md*

@@ -13,11 +13,11 @@
 
 *Theo texts at 9:45am: come to the venue. just you.*
 
-*No explanation. You've learned not to expect one from Theo when he's in this mode — the quiet, specific mode that means something real is happening.*
+*No explanation. You've learned not to expect one from Theo when he's in this mode — the quiet, specific mode that means something real is happening and he's not going to name it in advance.*
 
 *The arena is empty.*
 
-*Rigging up, lighting on, soundcheck configuration still in place from last night's show. But no crew. No cameras. Just the space.*
+*Rigging up, lighting on, soundcheck configuration still in place from last night's show. No crew. No cameras. Just the space.*
 
 *And Theo, standing at center stage.*
 
@@ -31,12 +31,12 @@
 *He says it looking at the empty seats.*
 
 **THEO:**
-"Not for anyone. Not for the cameras. Just — here."
+"Not for anyone. Not for the cameras or the review. Just — here. In this room."
 
 *He looks at you.*
 
 **THEO:**
-"I wanted someone to watch. Not to give feedback. Just — to see."
+"I wanted someone to watch. Not to give notes. Just to see."
 
 *He holds your gaze.*
 
@@ -47,13 +47,13 @@
 
 *You take a seat in the front row.*
 
-*The arena is huge around you. Four thousand seats, all empty.*
+*The arena is enormous around you. Four thousand seats, all empty, the ceiling rigging running up into dark.*
 
 *Theo walks to his mark.*
 
 *He breathes once.*
 
-*The track starts — he has a speaker, small, he brought it himself.*
+*The track starts — the speaker he brought himself, small, set on the stage floor.*
 
 *He goes.*
 
@@ -65,30 +65,32 @@
 
 *This is different.*
 
-*In practice rooms, he's teaching. On stage, he's performing. Here — here there's nobody to perform to except you and the empty seats and the rigging above and whatever it is he carries into movement when nobody's deciding what it should look like.*
+*In practice rooms, he's teaching or being taught. On stage, there's an audience to perform to. Here — here there's nobody except you and the empty seats and whatever he carries into movement when no one's deciding what it should look like.*
 
-*It's everything.*
+*You watch.*
 
-*You understand, watching this, why Theo said what he said on the rooftop about wanting someone to watch and not blink.*
+*You understand, watching this, why Theo said what he said in the practice room about wishing it didn't cost anything. This is what it costs. This is what he pays it for.*
 
-*You don't blink.*
+*You don't look away.*
 
 ---
 
 ## SCENE 3 — AFTERWARDS
 
-*He finishes. The track ends.*
+*He finishes.*
 
-*The arena goes very quiet — just the sound of an empty space with nothing in it.*
+*The track ends.*
 
-*Theo stands at center stage, breathing.*
+*The arena goes very quiet — just the specific silence of an empty space with four thousand seats in it.*
+
+*Theo stands at center stage, breathing, looking at the front row.*
 
 *He looks at you.*
 
 **THEO:**
 "Did you see me?"
 
-*He means it. He means: not the performance. Me.*
+*He means it. Not the performance — the thing inside the performance. Me.*
 
 ---
 
@@ -109,7 +111,7 @@
 >
 > **THEO:** "Okay."
 >
-> *He says it like putting something down.*
+> *He says it like putting something down he's been holding.*
 >
 > **THEO:** "Good."
 >
@@ -118,15 +120,15 @@
 ---
 
 **OPTION B:** Describe exactly what you noticed — specifically.
-> **YOU:** "The section at the half — when the music drops and you hold — you stayed in it longer than any version I've seen you do. You trusted the silence. And when you came back out of it, everything after that landed differently."
+> **YOU:** "The section at the half — when the music drops and you hold — you stayed in it longer than any time I've seen you do it. You trusted the silence. And when you came back out of it, everything after landed differently."
 >
 > *Theo stares at you.*
 >
-> **THEO:** "You —"
+> **THEO:** "That's — yeah."
 >
 > *He stops.*
 >
-> **THEO:** "Yeah. That was the thing I've been trying to do for six months and it happened today."
+> **THEO:** "I've been trying to do that for six months. And it happened today. Here."
 >
 > *He looks at the empty seats.*
 >
@@ -136,7 +138,7 @@
 >
 > **THEO:** "..."
 >
-> *He smiles. It's the real one.*
+> *He smiles. The real one.*
 >
 > `[+5 THEO_TRUST] [+1 GROUP_REP]`
 
@@ -145,11 +147,11 @@
 **OPTION C:** Applaud. Slowly. Sincerely.
 > *You start clapping.*
 >
-> *Slowly. Not performatively — just: you clap, the sound going out into the empty arena.*
+> *Slowly. Not as a performance — just: you clap, the sound going out into the empty arena, four thousand empty seats catching it.*
 >
-> *Theo, on stage, looks at you.*
+> *Theo looks at you from the stage.*
 >
-> *He laughs — short, surprised, genuine.*
+> *He laughs — short, surprised, real.*
 >
 > **THEO:** "There's nobody here."
 >
@@ -157,7 +159,7 @@
 >
 > *He shakes his head.*
 >
-> *But he's smiling.*
+> *But he's smiling. He's still smiling when he comes off the stage.*
 >
 > `[+4 THEO_TRUST]`
 
@@ -165,23 +167,29 @@
 
 ## SCENE 4 — THE WRISTBAND
 
-*He comes off stage. Sits beside you in the front row.*
+*He comes off stage and sits beside you in the front row.*
 
-*He's looking at his wrist — the practice wristband he always wears, elastic, frayed at the edges, been there so long it's shaped to him.*
+*They're close together in the enormous empty space, the stage lights still on, the arena quiet around them.*
+
+*He's looking at his wrist — the practice wristband he always wears, elastic, frayed at the edges, been there long enough to go the color of his skin.*
 
 *He takes it off.*
 
-*He ties it around your wrist without asking. Carefully.*
+*He takes your wrist.*
+
+*He ties it on carefully, the way you'd tie something you've worn so long you know exactly how it goes. His thumbs press the knot flat.*
+
+*He doesn't let go right away.*
 
 **THEO:**
 "I got this at my first professional audition. I was seventeen."
 
-*He ties it.*
+*He looks at it on your wrist.*
 
 **THEO:**
-"I've never taken it off for anything except stages because I don't wear it on stage. I don't know why — it just felt like the pre-stage thing."
+"I've never taken it off except for stages — I don't wear it on stage, I don't know why, it just always felt like the pre-stage thing. The thing I had before I went on."
 
-*He looks at it on your wrist.*
+*He finally lets go.*
 
 **THEO:**
 "I want you to have it."
@@ -192,15 +200,19 @@
 **THEO:**
 "I don't need it anymore."
 
-*He says it simply. Like he worked it out just now.*
+*He says it simply. Like he just now worked it out.*
 
 **THEO:**
-"I thought the wristband was the thing. But the thing is just — doing it. Doing it anyway. I know that now."
+"I thought the wristband was the thing. But the thing is just doing it. Doing it anyway, every time, even when it costs. I know that now. I didn't know it at seventeen."
 
-*He stands.*
+*He stands up.*
 
 **THEO:**
 "Keep it."
+
+*He looks at it on your wrist for one more second.*
+
+*Then he goes back to get his speaker.*
 
 ---
 
@@ -210,3 +222,7 @@
 **Type:** Accessory — wristband
 
 **Unlocks:** Episode 21 — "What Jay Wrote"
+
+---
+
+*Next: ep21_what_jay_wrote.md*

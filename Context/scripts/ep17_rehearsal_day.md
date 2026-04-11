@@ -15,30 +15,29 @@
 
 *You've been learning this slowly, and today it's clearest: CALIX the group, and CALIX the product. The group is five people in a practice room, a van, a kitchen at 3am. The product is what gets photographed today.*
 
-*The behind-the-scenes crew arrived before you did. Cameras. Lights. A director who says "natural, just be natural" and somehow makes that the least natural instruction you've ever received.*
+*The behind-the-scenes crew arrived before you did. Cameras. Lights. A director who says "natural, just be natural" and somehow makes that the least natural instruction possible.*
 
-*Kain is already in full production mode — not practice-room Kain, the one who leaves his door ajar. This is the version that exists for cameras.*
+*Kain is already in production mode — not practice-room Kain, not door-left-open Kain. The version that exists for cameras.*
 
 *You watch him switch.*
 
-*It happens in a second. Something settles into place.*
+*It happens in less than a second. Something closes and something else opens and he's different.*
 
-**NARRATION:**
-> *You're going to have to learn how to do that.*
+*You're going to have to learn how to do that.*
 
 ---
 
 ## SCENE 1 — PRODUCTION
 
-*The rehearsal itself is standard. You've done the set enough times that it runs cleanly.*
+*The rehearsal itself is standard. You've done the set enough times that it runs clean.*
 
-*What's different: the cameras following every section, the stylists who appear between takes, the content producer who asks for "a moment between members, something real" and everyone performs real slightly differently than they actually are.*
+*What's different: the cameras following every section, the stylists who appear between takes with powder and tiny mirrors, the content producer who asks for "a natural moment between members" and everyone performs natural slightly differently than they actually are.*
 
-*Theo is excellent at this. He does "real" so well it looks unperformed — which might mean it is unperformed, or might mean he's been doing this long enough that it's second nature.*
+*Theo is excellent at this. He does "natural" so well it looks unperformed — which might mean it is unperformed, or might mean he's been doing this long enough that there's no longer a gap between the performance and the person.*
 
-*Jay keeps his headphones visible at all times. It's a choice — one earphone in, one out, which reads on camera as: professional but approachable.*
+*Jay keeps one earbud visible at all times. One in, one out — professional but approachable. It's a choice he made somewhere along the way and locked in.*
 
-*Finn does something interesting: he finds a corner of the room between takes and just exists there, and somehow the camera keeps finding him, and somehow he never looks like he's waiting to be found.*
+*Finn does something interesting: he finds a corner between takes and just exists there, and somehow the camera keeps finding him, and somehow he never looks like he's waiting to be found.*
 
 *Kain manages everything from the center.*
 
@@ -48,11 +47,11 @@
 
 ## SCENE 2 — THE CAMERA
 
-*During a break. You're getting water. The production camera — handheld, following natural movement — catches you off-guard.*
+*During a break. You're getting water. The handheld production camera catches you off-guard.*
 
 *You're not performing.*
 
-*Your face is just: your face. Tired, focused, real.*
+*Your face is just — your face. Tired, focused, real.*
 
 *The camera holds on you for three seconds.*
 
@@ -65,7 +64,7 @@
 **OPTION A:** Let it be real. Don't perform.
 > *You look at the camera.*
 >
-> *You don't fix your expression. You don't smile or adjust.*
+> *You don't fix your expression. You don't smile or adjust anything.*
 >
 > *You just look back.*
 >
@@ -82,15 +81,13 @@
 ---
 
 **OPTION B:** Smile into it, professionally.
-> *You catch the camera and you adjust — not dramatically, just the industry-trained lift.*
+> *You catch the camera and adjust — the industry-trained lift, the version you've practiced.*
 >
 > *Clean. Professional.*
 >
 > *Kain sees it from across the room.*
 >
-> *He doesn't say anything. But there's something in the angle of his head.*
->
-> *Approval, probably. Or at least recognition.*
+> *He doesn't say anything. But there's something in the angle of his head — a small recognition.*
 >
 > `[+2 KAIN_TRUST] [+1 GROUP_REP]`
 
@@ -99,7 +96,7 @@
 **OPTION C:** Look for Theo — he's always good in these moments.
 > *You find Theo with your eyes.*
 >
-> *He reads the situation immediately — he always reads situations immediately — and he drifts over, casually, puts himself in the frame with you, says something to the camera that's charming and redirects attention.*
+> *He reads the situation immediately and drifts over, casual, puts himself in the frame with you, says something to the camera that's warm and redirects.*
 >
 > *Later:*
 >
@@ -107,9 +104,7 @@
 >
 > **YOU:** "Yeah. Thanks."
 >
-> **THEO:** "Camera's weird sometimes. You'll get used to reading when it's on."
->
-> *He says it without judgment.*
+> **THEO:** "Camera's weird when it's on you unexpectedly. You'll learn to feel when it's there before it finds you. It takes a while."
 >
 > `[+2 THEO_TRUST]`
 
@@ -120,7 +115,7 @@
 >
 > *The camera loses you.*
 >
-> *Jay, nearby, says nothing. But he did the same thing three times today.*
+> *Jay, nearby, says nothing. But you notice he's done the same thing three times today.*
 >
 > *There's a solidarity in that.*
 >
@@ -132,13 +127,19 @@
 
 *After the rehearsal. Loading out.*
 
-*There are fans at the venue perimeter — not a crowd, maybe fifteen, twenty. Word got out. It always does.*
+*Fans at the venue perimeter — not a crowd, maybe fifteen, twenty people. Word got out. It always does.*
 
-*Security keeps them back. You lift a hand toward the fans — not a wave, just an acknowledgment. Someone in the crowd calls your name.*
+*Security keeps them back. You lift a hand toward them — not quite a wave, just an acknowledgment. Someone calls your name.*
 
 *It lands differently than you expected.*
 
-*On the van, loading out. Theo drops into the seat beside you without comment. A minute later, he reaches into his bag and tucks a bottle of vitamin water into the pocket of your jacket.*
+---
+
+*On the van, loading out.*
+
+*Theo drops into the seat beside you without asking. He's warm from the session still, shoulder against yours for a second before he settles.*
+
+*A minute later, he reaches into his bag and tucks a bottle of vitamin water into the front pocket of your jacket.*
 
 *He doesn't look at you.*
 
@@ -155,3 +156,7 @@
 **Type:** Drink — from member
 
 **Unlocks:** Episode 18 — "The Night Before"
+
+---
+
+*Next: ep18_the_night_before.md*
