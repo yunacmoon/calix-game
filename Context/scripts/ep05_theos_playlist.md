@@ -21,7 +21,7 @@
 
 *The van picks you up at 2pm.*
 
-*Theo is already in the middle row, legs stretched across the seat until Kain gets in and Theo's legs retract without comment. Jay takes the back corner — left side, window. He's had his headphones on since the lobby. Finn is next to Theo, which leaves you the front row with Kain, or the back row with Jay.*
+*Theo is already in the middle row, legs stretched across the seat until Kain gets in and they retract without comment. Jay takes the back corner — left side, window. Headphones on since the lobby. Finn is next to Theo, which leaves you the front row with Kain, or the back row with Jay.*
 
 *You take the back row.*
 
@@ -30,41 +30,39 @@
 *The van pulls out.*
 
 **NARRATION:**
-> *There is a specific kind of group intimacy that happens in transit. Nobody's performing for anyone — there's nowhere to perform to. The city moves past the window, and you're all just people in a van.*
->
-> *It is, you're realizing, one of the only places everyone is completely themselves.*
+> *Nobody's performing for anyone in here. The city moves past the glass, everyone in their own version of in-between, and for the first time since you arrived it feels like you're all just people.*
 
 ---
 
 ## SCENE 1 — THE AUX
 
 **THEO:**
-*(from the middle row, to the driver)*
+*(leaning toward the front)*
 "Can I have the aux?"
 
 *The driver, used to this, hands back the cable.*
 
-*Kain, from the front passenger seat:*
+*From the passenger seat:*
 
 **KAIN:**
 "Don't put on the thing from last time."
 
 **THEO:**
-"What thing—"
+"What thing —"
 
 **KAIN:**
-"The forty-minute mix with the breakdown."
+"The forty-minute mix with the breakdown in the middle."
 
 **THEO:**
-"That was a great mix."
+"That was a great mix. That mix held us together through two hours of traffic —"
 
 **KAIN:**
-"We were in traffic for two hours."
+"We were trapped."
 
 **THEO:**
-"And the mix carried us through it."
+"We were supported."
 
-*He plugs in. The first few seconds of something upbeat, driving, with a lot of bass — it fills the van.*
+*He plugs in. The first few seconds of something with a lot of bass — it fills the van immediately.*
 
 *Jay, without moving:*
 
@@ -78,24 +76,22 @@
 **JAY:**
 "..."
 
-*(Implying: not really, but fine.)*
-
-*Theo catches your eye in the rearview mirror. He grins.*
+*Theo catches your eye in the rearview mirror. Grins.*
 
 **THEO:**
-"He's always like this. You get used to it."
+"He's always like this in the van. You get used to it. It's actually an improvement from six months ago."
 
 **JAY:**
 "I can hear you."
 
 **THEO:**
-"I know."
+"I know, that's fine."
 
 ---
 
 ## SCENE 2 — THE QUIZ
 
-*Ten minutes into the drive. The city is thick — construction somewhere ahead, everything slowing.*
+*Ten minutes in. The city thickens ahead — construction somewhere, everything slowing.*
 
 *Theo turns around in his seat, arm slung over the headrest.*
 
@@ -111,16 +107,16 @@
 "Is this a test?"
 
 **THEO:**
-"It's a vibe check. There's a difference. Tests you can fail. Vibe checks just tell you where someone is."
+"Vibe check. Different thing. Tests you can fail. Vibe checks just tell me where someone is."
 
 *He tilts his head.*
 
 **THEO:**
-"What do you put on when you're getting ready? Not, like, the artist you say you like in interviews. The actual thing. The thing that's been on your phone for a year that you've never told anyone is there."
+"What do you put on when you're getting ready? Not the artist you say in interviews — the actual thing. The one that's been on your phone for a year that you've never mentioned to anyone."
 
-*Finn, beside him, is looking out the window. But the slight angle of his head says he's listening.*
+*Finn, beside him, is looking out the window. The slight angle of his head says he's listening.*
 
-*Jay still has his headphones on. One side is off his ear.*
+*Jay's headphones are on. One side is off his ear.*
 
 ---
 
@@ -130,26 +126,26 @@
 "Why does it matter?"
 
 **THEO:**
-"Because I can tell everything about a person from what they put on when no one's watching. Kain puts on classical music while he reviews schedules —"
+"Because it tells me everything. Kain puts on classical music when he's reviewing schedules —"
 
 **KAIN:**
 "That's private."
 
 **THEO:**
-"— Jay puts on lo-fi beats which is the most secretly soft thing about him —"
+"— Jay puts on lo-fi beats, which is genuinely the softest thing about him and I say that with love —"
 
 **JAY:**
-"It's for concentration."
+"Concentration."
 
 **THEO:**
-"Finn puts on this specific 1970s jazz —"
+"Finn does this specific Brazilian jazz from the seventies —"
 
 **FINN:**
-*(still looking out the window)*
-"It's Brazilian jazz."
+*(still at the window)*
+"It's from the sixties, mostly."
 
 **THEO:**
-"Brazilian jazz from the 1970s, which tracks completely, by the way."
+"Brazilian jazz from multiple decades, which honestly tracks perfectly for him."
 
 *He looks at you.*
 
@@ -163,45 +159,43 @@
 *The current track ends. Theo holds up the phone.*
 
 **THEO:**
-"You pick."
+"You pick. Go."
 
-*He hands it back to you.*
+*He hands it back.*
 
-*You feel Jay's attention shift — he doesn't move, but you know he's listening.*
+*You feel Jay's attention shift. He doesn't move, but you know he's listening.*
 
 ---
 
 **OPTION A:** Pick something unexpected and personal.
-> *You hand back something specific. Not the most obvious choice, not the safest one — something that tells them something true.*
+> *You pull up something specific. Not the safest choice, not the most obvious one — something that tells them something true about you.*
 >
-> *Theo takes the phone. Looks at what you've pulled up.*
+> *Theo takes the phone back. Looks at what you've put on.*
 >
 > **THEO:** "Oh —"
 >
 > *He looks at you differently.*
 >
-> **THEO:** "I didn't expect that."
+> **THEO:** "Okay. I didn't see that coming. That's interesting."
 >
-> *The song starts. It's got a specific texture — something that reveals an opinion.*
+> *The song starts — a specific texture, a specific opinion in it.*
 >
 > *From the back corner, Jay takes his other headphone off.*
->
-> *He doesn't say anything. He listens.*
 >
 > *Finn turns from the window.*
 >
 > **FINN:** *(quietly)* "Good choice."
 >
-> *He means it in the way Finn means everything — specifically.*
+> *He means it the way Finn means everything — exactly.*
 >
 > `[+2 THEO_TRUST] [+2 JAY_TRUST]`
 
 ---
 
 **OPTION B:** Pick something safe and popular.
-> *You put on something everyone knows. Good song. Proven. Impossible to argue with.*
+> *You put on something everyone knows. A good song. Impossible to argue with.*
 >
-> *Theo nods along. He's not disappointed, exactly — he just recalibrates slightly.*
+> *Theo nods along. He recalibrates slightly but doesn't say so.*
 >
 > **THEO:** "Classic."
 >
@@ -211,22 +205,22 @@
 >
 > **KAIN:** "Good."
 >
-> *Kain approval of your safe choice says something you can't quite decide how to feel about.*
+> *You're not sure how you feel about Kain approving of the safe choice.*
 >
 > `[+1 THEO_TRUST] [-1 JAY_TRUST]`
 
 ---
 
 **OPTION C:** Hand the aux back to Theo.
-> **YOU:** "You had something better going. Put yours back on."
+> **YOU:** "You had something better. Put yours back on."
 >
 > *Theo holds eye contact with you for a beat.*
 >
-> **THEO:** "...that's somehow both the right answer and the boring answer."
+> **THEO:** "...that is somehow both the correct answer and the boring answer and I can't decide how to feel about it."
 >
 > *He takes the phone back.*
 >
-> **THEO:** "I respect it though. You knew what you were walking into and you didn't overstep."
+> **THEO:** "I respect it though. You knew what you were walking into and you didn't try to outdo me. That's self-awareness."
 >
 > *He puts something new on. It's better than what was playing.*
 >
@@ -235,7 +229,7 @@
 ---
 
 **OPTION D:** Ask Jay what he'd pick.
-> *You hold the phone out toward Jay.*
+> *You hold the phone toward Jay.*
 >
 > **YOU:** "Jay. You pick."
 >
@@ -245,23 +239,21 @@
 >
 > **JAY:** "..."
 >
-> **THEO:** *(slowly)* "Oh — so we're doing that."
+> **THEO:** *(slowly, watching)* "Oh. Okay. So we're doing that."
 >
-> *Jay reaches across. He takes the phone. Scrolls for six seconds.*
+> *Jay reaches across. Takes the phone. Scrolls for exactly six seconds.*
 >
 > *He picks something.*
 >
-> *It's unexpected. Lower, slower than Theo's energy. But it fills the van completely.*
+> *Lower, slower, more space in it than anything Theo would have chosen. It fills the van differently.*
 >
 > *Theo listens for ten seconds.*
 >
-> **THEO:** "Okay. Okay, I see it."
+> **THEO:** "Okay. Yeah. I see it."
 >
-> *Jay hands the phone back. Says nothing.*
+> *Jay hands the phone back without a word.*
 >
-> *He puts his headphone back on.*
->
-> *But only one side.*
+> *He puts his headphone back on. Only one side.*
 >
 > `[+3 JAY_TRUST]`
 
@@ -269,10 +261,10 @@
 
 ## SCENE 4 — THEO KEEPS GOING
 
-*The music plays. Traffic moves. Theo is not the kind of person who lets a good conversation die.*
+*The music plays. Traffic moves. Theo is not someone who lets a good conversation die.*
 
 **THEO:**
-"Okay next question. Genuinely — what do you think of the new formation? Kain's version."
+"Okay — next question. What do you actually think of the new formation? Kain's version, center open."
 
 *From the front:*
 
@@ -280,21 +272,21 @@
 "That's not a conversation for the van."
 
 **THEO:**
-"We're all here. It's a perfectly good place for a conversation."
+"Everyone's here. It's an efficient use of time."
 
 **KAIN:**
 "Theo."
 
 **THEO:**
 *(to you, quietly)*
-"He's going to say we'll discuss it in the debrief. Watch."
+"He's going to say we'll discuss it in the debrief."
 
 **KAIN:**
 "We'll discuss it in the debrief."
 
-*Theo looks at you with an expression of complete vindication.*
+*Theo looks at you with complete vindication.*
 
-*You hear something from the back corner — Jay, under his breath, something that might be a short exhale that might be a laugh.*
+*From the back corner — something from Jay. A short exhale that might be a laugh.*
 
 ---
 
@@ -302,7 +294,7 @@
 
 *The traffic clears. The van speeds up.*
 
-*Finn has been quiet, which is normal, but at some point he turns from the window.*
+*Finn, who has been quiet in the way Finn is always quiet, turns from the window.*
 
 **FINN:**
 "You've been here a week."
@@ -316,9 +308,9 @@
 "About the group?"
 
 **FINN:**
-"About anything. This week. What was different from what you expected."
+"About anything. This week. What was different from what you expected it to be."
 
-*It's a different kind of question than Theo's. Theo asks the kind of questions that move fast. Finn asks the kind that require you to stop.*
+*It's a different kind of question than Theo's. Theo asks questions that move fast. Finn asks the kind that need you to stop.*
 
 ---
 
@@ -327,7 +319,7 @@
 ---
 
 **OPTION A:** How much everyone actually cares.
-> **YOU:** "How much everyone gives a damn. I knew you were good — I knew that from outside. But being in it is different. Everyone in that practice room is actually trying."
+> **YOU:** "How much everyone actually gives a damn. I knew you were good from the outside — but being in it is different. Everyone in that room is genuinely trying. All the time."
 >
 > *Finn takes that in.*
 >
@@ -335,7 +327,7 @@
 >
 > **YOU:** "Especially Jay."
 >
-> *From the back corner, nothing. But the headphone is definitely off.*
+> *From the back corner, nothing. But the one remaining headphone is definitely off.*
 >
 > **FINN:** "Yeah."
 >
@@ -352,9 +344,9 @@
 >
 > *Finn blinks.*
 >
-> **YOU:** "I expected — I don't know. You have a big presence from outside. But in person you're very quiet."
+> **YOU:** "I expected — you have a big presence from outside. But in person you're very quiet."
 >
-> *Finn considers this for a moment.*
+> *Finn considers it.*
 >
 > **FINN:** "My presence from outside isn't mine. It's what they made from what I gave them."
 >
@@ -370,31 +362,33 @@
 
 *The van pulls up to the studio building.*
 
-*Kain is already coordinating with his phone — schedules, timings, who goes where. Theo is gathering his bag. Jay stands and stretches — he's taller in full height than in van-proportion.*
+*Kain is already coordinating with his phone. Theo is gathering his bag. Jay stands and stretches — taller in full height than in van-proportion.*
 
-*As you all file out, Theo falls into step beside you.*
+*As you file out, Theo falls into step beside you.*
 
 **THEO:**
-"Good answer, by the way. Whichever one you gave."
+"Good answer, by the way. Whatever you said to Finn."
 
 **YOU:**
-"You don't know what I said to Finn."
+"You don't know what I said."
 
 **THEO:**
-"I was listening. I'm always listening."
+"I was listening the whole time. I'm always listening."
 
 *He grins.*
 
 **THEO:**
-"I'm just good at looking like I'm not."
+"I'm just very good at looking like I'm not. It's a skill. I've worked on it."
 
-*He jogs ahead to catch up with Kain, who is already inside.*
+*He jogs ahead to catch Kain.*
 
-*Jay passes you on the way in. He doesn't say anything. But as he passes, he lowers his remaining earbud.*
+*Jay passes you on the way in. Doesn't say anything.*
+
+*But as he passes, his remaining earbud comes out.*
 
 *Both out, now.*
 
-*Like the van ride continues.*
+*Like the van ride is still going.*
 
 ---
 

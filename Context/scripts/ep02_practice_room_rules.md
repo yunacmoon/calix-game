@@ -23,14 +23,14 @@
 
 *Kain is already there. He was there before you. You get the sense he's always there before everyone.*
 
-*He's running through something — not the full choreo, just a sequence of four counts, over and over. Precise. Mechanical in the best way. Like a musician practicing a single phrase until it stops feeling like practice and starts feeling like breathing.*
+*He's running through something — not the full choreo, just a sequence of four counts, over and over. The same phrase, again and again, like he's listening for something in it that isn't there yet.*
 
 *He sees you in the mirror. Doesn't stop.*
 
 **KAIN:**
 "Good. You're early."
 
-*He says it like a neutral observation, not a compliment.*
+*He goes back to the four counts.*
 
 **KAIN:**
 "Stretch. We start in eight minutes."
@@ -39,20 +39,20 @@
 
 ## SCENE 1 — THE ROOM FILLS
 
-*Theo arrives at 9:07 and does not appear to notice that he's late. He comes in mid-conversation with his own phone, a voice memo he's listening to with one earbud in, his dance bag swinging from one shoulder. When he sees you, he throws a grin across the room.*
+*Theo arrives at 9:07 and does not appear to notice he's late. He comes in mid-conversation with his own phone, a voice memo he's listening to with one earbud in, dance bag swinging from one shoulder. When he sees you in the mirror, he throws a grin across the room.*
 
 **THEO:**
-"Hey! You made it. How'd you sleep?"
+"Hey! You're here. How'd you sleep?"
 
 *You open your mouth.*
 
 **THEO:**
 "Actually hold on —"
 
-*He listens to five more seconds of his voice memo, nods once, and pulls the earbud out.*
+*He listens to five more seconds of his voice memo, nods once, yanks the earbud out.*
 
 **THEO:**
-"Okay. Sorry. Kain texted at six-thirty about the formation change and I've been thinking about it since and I have thoughts."
+"Okay. Sorry. Kain texted at six-thirty about the formation change and I've been turning it over since and I have thoughts. A lot of thoughts. We'll get to them."
 
 *From across the room:*
 
@@ -60,13 +60,13 @@
 "You're seven minutes late."
 
 **THEO:**
-"I'm here before nine-ten, which was the stated start time —"
+"I'm here before nine-ten, which — I thought nine-ten was the —"
 
 **KAIN:**
-"The stated start time was nine."
+"The start time was nine."
 
 **THEO:**
-"I thought it was nine-ten."
+"Okay, but I genuinely thought —"
 
 **KAIN:**
 "..."
@@ -79,7 +79,7 @@
 
 ## SCENE 2 — THE FORMATION CHANGE
 
-*Kain calls the group to the center. He goes to the whiteboard, which has been updated since last night. New formation diagram. Five positions instead of the four you saw before.*
+*Kain calls the group to the center. He goes to the whiteboard, updated since last night. New formation diagram. Five positions.*
 
 **KAIN:**
 "New formation. I've restructured the opening sequence and the second bridge to account for the fifth position."
@@ -92,30 +92,30 @@
 *A silence.*
 
 **THEO:**
-"That's — wait. Center? For the opening?"
+"That's — wait. Center? For the opening eight?"
 
 **KAIN:**
 "The formation needs a fifth anchor point. It's the most structurally logical placement."
 
 **THEO:**
-"It's also — Kain, that's a lot of pressure for a first —"
+"It's also — Kain, that's a lot to drop on someone in their first full week without —"
 
 **KAIN:**
 "The alternative is placing position five off-center, which makes the whole opening asymmetric. I'm not putting out asymmetric work."
 
 **THEO:**
-"There's a version where —"
+"There's a version where we at least —"
 
 **KAIN:**
 "Theo."
 
-*One word. Flat. Theo closes his mouth.*
+*Theo closes his mouth.*
 
 *A beat.*
 
 **THEO:**
 *(quieter)*
-"I think you should have asked the group."
+"I think you should have asked the group first. That's all I'm saying."
 
 *Kain turns back to the board.*
 
@@ -135,7 +135,9 @@
 *You feel every eye in the room — not just theirs, but yours, in the mirror.*
 
 **NARRATION:**
-> *This is the moment where you either shrink or you don't. Your body knows the sequence. Your body has always known sequences — that was never the question. The question is what you do with the weight of being watched while doing it.*
+> *Your body knows the sequence. That was never the question.*
+>
+> *The question is what you do when you're doing it and you can see yourself doing it and so can everyone else.*
 >
 > *The answer, right now, is: you find out.*
 
@@ -157,7 +159,7 @@
 ---
 
 **OPTION A:** Learn the new formation immediately. Show you can handle it.
-> *By the third run, your body has it. Not perfectly — there's a slight delay on the pivot at count nine — but the center position is yours and you own it without qualification.*
+> *By the third run, your body has it. Not perfectly — there's a slight delay on the pivot at count nine — but the center position is yours and you're not apologizing for it.*
 >
 > *On the fourth run, Kain stops the track.*
 >
@@ -169,32 +171,32 @@
 >
 > *Fifth run. The pivot lands.*
 >
-> *Kain watches it. Doesn't say anything. Goes back to his tablet.*
+> *Kain watches it happen. Makes a note on his tablet. Doesn't look up.*
 >
-> *That's the acknowledgment.*
+> *Theo catches your eye across the room and mouths: good.
 >
 > `[+2 KAIN_TRUST] [+1 SKILL]`
 
 ---
 
 **OPTION B:** Ask Theo to walk you through it.
-> *Between runs, you find Theo.*
+> *Between runs, you find Theo at the water table.*
 >
-> **YOU:** "The transition at nine — can you show me how you're reading the count?"
+> **YOU:** "The transition at nine — can you show me how you're reading the count? The way it feels, not the way it's written."
 >
 > *Theo's whole energy shifts — he's been waiting for something to do.*
 >
-> **THEO:** "Yes. Okay. So what Kain has on the board is technically right but the way it feels is more like —"
+> **THEO:** "Yes. Okay — so what Kain has on the board is technically correct, but the way it actually lives in your body is more like —"
 >
 > *He demonstrates it in slow motion. Once. Then again, talking through the count.*
 >
-> **THEO:** "It's not a pivot, it's more like a lean that becomes a pivot. Does that make sense?"
+> **THEO:** "It's not a pivot so much as a lean that becomes a pivot. Like you're already there before you decide to go. Does that land?"
 >
 > **YOU:** "Do it again."
 >
 > *He does. You mirror it. It's better.*
 >
-> **THEO:** *(quietly, so Kain doesn't hear)* "You're fast. That's good. He doesn't do patience."
+> **THEO:** *(quietly, moving away)* "You're fast. That's good. He doesn't do patience."
 >
 > `[+2 THEO_TRUST]`
 
@@ -207,7 +209,7 @@
 >
 > *He looks up from his tablet.*
 >
-> **YOU:** "The count-nine pivot — if I come in from a slightly wider base, the transition reads cleaner in the mirror. Can I show you?"
+> **YOU:** "The count-nine pivot — if I come in from a slightly wider base, the transition reads cleaner in the mirror. Can I try it?"
 >
 > *Theo goes very still.*
 >
@@ -215,26 +217,24 @@
 >
 > **KAIN:** "Show me."
 >
-> *You demonstrate. You're right — it does read cleaner. You can see it yourself in the mirror.*
+> *You demonstrate. You can see it yourself — it does read cleaner.*
 >
-> *Kain watches. Doesn't say: good idea. Does say:*
+> *Kain watches. Says nothing for three seconds.*
 >
 > **KAIN:** "Run it from the top with that adjustment."
->
-> *That's a yes.*
 >
 > `[+1 KAIN_TRUST] [+1 GROUP_REP]`
 
 ---
 
 **OPTION D:** Say nothing and struggle through it.
-> *You run it again. And again. By the fifth run, the others are drilling their own sections and you're still working the center opening.*
+> *You run it again. And again. By the fifth run, the others have moved to drilling their own sections and you're still working the center opening.*
 >
-> *Theo drifts close.*
+> *Theo drifts close between sets.*
 >
-> **THEO:** *(very quietly)* "Hey. Ask for help. It's not a sign of anything."
+> **THEO:** *(low, so only you hear)* "Hey. Ask for help. It's not a sign of anything — everyone needed it on day one, including me, and I will never tell you what I looked like."
 >
-> **YOU:** *(internal)* *You know. You just didn't.*
+> **YOU (internal):** *You know. You just didn't.*
 >
 > *The session ends without you landing it cleanly.*
 >
@@ -246,7 +246,7 @@
 
 *Twenty-minute water break. The room decompresses.*
 
-*Theo sits on the floor, back against the mirror, doing light stretches. Jay refills his water and checks his phone and comes back to the same spot on the floor. Finn has his eyes closed again, one hand around his water bottle.*
+*Theo sits on the floor, back against the mirror, doing light stretches. Jay refills his water and comes back to the same spot on the floor without checking his phone — unusual. Finn has his eyes closed, one hand around his water bottle.*
 
 *You sit somewhere in the middle of all of it.*
 
@@ -256,7 +256,7 @@
 *You look at him.*
 
 **THEO:**
-"I'm not asking for feedback on Kain's formation choices, that's a separate conversation that I'm going to have separately —"
+"Not asking about Kain's formation decisions, that's a whole other conversation I'm having separately —"
 
 *From across the room, Kain:*
 
@@ -264,13 +264,13 @@
 "I can hear you."
 
 **THEO:**
-"I know. I said separately, not quietly."
+"I know. I said separately, not quietly. Those are different things."
 
-*Jay makes a sound. Definitive, brief.*
+*Jay makes a short sound. Not quite a laugh.*
 
 **THEO:**
-*(to you, ignoring Kain)*
-"I just mean. How are you feeling. Generally."
+*(to you)*
+"I just mean — generally. How are you feeling."
 
 *Finn opens one eye. He's listening.*
 
@@ -285,15 +285,15 @@
 >
 > *Theo laughs — actual laugh, not a performance.*
 >
-> **THEO:** "Yes. That is exactly what it's like. Every day."
+> **THEO:** "Yes. That is exactly it. Every single day, that's what it is."
 >
-> *Finn's eye closes again, but something in his face settles.*
+> *Finn's eye closes again. Something in his face settles.*
 >
 > **JAY:** *(without looking up)* "It gets faster."
 >
 > *Three seconds of silence.*
 >
-> **THEO:** "Did Jay just volunteer information?"
+> **THEO:** "Did Jay just offer unsolicited reassurance?"
 >
 > **JAY:** "..."
 >
@@ -302,23 +302,23 @@
 ---
 
 **OPTION B:** Redirect — ask about the Kain/Theo tension.
-> **YOU:** "Does that — the formation thing — does that happen a lot?"
+> **YOU:** "Does that happen a lot? The formation thing. Kain deciding without asking."
 >
 > *Theo and Jay exchange a look.*
 >
 > **THEO:** "Define 'that.'"
 >
-> **YOU:** "Kain deciding something without asking."
+> **YOU:** "Him making the call and then telling everyone."
 >
 > *A pause.*
 >
-> **THEO:** "He's not — it's not that he doesn't care what we think. He just —"
+> **THEO:** "He's not — it's not that he doesn't care what we think. He does. He just —"
 >
 > **JAY:** "He processes faster than he consults."
 >
 > *Everyone looks at Jay.*
 >
-> **JAY:** *(already looking at his phone)* "What."
+> **JAY:** *(already back to his phone)* "What."
 >
 > `[+1 THEO_TRUST] [+2 JAY_TRUST]`
 
@@ -335,21 +335,19 @@
 "You said twenty."
 
 **KAIN:**
-"Two more minutes means we have two more minutes."
+"Two more minutes means we have two more minutes left."
 
-*Theo looks at you with an expression that says: see? This is every day.*
+*Theo gives you a look. This is every day.*
 
-*But when Kain turns back to the whiteboard, there's something in the set of his shoulders that's different than this morning. Looser, by degrees. Not softer — just slightly less load-bearing.*
+*But when Kain turns back to the whiteboard, his shoulders are different than they were this morning. Not softer — just slightly less load-bearing. Like something got resolved by running it five times that couldn't be resolved by talking about it.*
 
-*Maybe he heard the Jay thing. Maybe it helped.*
-
-*You don't know yet how to read him. But you're starting to collect data.*
+*You're starting to collect data on him. It's going to take a while.*
 
 ---
 
 ## SCENE 6 — SECOND HALF
 
-*The second half of practice is different. The formation is starting to settle into muscle memory, and when it does, something shifts — the room starts to feel less like five individuals running the same sequence and more like a thing that belongs together.*
+*The second half of practice is different. The formation is settling into muscle memory, and when it does, something shifts — the room starts to feel less like five individuals running the same sequence and more like a thing that might, eventually, belong together.*
 
 *It's small. It's early. But it's there.*
 
@@ -363,9 +361,9 @@
 *(quietly, to no one)*
 "...Yeah. Okay."
 
-*He's satisfied. Theo's satisfied is different from Kain's satisfied — it lives in his body, the way a tension releases.*
+*He exhales through his nose — quiet, satisfied. The kind of exhale that takes all day to arrive.*
 
-*Kain makes a note on his tablet. He doesn't look up.*
+*Kain makes a note on his tablet.*
 
 **KAIN:**
 "Same time tomorrow. I'm adding the third section."
@@ -391,7 +389,7 @@
 >
 > *Theo appears at your shoulder.*
 >
-> **THEO:** *(whispering)* "That's five words more than he said to me after my first full practice. You're doing great."
+> **THEO:** *(low)* "Five words more than he said to me after my first full practice. You're doing fine. Don't let him know I told you that."
 
 ---
 
