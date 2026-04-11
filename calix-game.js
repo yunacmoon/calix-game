@@ -1904,7 +1904,7 @@
       allPhotos.forEach(function(src) {
         sliderHtml += '<div class="cd-photo-slide"><img src="' + src + '" alt=""></div>';
       });
-      sliderHtml += '</div>';
+      sliderHtml += '</div></div>';
       if (allPhotos.length > 1) {
         sliderHtml += '<div class="cd-photo-dots" id="cd-dots">';
         allPhotos.forEach(function(_, i) {
@@ -1913,7 +1913,6 @@
         sliderHtml += '</div>';
         sliderHtml += '<div class="cd-photo-more" id="cd-more-photos">more photos &rarr;</div>';
       }
-      sliderHtml += '</div>';
       photoWrap.innerHTML = sliderHtml;
 
       if (allPhotos.length > 1) {
