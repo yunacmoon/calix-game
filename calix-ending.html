@@ -381,7 +381,7 @@ body::after {
   opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
 }
 .pc-sub {
-  font-size: 14px; color: var(--ink-muted); margin-bottom: 40px;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 40px;
   opacity: 0; animation: fadeUp 0.7s ease 0.4s forwards;
 }
 
@@ -670,8 +670,8 @@ body::after {
 ───────────────────────────────────────── -->
 <div class="phase" id="phase-photocard">
   <p class="pc-eyebrow">✦ Reward Unlocked</p>
-  <h2 class="pc-headline">Debut Photocard</h2>
-  <p class="pc-sub" id="pc-sub">A keepsake from the night everything began.</p>
+  <h2 class="pc-headline">Debut Night, All Five</h2>
+  <p class="pc-sub" id="pc-sub">Hongdae, 3AM</p>
 
   <div class="pc-card-wrap">
     <div class="pc-card" id="pc-card">
@@ -963,7 +963,7 @@ function buildStars() {
     imgEl.src = PHOTOBOOTH[candidateName] || PHOTOBOOTH['YOOJIN'];
   }
   const subEl = document.getElementById('pc-sub');
-  if (subEl) subEl.textContent = 'A keepsake from the night everything began.';
+  if (subEl) subEl.textContent = 'Hongdae, 3AM';
 }
 
 // ── SHARE ──
