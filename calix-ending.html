@@ -393,56 +393,25 @@ body::after {
   from { opacity: 0; transform: scale(0.8) rotateY(30deg); }
   to   { opacity: 1; transform: scale(1) rotateY(0deg); }
 }
-
 .pc-card {
-  width: min(260px, 72vw);
-  aspect-ratio: 2/3;
+  width: min(280px, 78vw);
+  aspect-ratio: 3/4;
   border-radius: 20px;
-  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b69 40%, #0a1628 100%);
+  overflow: hidden;
   border: 2px solid var(--gold);
-  box-shadow:
-    0 0 40px rgba(201,168,76,0.4),
-    0 0 80px rgba(201,168,76,0.15),
-    0 24px 60px rgba(0,0,61,0.4);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: flex-end;
-  padding: 24px; position: relative; overflow: hidden;
+  box-shadow: 0 0 40px rgba(201,168,76,0.4), 0 0 80px rgba(201,168,76,0.15), 0 24px 60px rgba(0,0,61,0.4);
+  position: relative;
   animation: goldShimmer 3s ease-in-out infinite;
+  background: #1a0a2e;
 }
 @keyframes goldShimmer {
   0%,100% { box-shadow: 0 0 40px rgba(201,168,76,0.4), 0 0 80px rgba(201,168,76,0.15), 0 24px 60px rgba(0,0,61,0.4); }
   50% { box-shadow: 0 0 60px rgba(201,168,76,0.6), 0 0 120px rgba(201,168,76,0.25), 0 24px 60px rgba(0,0,61,0.4); }
 }
-
-.pc-card::before {
-  content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(151,125,255,0.3) 0%, transparent 60%),
-              radial-gradient(ellipse at 80% 80%, rgba(0,51,255,0.2) 0%, transparent 50%);
-}
-.pc-stars {
-  position: absolute; inset: 0; pointer-events: none;
-}
-.pc-star {
-  position: absolute; width: 2px; height: 2px; background: white;
-  border-radius: 50%; animation: twinkle 2s ease-in-out infinite;
-}
-@keyframes twinkle {
-  0%,100% { opacity: 0.2; } 50% { opacity: 1; }
-}
-
-.pc-card-group {
-  font-size: 8px; letter-spacing: 0.5em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 8px; position: relative; z-index: 1;
-}
-.pc-card-member-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px; font-weight: 400; color: white;
-  line-height: 1; margin-bottom: 4px; position: relative; z-index: 1;
-}
-.pc-card-era {
-  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
-  color: rgba(255,255,255,0.45); position: relative; z-index: 1;
-}
+.pc-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pc-stars { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+.pc-star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle 2s ease-in-out infinite; }
+@keyframes twinkle { 0%,100% { opacity: 0.2; } 50% { opacity: 1; } }
 
 .pc-gold-rule {
   width: 60px; height: 1px;
@@ -707,9 +676,7 @@ body::after {
   <div class="pc-card-wrap">
     <div class="pc-card" id="pc-card">
       <div class="pc-stars" id="pc-stars"></div>
-      <p class="pc-card-group">CALIX</p>
-      <p class="pc-card-member-name" id="pc-card-name">—</p>
-      <p class="pc-card-era">Debut Era · 2025</p>
+      <img id="pc-group-photo" src="" alt="CALIX" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
     </div>
   </div>
 
@@ -952,24 +919,37 @@ function pickMember(name) {
 
 // ── PHOTOCARD ──
 function buildStars() {
+  // Star particles
   const container = document.getElementById('pc-stars');
-  if (!container) return;
-  container.innerHTML = '';
-  for (let i = 0; i < 28; i++) {
-    const s = document.createElement('div');
-    s.className = 'pc-star';
-    s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*2}s;animation-duration:${1.5+Math.random()}s`;
-    container.appendChild(s);
+  if (container) {
+    container.innerHTML = '';
+    for (let i = 0; i < 28; i++) {
+      const s = document.createElement('div');
+      s.className = 'pc-star';
+      s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*2}s;animation-duration:${1.5+Math.random()}s`;
+      container.appendChild(s);
+    }
   }
-  const nameEl = document.getElementById('pc-card-name');
-  if (nameEl && chosenMember) {
-    nameEl.textContent = chosenMember.charAt(0) + chosenMember.slice(1).toLowerCase();
+  // Group photo based on chosen candidate
+  var candidateName = '';
+  try {
+    var saved = localStorage.getItem('calix_save_v1');
+    if (saved) {
+      var o = JSON.parse(saved);
+      candidateName = (o.candidateName || '').toUpperCase();
+    }
+  } catch(e) {}
+  var PHOTOBOOTH = {
+    YOOJIN: 'Images/09_Photobooth/With_Yoojin.png',
+    ALEX:   'Images/09_Photobooth/With_Alex.png',
+    GREY:   'Images/09_Photobooth/With_Grey.png',
+  };
+  var imgEl = document.getElementById('pc-group-photo');
+  if (imgEl) {
+    imgEl.src = PHOTOBOOTH[candidateName] || PHOTOBOOTH['YOOJIN'];
   }
   const subEl = document.getElementById('pc-sub');
-  if (subEl && chosenMember) {
-    const memberName = chosenMember.charAt(0) + chosenMember.slice(1).toLowerCase();
-    subEl.textContent = memberName + ' — Debut Era. A night no one will forget.';
-  }
+  if (subEl) subEl.textContent = 'A keepsake from the night everything began.';
 }
 
 // ── SHARE ──
