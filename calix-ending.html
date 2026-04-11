@@ -52,6 +52,18 @@ body::after {
 @keyframes orb1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(70px,50px)} }
 @keyframes orb2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-50px,-70px)} }
 
+/* ── CAMERA FLASH ── */
+#camera-flash {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  background: #fff; opacity: 0;
+}
+@keyframes flashBurst {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  35%  { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+
 /* ── CONFETTI CANVAS ── */
 #confetti-canvas {
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -515,6 +527,7 @@ body::after {
 <body>
 
 <canvas id="confetti-canvas"></canvas>
+<div id="camera-flash"></div>
 
 <!-- ─────────────────────────────────────────
      PHASE 1: DEBUT STAGE
@@ -844,6 +857,36 @@ function fireConfetti() {
   animateConfetti();
 }
 
+// ── CAMERA FLASH + SHUTTER SOUND ──
+function cameraFlash() {
+  // 셔터 사운드 (Web Audio API)
+  try {
+    const ac = new (window.AudioContext || window.webkitAudioContext)();
+    // 클릭 노이즈
+    const bufLen = ac.sampleRate * 0.06;
+    const buf = ac.createBuffer(1, bufLen, ac.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < bufLen; i++) {
+      data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / bufLen, 4);
+    }
+    const src = ac.createBufferSource();
+    src.buffer = buf;
+    const gain = ac.createGain();
+    gain.gain.setValueAtTime(1.2, ac.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.06);
+    src.connect(gain);
+    gain.connect(ac.destination);
+    src.start();
+  } catch(e) {}
+
+  // 플래시 오버레이
+  const flash = document.getElementById('camera-flash');
+  if (!flash) return;
+  flash.style.animation = 'none';
+  flash.offsetHeight; // reflow
+  flash.style.animation = 'flashBurst 0.55s ease-out forwards';
+}
+
 // ── PHASE NAVIGATION ──
 function goPhase(id) {
   document.querySelectorAll('.phase').forEach(p => p.classList.remove('active'));
@@ -856,6 +899,7 @@ function goPhase(id) {
   }
   if (id === 'phase-photocard') {
     buildStars();
+    cameraFlash();
     setTimeout(fireConfetti, 800);
   }
   if (id === 'phase-fin') {
