@@ -19,18 +19,18 @@
 
 ## COLD OPEN
 
-*You know Jay sends the tracks he's working on to the group chat when they're finished.*
+*You know Jay sends the finished tracks to the group chat.*
 
-*You did not know he had a studio room.*
+*You didn't know he had a studio room.*
 
-*It's one of the smaller rooms in the label building — not a proper tracking room, just a mixing console and a speaker and a chair that's been there so long it's shaped to one person. Jay found it two years ago. He doesn't tell people about it.*
+*It's one of the smaller rooms in the label building — not a proper tracking room, just a mixing console and a speaker and a chair that's been there long enough to hold the shape of one person. Jay found it two years ago. He doesn't tell people about it.*
 
-*He tells you when you run into him in the hallway and he's carrying his notebook and he makes a decision you can see him make — a half-second where he weighs something — and then he says:*
+*He tells you when you run into him in the hallway and he's carrying his notebook and he makes a decision — you can see it happen, a half-second where he weighs something — and then:*
 
 **JAY:**
 "Come, if you want."
 
-*He doesn't look to see if you're following.*
+*He doesn't look back to check if you're following.*
 
 *You follow.*
 
@@ -38,23 +38,21 @@
 
 ## SCENE 1 — THE ROOM
 
-*The room is small. Console on the left wall, speaker on the right, a rolling chair that Jay drops into immediately. The console has notes on it — actual handwritten notes, sticky tabs, some kind of system only he understands.*
+*The room is small. Console on the left wall, speaker on the right, the rolling chair Jay drops into immediately. The console has notes — handwritten, sticky tabs, a system only he understands.*
 
-*He has his notebook.*
+*He opens his notebook.*
 
-*He has a track loaded — you can see the waveform on the screen. It's not finished. Pieces of it.*
+*He has a track loaded — you can see the waveform on the screen. Pieces of it, not stitched together yet.*
 
-*There's a second chair, folding, by the door. He doesn't point to it. You move it close enough and sit.*
+*There's a second chair, folding, against the door. He doesn't point to it. You move it close enough and sit.*
 
 **JAY:**
 "I'm working on something."
 
-*He opens his notebook.*
+*He presses play.*
 
 **JAY:**
-"You can stay or you can go. I'm going to work either way."
-
-*He presses play.*
+"You can stay or you can go. Either's fine."
 
 ---
 
@@ -62,9 +60,9 @@
 
 *What comes out of the speaker is nothing like what CALIX releases.*
 
-*It's raw — not unfinished-raw but honest-raw, the kind of sound that doesn't have a label filter on it. Instrumental first: something with low pulse, a sample looped from somewhere. Then Jay's voice comes in.*
+*Raw — not unfinished-raw, honest-raw. Instrumental first: a low pulse, a sample looped from somewhere you can't place. Then Jay's voice comes in.*
 
-*He's rapping. But softer than his stage voice — faster in some places, completely open in others.*
+*Rapping, but softer than his stage voice. Faster in some places. In others, completely open — like he forgot to close something and the sound just comes through.*
 
 *It plays for a minute forty.*
 
@@ -72,11 +70,9 @@
 
 *He writes something in the notebook.*
 
-*Plays it again from the bridge.*
+*Plays it again from the bridge. Stops. Writes.*
 
-*Stops. Writes.*
-
-*He does this twice before he looks at you.*
+*He does this twice without looking at you, and then he does.*
 
 **JAY:**
 "What are you thinking."
@@ -94,11 +90,11 @@
 **OPTION A:** Tell him exactly what you heard — the emotion in it.
 > *You sit with it for a beat. You don't rush.*
 >
-> **YOU:** "It sounds like you're talking to someone who isn't in the room anymore."
+> **YOU:** "It sounds like you're talking to someone who isn't in the room anymore. Like you're saying something out loud instead of saying it to them."
 >
-> *Jay is very still.*
+> *Jay goes very still.*
 >
-> **YOU:** "The bridge specifically — the way the cadence slows down there. It doesn't sound like anger. It sounds like you're saying something you should have said and didn't."
+> **YOU:** "The bridge especially — the way the cadence slows there. It doesn't sound like anger. It sounds like something you should have said and didn't."
 >
 > *A long pause.*
 >
@@ -108,11 +104,11 @@
 >
 > *He clicks his pen.*
 >
-> **JAY:** "That's — yeah."
+> **JAY:** "Yeah. That's — yeah."
 >
 > *He writes something.*
 >
-> **JAY:** "That's the part I haven't been able to finish."
+> **JAY:** "That's the part I haven't been able to finish. I didn't know why until right now."
 >
 > `[+3 JAY_TRUST] [+1 GROUP_REP]`
 
@@ -123,21 +119,21 @@
 >
 > *Jay looks at you.*
 >
-> *The question hangs.*
+> *The question sits.*
 >
 > **JAY:** "..."
 >
-> *He almost answers. You can see it — the thing rising, the decision about whether to let it.*
+> *He almost answers. You can see it — something rises, a decision about whether to let it through.*
 >
 > **JAY:** "Someone I used to know."
 >
-> *He says it simply. Like that's a complete sentence. It is.*
+> *He says it plainly, like that's a full sentence. It is.*
 >
 > **JAY:** "Before CALIX."
 >
 > *He looks back at the screen.*
 >
-> **JAY:** "I write about people I can't talk to anymore. It's just how it comes out."
+> **JAY:** "I write about people I can't talk to anymore. It just comes out that way. It's the only way I know how to finish it."
 >
 > `[+1 JAY_TRUST]`
 
@@ -154,19 +150,19 @@
 >
 > *He presses play.*
 >
-> *Neither of you says anything during the second play. You just listen. You listen the way Jay listens to things — all of it, the spaces between the sounds, the choices.*
+> *Neither of you says anything during the second run. You listen the way Jay listens to things — all of it, the spaces between sounds, the choices in the arrangement.*
 >
-> *When it ends again:*
+> *When it ends:*
 >
 > **JAY:** "..."
 >
-> *He writes something in the notebook — longer this time. Multiple lines.*
+> *He writes in the notebook. Longer this time — multiple lines, fast.*
 >
 > *He doesn't explain what he wrote.*
 >
 > **JAY:** "I'm going to fix the bridge."
 >
-> *He says it like something settled.*
+> *He says it like something settled into place.*
 >
 > `[+4 JAY_TRUST]`
 
@@ -185,11 +181,9 @@
 >
 > **JAY:** "Okay."
 >
-> *He says it the way you close a door you opened a little and then decided not to.*
+> *He says it the way you close a door you opened slightly and then decided not to.*
 >
 > **JAY:** "I'm going to keep working."
->
-> *He's not rude. He's just — done.*
 >
 > `[-2 JAY_TRUST]`
 
@@ -197,11 +191,11 @@
 
 ## SCENE 3 — THE NOTEBOOK
 
-*If you stayed on good terms — Jay keeps working. He plays sections. Stops them. Writes.*
+*Jay keeps working. He plays sections. Stops them. Writes.*
 
 *You stay.*
 
-*At some point you stop trying to track what he's doing and you just exist in the room with him. The sound of the track. The scratch of his pen. The specific quality of someone doing the thing they're actually for.*
+*At some point you stop tracking what he's doing and you just exist in the room with him. The track fragments. The scratch of his pen. The specific quality of someone doing the thing they're actually for.*
 
 *After a while:*
 
@@ -214,28 +208,28 @@
 "What?"
 
 **JAY:**
-"It's decided before it's made. Someone says: this is the vibe, this is the direction, this is the sound for this cycle — and then people go make that thing. And it's fine. It works. But it was already decided."
+"It's decided before it's made. The direction, the sound, the vibe for this cycle — and then people go make that thing. The thing was decided in a meeting, and then they make it. And it's fine. It works. But it was already decided before anyone sat down to write it."
 
 *He clicks his pen.*
 
 **JAY:**
-"I don't write like that. I write because I need to say something and I don't know what it is until I'm finished. And then sometimes it doesn't fit CALIX and it just lives in the notebook."
+"I don't write like that. I write because I need to say something I don't know how to say out loud, and I don't know what it is until I'm finished. And sometimes what comes out doesn't fit CALIX. So it stays in the notebook."
 
 *He looks at it.*
 
 **JAY:**
-"I have two years of notebooks. All the stuff that was true but didn't fit the format."
+"I have two years of notebooks. Everything that was true but didn't fit the format."
 
 **YOU:**
-"Is that frustrating?"
+"Doesn't that frustrate you?"
 
 **JAY:**
-"It would be frustrating if the format wasn't also real. But CALIX is real too."
+"It would, if the format wasn't also real. But CALIX is real too. It's just a different kind of true."
 
 *A pause.*
 
 **JAY:**
-"Two kinds of true. That's okay."
+"Two kinds of true. That's fine."
 
 ---
 
@@ -243,14 +237,12 @@
 
 *An hour later, Jay plays the bridge again.*
 
-*He's changed something — the cadence, the line. You can hear the difference. Where it was stuck, something opened.*
+*Something's changed in it — the cadence, one line. You can hear where it was stuck and now it's not.*
 
 **JAY:**
 "There."
 
-*He says it like a fact.*
-
-*He plays it twice more. Makes a note.*
+*He says it like a fact. He plays it twice more and makes a note.*
 
 **JAY:**
 "The part I couldn't finish — it wasn't the line. It was that I was saying the wrong thing in the line."
@@ -272,24 +264,28 @@
 >
 > *He saves the file. Closes his notebook.*
 >
-> *He doesn't say anything else. He doesn't have to.*
+> *He doesn't say anything else, and he doesn't have to.*
 >
-> *The track is finished in a way it wasn't an hour ago and you were in the room when it happened.*
+> *The track is finished in a way it wasn't an hour ago, and you were in the room when it happened.*
 >
 > `[+2 JAY_TRUST]`
 
 ---
 
 **OPTION B:** Ask what changed.
-> **YOU:** "What did you change in the line?"
+> **YOU:** "What did you change?"
 >
 > *Jay looks at the notebook.*
 >
-> **JAY:** "I was writing to the person I was angry at. I changed it to the person I actually miss."
+> **JAY:** "I was writing to the person I was angry at."
 >
-> *He says it plainly. No performance.*
+> *He closes the notebook.*
 >
-> **JAY:** "Different song."
+> **JAY:** "I changed it to the person I actually miss."
+>
+> *He says it plainly. No performance in it.*
+>
+> **JAY:** "Completely different song."
 >
 > `[+3 JAY_TRUST]`
 
@@ -297,47 +293,49 @@
 
 ## SCENE 5 — LEAVING
 
-*It's late. Jay saves the file. Closes the program.*
+*Late. Jay saves the file and closes the program.*
 
 *He stands, picks up his notebook.*
 
-*He takes a second one from the shelf beside the console — identical, spiral-bound, black cover, completely blank — and holds it out across the console.*
+*He takes a second one from the shelf beside the console — identical, spiral-bound, black cover, completely blank — and holds it out.*
+
+*His fingers are still on the spine when you reach for it.*
+
+*He doesn't notice.*
+
+*You do.*
 
 **JAY:**
 "Here."
-
-*You take it.*
 
 **YOU:**
 "What's this for?"
 
 **JAY:**
-"Write in it. Whatever. It doesn't have to be music."
+"Write in it. Whatever — it doesn't have to be music. It doesn't have to be anything."
 
 *He tucks his own notebook under his arm.*
 
 **JAY:**
-"The thing about writing it down is it gets out of your head and onto the page and then you can look at it from outside. That's useful."
+"The thing about writing it down is it gets out of your head and onto the page and then you can look at it from the outside. That's all it is. That's the whole point."
 
 *He moves toward the door.*
 
 **JAY:**
-"That's all it is."
+"Bring it whenever. I'm usually in here on Thursday nights."
 
 *He walks out.*
 
 **NARRATION:**
 > *The studio is very quiet when he's gone.*
 >
-> *The blank notebook is in your hands — same kind he uses. Same weight. Same possibility.*
+> *The notebook is in your hands — same kind he uses. Same weight.*
 >
 > *You think about what he said: two kinds of true.*
 >
-> *You think you understand, now, why Jay says so little. It's not that he doesn't have things to say. It's that he saves them for when they're worth saying.*
+> *You hold the notebook for a moment before you put it under your arm the same way he did.*
 >
 > *You walk out.*
->
-> *You bring the notebook home.*
 
 ---
 

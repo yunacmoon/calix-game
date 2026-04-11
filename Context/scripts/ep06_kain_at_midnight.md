@@ -21,7 +21,7 @@
 
 *You couldn't sleep.*
 
-*This has become a pattern — something about this building, its rhythms, keeps you at the surface of sleep rather than under it. You've started using the late hours: practice room when it's empty, the kitchen, the hallway.*
+*This has become a pattern — something about this building keeps you at the surface of sleep rather than under it. You've started using the late hours: practice room when it's empty, the kitchen, the hallway.*
 
 *Tonight, the practice room isn't empty.*
 
@@ -29,11 +29,11 @@
 
 *Kain. Midnight. Running a sequence.*
 
-*He's not running the group's choreo — or if he is, it's a version of it you haven't seen. Something with more in it. More precision, more depth, like he's running the version he keeps for himself that's harder than what he asks of the others.*
+*Not the group choreo — or if it is, it's a version he keeps for himself. More precise. More depth. Like he's running the one that's harder than what he asks of anyone else.*
 
 *He does it once. Stops. Resets. Does it again.*
 
-*His face in the mirror is different from his face in practice — no performance layer, no leadership layer. Just: work. Just: a person who loves this enough to do it alone at midnight.*
+*His face in the mirror is different from his face in practice. No performance in it. Just work — just a person who loves this enough to do it alone at midnight.*
 
 *You stand at the glass for longer than you mean to.*
 
@@ -43,17 +43,15 @@
 
 *You don't decide to go in so much as you stop not going in.*
 
-*The door opens quietly. The music is clearer from inside — something mid-tempo, a track you half-recognize, on loop.*
+*The door opens quietly. The music is clearer from inside — something mid-tempo, looped.*
 
 *Kain doesn't stop.*
 
-*He's seen you in the mirror.*
-
-*He just keeps going — one more run of the sequence, start to finish. Clean. You watch it from the doorway and understand, for the first time with clarity, why he's the leader. It's not authority. It's standard. He sets a standard that everything else has to rise to meet.*
+*He's seen you in the mirror. He keeps going — one more run, start to finish. You watch it from the doorway and understand, for the first time with real clarity, why he's the leader. Not authority. Standard. He sets a standard that everything else has to rise to meet.*
 
 *He stops. Turns.*
 
-*He looks at you the way he looks at everything — assessing. But there's something different about the assessment at midnight. Less armor in it.*
+*He looks at you. There's something different about the assessment at midnight — not softer, just less of the usual distance in it.*
 
 **KAIN:**
 "You're not scheduled for the room."
@@ -71,16 +69,12 @@
 **KAIN:**
 "What are you doing here."
 
-*Not angry. Just a question.*
-
 ---
 
 ## SCENE 2 — THE WATCH
 
-*You're honest:*
-
 **YOU:**
-"I couldn't sleep. I was going to use the room. But you were here."
+"Couldn't sleep. I was going to use the room. But you were here."
 
 **KAIN:**
 "And you came in anyway."
@@ -88,7 +82,7 @@
 **YOU:**
 "I watched for a minute first."
 
-*He doesn't look bothered by that. He sets his water bottle down.*
+*He sets his water bottle down.*
 
 **KAIN:**
 "How long."
@@ -96,12 +90,10 @@
 **YOU:**
 "A few minutes."
 
-*He nods once. Absorbing this.*
+*He nods once.*
 
 **KAIN:**
 "And?"
-
-*He says it neutrally — not fishing for a compliment, just completing the information gathering. He wants to know what you saw.*
 
 ---
 
@@ -114,15 +106,15 @@
 >
 > **YOU:** "You never stop, do you."
 >
-> *It's not an accusation. Just — an observation. The kind you'd only make if you meant it.*
+> *It's not an accusation. Just an observation you mean.*
 >
-> *Kain looks at you for a moment.*
+> *Kain holds your gaze for a moment.*
 >
 > **KAIN:** "I stop."
 >
 > **YOU:** "When?"
 >
-> *A beat. Something passes across his face — not quite a smile, but the shape of recognition. Like you've asked the right annoying question.*
+> *Something crosses his face — not quite a smile, but close to recognition. Like you asked the right annoying question.*
 >
 > **KAIN:** "When it's done."
 >
@@ -136,7 +128,7 @@
 >
 > **KAIN:** "No."
 >
-> *He says it without self-pity. It's just true.*
+> *He says it without self-pity. Just true.*
 >
 > `[+2 KAIN_TRUST]`
 
@@ -147,15 +139,13 @@
 >
 > *Kain looks at you.*
 >
-> *He looks at you the way he looks at something he's already catalogued.*
->
 > **KAIN:** "You've been at the glass for four minutes."
 >
 > *Silence.*
 >
 > **KAIN:** "Don't do that. Don't pretend."
 >
-> *Not harsh. Just — a rule he's setting.*
+> *Not harsh — a rule he's setting.*
 >
 > **KAIN:** "If you were watching, say you were watching. I don't care that you watched. I care that you'd lie about it."
 >
@@ -168,7 +158,7 @@
 >
 > *A beat.*
 >
-> *Kain looks at you. This is not the response he expected. He expected discomfort, an apology, an explanation.*
+> *This is not the response he expected. He expected discomfort, an apology.*
 >
 > **KAIN:** "You know it?"
 >
@@ -182,9 +172,13 @@
 >
 > *You run it together.*
 >
-> *He doesn't look at you in the mirror. He looks at himself. But when you hit the count-seven weight shift correctly — Jay's correction — something in his posture shifts.*
+> *He doesn't watch you in the mirror. He watches himself. But when you hit the count-seven weight shift correctly — Jay's correction — he stops the track.*
 >
-> *He runs it again without saying anything.*
+> *He steps beside you. One hand on your shoulder, checking the position. Gone before you've registered it.*
+>
+> **KAIN:** "Again."
+>
+> *He goes back to his mark.*
 >
 > `[+3 KAIN_TRUST] [+1 SKILL]`
 
@@ -195,15 +189,13 @@
 >
 > *Then you nod once — the same nod you gave him on day one — and pull the door closed behind you.*
 >
-> *You stand in the hallway.*
->
 > *Inside, after a beat: the track resumes.*
 >
 > *He's still going.*
 >
-> **YOU (internal):** *He didn't ask you to stay. He didn't ask you to leave. He let you make the call.*
+> **YOU (internal):** *He didn't ask you to stay. He didn't ask you to leave. He let you decide.*
 >
-> *That's also, you're realizing, how Kain operates. He gives you the space to decide who you are. Then he remembers it.*
+> *That's how Kain operates. He gives you the space to decide who you are. Then he remembers.*
 >
 > `[+1 KAIN_TRUST]`
 
@@ -211,11 +203,9 @@
 
 ## SCENE 3 — AFTER
 
-*If you stayed:*
+*The practice continues for another twenty minutes. No talking. The music loops, you run the sequence, and Kain is watching himself in the mirror — not you. That's fine. Being in the same room is enough.*
 
-*The practice continues for another twenty minutes. You don't talk. The music loops and you run the sequence and Kain makes one correction — a hand placement in the second half — and you make the correction, and he goes back to watching himself, and that's it.*
-
-*When he finally stops, he stops like he means it. Towel. Water. Something in him released that was held taut the whole time.*
+*When he finally stops, he stops like he means it. Towel. Water. Something released that was held taut.*
 
 **KAIN:**
 "Your seven is better."
@@ -225,23 +215,19 @@
 **YOU:**
 "Jay told me."
 
-*He nods, once.*
+*He nods.*
 
 **KAIN:**
 "Good."
 
 *He picks up his bag.*
 
-*Then he stops. Reaches into the side pocket. Pulls out a spare energy drink — still sealed — and sets it on the shelf beside you.*
-
-*He doesn't make anything of it.*
+*Then stops. Reaches into the side pocket. Pulls out a spare energy drink — sealed — and sets it on the shelf beside you without making anything of it.*
 
 **KAIN:**
-"The electrolytes are better than the ones you get from the vending machine."
+"The electrolytes are better than the vending machine ones."
 
 *He walks out.*
-
-*You stand in the practice room alone.*
 
 *The track is still looping.*
 
@@ -249,32 +235,26 @@
 
 ## SCENE 4 — LEAVING
 
-*You stay in the room for a few more minutes.*
+*You stay a few more minutes.*
 
-*Not to practice — just to be in it. The space that Kain uses like an extension of himself, that exists somewhere between studio and sanctuary for him.*
+*Not to practice — just to be in it. The space Kain uses like an extension of himself.*
 
-*You run the sequence once more, by yourself.*
+*You run the sequence once more, alone.*
 
-*It's good. It's actually good.*
+*It's good. Actually good.*
 
 **NARRATION:**
-> *You drink half the energy drink before you leave. It's better than the vending machine kind — he was right.*
+> *You drink half the energy drink on the way out. He was right — it's better.*
 >
-> *You think about what Finn said, two nights ago in the common room: Kain has a very specific idea of what CALIX is supposed to be, and it cost him things. So when anything threatens it — even good things — his first instinct is protection.*
+> *You think about what Finn said: Kain won't let himself want something until he knows he can have it. So he won't let himself want you in the group until he's sure you're staying.*
 >
-> *Tonight he didn't protect himself from you.*
+> *Tonight he let you in the room.*
 >
 > *That's small. Or it isn't. You're still figuring out Kain's scale.*
 
-*On your way out, you notice it — pinned to the corner of the practice room mirror. A photocard. Kain's. Pre-debut era. Younger, same eyes.*
+*On the way out, you notice it — pinned to the corner of the practice room mirror. A photocard. Kain. Pre-debut. Younger, same eyes.*
 
-*You look at it for a moment.*
-
-*Then you take it down.*
-
-*You're not sure who left it there. Could be anyone. Could be no one — just something that got left behind and forgotten. The practice room collects things like that. There's something about the wear on the edges, the slightly faded print, that makes it look abandoned rather than placed.*
-
-*Former member, maybe. You don't know enough history yet to say.*
+*You're not sure who left it there. The edges are worn, the print slightly faded — not placed, just left. The practice room collects things like that. Former member, maybe. You don't know enough history yet.*
 
 *You take it anyway.*
 

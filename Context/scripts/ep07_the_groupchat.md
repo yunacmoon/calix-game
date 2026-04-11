@@ -108,19 +108,19 @@ FINN
 *You are sitting in bed, phone in both hands, reading this.*
 
 **NARRATION:**
-> *This is CALIX in text.*
+> *The groupchat is not what you expected.*
 >
-> *You've been watching them for a week in practice rooms, at dinner tables, in hallways. But text is a different kind of watching. Everyone's guard is different — not lower, necessarily, but differently shaped.*
+> *You've watched them in practice rooms, at dinner tables, in hallways. But text is a different register — everyone runs slightly different from their in-person version, and you're still calibrating what's normal.*
 >
-> *Kain types in full sentences with correct punctuation and almost no typos. You get the sense he reviews before he sends.*
+> *Kain types in full sentences with correct punctuation and no typos. Kain reviews before he sends. That's already obvious.*
 >
-> *Theo sends in bursts — three messages where one would do, voice memos when he's too excited to type.*
+> *Theo sends in bursts — three where one would do, voice memos when he's too excited to type, sometimes a second message correcting the first before you've read it.*
 >
-> *Jay responds with one word or an emoji and it always lands like a full sentence.*
+> *Jay responds with one word or an emoji and it lands like a full sentence every time.*
 >
-> *Finn sends a single emoji and somehow it's always exactly right.*
+> *Finn sends a single emoji. It's always exactly right.*
 >
-> *You have not yet sent anything.*
+> *You have not sent anything yet.*
 >
 > *The cursor blinks in the text box.*
 
@@ -196,11 +196,11 @@ THEO
 
 *Theo's 1:47 voice memo plays.*
 
-*It is Theo, at full Theo, talking through an idea about the third section of choreo — he thinks the current setup has everyone too static in the second half of the section, and he wants more floor work, or at least more dynamic variation, and he has a specific sequence in mind that he's humming to demonstrate and the humming is genuinely good and also he mentions twice that he doesn't want to step on Kain's plan but he's also being very clear about what he thinks —*
+*It is Theo, at full Theo — talking fast, stopping to reconsider, restarting. He thinks the current setup has everyone too static in the second half of the third section, and he wants more floor work, or at least more dynamic variation, and he has a sequence in mind that he starts humming to demonstrate. The humming is genuinely good. He mentions twice that he doesn't want to step on Kain's plan but he's also being very specific about what he thinks, and the longer he goes the more he sounds like someone who has been holding this in since morning.*
 
 *It ends.*
 
-*You realize you've listened to it twice.*
+*You've listened to it twice without noticing.*
 
 ---
 
@@ -213,7 +213,7 @@ THEO
 **OPTION A:** Send a voice memo back, matching his energy.
 > *You hold the record button.*
 >
-> **YOU (voice memo — 0:31):** "Okay so I listened to yours twice. The part about floor work — I think you're right, there's a dead zone in the second half. And the sequence you hummed at the end? If we anchor that on the beat before the break it lands differently. Try it in the mirror. Also yes this is clearly not just a logistics channel."
+> **YOU (voice memo — 0:31):** "Okay so I listened to yours twice. The part about floor work — I think you're right, there's a dead zone in the second half where the energy goes flat. And the sequence you hummed at the end? If we anchor that on the beat right before the break it lands differently. Just try it in the mirror once. Also yes this is clearly not a logistics channel."
 >
 > *Send.*
 >
@@ -230,7 +230,7 @@ THEO
 >
 > THEO
 >   also the beat anchor thing is EXACTLY what I was hearing
->   how did you hear that
+>   how did you catch that
 >
 >                                JAY
 >                              [voice memo — 0:06]
@@ -259,7 +259,7 @@ THEO
 **OPTION B:** Type out a genuine opinion.
 > *You type.*
 >
-> **YOU:** "Theo's right about the static section. The second half of the third section stops moving and I think that's deliberate but it might be too long. Also this is definitely not a logistics channel."
+> **YOU:** "Theo's right about the static section. The second half stops moving right when it should keep building, and I think the stillness is too long to be intentional. Also this is clearly not a logistics channel."
 >
 > *Send.*
 >
@@ -276,12 +276,12 @@ THEO
 >
 > KAIN
 >   "Too long" is subjective.
->   What's the specific count?
+>   What's the specific count you'd cut?
 >
 > ━━━━━━━━━━━━━━━━━━━━
 > ```
 >
-> *Kain just directly engaged you in a scheduling discussion. That's — something.*
+> *Kain is directly asking your opinion. About counts. By name.*
 >
 > `[+2 THEO_TRUST] [+1 JAY_TRUST]`
 
@@ -306,16 +306,15 @@ THEO
 >
 > FINN
 >   they used a music note
->
-> FINN
 >   that's agreement in the language of emoji
 >
 >                                JAY
 >                              he's right
 >
 > THEO
->   okay FINN and [your name] are clearly
->   operating on a different frequency
+>   okay so [your name] and Finn are
+>   operating on a whole different frequency
+>   I'm just going to accept this
 >
 > ━━━━━━━━━━━━━━━━━━━━
 > ```
@@ -339,7 +338,7 @@ THEO
 > ━━━━━━━━━━━━━━━━━━━━
 >
 > [you, 8:14am]
-> Read Theo's voice memo.
+> Read Theo's voice memo this morning.
 > He's right about the static section.
 >
 > KAIN [8:16am]
@@ -348,9 +347,9 @@ THEO
 > ━━━━━━━━━━━━━━━━━━━━
 > ```
 >
-> *There are nineteen messages from Theo between midnight and 8am that are not relevant to the choreo.*
+> *There are nineteen messages from Theo between midnight and 8am that have nothing to do with the choreo.*
 >
-> *Kain responded to you specifically. At 8:16am, which means he was already awake and already thinking about it.*
+> *Kain said good morning. To you specifically. At 8:16am, which means he was already awake and already thinking about it.*
 >
 > `[+1 KAIN_TRUST]`
 
@@ -466,7 +465,7 @@ THEO
 ---
 
 **OPTION B:** Ask what kind of film.
-> **YOU:** "What silent film?"
+> **YOU:** "What's the film?"
 >
 > ```
 > FINN
@@ -488,6 +487,8 @@ THEO
 >
 > THEO
 >   when did this happen
+>   when did you two watch silent films together
+>   and not tell anyone
 >
 > ━━━━━━━━━━━━━━━━━━━━
 > ```
@@ -517,18 +518,20 @@ KAIN
 
 *You stare at your phone.*
 
-*Kain is texting you separately.*
+*Kain is texting you. Separately. About the choreo. Asking your opinion on something he designed.*
 
-*About the choreo.*
-
-*Asking your opinion.*
+*The message came in three minutes ago — you were in the kitchen and didn't hear it.*
 
 ---
 
 **NARRATION:**
-> *You remember what Finn said. When he respects someone, he asks their opinion first.*
+> *You think about what Finn said. When Kain respects someone, he asks first.*
 >
-> *You start typing.*
+> *You think about the practice room at midnight. The way he ran the same four counts again and again in the mirror, looking for something that wasn't there yet.*
+>
+> *The same precision is in the text. Full sentences. Correct punctuation. He reviewed it before he sent.*
+>
+> *You pick up the phone.*
 
 ---
 

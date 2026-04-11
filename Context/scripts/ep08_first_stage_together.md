@@ -25,18 +25,13 @@
 
 *You walk out from the wings.*
 
-*The stage is bigger than anything you've practiced on. The lights are off but you can see the shape of it — the edge, the wings, the curve of the seats going up and back into dark.*
+*The stage is bigger than anything you've practiced on. The lights are off but you can see the shape of it — the edge, the distance to the wings, the curve of the seats going up and back and dark. More dark than you expected. It's hard to see where it ends.*
 
-**NARRATION:**
-> *This is the moment that was theoretical for so long it stopped feeling real.*
->
-> *Practice rooms have mirrors. Stages have edges — real ones, places where you stop and the audience begins. You have to relearn how to perform in a space that has edges.*
->
-> *You stand at the center mark.*
->
-> *You breathe.*
->
-> *You go back to the wings.*
+*You stand at the center mark.*
+
+*You breathe.*
+
+*You go back to the wings.*
 
 ---
 
@@ -44,22 +39,24 @@
 
 *Two hours before.*
 
-*The dressing room has five stations. Yours was set up this morning — stylists, the label, someone who coordinates these things. Your name on the mirror.*
+*The dressing room has five stations. Yours was set up this morning — stylists, someone who coordinates these things, a printed schedule in the corner of the mirror. Your name on the mirror.*
 
-*First time: your name on a mirror in a venue dressing room. You hold that for exactly three seconds before Theo comes in.*
+*First time. Your name on a mirror in a venue dressing room.*
 
-**THEO:**
-"Okay. Okay, we're really doing this. Like, for real. Five chairs."
-
-*He's counting the chairs.*
+*You hold that for exactly three seconds before Theo comes in.*
 
 **THEO:**
-"There are five chairs. There have been four chairs for two years and now there are five."
+"Okay. Okay, we're doing this. Like, for real. Five chairs."
+
+*He's counting the chairs. He counts them twice.*
+
+**THEO:**
+"There are five chairs. We've had four chairs for two years and now there are five. That's — that's a real thing."
 
 *He sits in the one next to yours.*
 
 **THEO:**
-"Is this weird? This feels weird. It feels right and also weird."
+"Is this weird? This feels weird. It feels right and also really weird at the same time."
 
 *He looks at you in the mirror.*
 
@@ -70,9 +67,9 @@
 
 ## SCENE 2 — KAIN'S CHECKLIST
 
-*Kain comes in with a physical checklist. You clock this — a physical, handwritten checklist. Kain has a handwritten checklist for the performance.*
+*Kain comes in with a physical checklist. Handwritten. You clock this — Kain, who keeps everything on his tablet, has a handwritten checklist for the performance.*
 
-*He goes through it without reading it aloud. Marks things. Makes a note.*
+*He goes through it without reading it aloud. Marks things. Makes a note in the margin.*
 
 **KAIN:**
 "Thirty-minute costume call. Twenty-minute vocal warmup. Stage check at T-minus forty-five."
@@ -80,7 +77,7 @@
 *He looks up.*
 
 **KAIN:**
-"The new section goes in at the bridge as planned. If anything shifts, we hold the original formation. Don't improvise."
+"The new section goes in at the bridge as planned. If anything shifts — if anything at all shifts — we hold the original formation. Don't improvise."
 
 *He looks at you specifically for the last part.*
 
@@ -104,26 +101,25 @@
 
 *Jay is already in his costume and in his chair, headphones on, eyes closed.*
 
-*He doesn't look nervous. He looks like someone who has been somewhere very deep inside himself and is waiting to come back up.*
+*He doesn't look nervous. He looks like someone who has gone somewhere very far inside himself and is just waiting.*
 
-*Finn, settling at the station beside you:*
-
-**FINN:**
-*(quietly, not to you specifically, but you're the one close enough to hear)*
-"He's always like this before a stage. He goes somewhere. He'll be fine when the track starts."
-
-*You look at Jay in the mirror.*
+*Finn, settling at the station beside you, low enough that only you hear:*
 
 **FINN:**
-"He was like this the first time, too. First ever performance. He sat with his headphones on for forty minutes and then walked out and did the best set of all of us."
+"He's always like this before a stage. Goes somewhere. He'll be fine the moment the track starts."
 
-*He looks at his own reflection.*
+*You look at Jay's reflection in the mirror.*
+
+**FINN:**
+"He was like this the first time too. First ever performance. Sat with his headphones on for forty minutes and then walked out and did the best set of all of us."
+
+*He glances at his own reflection.*
 
 **FINN:**
 "I was the one who was visibly nervous."
 
 **YOU:**
-"Were you?"
+"You were?"
 
 **FINN:**
 "I held Theo's hand in the wings until the thirty-second mark."
@@ -131,7 +127,7 @@
 *He pauses.*
 
 **FINN:**
-"Don't tell Theo I told you that. He'll never let me live it down."
+"Don't tell Theo I told you that. He'll make it a whole thing, I'll never hear the end of it."
 
 ---
 
@@ -139,7 +135,7 @@
 
 *T-minus five minutes.*
 
-*The five of you are in the wings. The crowd noise is not muffled anymore — it's right there, on the other side of the curtain, four thousand people and the specific roar of anticipation.*
+*Five of you in the wings. The crowd noise is not muffled anymore — it's right there, on the other side of the curtain. Four thousand people and the specific pressure-sound of anticipation.*
 
 *Kain is in front. Finn behind him. Then Jay. Then Theo and you at the back.*
 
@@ -159,16 +155,16 @@
 
 ## CHOICE 1 — Right before you go on. Theo asks: "How are you feeling?"
 
-*He's looking at you. His eyes are bright with something that isn't quite fear — it's the thing past fear.*
+*He's looking at you. His eyes are bright with something that isn't quite fear.*
 
 ---
 
 **OPTION A:** *"Ready."*
 > **YOU:** "Ready."
 >
-> *Theo stares at you.*
+> *Theo stares at you for two full seconds.*
 >
-> **THEO:** "...okay. Okay, yeah."
+> **THEO:** "...okay. Okay, yeah. Yeah, okay."
 >
 > *He lets go of your wrist. Settles.*
 >
@@ -187,11 +183,11 @@
 >
 > *Theo exhales — the best kind, a laugh disguised as a breath.*
 >
-> **THEO:** "God, okay, me too. Let's go."
+> **THEO:** "God, okay, me too. Yeah. Let's go."
 >
 > *He squeezes your wrist once before he lets go.*
 >
-> *Finn, ahead of you, glances back. Something in his face softens.*
+> *Finn, ahead of you, glances back briefly. Something in his face softens and then he faces front again.*
 >
 > `[+2 THEO_TRUST] [+1 GROUP_REP]`
 
@@ -210,7 +206,7 @@
 >
 > *He releases.*
 >
-> *Finn has turned back to face front, but his shoulders are slightly lower than they were. Something in the whole group settled.*
+> *Finn has turned back to face front, but his shoulders are slightly lower. Like something in the whole group settled.*
 >
 > `[+2 FINN_TRUST] [+1 THEO_TRUST]`
 
@@ -245,7 +241,7 @@
 
 *Four thousand people.*
 
-*The intro rolls — the track you've run fifty times in the practice room, two hundred times in your head — and it's different when it's real, when the bass is coming through the floor and the light is in your face and the crowd noise collapses into something that's almost a physical sensation.*
+*The intro rolls — the track you've run fifty times in the practice room, two hundred times in your head — and it's different when it's real. The bass comes through the floor. The light has weight. The crowd noise collapses into something that is almost a physical sensation, like pressure that keeps changing shape.*
 
 *Kain walks out first.*
 
@@ -267,11 +263,11 @@
 
 *The performance doesn't exist in narration.*
 
-*It exists in the run of counts you know in your body, in the moments where the mirror isn't there and you have to trust what you've built, in the look Theo gives you across the stage on the second chorus where his expression says: see? I told you.*
+*It exists in the sequence you know in your body, in the counts landing clean when the mirror isn't there and you have to trust what you've built in it. It exists in the look Theo gives you across the stage on the second chorus, his expression saying: see, I told you.*
 
-*It exists in the moment Kain catches your eye — just once, mid-bridge — and holds it for exactly one count.*
+*It exists in Kain catching your eye — just once, mid-bridge — and holding it for exactly one count. One count too long, maybe. Then he's back to the mirror and the moment is already gone.*
 
-*It exists in Jay, whose face when he performs is the most open you've seen him, like the music takes down whatever he keeps up the rest of the time.*
+*It exists in Jay, whose face when he performs is the most open you've ever seen it, like the music takes down whatever he keeps up the rest of the time.*
 
 *It exists in Finn, who is beautiful in a way that's specific on stage — not the visual-member way, but the way of someone who has decided to mean every single thing.*
 
@@ -289,9 +285,9 @@
 
 *Theo throws his arms up. He's saying something to the crowd — his stage voice, the one that carries. Kain bows, precise, the leader's bow.*
 
-*Jay takes the applause and doesn't move. He just stands in it, headphones gone, the crowd's sound filling the space where the music was.*
+*Jay takes the applause and doesn't move. He just stands in it, headphones long gone, the crowd's sound filling the space where the music was.*
 
-*Finn looks out at the crowd with something in his face you can't quite read — gratitude, maybe, or relief, or both.*
+*Finn looks out at the crowd with something in his face that isn't for you — private, something released.*
 
 *You stand there.*
 
@@ -322,9 +318,9 @@
 >
 > *Not to the others — to you. The new one.*
 >
-> *Maybe it's a test. Maybe it's a welcome. Maybe the fan doesn't know what it means and just wanted you to have something.*
+> *You don't know what it means. Maybe it's a test. Maybe it's a welcome. Maybe the fan doesn't know what it means and just wanted you to have something.*
 >
-> *But you look at this photocard — the four of them, before — and you feel the weight of what you've walked into.*
+> *But you look at this card — the four of them, before — and you feel the weight of what you've walked into.*
 >
 > *Not pressure. History.*
 >
@@ -338,15 +334,15 @@
 
 *The five of you in the wings.*
 
-*Still in the adrenaline. Still loud with it.*
+*Still inside the adrenaline. Heat-of-the-moment words that don't have to mean anything because the feeling is carrying them.*
 
-*Theo is talking — he's always talking but now it's faster, heat-of-the-moment words that don't have to mean anything because the feeling is carrying them.*
+*Theo is talking fast — he's always talking but now it's faster and looser.*
 
-*Jay is breathing slowly. Coming back from wherever he went.*
+*Jay is breathing slowly. Coming back.*
 
 *Finn is drinking water and looking at the floor with an expression that's private.*
 
-*Kain uncaps a water bottle and drinks and then looks at the five of them.*
+*Kain uncaps a water bottle and drinks and then looks at all of them.*
 
 **KAIN:**
 "Tomorrow. Debrief. Nine am."
@@ -356,9 +352,7 @@
 **KAIN:**
 "..."
 
-*He almost says something else.*
-
-*He doesn't.*
+*He almost says something else. You watch him decide not to.*
 
 *He caps his water bottle and walks toward the venue exit.*
 
@@ -373,7 +367,7 @@
 *Theo looks at you.*
 
 **THEO:**
-"That was definitely almost a 'good job.'"
+"That was definitely almost a 'good job.' I've been here two years, I know the difference between a logistics note and an almost-compliment."
 
 ---
 
