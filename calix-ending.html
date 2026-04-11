@@ -410,11 +410,14 @@ body::after {
 
 .pc-card-wrap {
   position: relative; display: inline-block; margin-bottom: 40px;
-  opacity: 0; animation: pcReveal 1s cubic-bezier(0.34,1.4,0.64,1) 0.6s forwards;
+  opacity: 0; animation: pcDrop 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
 }
-@keyframes pcReveal {
-  from { opacity: 0; transform: scale(0.8) rotateY(30deg); }
-  to   { opacity: 1; transform: scale(1) rotateY(0deg); }
+@keyframes pcDrop {
+  0%   { opacity: 0; transform: translateY(-120px) rotate(-3deg); }
+  60%  { opacity: 1; transform: translateY(10px) rotate(1deg); }
+  78%  { transform: translateY(-5px) rotate(-0.5deg); }
+  90%  { transform: translateY(4px) rotate(0.3deg); }
+  100% { opacity: 1; transform: translateY(0) rotate(0deg); }
 }
 .pc-card {
   width: min(280px, 78vw);
@@ -857,29 +860,8 @@ function fireConfetti() {
   animateConfetti();
 }
 
-// ── CAMERA FLASH + SHUTTER SOUND ──
+// ── CAMERA FLASH ──
 function cameraFlash() {
-  // 셔터 사운드 (Web Audio API)
-  try {
-    const ac = new (window.AudioContext || window.webkitAudioContext)();
-    // 클릭 노이즈
-    const bufLen = ac.sampleRate * 0.06;
-    const buf = ac.createBuffer(1, bufLen, ac.sampleRate);
-    const data = buf.getChannelData(0);
-    for (let i = 0; i < bufLen; i++) {
-      data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / bufLen, 4);
-    }
-    const src = ac.createBufferSource();
-    src.buffer = buf;
-    const gain = ac.createGain();
-    gain.gain.setValueAtTime(1.2, ac.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.06);
-    src.connect(gain);
-    gain.connect(ac.destination);
-    src.start();
-  } catch(e) {}
-
-  // 플래시 오버레이
   const flash = document.getElementById('camera-flash');
   if (!flash) return;
   flash.style.animation = 'none';
