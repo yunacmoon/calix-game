@@ -1081,6 +1081,12 @@
 
     section.appendChild(prompt);
     section.appendChild(bar);
+
+    var saveExit = document.createElement('div');
+    saveExit.className = 'save-exit-wrap';
+    saveExit.innerHTML = '<button class="save-exit-btn" onclick="saveGame();window.location.href=\'index.html\'">save & exit</button>';
+    section.appendChild(saveExit);
+
     stream.appendChild(section);
   }
 
