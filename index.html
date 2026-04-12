@@ -123,6 +123,7 @@ body::after {
 #s-title { align-items:center; justify-content:center; text-align:center; padding-top:0; position:relative; overflow:hidden; min-height:100vh; }
 .title-bg { position:absolute; inset:0; z-index:0; overflow:hidden; }
 .title-bg img { width:100%; height:auto; position:absolute; top:50%; left:0; transform:translateY(-50%); opacity:0.55; }
+@media(max-width:600px){ .title-bg img { top:auto; bottom:0; transform:none; } }
 .title-bg::after {
   content:''; position:absolute; inset:0;
   background:linear-gradient(to bottom, rgba(242,230,238,0.2) 0%, rgba(208,218,255,0.6) 60%, rgba(230,218,250,0.92) 100%);
