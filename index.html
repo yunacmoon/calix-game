@@ -836,7 +836,7 @@ body::after {
     <div style="display:flex; align-items:center; gap:14px;">
       <img src="icon-192.png" style="width:44px;height:44px;border-radius:10px;flex-shrink:0;">
       <div style="flex:1; min-width:0;">
-        <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">홈 화면에 CALIX 추가</div>
+        <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">Add CALIX to your home screen</div>
         <div id="pwa-banner-desc" style="font-size:12px;color:rgba(255,255,255,0.55);line-height:1.4;"></div>
       </div>
       <button id="pwa-dismiss" style="
@@ -880,17 +880,17 @@ body::after {
 
     if (isIOS) {
       // iOS: 수동 안내
-      desc.textContent = 'Safari 하단 공유 버튼 → "홈 화면에 추가"';
-      actionRow.innerHTML = '<button onclick="document.getElementById(\'pwa-banner\').querySelector(\'[id=pwa-dismiss]\').click()" style="background:rgba(151,125,255,0.2);border:1px solid rgba(151,125,255,0.4);color:#977DFF;border-radius:8px;padding:8px 16px;font-size:12px;font-family:inherit;cursor:pointer;">알겠어요</button>';
+      desc.textContent = 'Tap the share icon → "Add to Home Screen"';
+      actionRow.innerHTML = '<button onclick="document.getElementById(\'pwa-banner\').querySelector(\'[id=pwa-dismiss]\').click()" style="background:rgba(151,125,255,0.2);border:1px solid rgba(151,125,255,0.4);color:#977DFF;border-radius:8px;padding:8px 16px;font-size:12px;font-family:inherit;cursor:pointer;">Got it</button>';
       setTimeout(showBanner, 4000);
     } else {
       // Android: beforeinstallprompt 인터셉트
       window.addEventListener('beforeinstallprompt', function(e) {
         e.preventDefault();
         deferredPrompt = e;
-        desc.textContent = '앱처럼 바로 열 수 있어요. 저장해둘게요?';
+        desc.textContent = 'Open it like an app, anytime.';
         actionRow.innerHTML =
-          '<button id="pwa-install-btn" style="background:linear-gradient(135deg,#977DFF,#6B4FD8);border:none;color:#fff;border-radius:8px;padding:8px 20px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;">홈 화면에 추가</button>';
+          '<button id="pwa-install-btn" style="background:linear-gradient(135deg,#977DFF,#6B4FD8);border:none;color:#fff;border-radius:8px;padding:8px 20px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;">Add to Home Screen</button>';
         setTimeout(showBanner, 3000);
 
         document.getElementById('pwa-install-btn').addEventListener('click', function() {
