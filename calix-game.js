@@ -2144,7 +2144,7 @@
           gameState.candidateArchetype = 'STRONG';
           gameState.candidateBlurb = '';
         }
-        window.showScreen(6); // s-episode
+        window.showScreen(5); // s-episode
         startEpisode(epN);
         return;
       }
