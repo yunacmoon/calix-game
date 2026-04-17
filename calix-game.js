@@ -1796,8 +1796,15 @@
     var KOFI_KEY = 'calix_kofi_shown';
     if (gameState.currentEpisodeN === 3 && !localStorage.getItem(KOFI_KEY)) {
       localStorage.setItem(KOFI_KEY, '1');
-      var ov = document.getElementById('kofi-overlay');
-      if (ov) { ov.classList.add('show'); return; }
+      if (window.Capacitor) {
+        // iOS 앱 — IAP 자리 (나중에 연결)
+        proceedFromRewardPopupToRewardScreen();
+      } else {
+        var ov = document.getElementById('kofi-overlay');
+        if (ov) { ov.classList.add('show'); return; }
+        proceedFromRewardPopupToRewardScreen();
+      }
+      return;
     }
     proceedFromRewardPopupToRewardScreen();
   };
