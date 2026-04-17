@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CALIX — Fin</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#977DFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CALIX">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Rethink+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --purple-light: #977DFF;
+  --purple-mid: #6B4FD8;
+  --blue: #0033FF;
+  --ink: #00003D;
+  --ink-soft: rgba(0,0,61,0.65);
+  --ink-muted: rgba(0,0,61,0.38);
+  --rule: rgba(0,0,61,0.10);
+  --gold: #C9A84C;
+  --gold-light: #E8D5A3;
+  --gold-dark: #9C7A2E;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'Rethink Sans', sans-serif;
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #F2E6EE 0%, #E4DAFA 25%, #D0DAFF 50%, #E0D4F8 75%, #FFCCF2 100%);
+  background-size: 400% 400%;
+  animation: holo 14s ease infinite;
+}
+
+@keyframes holo {
+  0%   { background-position: 0% 50% }
+  50%  { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+body::before {
+  content: ''; position: fixed; width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(151,125,255,0.22) 0%, transparent 70%);
+  top: -250px; left: -250px; pointer-events: none; animation: orb1 9s ease-in-out infinite;
+}
+body::after {
+  content: ''; position: fixed; width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,51,255,0.16) 0%, transparent 70%);
+  bottom: -200px; right: -200px; pointer-events: none; animation: orb2 11s ease-in-out infinite;
+}
+@keyframes orb1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(70px,50px)} }
+@keyframes orb2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-50px,-70px)} }
+
+/* ── CAMERA FLASH ── */
+#camera-flash {
+  position: fixed; inset: 0; pointer-events: none; z-index: 999;
+  background: #fff; opacity: 0;
+}
+@keyframes flashBurst {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  35%  { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+
+/* ── CONFETTI CANVAS ── */
+#confetti-canvas {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+}
+
+/* ── PHASES ── */
+.phase { display: none; min-height: 100vh; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 1; padding: 40px 24px 80px; }
+.phase.active { display: flex; }
+
+/* ── PHASE 1: STAGE ── */
+#phase-stage {
+  text-align: center;
+  justify-content: flex-start;
+  padding: 0 0 80px;
+}
+
+/* HERO WRAP */
+.stage-hero-wrap {
+  width: 100%; position: relative;
+  flex-shrink: 0; margin-bottom: 0;
+}
+
+/* 배경 그룹샷 슬롯 */
+.stage-hero-bg {
+  width: 100%; aspect-ratio: 1232/928; max-height: min(62vh, 580px);
+  position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #0d0020 0%, #1a0540 40%, #020d30 100%);
+}
+.stage-hero-bg img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+  display: block; filter: brightness(0.55) contrast(1.08);
+}
+.stage-hero-bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(4,0,20,0.35) 0%, rgba(4,0,20,0.15) 40%, rgba(4,0,20,0.55) 100%);
+  pointer-events: none;
+}
+/* 이미지 없을 때 플레이스홀더 */
+.stage-hero-placeholder {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  border: 2px dashed rgba(151,125,255,0.3);
+}
+.stage-hero-bg img[src=""] ~ .stage-hero-placeholder,
+.stage-hero-bg img:not([src]) ~ .stage-hero-placeholder { display: flex; }
+.stage-hero-bg img[src]:not([src=""]) ~ .stage-hero-placeholder { display: none; }
+
+.placeholder-icon { font-size: 36px; opacity: 0.4; }
+.placeholder-label {
+  font-family: 'Playfair Display', serif; font-size: 15px;
+  color: rgba(151,125,255,0.6); letter-spacing: 0.05em;
+}
+.placeholder-hint {
+  font-size: 10px; letter-spacing: 0.15em; font-family: monospace;
+  color: rgba(151,125,255,0.35); margin-top: 4px;
+}
+
+/* 오버레이 — 아래로 페이드아웃 */
+.stage-hero-overlay {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(230,218,250,0.95) 100%);
+  pointer-events: none;
+}
+
+/* 텍스트 블록 */
+.stage-text-block {
+  padding: 32px 24px 0; width: 100%; max-width: 580px; margin: 0 auto;
+}
+
+.stage-eyebrow {
+  font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+  color: var(--purple-mid); margin-bottom: 32px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
+}
+
+.stage-lights {
+  display: flex; justify-content: center; gap: 16px; margin-bottom: 32px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards;
+}
+.stage-light {
+  width: 8px; height: 8px; border-radius: 50%;
+  animation: lightPulse 1.4s ease-in-out infinite;
+}
+.stage-light:nth-child(1) { background: #FF6B9D; animation-delay: 0s; }
+.stage-light:nth-child(2) { background: var(--purple-light); animation-delay: 0.2s; }
+.stage-light:nth-child(3) { background: #6DD5FA; animation-delay: 0.4s; }
+.stage-light:nth-child(4) { background: var(--gold); animation-delay: 0.6s; }
+.stage-light:nth-child(5) { background: #FF6B9D; animation-delay: 0.8s; }
+@keyframes lightPulse {
+  0%,100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.8); opacity: 1; box-shadow: 0 0 12px currentColor; }
+}
+
+.stage-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(52px, 12vw, 100px);
+  font-weight: 400; line-height: 0.9;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--purple-mid) 45%, var(--blue) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  margin-bottom: 8px;
+  opacity: 0; animation: fadeUp 0.9s ease 0.7s forwards;
+}
+.stage-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(14px, 3vw, 20px);
+  font-style: italic; color: var(--ink-soft);
+  margin-bottom: 48px; letter-spacing: 0.04em;
+  opacity: 0; animation: fadeUp 0.8s ease 0.9s forwards;
+}
+
+.stage-scene {
+  max-width: 560px; margin: 0 auto 48px;
+  padding: 32px 36px;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(151,125,255,0.22);
+  border-radius: 20px;
+  text-align: left;
+  opacity: 0; animation: fadeUp 0.9s ease 1.1s forwards;
+}
+.scene-label {
+  font-size: 9px; letter-spacing: 0.45em; text-transform: uppercase;
+  color: var(--purple-mid); margin-bottom: 16px;
+}
+.scene-text {
+  font-size: 16px; line-height: 1.9; color: var(--ink-soft);
+}
+.scene-text strong { color: var(--ink); font-weight: 500; }
+
+.stage-cta {
+  opacity: 0; animation: fadeUp 0.8s ease 1.4s forwards;
+}
+
+/* ── PHASE 2: SNS / FAN STATS ── */
+#phase-stats { text-align: center; }
+
+.stats-eyebrow {
+  font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+  color: var(--purple-mid); margin-bottom: 24px;
+  opacity: 0; animation: fadeUp 0.7s ease 0.1s forwards;
+}
+.stats-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 6vw, 52px);
+  font-weight: 400; line-height: 1.1; color: var(--ink);
+  margin-bottom: 48px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
+}
+.stats-headline em { font-style: italic; color: var(--purple-mid); }
+
+.stats-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
+  max-width: 500px; width: 100%; margin: 0 auto 48px;
+}
+@media(min-width: 500px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.stat-card {
+  background: rgba(255,255,255,0.62);
+  border: 1px solid rgba(151,125,255,0.2);
+  border-radius: 16px; padding: 22px 12px;
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.stat-card.in { opacity: 1; transform: translateY(0); }
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 5vw, 38px);
+  font-weight: 500; color: var(--purple-mid);
+  line-height: 1; margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--ink-muted); line-height: 1.4;
+}
+
+.fan-quotes {
+  max-width: 520px; width: 100%; margin: 0 auto 48px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.fan-quote {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(151,125,255,0.15);
+  border-radius: 12px; padding: 14px 18px;
+  font-size: 14px; line-height: 1.6; color: var(--ink-soft);
+  text-align: left;
+  opacity: 0; transform: translateX(-12px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fan-quote.in { opacity: 1; transform: translateX(0); }
+.fan-quote-handle { font-size: 11px; color: var(--purple-mid); font-weight: 600; margin-bottom: 4px; }
+
+.stats-cta { opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards; }
+
+/* ── PHASE 3: MEMBER CHOOSE ── */
+#phase-choose { text-align: center; }
+
+.choose-eyebrow {
+  font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+  color: var(--purple-mid); margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 0.7s ease 0.1s forwards;
+}
+.choose-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 400; line-height: 1.1; color: var(--ink);
+  margin-bottom: 10px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
+}
+.choose-sub {
+  font-size: 15px; color: var(--ink-muted); margin-bottom: 40px;
+  opacity: 0; animation: fadeUp 0.7s ease 0.4s forwards;
+}
+
+.member-pick-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+  max-width: 460px; width: 100%; margin: 0 auto 16px;
+}
+@media(min-width: 480px) { .member-pick-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.member-pick-btn {
+  background: rgba(255,255,255,0.6);
+  border: 1.5px solid rgba(151,125,255,0.22);
+  border-radius: 16px;
+  padding: 0 0 14px;
+  cursor: pointer; transition: all 0.25s;
+  text-align: center; overflow: hidden;
+  opacity: 0; animation: fadeUp 0.7s ease forwards;
+}
+.member-pick-btn:nth-child(1) { animation-delay: 0.5s; }
+.member-pick-btn:nth-child(2) { animation-delay: 0.65s; }
+.member-pick-btn:nth-child(3) { animation-delay: 0.8s; }
+.member-pick-btn:nth-child(4) { animation-delay: 0.95s; }
+
+.member-pick-btn:hover {
+  background: rgba(151,125,255,0.1);
+  border-color: var(--purple-mid);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(107,79,216,0.2);
+}
+
+/* 사진 영역 */
+.member-pick-photo {
+  width: 100%; aspect-ratio: 2/3;
+  position: relative; overflow: hidden;
+  background: linear-gradient(160deg, #1a0540, #0a1628);
+  border-radius: 14px 14px 0 0;
+  margin-bottom: 10px;
+}
+.member-pick-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block; transition: transform 0.4s ease;
+}
+.member-pick-btn:hover .member-pick-photo img {
+  transform: scale(1.05);
+}
+/* 이미지 없을 때 폴백 */
+.member-pick-photo.no-photo img { display: none; }
+.member-pick-photo .photo-fallback {
+  display: none; position: absolute; inset: 0;
+  align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif; font-size: 32px;
+  color: rgba(151,125,255,0.5);
+}
+.member-pick-photo.no-photo .photo-fallback { display: flex; }
+.member-pick-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; color: var(--ink); margin-bottom: 4px;
+}
+.member-pick-role {
+  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* ── PHASE 4: MEMBER SCENE ── */
+#phase-member-scene { text-align: center; }
+
+.mscene-header {
+  margin-bottom: 32px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.mscene-with {
+  font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase;
+  color: var(--purple-mid); margin-bottom: 8px;
+}
+.mscene-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 7vw, 60px);
+  font-weight: 400; color: var(--ink); line-height: 1;
+}
+
+.mscene-card {
+  max-width: 520px; width: 100%; margin: 0 auto 36px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(151,125,255,0.22);
+  border-radius: 20px; overflow: hidden;
+  opacity: 0; animation: fadeUp 0.9s ease 0.4s forwards;
+}
+.mscene-scene-label {
+  padding: 16px 24px 0;
+  font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase;
+  color: var(--purple-mid); text-align: left;
+}
+.mscene-dialogue {
+  padding: 20px 24px 24px;
+  font-size: 16px; line-height: 1.85; color: var(--ink-soft);
+  text-align: left; white-space: pre-line;
+}
+.mscene-dialogue strong { color: var(--ink); font-weight: 500; }
+.mscene-speaker {
+  font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--purple-mid); font-weight: 600; margin-bottom: 8px;
+}
+
+.mscene-cta {
+  opacity: 0; animation: fadeUp 0.8s ease 0.7s forwards;
+}
+.mscene-booth-line {
+  font-family: 'Playfair Display', serif;
+  font-style: italic; font-size: 17px;
+  color: var(--ink-soft); margin-bottom: 20px;
+  letter-spacing: 0.01em;
+}
+
+/* ── PHASE 5: PHOTOCARD UNLOCK ── */
+#phase-photocard { text-align: center; }
+
+.pc-eyebrow {
+  font-size: 10px; letter-spacing: 0.5em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 0.7s ease 0.1s forwards;
+}
+.pc-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 400; color: var(--ink); margin-bottom: 8px;
+  opacity: 0; animation: fadeUp 0.8s ease 0.3s forwards;
+}
+.pc-sub {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 40px;
+  opacity: 0; animation: fadeUp 0.7s ease 0.4s forwards;
+}
+
+.pc-card-wrap {
+  position: relative; display: inline-block; margin-bottom: 40px;
+  opacity: 0; animation: pcDrop 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+}
+@keyframes pcDrop {
+  0%   { opacity: 0; transform: translateY(-120px) rotate(-3deg); }
+  60%  { opacity: 1; transform: translateY(10px) rotate(1deg); }
+  78%  { transform: translateY(-5px) rotate(-0.5deg); }
+  90%  { transform: translateY(4px) rotate(0.3deg); }
+  100% { opacity: 1; transform: translateY(0) rotate(0deg); }
+}
+.pc-card {
+  width: min(280px, 78vw);
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 40px rgba(201,168,76,0.4), 0 0 80px rgba(201,168,76,0.15), 0 24px 60px rgba(0,0,61,0.4);
+  position: relative;
+  animation: goldShimmer 3s ease-in-out infinite;
+  background: #1a0a2e;
+}
+@keyframes goldShimmer {
+  0%,100% { box-shadow: 0 0 40px rgba(201,168,76,0.4), 0 0 80px rgba(201,168,76,0.15), 0 24px 60px rgba(0,0,61,0.4); }
+  50% { box-shadow: 0 0 60px rgba(201,168,76,0.6), 0 0 120px rgba(201,168,76,0.25), 0 24px 60px rgba(0,0,61,0.4); }
+}
+.pc-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pc-stars { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+.pc-star { position: absolute; width: 2px; height: 2px; background: white; border-radius: 50%; animation: twinkle 2s ease-in-out infinite; }
+@keyframes twinkle { 0%,100% { opacity: 0.2; } 50% { opacity: 1; } }
+
+.pc-gold-rule {
+  width: 60px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 0 auto 32px;
+  opacity: 0; animation: fadeIn 0.8s ease 1.4s forwards;
+}
+
+.pc-cta {
+  opacity: 0; animation: fadeUp 0.8s ease 1.6s forwards;
+}
+
+/* ── PHASE 6: FIN ── */
+#phase-fin {
+  text-align: center; justify-content: center;
+}
+
+.fin-rule {
+  width: 1px; height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--purple-light), transparent);
+  margin: 0 auto 40px;
+  opacity: 0; animation: growDown 1s ease 0.2s forwards;
+}
+.fin-word {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(80px, 18vw, 140px);
+  font-weight: 400; font-style: italic;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--purple-mid) 50%, var(--blue) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  line-height: 0.9; margin-bottom: 24px;
+  opacity: 0; animation: fadeUp 1.2s ease 0.5s forwards;
+}
+.fin-sub {
+  font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--ink-muted); margin-bottom: 56px;
+  opacity: 0; animation: fadeUp 0.8s ease 1s forwards;
+}
+.fin-btns {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  opacity: 0; animation: fadeUp 0.8s ease 1.3s forwards;
+}
+
+/* ── SHARED BUTTONS ── */
+.btn-solid {
+  display: inline-block; padding: 16px 52px;
+  background: linear-gradient(135deg, var(--purple-mid), var(--blue));
+  border: none; border-radius: 50px;
+  font-family: 'Rethink Sans', sans-serif; font-size: 13px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: white; cursor: pointer; transition: opacity 0.3s, transform 0.3s;
+}
+.btn-solid:hover { opacity: 0.88; transform: translateY(-2px); }
+
+.btn-glass {
+  display: inline-block; padding: 14px 44px;
+  background: rgba(255,255,255,0.55); backdrop-filter: blur(12px);
+  border: 1px solid rgba(151,125,255,0.5); border-radius: 50px;
+  font-family: 'Rethink Sans', sans-serif; font-size: 13px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--purple-mid); cursor: pointer; transition: all 0.3s;
+}
+.btn-glass:hover { background: rgba(151,125,255,0.2); border-color: var(--purple-mid); transform: translateY(-2px); }
+
+.btn-gold {
+  display: inline-block; padding: 16px 52px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+  border: none; border-radius: 50px;
+  font-family: 'Rethink Sans', sans-serif; font-size: 13px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: #1a0a00; cursor: pointer; transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 4px 24px rgba(201,168,76,0.35);
+}
+.btn-gold:hover { opacity: 0.9; transform: translateY(-2px); }
+
+/* ── KEYFRAMES ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes growDown {
+  from { transform: scaleY(0); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+<div id="camera-flash"></div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 1: DEBUT STAGE
+───────────────────────────────────────── -->
+<div class="phase active" id="phase-stage">
+
+  <!-- HERO: 뒷모습 이미지 단일 슬롯 -->
+  <div class="stage-hero-wrap">
+    <div class="stage-hero-bg">
+      <img src="Images/04_Banner/EP_Ending.png" alt="CALIX on stage" id="stage-hero-img" onerror="this.style.display='none';document.getElementById('stage-placeholder').style.display='flex'">
+      <div class="stage-hero-placeholder" id="stage-placeholder">
+        <span class="placeholder-icon">🎤</span>
+        <span class="placeholder-label">Group back illustration</span>
+        <span class="placeholder-hint">Images/Ending/debut_back.png</span>
+      </div>
+    </div>
+    <div class="stage-hero-overlay"></div>
+  </div>
+
+  <div class="stage-text-block">
+    <p class="stage-eyebrow">30 Episodes Later</p>
+
+    <div class="stage-lights">
+      <div class="stage-light"></div>
+      <div class="stage-light"></div>
+      <div class="stage-light"></div>
+      <div class="stage-light"></div>
+      <div class="stage-light"></div>
+    </div>
+
+    <h1 class="stage-title">CALIX</h1>
+    <p class="stage-subtitle">officially debuts.</p>
+
+    <div class="stage-scene">
+      <p class="scene-label">Seoul · Olympic Hall · 9:04 PM</p>
+      <p class="scene-text">
+        The lights drop. Five thousand people go quiet at exactly the same moment.<br><br>
+        Then the first beat hits — and the crowd <strong>erupts</strong>.<br><br>
+        From the wings, you watch all five of them walk out together for the first time.
+        Under those lights, in front of all those people, they look like they were always meant to be exactly this.
+        <br><br>
+        <strong>Five members. One group. No empty seats.</strong>
+      </p>
+    </div>
+
+    <div class="stage-cta">
+      <button class="btn-solid" onclick="goPhase('phase-stats')">See the reaction →</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 2: FAN STATS / SNS
+───────────────────────────────────────── -->
+<div class="phase" id="phase-stats">
+  <p class="stats-eyebrow">The World Responds</p>
+  <h2 class="stats-headline">They're trending.<br><em>Everywhere.</em></h2>
+
+  <div class="stats-grid">
+    <div class="stat-card" data-target="847K" data-suffix="">
+      <div class="stat-num" id="sn-streams">0</div>
+      <div class="stat-label">Streams<br>in 24hrs</div>
+    </div>
+    <div class="stat-card" data-target="1.2M" data-suffix="">
+      <div class="stat-num" id="sn-tweets">0</div>
+      <div class="stat-label">Tweets<br>#CALIXDebut</div>
+    </div>
+    <div class="stat-card" data-target="94" data-suffix="%">
+      <div class="stat-num" id="sn-score">0</div>
+      <div class="stat-label">Melon<br>Score</div>
+    </div>
+    <div class="stat-card" data-target="No.1" data-suffix="">
+      <div class="stat-num" id="sn-chart">—</div>
+      <div class="stat-label">iTunes<br>Chart</div>
+    </div>
+  </div>
+
+  <div class="fan-quotes">
+    <div class="fan-quote">
+      <div class="fan-quote-handle">@calixthelabel</div>
+      i was NOT ready for the 5th member. the chemistry on that stage is actually insane
+    </div>
+    <div class="fan-quote">
+      <div class="fan-quote-handle">@theo_biased</div>
+      the way kain just LOOKED at the new member during the bridge... this group is going to destroy me
+    </div>
+    <div class="fan-quote">
+      <div class="fan-quote-handle">@finnwrld</div>
+      finn was crying after the encore and i have never recovered
+    </div>
+  </div>
+
+  <div class="stats-cta">
+    <button class="btn-solid" onclick="goPhase('phase-choose')">One last moment →</button>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 3: CHOOSE A MEMBER
+───────────────────────────────────────── -->
+<div class="phase" id="phase-choose">
+  <p class="choose-eyebrow">After the show</p>
+  <h2 class="choose-headline">The night winds down.<br>Who do you find?</h2>
+  <p class="choose-sub">One last conversation, just between you two.</p>
+
+  <div class="member-pick-grid">
+    <button class="member-pick-btn" onclick="pickMember('KAIN')">
+      <div class="member-pick-photo">
+        <img src="Images/01_Current members/Kain_Intro.png" alt="Kain" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="photo-fallback">K</span>
+      </div>
+      <div class="member-pick-name">Kain</div>
+      <div class="member-pick-role">Leader</div>
+    </button>
+    <button class="member-pick-btn" onclick="pickMember('THEO')">
+      <div class="member-pick-photo">
+        <img src="Images/01_Current members/Theo_Intro.png" alt="Theo" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="photo-fallback">T</span>
+      </div>
+      <div class="member-pick-name">Theo</div>
+      <div class="member-pick-role">Main Dancer</div>
+    </button>
+    <button class="member-pick-btn" onclick="pickMember('JAY')">
+      <div class="member-pick-photo">
+        <img src="Images/01_Current members/Jay_Intro.png" alt="Jay" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="photo-fallback">J</span>
+      </div>
+      <div class="member-pick-name">Jay</div>
+      <div class="member-pick-role">Rapper</div>
+    </button>
+    <button class="member-pick-btn" onclick="pickMember('FINN')">
+      <div class="member-pick-photo">
+        <img src="Images/01_Current members/Finn_Intro.png" alt="Finn" onerror="this.parentElement.classList.add('no-photo')">
+        <span class="photo-fallback">F</span>
+      </div>
+      <div class="member-pick-name">Finn</div>
+      <div class="member-pick-role">Maknae</div>
+    </button>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 4: MEMBER SCENE
+───────────────────────────────────────── -->
+<div class="phase" id="phase-member-scene">
+  <div class="mscene-header">
+    <p class="mscene-with">A quiet moment with</p>
+    <h2 class="mscene-name" id="mscene-name">—</h2>
+  </div>
+
+  <div class="mscene-card">
+    <p class="mscene-scene-label" id="mscene-setting">Backstage · After Encore</p>
+    <div class="mscene-dialogue" id="mscene-dialogue"></div>
+  </div>
+
+  <div class="mscene-cta">
+    <p class="mscene-booth-line">"Let's get one to remember tonight."</p>
+    <button class="btn-solid" onclick="goPhase('phase-photocard')">Take a photo →</button>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 5: PHOTOCARD UNLOCK
+───────────────────────────────────────── -->
+<div class="phase" id="phase-photocard">
+  <p class="pc-eyebrow">✦ Reward Unlocked</p>
+  <h2 class="pc-headline">Debut Night — This Is Us</h2>
+  <p class="pc-sub" id="pc-sub">Hongdae, 3AM</p>
+
+  <div class="pc-card-wrap">
+    <div class="pc-card" id="pc-card">
+      <div class="pc-stars" id="pc-stars"></div>
+      <img id="pc-group-photo" src="" alt="CALIX" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+    </div>
+  </div>
+
+  <div class="pc-gold-rule"></div>
+
+  <div class="pc-cta">
+    <button class="btn-gold" onclick="goPhase('phase-fin')">Continue →</button>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────
+     PHASE 6: FIN
+───────────────────────────────────────── -->
+<div class="phase" id="phase-fin">
+  <div class="fin-rule"></div>
+  <h1 class="fin-word">Fin.</h1>
+  <p class="fin-sub">Thank you for being part of CALIX's story.</p>
+  <div class="fin-btns">
+    <button class="btn-solid" onclick="window.location.href='calix-v6.html'">Play again →</button>
+    <button class="btn-glass" onclick="shareGame()">Share CALIX</button>
+  </div>
+</div>
+
+<script>
+// ── MEMBER SCENES ──
+const MEMBER_SCENES = {
+  KAIN: {
+    setting: 'Backstage corridor · 11:40 PM',
+    dialogue: `You find him standing alone near the exit, still in stage clothes. He doesn't say anything at first. Just looks at you.
+
+<strong>KAIN</strong>
+"You stayed."
+
+He says it like he wasn't sure you would. Like the whole night — everything he built, everything he pushed through — somehow needed this one moment to land.
+
+<strong>KAIN</strong>
+"I don't say this to many people. But this group wouldn't be what it is without the choice you made."
+
+He gives you a single nod. From Kain, that's everything.`
+  },
+  THEO: {
+    setting: 'Dressing room · Post-show',
+    dialogue: `Theo is still buzzing — pacing, talking to himself, replaying the set in his head. When he sees you, the energy shifts completely.
+
+<strong>THEO</strong>
+"Okay — okay. Did you SEE that? Did you SEE the crowd during the bridge?"
+
+He grabs your arm without thinking, then catches himself. Laughs.
+
+<strong>THEO</strong>
+"I've been training for this since I was fifteen. And I thought I knew what it would feel like. I had no idea."
+
+He looks at you, suddenly quiet.
+
+<strong>THEO</strong>
+"I'm really glad you were here for this one."`
+  },
+  JAY: {
+    setting: 'Rooftop · After the encore',
+    dialogue: `Jay is up on the building roof eating convenience store ramen like nothing happened. He found it somewhere. You don't ask.
+
+<strong>JAY</strong>
+"Yo. You want some?"
+
+You sit next to him. For a while neither of you says anything. The city is loud below.
+
+<strong>JAY</strong>
+"I don't really do the whole… emotional speech thing."
+
+He eats another bite.
+
+<strong>JAY</strong>
+"But for real. I'm glad it worked out. You made it work out."
+
+He doesn't look at you when he says it. But he means it more than anything he's said all year.`
+  },
+  FINN: {
+    setting: 'Stage wing · Just after final bow',
+    dialogue: `Finn is sitting on a road case just offstage, knees up, still catching his breath. His eyes are red. He's not hiding it.
+
+When he sees you he immediately tries to pull it together — and fails completely.
+
+<strong>FINN</strong>
+"Don't — don't make it a thing."
+
+You don't say anything. He laughs and wipes his face with his sleeve.
+
+<strong>FINN</strong>
+"I just… I kept thinking about the first day of training. How scared I was. How I almost quit."
+
+He looks out at the empty stage.
+
+<strong>FINN</strong>
+"And then I looked over and you were there. And I thought — okay. We actually made it."`
+  }
+};
+
+// ── STATE ──
+let chosenMember = null;
+
+// ── CONFETTI ──
+const canvas = document.getElementById('confetti-canvas');
+const ctx = canvas.getContext('2d');
+let confettiPieces = [];
+let confettiActive = false;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+function spawnConfetti() {
+  const colors = ['#977DFF','#6B4FD8','#FF6B9D','#C9A84C','#6DD5FA','#0033FF','#E8D5A3'];
+  for (let i = 0; i < 120; i++) {
+    confettiPieces.push({
+      x: Math.random() * canvas.width,
+      y: -10 - Math.random() * 200,
+      w: 6 + Math.random() * 8,
+      h: 3 + Math.random() * 5,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rot: Math.random() * Math.PI * 2,
+      rotV: (Math.random() - 0.5) * 0.15,
+      vx: (Math.random() - 0.5) * 2.5,
+      vy: 1.5 + Math.random() * 3,
+      opacity: 0.8 + Math.random() * 0.2,
+    });
+  }
+}
+
+function animateConfetti() {
+  if (!confettiActive) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  confettiPieces = confettiPieces.filter(p => p.y < canvas.height + 20);
+  confettiPieces.forEach(p => {
+    p.x += p.vx; p.y += p.vy; p.rot += p.rotV;
+    ctx.save();
+    ctx.globalAlpha = p.opacity;
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.rot);
+    ctx.fillStyle = p.color;
+    ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+    ctx.restore();
+  });
+  if (confettiPieces.length > 0) requestAnimationFrame(animateConfetti);
+  else { confettiActive = false; ctx.clearRect(0,0,canvas.width,canvas.height); }
+}
+
+function fireConfetti() {
+  confettiActive = true;
+  spawnConfetti();
+  animateConfetti();
+}
+
+// ── CAMERA FLASH ──
+function cameraFlash() {
+  const flash = document.getElementById('camera-flash');
+  if (!flash) return;
+  flash.style.animation = 'none';
+  flash.offsetHeight; // reflow
+  flash.style.animation = 'flashBurst 0.55s ease-out forwards';
+}
+
+// ── PHASE NAVIGATION ──
+function goPhase(id) {
+  document.querySelectorAll('.phase').forEach(p => p.classList.remove('active'));
+  const next = document.getElementById(id);
+  if (!next) return;
+  next.classList.add('active');
+
+  if (id === 'phase-stats') {
+    setTimeout(animateStats, 300);
+  }
+  if (id === 'phase-photocard') {
+    buildStars();
+    cameraFlash();
+    setTimeout(fireConfetti, 800);
+  }
+  if (id === 'phase-fin') {
+    setTimeout(fireConfetti, 600);
+  }
+}
+
+// ── STATS ANIMATION ──
+function animateStats() {
+  document.querySelectorAll('.stat-card').forEach((card, i) => {
+    setTimeout(() => {
+      card.classList.add('in');
+      const targetMap = ['847K', '1.2M', '94%', 'No.1'];
+      const idMap = ['sn-streams','sn-tweets','sn-score','sn-chart'];
+      const el = document.getElementById(idMap[i]);
+      if (!el) return;
+      if (i === 3) { setTimeout(() => { el.textContent = 'No.1'; }, 400); return; }
+      const targets = [847, 1200, 94];
+      const suffixes = ['K', 'M', '%'];
+      let count = 0;
+      const end = targets[i];
+      const dur = 1200;
+      const step = dur / 60;
+      const inc = end / 60;
+      const interval = setInterval(() => {
+        count = Math.min(count + inc, end);
+        el.textContent = (i === 1 ? (count/1000).toFixed(1) : Math.floor(count)) + suffixes[i];
+        if (count >= end) clearInterval(interval);
+      }, step);
+    }, i * 150);
+  });
+
+  document.querySelectorAll('.fan-quote').forEach((q, i) => {
+    setTimeout(() => q.classList.add('in'), 600 + i * 200);
+  });
+}
+
+// ── 5번째 멤버 정보 로드 (localStorage에서) ──
+function loadFifthMember() {
+  try {
+    const saved = localStorage.getItem('calix_save');
+    if (!saved) return;
+    const state = JSON.parse(saved);
+    const name = state.candidateName;
+    if (!name) return;
+
+    // 이름 레이블
+    const labelEl = document.getElementById('fifth-name-label');
+    if (labelEl) labelEl.textContent = name;
+
+    // 이미지 (후보 이미지 경로 패턴에 맞게 조정)
+    const imgEl = document.getElementById('fifth-img');
+    if (imgEl) {
+      imgEl.src = 'Images/02_Candidates/' + name + '_Intro.png';
+      imgEl.alt = name;
+    }
+  } catch(e) {}
+}
+loadFifthMember();
+
+// ── TEST MODE (?test=YOOJIN / ALEX / GREY) ──
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var testCandidate = (params.get('test') || '').toUpperCase();
+  if (['YOOJIN','ALEX','GREY'].indexOf(testCandidate) !== -1) {
+    try {
+      var existing = JSON.parse(localStorage.getItem('calix_save_v1') || '{}');
+      existing.candidateName = testCandidate;
+      localStorage.setItem('calix_save_v1', JSON.stringify(existing));
+    } catch(e) {}
+    setTimeout(function() { goPhase('phase-photocard'); fireConfetti(); }, 200);
+  }
+})();
+
+// ── MEMBER PICK ──
+function pickMember(name) {
+  chosenMember = name;
+  const scene = MEMBER_SCENES[name];
+  if (!scene) return;
+
+  document.getElementById('mscene-name').textContent = name.charAt(0) + name.slice(1).toLowerCase();
+  document.getElementById('mscene-setting').textContent = scene.setting;
+  document.getElementById('mscene-dialogue').innerHTML = scene.dialogue;
+
+  goPhase('phase-member-scene');
+}
+
+// ── PHOTOCARD ──
+function buildStars() {
+  // Star particles
+  const container = document.getElementById('pc-stars');
+  if (container) {
+    container.innerHTML = '';
+    for (let i = 0; i < 28; i++) {
+      const s = document.createElement('div');
+      s.className = 'pc-star';
+      s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*2}s;animation-duration:${1.5+Math.random()}s`;
+      container.appendChild(s);
+    }
+  }
+  // Group photo based on chosen candidate
+  var candidateName = '';
+  try {
+    var saved = localStorage.getItem('calix_save_v1');
+    if (saved) {
+      var o = JSON.parse(saved);
+      candidateName = (o.candidateName || '').toUpperCase();
+    }
+  } catch(e) {}
+  var PHOTOBOOTH = {
+    YOOJIN: 'Images/09_Photobooth/With_Yoojin.png',
+    ALEX:   'Images/09_Photobooth/With_Alex.png',
+    GREY:   'Images/09_Photobooth/With_Grey.png',
+  };
+  var imgEl = document.getElementById('pc-group-photo');
+  if (imgEl) {
+    imgEl.src = PHOTOBOOTH[candidateName] || PHOTOBOOTH['YOOJIN'];
+  }
+  const subEl = document.getElementById('pc-sub');
+  if (subEl) subEl.textContent = 'Hongdae, 3AM';
+}
+
+// ── SHARE ──
+function shareGame() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'CALIX',
+      text: 'I just helped CALIX debut. Play the game →',
+      url: window.location.href.replace('calix-ending.html', 'calix-v6.html'),
+    }).catch(() => {});
+  } else {
+    navigator.clipboard && navigator.clipboard.writeText(
+      window.location.href.replace('calix-ending.html', 'calix-v6.html')
+    ).then(() => alert('Link copied!'));
+  }
+}
+</script>
+</body>
+</html>
