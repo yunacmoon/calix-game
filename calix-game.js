@@ -2128,6 +2128,20 @@
   window.initMembers = function () {};
 
   initGiftUi();
-  bootData();
-  window.showScreen(0);
+  bootData().then(function () {
+    var params = new URLSearchParams(window.location.search);
+    var epParam = params.get('ep');
+    if (epParam) {
+      var epN = parseInt(epParam, 10);
+      if (!isNaN(epN) && epN >= 1 && epN <= 30) {
+        // 에피소드 화면으로 바로 점프 (개발/테스트용)
+        gameState.currentEpisodeN = epN;
+        gameState.unlockedThrough = epN;
+        window.showScreen(6); // s-episode
+        startEpisode(epN);
+        return;
+      }
+    }
+    window.showScreen(0);
+  });
 })();
