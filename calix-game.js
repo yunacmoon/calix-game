@@ -2144,8 +2144,7 @@
           gameState.candidateArchetype = 'STRONG';
           gameState.candidateBlurb = '';
         }
-        window.showScreen(5); // s-episode
-        startEpisode(epN);
+        window.showScreen(5); // s-episode (initEpisode → startEpisode 자동 호출)
         return;
       }
     }
