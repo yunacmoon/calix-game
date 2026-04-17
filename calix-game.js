@@ -2138,6 +2138,12 @@
         // 에피소드 화면으로 바로 점프 (개발/테스트용)
         gameState.currentEpisodeN = epN;
         gameState.unlockedThrough = epN;
+        // 캐릭터 미선택 시 기본값 세팅
+        if (!gameState.candidateName) {
+          gameState.candidateName = 'ALEX';
+          gameState.candidateArchetype = 'STRONG';
+          gameState.candidateBlurb = '';
+        }
         window.showScreen(6); // s-episode
         startEpisode(epN);
         return;
