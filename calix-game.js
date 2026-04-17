@@ -1793,9 +1793,11 @@
 
   window.rewardPopupContinue = function () {
     hideRewardPopup();
-    var KOFI_KEY = 'calix_kofi_shown';
-    if (gameState.currentEpisodeN === 3 && !localStorage.getItem(KOFI_KEY)) {
-      localStorage.setItem(KOFI_KEY, '1');
+    var KOFI_TRIGGERS = [3, 8, 14, 18];
+    var ep = gameState.currentEpisodeN;
+    var kofiKey = 'calix_kofi_shown_ep' + ep;
+    if (KOFI_TRIGGERS.indexOf(ep) !== -1 && !localStorage.getItem(kofiKey)) {
+      localStorage.setItem(kofiKey, '1');
       if (window.Capacitor) {
         // iOS 앱 — IAP 자리 (나중에 연결)
         proceedFromRewardPopupToRewardScreen();
