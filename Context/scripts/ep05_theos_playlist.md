@@ -19,7 +19,7 @@
 
 ## COLD OPEN
 
-*The van picks you up at 2pm.*
+*The van picks you up at 6pm.*
 
 *Theo is already in the middle row, legs stretched across the seat until Kain gets in and they retract without comment. Jay takes the back corner — left side, window. Headphones on since the lobby. Finn is next to Theo, which leaves you the front row with Kain, or the back row with Jay.*
 
