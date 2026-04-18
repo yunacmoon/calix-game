@@ -1068,9 +1068,63 @@
           '<p class="choice-picked">Selected · ' +
           escapeHtml(toSentenceCase(stripStatTags(opt.label) || opt.label)) +
           '</p>';
-        const sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
-        const tail = flowQueue.slice(flowIdx + 1);
-        flowQueue = sub.concat(tail);
+
+        // 멤버 반응 — featured 멤버 감지 후 효과 기반으로 반응 선택
+        var MEMBER_REACTIONS = {
+          KAIN: {
+            positive: ['...', 'Noted.', 'Faster than I expected.', 'Good.', 'Don\'t make it a habit.'],
+            negative: ['...', 'Do better.', 'I\'ll pretend I didn\'t see that.', 'Again.']
+          },
+          THEO: {
+            positive: ['Okay WAIT — that was actually good.', 'I knew it. I called it.', 'Yes. Yes yes yes.', 'Okay I\'m not mad about that.'],
+            negative: ['...that\'s not — okay. okay.', 'I\'m not going to say anything.', 'We\'ll talk about this later.']
+          },
+          JAY: {
+            positive: ['Solid.', '...respect.', 'Yeah.', 'Real talk — not bad.'],
+            negative: ['Nah.', '...', 'I\'m gonna pretend you didn\'t do that.']
+          },
+          FINN: {
+            positive: ['I noticed.', 'That was the right one.', 'You surprised me.', '...yeah.'],
+            negative: ['That wasn\'t it.', '...okay.', 'I\'ll remember that.']
+          }
+        };
+
+        // 이 에피소드의 featured 멤버 감지
+        var featuredMember = null;
+        var speakerTally = { KAIN: 0, THEO: 0, JAY: 0, FINN: 0 };
+        flowQueue.forEach(function(b) {
+          if (b.type === 'dialogue' && speakerTally.hasOwnProperty(b.speaker)) speakerTally[b.speaker]++;
+        });
+        var topCount = 0;
+        Object.keys(speakerTally).forEach(function(k) {
+          if (speakerTally[k] > topCount) { topCount = speakerTally[k]; featuredMember = k; }
+        });
+
+        // 효과가 긍정인지 판단 (주요 스탯 증가 여부)
+        var isPositive = true;
+        if (opt.effects) {
+          var vals = Object.values(opt.effects);
+          if (vals.length && vals.every(function(v) { return v <= 0; })) isPositive = false;
+        }
+
+        if (featuredMember && MEMBER_REACTIONS[featuredMember]) {
+          var pool = isPositive
+            ? MEMBER_REACTIONS[featuredMember].positive
+            : MEMBER_REACTIONS[featuredMember].negative;
+          var reaction = pool[Math.floor(Math.random() * pool.length)];
+          var reactionBeat = {
+            type: 'narration',
+            html: '<span class="member-reaction">' + featuredMember.charAt(0) + featuredMember.slice(1).toLowerCase() + ' — <em>' + escapeHtml(reaction) + '</em></span>'
+          };
+          var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
+          var tail = flowQueue.slice(flowIdx + 1);
+          flowQueue = [reactionBeat].concat(sub).concat(tail);
+        } else {
+          var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
+          var tail = flowQueue.slice(flowIdx + 1);
+          flowQueue = sub.concat(tail);
+        }
+
         flowIdx = 0;
         lastNarrationFp = '';
         lastDialogueDedup = '';
