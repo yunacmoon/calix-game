@@ -968,6 +968,11 @@
   }
 
   function appendOneBeatToStream(beat) {
+    if (beat.type === 'member_reaction') {
+      appendStreamBlock('<div class="member-reaction">' + escapeHtml(beat.member) + ' — <em>' + escapeHtml(beat.reaction) + '</em></div>', '');
+      return;
+    }
+
     if (beat.type === 'narration') {
       const injected = applyCandidateToEpisodeText(beat.text, 'narration', null);
       const trimmed = trimNarrationForReader(injected);
@@ -1113,8 +1118,9 @@
             : MEMBER_REACTIONS[featuredMember].negative;
           var reaction = pool[Math.floor(Math.random() * pool.length)];
           var reactionBeat = {
-            type: 'narration',
-            html: '<span class="member-reaction">' + featuredMember.charAt(0) + featuredMember.slice(1).toLowerCase() + ' — <em>' + escapeHtml(reaction) + '</em></span>'
+            type: 'member_reaction',
+            member: featuredMember.charAt(0) + featuredMember.slice(1).toLowerCase(),
+            reaction: reaction
           };
           var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
           var tail = flowQueue.slice(flowIdx + 1);
