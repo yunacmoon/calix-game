@@ -340,7 +340,7 @@ body::after {
 .stat-label { transition:color 0.15s ease, opacity 0.15s ease; }
 .stat-label-flash { animation:calixStatFlash 0.75s ease; }
 @keyframes calixStatFlash { 0%,100%{ opacity:1; color:inherit; } 40%{ opacity:1; color:var(--purple-deep); } 60%{ color:var(--gold-dark); } }
-.stat-delta-float { position:absolute; right:0; top:-2px; font-size:12px; font-weight:800; letter-spacing:0.03em; pointer-events:none; z-index:20; animation:statDeltaRise 1.2s ease-out forwards; }
+.stat-delta-float { position:fixed; font-size:12px; font-weight:800; letter-spacing:0.03em; pointer-events:none; z-index:9999; animation:statDeltaRise 1.2s ease-out forwards; }
 .stat-delta-pos { color:#a78bfa; }
 .stat-delta-neg { color:#f87171; }
 @keyframes statDeltaRise { 0%{ opacity:1; transform:translateY(0); } 55%{ opacity:1; transform:translateY(-18px); } 100%{ opacity:0; transform:translateY(-30px); } }

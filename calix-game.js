@@ -759,10 +759,13 @@
         if (delta === 0) return;
         var row = side.querySelector('[data-stat-row="' + key + '"]');
         if (!row) return;
+        var rect = row.getBoundingClientRect();
         var floater = document.createElement('span');
         floater.className = 'stat-delta-float ' + (delta > 0 ? 'stat-delta-pos' : 'stat-delta-neg');
         floater.textContent = (delta > 0 ? '+' : '') + delta;
-        row.appendChild(floater);
+        floater.style.left = (rect.right - 28) + 'px';
+        floater.style.top = (rect.top + 2) + 'px';
+        document.body.appendChild(floater);
         setTimeout(function () { if (floater.parentNode) floater.parentNode.removeChild(floater); }, 1300);
       });
     }
