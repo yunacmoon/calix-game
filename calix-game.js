@@ -1500,7 +1500,32 @@
     saveGame();
     syncNavIdentity();
     document.getElementById('ov-name').textContent = name;
-    document.getElementById('ov-body').textContent = gameState.candidateBlurb;
+    var ovBodyEl = document.getElementById('ov-body');
+    if (ovBodyEl) {
+      var prof = candidateBackstories[name] || {};
+      var bodyHtml = '';
+      // Narrative paragraphs (who he is + backstory)
+      if (prof.previous) {
+        prof.previous.split(/\n\n+/).forEach(function (para) {
+          var p = para.replace(/\s+/g, ' ').trim();
+          if (p) bodyHtml += '<p>' + escapeHtml(p) + '</p>';
+        });
+      }
+      // Stat lines
+      var stats = [
+        { key: 'Left behind', val: prof.gave },
+        { key: 'What he brought', val: prof.brought },
+        { key: 'The part he doesn\'t say', val: prof.shadow },
+      ].filter(function (s) { return s.val && s.val !== '—'; });
+      if (stats.length) {
+        bodyHtml += '<div class="ov-stat-block">';
+        stats.forEach(function (s) {
+          bodyHtml += '<div class="ov-stat-line"><span class="ov-stat-key">' + escapeHtml(s.key) + '</span><span class="ov-stat-val">' + escapeHtml(s.val) + '</span></div>';
+        });
+        bodyHtml += '</div>';
+      }
+      ovBodyEl.innerHTML = bodyHtml || escapeHtml(gameState.candidateBlurb || '—');
+    }
     var ovImg = document.querySelector('#overlay .ov-img img');
     var cardImg = selectedCardEl.querySelector('img');
     if (ovImg && cardImg && cardImg.src) ovImg.src = cardImg.src;
