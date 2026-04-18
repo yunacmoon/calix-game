@@ -146,7 +146,7 @@
 
 ---
 
-**OPTION B:** Ask if you can keep it.
+**OPTION B:** *"Can I keep this?"*
 > **YOU:** "Can I keep this?"
 >
 > *Finn looks at you.*
@@ -165,7 +165,7 @@
 
 ---
 
-**OPTION C:** Ask to take one of him.
+**OPTION C:** *"Give me the camera."*
 > **YOU:** "Give me the camera."
 >
 > *Finn blinks.*
@@ -196,7 +196,7 @@
 
 ---
 
-**OPTION D:** Laugh it off.
+**OPTION D:** *"I look weird."*
 > **YOU:** "I look weird."
 >
 > *Finn takes the print back.*

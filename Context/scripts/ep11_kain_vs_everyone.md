@@ -158,7 +158,7 @@
 
 ---
 
-**OPTION A:** Side with Theo out loud.
+**OPTION A:** *"He's right that you should have said something in the room."*
 > **YOU:** "He's right that you should have said something in the room. Even fast. Even just a word so we knew what was happening."
 >
 > *Kain holds eye contact with you.*
@@ -177,7 +177,7 @@
 
 ---
 
-**OPTION B:** Side with Kain out loud.
+**OPTION B:** *"He made the call he thought protected the group."*
 > **YOU:** "He made the call he thought protected the group. That's what a leader does when there's no time to ask."
 >
 > *Theo stares at you.*
@@ -194,7 +194,7 @@
 
 ---
 
-**OPTION C:** Say nothing. Make eye contact with Kain.
+**OPTION C:** *[Say nothing. Look at him — fully.]*
 > *You hold his gaze.*
 >
 > *You don't agree. You don't disagree. You just look at him — fully — and let him be looked at.*
@@ -215,7 +215,7 @@
 
 ---
 
-**OPTION D:** Suggest a compromise.
+**OPTION D:** *"What do we actually want going forward? Not what happened — what's the process next time."*
 > **YOU:** "What do we actually want going forward? Not what happened today — what's the process for next time. Specifically."
 >
 > *Everyone refocuses.*

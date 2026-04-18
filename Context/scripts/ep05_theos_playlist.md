@@ -167,7 +167,7 @@
 
 ---
 
-**OPTION A:** Pick something unexpected and personal.
+**OPTION A:** *[Pull up something specific. Personal. Not the obvious choice.]*
 > *You pull up something specific. Not the safest choice, not the most obvious one — something that tells them something true about you.*
 >
 > *Theo takes the phone back. Looks at what you've put on.*
@@ -192,7 +192,7 @@
 
 ---
 
-**OPTION B:** Pick something safe and popular.
+**OPTION B:** *[Pick something everyone knows. Safe. Impossible to argue with.]*
 > *You put on something everyone knows. A good song. Impossible to argue with.*
 >
 > *Theo nods along. He recalibrates slightly but doesn't say so.*
@@ -211,7 +211,7 @@
 
 ---
 
-**OPTION C:** Hand the aux back to Theo.
+**OPTION C:** *"You had something better. Put yours back on."*
 > **YOU:** "You had something better. Put yours back on."
 >
 > *Theo holds eye contact with you for a beat.*
@@ -228,7 +228,7 @@
 
 ---
 
-**OPTION D:** Ask Jay what he'd pick.
+**OPTION D:** *"Jay. You pick."*
 > *You hold the phone toward Jay.*
 >
 > **YOU:** "Jay. You pick."
@@ -318,7 +318,7 @@
 
 ---
 
-**OPTION A:** How much everyone actually cares.
+**OPTION A:** *"How much everyone actually gives a damn. Being in it is different from watching from outside."*
 > **YOU:** "How much everyone actually gives a damn. I knew you were good from the outside — but being in it is different. Everyone in that room is genuinely trying. All the time."
 >
 > *Finn takes that in.*
@@ -339,7 +339,7 @@
 
 ---
 
-**OPTION B:** How quiet Finn is.
+**OPTION B:** *"Honestly? You. You have a big presence from outside — but in person you're very quiet."*
 > **YOU:** "Honestly? You."
 >
 > *Finn blinks.*

@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "CALIX Static Dev Server",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-c", "import http.server,os; os.chdir('/Users/yunamoon/Desktop/_Calix/Calix_files'); http.server.HTTPServer(('127.0.0.1',8080),http.server.SimpleHTTPRequestHandler).serve_forever()"],
+      "runtimeExecutable": "/usr/bin/ruby",
+      "runtimeArgs": ["-run", "-e", "httpd", "/Users/yunamoon/Desktop/_Calix/Calix_files", "-p", "8080"],
       "port": 8080
     }
   ]

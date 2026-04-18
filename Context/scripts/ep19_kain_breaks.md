@@ -80,7 +80,7 @@
 
 ---
 
-**OPTION A:** Sit down next to him. Don't say anything.
+**OPTION A:** *[Sit down beside him. Say nothing.]*
 > *You sit down.*
 >
 > *On the floor, beside him, back against the mirror.*
@@ -128,7 +128,7 @@
 
 ---
 
-**OPTION C:** Get him water. Come back. Say nothing.
+**OPTION C:** *[Get him water. Come back. Sit.]*
 > *You go to the shelf.*
 >
 > *You come back. You set a bottle beside him.*
@@ -147,7 +147,7 @@
 
 ---
 
-**OPTION D:** Tell him the group sees it. They're not going anywhere.
+**OPTION D:** *"They know what it costs you. Nobody's going anywhere."*
 > **YOU:** "They know what it costs you. All of them."
 >
 > *Kain doesn't look at you.*

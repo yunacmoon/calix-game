@@ -193,7 +193,7 @@
 
 ---
 
-**OPTION C:** Squeeze his hand back. Don't say anything.
+**OPTION C:** *[Cover his hand with yours. Say nothing.]*
 > *You reach up and cover his hand with yours.*
 >
 > *You don't say anything.*

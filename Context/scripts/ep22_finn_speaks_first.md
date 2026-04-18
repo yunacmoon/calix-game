@@ -76,7 +76,7 @@
 
 ---
 
-**OPTION A:** Tell him you've been watching him back.
+**OPTION A:** *"I've been watching you too."*
 > **YOU:** "I've been watching you too."
 >
 > *Finn looks at you.*
@@ -120,7 +120,7 @@
 
 ---
 
-**OPTION C:** Thank him. Mean it.
+**OPTION C:** *"Thank you. Genuinely."*
 > **YOU:** "Thank you."
 >
 > *Finn looks at you.*

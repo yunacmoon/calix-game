@@ -158,7 +158,7 @@
 
 ---
 
-**OPTION A:** Learn the new formation immediately. Show you can handle it.
+**OPTION A:** *"Got it."*
 > *By the third run, your body has it. Not perfectly — there's a slight delay on the pivot at count nine — but the center position is yours and you're not apologizing for it.*
 >
 > *On the fourth run, Kain stops the track.*
@@ -179,7 +179,7 @@
 
 ---
 
-**OPTION B:** Ask Theo to walk you through it.
+**OPTION B:** *"The transition at nine — can you show me how you're reading the count?"*
 > *Between runs, you find Theo at the water table.*
 >
 > **YOU:** "The transition at nine — can you show me how you're reading the count? The way it feels, not the way it's written."
@@ -202,7 +202,7 @@
 
 ---
 
-**OPTION C:** Suggest a small adjustment.
+**OPTION C:** *"Kain — if I come in from a wider base, the transition reads cleaner. Can I try it?"*
 > *After the third run, you stop.*
 >
 > **YOU:** "Kain."
@@ -227,7 +227,7 @@
 
 ---
 
-**OPTION D:** Say nothing and struggle through it.
+**OPTION D:** *[Say nothing. Run it again.]*
 > *You run it again. And again. By the fifth run, the others have moved to drilling their own sections and you're still working the center opening.*
 >
 > *Theo drifts close between sets.*
@@ -280,7 +280,7 @@
 
 ---
 
-**OPTION A:** Honest answer.
+**OPTION A:** *"Like I've been in this room for three hours and it's been forty minutes."*
 > **YOU:** "Like I've been in this room for three hours and it's been forty minutes."
 >
 > *Theo laughs — actual laugh, not a performance.*
@@ -301,7 +301,7 @@
 
 ---
 
-**OPTION B:** Redirect — ask about the Kain/Theo tension.
+**OPTION B:** *"Does that happen a lot? Kain deciding without asking."*
 > **YOU:** "Does that happen a lot? The formation thing. Kain deciding without asking."
 >
 > *Theo and Jay exchange a look.*

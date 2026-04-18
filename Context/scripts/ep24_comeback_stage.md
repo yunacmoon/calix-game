@@ -73,7 +73,7 @@
 
 ---
 
-**OPTION A:** Hold it. Look back.
+**OPTION A:** *[Hold his gaze.]*
 > *You hold his gaze.*
 >
 > *One full second. Two.*
@@ -90,7 +90,7 @@
 
 ---
 
-**OPTION B:** Nod once.
+**OPTION B:** *[Nod back. Simple.]*
 > *You nod back.*
 >
 > *Simple. Certain.*
@@ -103,7 +103,7 @@
 
 ---
 
-**OPTION C:** Smile.
+**OPTION C:** *[Smile.]*
 > *You smile.*
 >
 > *Theo, beside you, sees it and his whole face lifts.*

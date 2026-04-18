@@ -119,7 +119,7 @@
 
 ---
 
-**OPTION B:** Describe exactly what you noticed — specifically.
+**OPTION B:** *"When the music dropped and you held — you stayed in it longer than I've ever seen you."*
 > **YOU:** "The section at the half — when the music drops and you hold — you stayed in it longer than any time I've seen you do it. You trusted the silence. And when you came back out of it, everything after landed differently."
 >
 > *Theo stares at you.*
@@ -144,7 +144,7 @@
 
 ---
 
-**OPTION C:** Applaud. Slowly. Sincerely.
+**OPTION C:** *[Start clapping. Slow. Not a performance.]*
 > *You start clapping.*
 >
 > *Slowly. Not as a performance — just: you clap, the sound going out into the empty arena, four thousand empty seats catching it.*

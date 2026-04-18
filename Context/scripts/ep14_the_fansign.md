@@ -107,7 +107,7 @@
 
 ---
 
-**OPTION A:** Hold eye contact. Read the first line of the letter to them.
+**OPTION A:** *"Can I read you this part?"*
 > *You break the seal. You read the first line quietly, to yourself. Then:*
 >
 > **YOU:** "Can I read you this part?"
@@ -130,7 +130,7 @@
 
 ---
 
-**OPTION B:** Accept gracefully. *"I'll read this tonight."*
+**OPTION B:** *"I'll read this tonight. All of it."*
 > **YOU:** "I'll read this tonight. All of it."
 >
 > *You hold the letter.*
@@ -143,7 +143,7 @@
 
 ---
 
-**OPTION C:** Ask their name and use it.
+**OPTION C:** *"What's your name?"*
 > **YOU:** "What's your name?"
 >
 > *They tell you.*
@@ -160,7 +160,7 @@
 
 ---
 
-**OPTION D:** Panic slightly. Theo covers for you.
+**OPTION D:** *[Panic shows. Theo sees it and covers.]*
 > *The letter, the crying, the gift — it's more than you're prepared for and it shows in your face.*
 >
 > *Theo, from beside you:*

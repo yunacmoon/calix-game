@@ -62,7 +62,7 @@
 
 ---
 
-**OPTION A:** Say it directly. *"Your knee."*
+**OPTION A:** *"Your knee."*
 > *You drop your bag.*
 >
 > **YOU:** "Theo. Your knee."
@@ -101,7 +101,7 @@
 
 ---
 
-**OPTION B:** Sit down next to him. Say nothing.
+**OPTION B:** *[Sit down on the floor beside him. Say nothing.]*
 > *You drop your bag.*
 >
 > *You sit on the practice room floor.*
@@ -134,7 +134,7 @@
 
 ---
 
-**OPTION C:** Offer to get Kain.
+**OPTION C:** *"Should I get Kain?"*
 > **YOU:** "Should I get Kain?"
 >
 > *Theo spins around from the mirror.*
@@ -153,7 +153,7 @@
 
 ---
 
-**OPTION D:** Ignore it. Follow his lead.
+**OPTION D:** *[Say nothing. Follow his lead.]*
 > *Theo resets. Runs it again.*
 >
 > *You watch him compensate again.*
@@ -253,7 +253,7 @@
 
 ---
 
-**OPTION A:** Stay in it. Don't make it smaller.
+**OPTION A:** *"You don't have to make it smaller to be able to talk about it."*
 > **YOU:** "You don't have to make it smaller to be able to talk about it."
 >
 > *Theo looks at you.*
@@ -274,7 +274,7 @@
 
 ---
 
-**OPTION B:** Ask about the knee. Practically.
+**OPTION B:** *"How long has the knee been like this?"*
 > **YOU:** "How long has the knee been like this?"
 >
 > **THEO:** "On and off for about six months. It gets bad when I push it, good when I don't, and I don't really let it stay good for very long."

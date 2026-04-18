@@ -92,7 +92,7 @@
 
 ---
 
-**OPTION A:** Push further. Match everything he throws.
+**OPTION A:** *[Push further. Meet everything he throws.]*
 > *He escalates. You escalate.*
 >
 > *At some point Theo is grinning — the real one, unmanaged, the one that arrives when he's fully in it and has stopped thinking — and he's pushing harder because you're still there and he hasn't hit the ceiling yet.*
@@ -117,7 +117,7 @@
 
 ---
 
-**OPTION B:** Acknowledge the limit and say so.
+**OPTION B:** *"That's my ceiling right now."*
 > *At some point — Theo throws something that's at the edge of your range — you stop.*
 >
 > **YOU:** "That's my ceiling right now."
@@ -146,7 +146,7 @@
 
 ---
 
-**OPTION C:** Ask him to show you the thing he can't teach.
+**OPTION C:** *"Show me the thing you can't teach."*
 > *After three rounds:*
 >
 > **YOU:** "Show me the thing you can't teach."

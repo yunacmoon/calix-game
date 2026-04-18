@@ -164,7 +164,7 @@
 
 ---
 
-**OPTION B:** Hold your glass up. Don't say anything. They know.
+**OPTION B:** *[Raise your glass. Don't say anything.]*
 > *You raise your glass.*
 >
 > *You don't say anything.*

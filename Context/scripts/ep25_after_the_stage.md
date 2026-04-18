@@ -62,7 +62,7 @@
 
 ---
 
-**OPTION A:** Relief.
+**OPTION A:** *[Let the weight leave your body.]*
 > *You feel the weight leave your body — months of it, a year of it. Not gone, just set down.*
 >
 > *You lean against the wall.*
@@ -79,7 +79,7 @@
 
 ---
 
-**OPTION B:** You want to do it again. Immediately.
+**OPTION B:** *"Can we go again?"*
 > **YOU:** "Can we go again?"
 >
 > *Theo looks at you.*
@@ -104,7 +104,7 @@
 
 ---
 
-**OPTION C:** You look at each person in the room.
+**OPTION C:** *[Look at each of them.]*
 > *Kain on the equipment case. Theo on the floor. Jay against the far wall. Finn in the corner.*
 >
 > *A year ago these were four people who had built something before you arrived, and you had to find your place in it.*

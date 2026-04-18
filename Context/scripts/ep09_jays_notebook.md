@@ -87,7 +87,7 @@
 
 ---
 
-**OPTION A:** Tell him exactly what you heard — the emotion in it.
+**OPTION A:** *"It sounds like you're talking to someone who isn't in the room anymore."*
 > *You sit with it for a beat. You don't rush.*
 >
 > **YOU:** "It sounds like you're talking to someone who isn't in the room anymore. Like you're saying something out loud instead of saying it to them."
@@ -114,7 +114,7 @@
 
 ---
 
-**OPTION B:** Ask who it's about.
+**OPTION B:** *"Who is it about?"*
 > **YOU:** "Who is it about?"
 >
 > *Jay looks at you.*
@@ -168,7 +168,7 @@
 
 ---
 
-**OPTION D:** Say it's good. Generic.
+**OPTION D:** *"It's really good, Jay."*
 > **YOU:** "It's really good, Jay."
 >
 > *A pause.*
@@ -272,7 +272,7 @@
 
 ---
 
-**OPTION B:** Ask what changed.
+**OPTION B:** *"What did you change?"*
 > **YOU:** "What did you change?"
 >
 > *Jay looks at the notebook.*

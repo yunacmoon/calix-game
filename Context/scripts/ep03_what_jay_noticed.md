@@ -112,7 +112,7 @@
 
 ---
 
-**OPTION A:** Listen. Ask him to elaborate.
+**OPTION A:** *"Show me what you mean. The weight shift — show me."*
 > *You push off the wall and walk toward him. Not all the way — you stop at a reasonable distance and crouch down to his level.*
 >
 > **YOU:** "Show me what you mean. The weight shift — show me."
@@ -145,7 +145,7 @@
 
 ---
 
-**OPTION B:** Thank him, but defend your choice.
+**OPTION B:** *"I've been working count nine because that's where the delay shows."*
 > **YOU:** "I appreciate it. I've been working count nine because that's where the delay shows."
 >
 > *Jay looks at you.*
@@ -174,7 +174,7 @@
 
 ---
 
-**OPTION C:** Dismiss it.
+**OPTION C:** *"I think I know my own body."*
 > **YOU:** "I think I know my own body."
 >
 > *Jay looks at you for three seconds.*
@@ -193,7 +193,7 @@
 
 ---
 
-**OPTION D:** Ask why he's still here.
+**OPTION D:** *"Why are you still here?"*
 > **YOU:** "Why are you still here?"
 >
 > *Jay clicks his pen. Doesn't look up immediately.*
@@ -328,7 +328,7 @@
 
 ---
 
-**OPTION A:** Honestly: both.
+**OPTION A:** *"Both. Depends on the run."*
 > **YOU:** "Both. Depends on the run."
 >
 > *Jay looks at you.*
@@ -345,7 +345,7 @@
 
 ---
 
-**OPTION B:** Reading what the others do right.
+**OPTION B:** *"What's working. Why make all the mistakes yourself when someone else already did?"*
 > **YOU:** "What's working. I learn faster from watching than from trying."
 >
 > **JAY:** "Most people learn from their own mistakes."

@@ -78,7 +78,7 @@
 
 ---
 
-**OPTION A:** Give your genuine vision. Something specific.
+**OPTION A:** *"The next cycle should be the one where CALIX stops explaining itself."*
 > *You think about it. Really think.*
 >
 > **YOU:** "I think the next cycle should be the one where CALIX stops explaining itself. The first two years were about proving you belonged in the conversation. You're in the conversation now. Start saying something in it."

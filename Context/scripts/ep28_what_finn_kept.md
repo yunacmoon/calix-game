@@ -115,7 +115,7 @@
 
 ---
 
-**OPTION B:** Ask if you can have it.
+**OPTION B:** *"Can I have this one?"*
 > **YOU:** "Can I have this one?"
 >
 > *Finn looks at you.*
@@ -134,7 +134,7 @@
 
 ---
 
-**OPTION C:** Ask which is his favourite of you.
+**OPTION C:** *"Which one is your favourite?"*
 > **YOU:** "Which one is your favourite?"
 >
 > *Finn is quiet for a moment.*

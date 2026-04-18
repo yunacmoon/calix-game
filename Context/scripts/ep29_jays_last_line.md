@@ -104,7 +104,7 @@
 
 ---
 
-**OPTION B:** Stay in the studio until morning.
+**OPTION B:** *[Stay. Neither of you moves to leave.]*
 > *Neither of you moves to leave.*
 >
 > *Jay plays the full track. You listen.*
@@ -121,7 +121,7 @@
 
 ---
 
-**OPTION C:** Ask him what it cost to write that line.
+**OPTION C:** *"What did it cost? That line."*
 > **YOU:** "What did it cost? That line."
 >
 > *A long silence.*

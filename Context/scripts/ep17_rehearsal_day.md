@@ -61,7 +61,7 @@
 
 ---
 
-**OPTION A:** Let it be real. Don't perform.
+**OPTION A:** *[Look back. Don't fix your expression.]*
 > *You look at the camera.*
 >
 > *You don't fix your expression. You don't smile or adjust anything.*
@@ -80,7 +80,7 @@
 
 ---
 
-**OPTION B:** Smile into it, professionally.
+**OPTION B:** *[Find the camera. Give it the trained smile.]*
 > *You catch the camera and adjust — the industry-trained lift, the version you've practiced.*
 >
 > *Clean. Professional.*
@@ -93,7 +93,7 @@
 
 ---
 
-**OPTION C:** Look for Theo — he's always good in these moments.
+**OPTION C:** *[Find Theo with your eyes.]*
 > *You find Theo with your eyes.*
 >
 > *He reads the situation immediately and drifts over, casual, puts himself in the frame with you, says something to the camera that's warm and redirects.*
@@ -110,7 +110,7 @@
 
 ---
 
-**OPTION D:** Look away.
+**OPTION D:** *[Turn slightly. Let the camera lose you.]*
 > *You turn slightly — not enough to look like you're hiding, just enough to find somewhere else to be.*
 >
 > *The camera loses you.*

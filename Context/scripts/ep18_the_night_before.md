@@ -77,7 +77,7 @@
 
 ---
 
-**OPTION A:** Stay. Sit with it.
+**OPTION A:** *[Stay. Don't make it bigger than it is.]*
 > *You stay.*
 >
 > *You don't try to start a conversation. You don't try to make the moment bigger than it is.*
@@ -92,7 +92,7 @@
 
 ---
 
-**OPTION B:** Get up and make something for everyone.
+**OPTION B:** *[Go to the kitchen. Make tea for everyone.]*
 > *You go to the kitchen.*
 >
 > **THEO:** *(from the couch)* "Oh — are you making something? Is there tea? Can there be tea, please?"
@@ -109,7 +109,7 @@
 
 ---
 
-**OPTION C:** Say out loud that this feels right.
+**OPTION C:** *"I didn't expect it to feel like this."*
 > **YOU:** "I didn't expect it to feel like this."
 >
 > *Theo looks over.*
@@ -134,7 +134,7 @@
 
 ---
 
-**OPTION D:** Catch Jay's eye. He gives you a small nod.
+**OPTION D:** *[Catch Jay's eye across the room.]*
 > *You look at Jay across the room.*
 >
 > *He's already looking at you.*

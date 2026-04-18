@@ -50,7 +50,7 @@
 
 ---
 
-**OPTION A:** Say the specific line. Out loud.
+**OPTION A:** *[Repeat the line. The one from the second verse.]*
 > *You hold it for a beat.*
 >
 > *Then you say the line. The one from the second verse. Quietly, just the words back.*
@@ -94,7 +94,7 @@
 
 ---
 
-**OPTION C:** Ask if the others know yet.
+**OPTION C:** *"Have the others heard this?"*
 > **YOU:** "Have the others heard this?"
 >
 > *Jay shakes his head.*

@@ -103,7 +103,7 @@
 
 ---
 
-**OPTION A:** Get loud. Force a pause.
+**OPTION A:** *"Stop."*
 > **YOU:** "Stop."
 >
 > *It lands.*
@@ -126,7 +126,7 @@
 
 ---
 
-**OPTION B:** Leave the room. Give it space.
+**OPTION B:** *[Stand up. Walk to the hallway.]*
 > *You stand. You walk to the hallway.*
 >
 > *Not storming out — just giving the room room.*
@@ -151,7 +151,7 @@
 
 ---
 
-**OPTION C:** Go to the person who's hurting most. Say nothing. Just stand there.
+**OPTION C:** *[Cross the room. Stand beside Theo.]*
 > *Theo.*
 >
 > *Under all of it — the anger, the volume — Theo is hurting. He's not angry about the decision; he's hurt that it happened in a way that cut people out.*
@@ -178,7 +178,7 @@
 
 ---
 
-**OPTION D:** Say the thing nobody's saying out loud.
+**OPTION D:** *"The rumor landed because it was true once. Six months ago."*
 > **YOU:** "The rumor landed because it was true once. Six months ago — it wasn't unanimous. I know that."
 >
 > *Complete silence.*

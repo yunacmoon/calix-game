@@ -132,7 +132,7 @@
 
 ---
 
-**OPTION A:** Hold eye contact. Don't flinch.
+**OPTION A:** *"Understood. It won't happen again."*
 > *You look at Kain and stay there. You don't apologize, don't explain, don't reach for a smile you don't have.*
 >
 > **YOU (internal):** *Three minutes. He counted. File that.*
@@ -151,7 +151,7 @@
 
 ---
 
-**OPTION B:** Deflect with humor.
+**OPTION B:** *"Three minutes. I'll work on getting it down to two."*
 > **YOU:** "Three minutes. I'll work on getting it down to two."
 >
 > *From beside you, Theo makes a sound — somewhere between a laugh and a cough, like he caught himself.*
@@ -168,7 +168,7 @@
 
 ---
 
-**OPTION C:** Say nothing. Just nod.
+**OPTION C:** *[Say nothing. Nod once — deliberate.]*
 > *You take in the room. You take in Kain. You nod once — deliberate, not a reflex.*
 >
 > *On the couch, Jay's eyes lift from his phone. Just barely. Just enough.*
@@ -185,7 +185,7 @@
 
 ---
 
-**OPTION D:** Apologize for being late.
+**OPTION D:** *"I'm sorry — the traffic was — I should have left earlier —"*
 > **YOU:** "I'm sorry — the traffic was — I should have left earlier, I knew I should have, I'm sorry —"
 >
 > *Theo's smile holds its shape. It's working to.*
@@ -335,7 +335,7 @@
 
 ---
 
-**OPTION A:** Be honest. The real answer.
+**OPTION A:** *"I want to make something that actually lasts. That it meant something while it was happening."*
 > *You set down your chopsticks.*
 >
 > **YOU:** "I want to make something that actually lasts. Not just one good cycle and then — I want to look back at it and know it was real. That it meant something while it was happening."
@@ -352,7 +352,7 @@
 
 ---
 
-**OPTION B:** Deflect — ask what they want.
+**OPTION B:** *"Tell me yours first and I'll tell you mine."*
 > **YOU:** "Tell me yours first and I'll tell you mine."
 >
 > *Theo's whole face changes.*
@@ -367,7 +367,7 @@
 
 ---
 
-**OPTION C:** Give the honest-but-short version.
+**OPTION C:** *"I just want to be good. Good enough that it actually means something."*
 > **YOU:** "I just want to be good. Good enough that it actually means something."
 >
 > *A silence settles over the table.*

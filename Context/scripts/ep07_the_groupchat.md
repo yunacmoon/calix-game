@@ -210,7 +210,7 @@ THEO
 
 ---
 
-**OPTION A:** Send a voice memo back, matching his energy.
+**OPTION A:** *[Record a voice memo. Match his energy.]*
 > *You hold the record button.*
 >
 > **YOU (voice memo — 0:31):** "Okay so I listened to yours twice. The part about floor work — I think you're right, there's a dead zone in the second half where the energy goes flat. And the sequence you hummed at the end? If we anchor that on the beat right before the break it lands differently. Just try it in the mirror once. Also yes this is clearly not a logistics channel."
@@ -256,7 +256,7 @@ THEO
 
 ---
 
-**OPTION B:** Type out a genuine opinion.
+**OPTION B:** *"Theo's right about the static section."*
 > *You type.*
 >
 > **YOU:** "Theo's right about the static section. The second half stops moving right when it should keep building, and I think the stillness is too long to be intentional. Also this is clearly not a logistics channel."
@@ -287,7 +287,7 @@ THEO
 
 ---
 
-**OPTION C:** React with an emoji like Finn.
+**OPTION C:** *[Send 🎶 and nothing else.]*
 > *You send: 🎶*
 >
 > ```
@@ -323,7 +323,7 @@ THEO
 
 ---
 
-**OPTION D:** Don't respond until morning.
+**OPTION D:** *[Put the phone down. Sleep on it.]*
 > *You read it.*
 >
 > *You put your phone down.*
@@ -431,7 +431,7 @@ THEO
 
 ---
 
-**OPTION A:** Yes, immediately.
+**OPTION A:** *"I'm in."*
 > **YOU:** "I'm in."
 >
 > ```
@@ -464,7 +464,7 @@ THEO
 
 ---
 
-**OPTION B:** Ask what kind of film.
+**OPTION B:** *"What's the film?"*
 > **YOU:** "What's the film?"
 >
 > ```

@@ -121,7 +121,7 @@
 
 ---
 
-**OPTION C:** Ask him what he'd do.
+**OPTION C:** *"What would you do? If it didn't work."*
 > **YOU:** "What would you do? If it didn't work."
 >
 > *Jay is quiet for a long time.*

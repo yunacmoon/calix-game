@@ -99,7 +99,7 @@
 
 ---
 
-**OPTION A:** One take. Mean it.
+**OPTION A:** *[One take. Don't think about technique.]*
 > *You don't think about technique.*
 >
 > *You think about the year. The practice room at midnight. The floor with Kain. The rooftop with Finn. The studio with Jay. The empty arena with Theo. Everything the year built.*
@@ -118,7 +118,7 @@
 
 ---
 
-**OPTION B:** Two takes. The second one lands.
+**OPTION B:** *"Again."*
 > *First take: close. Not there.*
 >
 > *You come out.*
@@ -141,7 +141,7 @@
 
 ---
 
-**OPTION C:** Ask to hear the full track first.
+**OPTION C:** *"Play it from the top."*
 > **YOU:** "Play it from the top."
 >
 > *Jay looks at you.*

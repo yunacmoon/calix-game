@@ -87,7 +87,7 @@
 
 ---
 
-**OPTION B:** Tell him what you heard and what it meant.
+**OPTION B:** *"I heard what you said. About the group being better."*
 > *You don't move.*
 >
 > **YOU:** "I heard what you said. About the group being better."

@@ -101,7 +101,7 @@
 
 ---
 
-**OPTION A:** Be direct. *"You never stop, do you."*
+**OPTION A:** *"You never stop, do you."*
 > *You look at him.*
 >
 > **YOU:** "You never stop, do you."
@@ -134,7 +134,7 @@
 
 ---
 
-**OPTION B:** Pretend you just arrived.
+**OPTION B:** *"Oh — I just got here, I didn't realize —"*
 > **YOU:** "Oh — I just got here, I didn't realize —"
 >
 > *Kain looks at you.*
@@ -153,7 +153,7 @@
 
 ---
 
-**OPTION C:** Ask if you can run the choreo with him.
+**OPTION C:** *"Can I run it with you?"*
 > **YOU:** "Can I run it with you?"
 >
 > *A beat.*
@@ -184,7 +184,7 @@
 
 ---
 
-**OPTION D:** Leave without a word.
+**OPTION D:** *[Say nothing. Meet his eyes in the mirror. Nod once. Leave.]*
 > *You make eye contact with him in the mirror.*
 >
 > *Then you nod once — the same nod you gave him on day one — and pull the door closed behind you.*

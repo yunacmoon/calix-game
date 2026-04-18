@@ -153,7 +153,7 @@
 
 ---
 
-**OPTION A:** Be honest. The real answer.
+**OPTION A:** *"I want to make something someone puts on at 2am when something is wrong. Even one person. That would be enough."*
 > *You think about it for long enough that it actually costs something.*
 >
 > **YOU:** "I want to make something that someone carries with them. Not just listens to — something they put on at 2am when something is wrong and it actually helps. Even one person. That would be enough."
@@ -178,7 +178,7 @@
 
 ---
 
-**OPTION B:** Give the polished answer.
+**OPTION B:** *"I want to perform at the highest level. Be part of something that makes an impact."*
 > **YOU:** "I want to perform at the highest level. Be part of something that makes an impact."
 >
 > *Finn doesn't say anything.*
@@ -201,7 +201,7 @@
 
 ---
 
-**OPTION C:** Ask him the same question back.
+**OPTION C:** *"What made you want it?"*
 > **YOU:** "What made you want it?"
 >
 > *A pause.*
@@ -230,7 +230,7 @@
 
 ---
 
-**OPTION D:** Say you don't know yet.
+**OPTION D:** *"I don't actually know yet."*
 > **YOU:** "I don't actually know yet."
 >
 > *Finn goes still.*
