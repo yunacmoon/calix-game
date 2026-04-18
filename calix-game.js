@@ -1383,6 +1383,20 @@
   window.initEpisode = function () {
     giftShownThisEpisode = false;
     loadSave();
+    // URL ?ep=N 딥링크면 localStorage 저장값보다 우선 적용
+    var _epParam = new URLSearchParams(window.location.search).get('ep');
+    if (_epParam) {
+      var _epN = parseInt(_epParam, 10);
+      if (!isNaN(_epN) && _epN >= 1 && _epN <= 30) {
+        gameState.currentEpisodeN = _epN;
+        gameState.unlockedThrough = Math.max(gameState.unlockedThrough || 0, _epN);
+        if (!gameState.candidateName) {
+          gameState.candidateName = 'ALEX';
+          gameState.candidateArchetype = 'STRONG';
+          gameState.candidateBlurb = '';
+        }
+      }
+    }
     syncNavIdentity();
     renderStatsSidebar();
     if (!gameState.candidateName) {
