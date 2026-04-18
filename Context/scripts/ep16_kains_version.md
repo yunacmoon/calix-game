@@ -66,7 +66,7 @@
 
 ---
 
-## CHOICE — He knows you heard. What do you do?
+## CHOICE 1 — He knows you heard. What do you do?
 
 ---
 

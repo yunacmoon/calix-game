@@ -76,7 +76,7 @@
 
 ---
 
-## CHOICE — Kain says: *"I don't know how to do this without it costing everything."*
+## CHOICE 1 — Kain says: *"I don't know how to do this without it costing everything."*
 
 ---
 

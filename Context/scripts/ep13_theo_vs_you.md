@@ -88,7 +88,7 @@
 
 ---
 
-## CHOICE — You keep up with him. He was not expecting that.
+## CHOICE 1 — You keep up with him. He was not expecting that.
 
 ---
 

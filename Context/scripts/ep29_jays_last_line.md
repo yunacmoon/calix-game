@@ -79,7 +79,7 @@
 
 ---
 
-## CHOICE — *"That one,"* you say. Jay nods. Then —
+## CHOICE 1 — *"That one,"* you say. Jay nods. Then —
 
 ---
 

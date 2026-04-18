@@ -72,7 +72,7 @@
 
 ---
 
-## CHOICE — He finishes. Looks at you. Waits.
+## CHOICE 1 — He finishes. Looks at you. Waits.
 
 ---
 

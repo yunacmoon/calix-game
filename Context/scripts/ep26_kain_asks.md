@@ -74,7 +74,7 @@
 
 ---
 
-## CHOICE — Kain asks for your real vision for CALIX's next chapter.
+## CHOICE 1 — Kain asks for your real vision for CALIX's next chapter.
 
 ---
 

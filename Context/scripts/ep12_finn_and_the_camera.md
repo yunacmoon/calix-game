@@ -123,7 +123,7 @@
 
 ---
 
-## CHOICE — He shows you the photo. What do you say?
+## CHOICE 1 — He shows you the photo. What do you say?
 
 ---
 

@@ -73,7 +73,7 @@
 
 ---
 
-## CHOICE — Someone put music on. It just happened. What do you do?
+## CHOICE 1 — Someone put music on. It just happened. What do you do?
 
 ---
 

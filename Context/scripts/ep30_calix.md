@@ -137,7 +137,7 @@
 
 ---
 
-## CHOICE — FINAL. Theo makes a toast: *"To CALIX. All five."* He looks at you last.
+## CHOICE 1 — FINAL. Theo makes a toast: *"To CALIX. All five."* He looks at you last.
 
 ---
 

@@ -95,7 +95,7 @@
 
 ---
 
-## CHOICE — In the booth. Kain says: *"Don't perform it. Just mean it."*
+## CHOICE 1 — In the booth. Kain says: *"Don't perform it. Just mean it."*
 
 ---
 

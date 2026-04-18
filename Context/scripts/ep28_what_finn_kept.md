@@ -94,7 +94,7 @@
 
 ---
 
-## CHOICE — Finn shows you the photograph. What do you say?
+## CHOICE 1 — Finn shows you the photograph. What do you say?
 
 ---
 

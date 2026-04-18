@@ -61,7 +61,7 @@
 
 ---
 
-## CHOICE — Jay asks: *"Do you think about what happens if this doesn't work?"*
+## CHOICE 1 — Jay asks: *"Do you think about what happens if this doesn't work?"*
 
 ---
 

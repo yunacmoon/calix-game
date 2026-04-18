@@ -58,7 +58,7 @@
 
 ---
 
-## CHOICE — In the quiet after the stage, what do you feel?
+## CHOICE 1 — In the quiet after the stage, what do you feel?
 
 ---
 

@@ -57,7 +57,7 @@
 
 ---
 
-## CHOICE — A staff camera catches you off-guard. Your real expression. Do you recover?
+## CHOICE 1 — A staff camera catches you off-guard. Your real expression. Do you recover?
 
 ---
 

@@ -99,7 +99,7 @@
 
 ---
 
-## CHOICE — At the peak of the argument, in the silence — what do you do?
+## CHOICE 1 — At the peak of the argument, in the silence — what do you do?
 
 ---
 

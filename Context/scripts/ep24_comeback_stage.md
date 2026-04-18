@@ -69,7 +69,7 @@
 
 ---
 
-## CHOICE — Kain looks at you right before you go on. One second. No words.
+## CHOICE 1 — Kain looks at you right before you go on. One second. No words.
 
 ---
 

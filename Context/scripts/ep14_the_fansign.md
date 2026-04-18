@@ -103,7 +103,7 @@
 
 ---
 
-## CHOICE — A fan gives you a handwritten letter and a small wrapped gift. They're crying a little. What do you do?
+## CHOICE 1 — A fan gives you a handwritten letter and a small wrapped gift. They're crying a little. What do you do?
 
 ---
 

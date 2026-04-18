@@ -154,7 +154,7 @@
 
 ---
 
-## CHOICE — In the silence after, Kain looks at you. The only one who hasn't spoken.
+## CHOICE 1 — In the silence after, Kain looks at you. The only one who hasn't spoken.
 
 ---
 
