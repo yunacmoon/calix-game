@@ -1111,7 +1111,10 @@
           '</p>';
 
         // 멤버 반응 — featured 멤버 감지 후 효과 기반으로 반응 선택
+        // 감정적으로 무거운 에피소드에서는 반응 억제 (분위기 깨짐 방지)
+        var NO_REACTION_EPS = [19, 29, 30];
         var MEMBER_REACTIONS = {
+          // Kain: 트러스트 레벨에 따라 다른 반응 — 차갑게 시작해서 점점 진심으로
           KAIN: (function() {
             var kt = gameState.stats.KAIN_TRUST || 0;
             if (kt >= 10) return {
@@ -1123,21 +1126,24 @@
               negative: ['Do better.', 'Again.', '...']
             };
             return {
-              positive: ['...', 'Noted.', 'Good.', 'Don\'t make it a habit.'],
+              positive: ['...', 'Noted.', 'Good.'],
               negative: ['...', 'Do better.', 'Again.']
             };
           })(),
+          // Theo: 진심으로 warm하고 빠름 — 하지만 performance 아님, 실제로 저렇게 느끼는 것
           THEO: {
-            positive: ['Okay WAIT — that was actually good.', 'I knew it. I called it.', 'Yes. Yes yes yes.', 'Okay I\'m not mad about that.'],
-            negative: ['...that\'s not — okay. okay.', 'I\'m not going to say anything.', 'We\'ll talk about this later.']
+            positive: ['Okay — that landed.', 'I knew it.', 'Yes.', 'That one was you.', 'Okay I\'m not mad about that.'],
+            negative: ['...that\'s not — okay.', 'I\'m not going to say anything.', 'We\'ll figure it out.']
           },
+          // Jay: 말이 적고 직접적 — 칭찬도 짧고, 비판도 짧음. 감정 표현 안 함
           JAY: {
-            positive: ['Solid.', '...respect.', 'Yeah.', 'Real talk — not bad.'],
-            negative: ['Nah.', '...', 'I\'m gonna pretend you didn\'t do that.']
+            positive: ['Solid.', '...respect.', 'Yeah.', 'That worked.'],
+            negative: ['Nah.', '...', 'Wrong move.']
           },
+          // Finn: 관찰하는 사람 — 모든 걸 알아챔. 놀라지 않음. 말이 정확함
           FINN: {
-            positive: ['I noticed.', 'That was the right one.', 'You surprised me.', '...yeah.'],
-            negative: ['That wasn\'t it.', '...okay.', 'I\'ll remember that.']
+            positive: ['I noticed.', 'That was the right one.', 'That one mattered.', '...yeah.'],
+            negative: ['That wasn\'t it.', '...okay.', 'Not that one.']
           }
         };
 
@@ -1156,10 +1162,12 @@
         }
 
         // 선택지 본문에 이미 featured 멤버 대사가 있으면 리액션 생략
+        // 또는 감정적으로 무거운 에피소드는 리액션 억제
         var bodyAlreadyHasMember = featuredMember && opt.body &&
           new RegExp('\\*\\*' + featuredMember + '\\b', 'i').test(opt.body);
+        var isHeavyEpisode = NO_REACTION_EPS.indexOf(gameState.currentEpisodeN) !== -1;
 
-        if (featuredMember && MEMBER_REACTIONS[featuredMember] && !bodyAlreadyHasMember) {
+        if (featuredMember && MEMBER_REACTIONS[featuredMember] && !bodyAlreadyHasMember && !isHeavyEpisode) {
           var pool = isPositive
             ? MEMBER_REACTIONS[featuredMember].positive
             : MEMBER_REACTIONS[featuredMember].negative;
