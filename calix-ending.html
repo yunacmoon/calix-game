@@ -485,6 +485,33 @@ body::after {
   display: flex; flex-direction: column; align-items: center; gap: 12px;
   opacity: 0; animation: fadeUp 0.8s ease 1.3s forwards;
 }
+.fin-follow {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  margin-top: 32px; padding-top: 28px;
+  border-top: 1px solid rgba(107,79,216,0.15);
+  opacity: 0; animation: fadeUp 0.8s ease 1.8s forwards;
+}
+.fin-follow-label {
+  font-size: 13px; color: var(--ink-soft); letter-spacing: 0.02em;
+  text-align: center; margin-bottom: 4px; line-height: 1.5;
+}
+.fin-follow-btn {
+  display: flex; align-items: center; gap: 10px;
+  width: 220px; padding: 13px 20px;
+  border-radius: 50px; text-decoration: none;
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
+  transition: opacity 0.2s, transform 0.2s;
+  justify-content: center;
+}
+.fin-follow-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.fin-follow-x {
+  background: var(--ink); color: #fff;
+}
+.fin-follow-tiktok {
+  background: linear-gradient(135deg, #010101, #69C9D0);
+  color: #fff;
+}
 
 /* ── SHARED BUTTONS ── */
 .btn-solid {
@@ -727,10 +754,21 @@ body::after {
 <div class="phase" id="phase-fin">
   <div class="fin-rule"></div>
   <h1 class="fin-word">Fin.</h1>
-  <p class="fin-sub">Thank you for being part of CALIX's story.</p>
+  <p class="fin-sub">Season 2 is coming.</p>
   <div class="fin-btns">
     <button class="btn-solid" onclick="window.location.href='calix-v6.html'">Play again →</button>
     <button class="btn-glass" onclick="shareGame()">Share CALIX</button>
+  </div>
+  <div class="fin-follow">
+    <p class="fin-follow-label">Want more photocards and their stories first?</p>
+    <a href="https://twitter.com/tartgrahics26" target="_blank" rel="noopener" class="fin-follow-btn fin-follow-x">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      Follow on X
+    </a>
+    <a href="https://tiktok.com/@tartgraphics" target="_blank" rel="noopener" class="fin-follow-btn fin-follow-tiktok">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+      Follow on TikTok
+    </a>
   </div>
 </div>
 
