@@ -751,6 +751,22 @@
     const side = document.getElementById('stats-sidebar-body');
     if (side) side.innerHTML = html;
 
+    if (side && prevStatsOptional) {
+      var floatKeys = ['KAIN_TRUST', 'THEO_TRUST', 'JAY_TRUST', 'FINN_TRUST', 'GROUP_REP', 'SKILL'];
+      floatKeys.forEach(function (key) {
+        if (prevStatsOptional[key] === undefined) return;
+        var delta = s[key] - prevStatsOptional[key];
+        if (delta === 0) return;
+        var row = side.querySelector('[data-stat-row="' + key + '"]');
+        if (!row) return;
+        var floater = document.createElement('span');
+        floater.className = 'stat-delta-float ' + (delta > 0 ? 'stat-delta-pos' : 'stat-delta-neg');
+        floater.textContent = (delta > 0 ? '+' : '') + delta;
+        row.appendChild(floater);
+        setTimeout(function () { if (floater.parentNode) floater.parentNode.removeChild(floater); }, 1300);
+      });
+    }
+
     const invEl = document.getElementById('inventory-list');
     if (invEl) {
       if (!gameState.inventory.length) {
