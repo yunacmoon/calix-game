@@ -1582,8 +1582,6 @@
         btn.textContent = 'Fin · back to title';
         btn.disabled = false;
       }
-      var finSocial = document.getElementById('fin-social');
-      if (finSocial) finSocial.style.display = 'block';
     } else {
       const chk = checkGate((episodesMapMeta[nextN] && episodesMapMeta[nextN].gate) || 'None');
       if (btn) {
