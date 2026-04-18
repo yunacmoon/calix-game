@@ -227,6 +227,28 @@
 **KAIN:**
 "The electrolytes are better than the vending machine ones."
 
+*He's almost at the door when he stops.*
+
+*Not turning around. Just — stops.*
+
+**KAIN:**
+"Why couldn't you sleep."
+
+*It's not an assessment. Not a leader checking on a member. Just a question.*
+
+**YOU:**
+"Brain won't turn off."
+
+*A pause.*
+
+**KAIN:**
+"Yeah."
+
+*He says it like he knows exactly what that is.*
+
+**KAIN:**
+"If you need the room — text me first. I'll tell you when I'm in it. You can use the rest."
+
 *He walks out.*
 
 *The track is still looping.*

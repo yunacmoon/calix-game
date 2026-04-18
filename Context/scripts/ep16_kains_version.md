@@ -110,7 +110,13 @@
 >
 > **KAIN:** "Don't thank me for facts."
 >
-> *He goes back into his room.*
+> *He starts to go back into his room.*
+>
+> *Then, over his shoulder — quieter than everything else:*
+>
+> **KAIN:** "I meant it, though. All of it."
+>
+> *He closes the door.*
 >
 > `[+4 KAIN_TRUST]`
 

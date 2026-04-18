@@ -269,10 +269,29 @@
 **KAIN:**
 "I'm working on it."
 
-*He walks out.*
+*He's at the door.*
+
+*He pauses.*
+
+**KAIN:**
+"You've been here — four months?"
+
+**YOU:**
+"About that."
+
+*He looks at you properly. Not the way he looks at the group in meetings. Something quieter.*
+
+**KAIN:**
+"You're not new anymore."
+
+*He says it like a fact he's been sitting with for a while and is only now saying out loud.*
+
+*Then he walks out.*
 
 **NARRATION:**
-> *Kain in an empty conference room, turning his pen over, saying: I'm working on it.*
+> *You're not new anymore.*
+>
+> *From Kain, that's not small.*
 >
 > *You stand there for a moment before you follow.*
 
