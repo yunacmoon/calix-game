@@ -42,6 +42,7 @@
   const MEMBER_SPEAKERS = { THEO: true, KAIN: true, JAY: true, FINN: true };
   let currentEpisodeTitle = '';
   let episodeFeaturedMember = null;
+  let episodeSpeakerRunningCount = { KAIN: 0, THEO: 0, JAY: 0, FINN: 0 };
   let pendingReward = { coins: 0, itemLabel: null, rewardName: '', typeKey: 'coins', typeLabel: 'Coins' };
   /** Cumulative trust/skill deltas from choices this episode (for reward popup reaction). */
   let episodeChoiceStatDelta = {};
@@ -673,6 +674,7 @@
     lastDialogueDedup = '';
     newMemberInject = { theo: false, kain: false, narr: false };
     firstAddressPrefixBySpeaker = {};
+    episodeSpeakerRunningCount = { KAIN: 0, THEO: 0, JAY: 0, FINN: 0 };
   }
 
   window.episodeLockedContinue = function () {
@@ -1006,6 +1008,7 @@
       const dk = beat.speaker + '|' + textFingerprint(trimmed);
       if (dk === lastDialogueDedup) return;
       lastDialogueDedup = dk;
+      if (episodeSpeakerRunningCount.hasOwnProperty(beat.speaker)) episodeSpeakerRunningCount[beat.speaker]++;
       lastNarrationFp = '';
       appendStreamBlock(
         '<div class="character-name">' +
@@ -1094,15 +1097,11 @@
           }
         };
 
-        // 이 에피소드의 featured 멤버 감지
+        // 지금까지 가장 많이 말한 멤버
         var featuredMember = null;
-        var speakerTally = { KAIN: 0, THEO: 0, JAY: 0, FINN: 0 };
-        flowQueue.forEach(function(b) {
-          if (b.type === 'dialogue' && speakerTally.hasOwnProperty(b.speaker)) speakerTally[b.speaker]++;
-        });
-        var topCount = 0;
-        Object.keys(speakerTally).forEach(function(k) {
-          if (speakerTally[k] > topCount) { topCount = speakerTally[k]; featuredMember = k; }
+        var topRunCount = 0;
+        Object.keys(episodeSpeakerRunningCount).forEach(function(k) {
+          if (episodeSpeakerRunningCount[k] > topRunCount) { topRunCount = episodeSpeakerRunningCount[k]; featuredMember = k; }
         });
 
         // 효과가 긍정인지 판단 (주요 스탯 증가 여부)
