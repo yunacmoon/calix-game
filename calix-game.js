@@ -1112,10 +1112,21 @@
 
         // 멤버 반응 — featured 멤버 감지 후 효과 기반으로 반응 선택
         var MEMBER_REACTIONS = {
-          KAIN: {
-            positive: ['...', 'Noted.', 'Faster than I expected.', 'Good.', 'Don\'t make it a habit.'],
-            negative: ['...', 'Do better.', 'I\'ll pretend I didn\'t see that.', 'Again.']
-          },
+          KAIN: (function() {
+            var kt = gameState.stats.KAIN_TRUST || 0;
+            if (kt >= 10) return {
+              positive: ['I see you.', 'That was the right call.', '...yeah.', 'Keep that.', 'Good. Really.'],
+              negative: ['Not this time.', '...we\'ll fix it.', 'I know you can do better than that.']
+            };
+            if (kt >= 6) return {
+              positive: ['Good.', 'Faster than I expected.', 'Noted.', 'That works.'],
+              negative: ['Do better.', 'Again.', '...']
+            };
+            return {
+              positive: ['...', 'Noted.', 'Good.', 'Don\'t make it a habit.'],
+              negative: ['...', 'Do better.', 'Again.']
+            };
+          })(),
           THEO: {
             positive: ['Okay WAIT — that was actually good.', 'I knew it. I called it.', 'Yes. Yes yes yes.', 'Okay I\'m not mad about that.'],
             negative: ['...that\'s not — okay. okay.', 'I\'m not going to say anything.', 'We\'ll talk about this later.']

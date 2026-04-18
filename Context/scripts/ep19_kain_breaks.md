@@ -172,7 +172,26 @@
 
 ---
 
-## SCENE 3 — THE NECKLACE
+## SCENE 3 — LEAVING
+
+*Eventually you get up.*
+
+*Kain doesn't move.*
+
+*You're at the door when he says it — quiet, to the floor:*
+
+**KAIN:**
+"Thank you for staying."
+
+*He doesn't look at you.*
+
+*You don't say anything back. You don't need to.*
+
+*The door clicks shut behind you.*
+
+---
+
+## SCENE 4 — THE NECKLACE
 
 *Later.*
 

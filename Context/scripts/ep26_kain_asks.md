@@ -153,6 +153,46 @@
 
 ---
 
+## SCENE 2 — AFTER
+
+*The city keeps doing its thing.*
+
+*At some point the thermos runs out. Kain holds it upside down — nothing left.*
+
+**KAIN:**
+"I don't do this."
+
+**YOU:**
+"What?"
+
+**KAIN:**
+"Ask people things. What they think. What they see."
+
+*A pause.*
+
+**KAIN:**
+"I've been doing it with you."
+
+*He sets the thermos down.*
+
+*He looks at you — not assessing. Just looking.*
+
+**KAIN:**
+"I don't know what that means yet. But I wanted you to know I noticed."
+
+*He stands.*
+
+*He picks up the thermos.*
+
+**KAIN:**
+"Come on. It's cold."
+
+*He holds the rooftop door open.*
+
+*He waits.*
+
+---
+
 ## EPISODE END
 
 **Reward unlocked:** `1200 coins`
