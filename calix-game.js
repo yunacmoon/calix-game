@@ -1087,6 +1087,20 @@
       btn.textContent = toSentenceCase(stripStatTags(opt.label) || opt.label);
       btn.onclick = function () {
         applyDeltas(opt.effects);
+
+        // stat delta pills in scene stream
+        var STAT_LBL = { KAIN_TRUST:'Kain', THEO_TRUST:'Theo', JAY_TRUST:'Jay', FINN_TRUST:'Finn', GROUP_REP:'Group', SKILL:'Skill', COINS:'Coins' };
+        if (opt.effects && Object.keys(opt.effects).length) {
+          var pillHtml = '';
+          Object.keys(opt.effects).forEach(function(k) {
+            var v = opt.effects[k];
+            if (!v) return;
+            var lbl = STAT_LBL[k] || k;
+            pillHtml += '<span class="csd-pill ' + (v > 0 ? 'csd-pos' : 'csd-neg') + '">' + (v > 0 ? '+' : '') + v + ' ' + lbl + '</span>';
+          });
+          if (pillHtml) appendStreamBlock('<div class="choice-stat-delta">' + pillHtml + '</div>', '');
+        }
+
         const epk = String(gameState.currentEpisodeN);
         if (!gameState.episodeChoices[epk]) gameState.episodeChoices[epk] = [];
         gameState.episodeChoices[epk].push({ key: opt.key, label: stripStatTags(opt.label) });
