@@ -325,9 +325,9 @@ body::after {
 .choice-bar { display:flex; flex-direction:column; gap:10px; }
 .choice-bar--sticky { position:sticky; bottom:0; z-index:6; padding:20px 12px calc(16px + env(safe-area-inset-bottom,0px)); margin:0 -4px; background:linear-gradient(180deg, rgba(250,247,255,0) 0%, rgba(250,247,255,0.88) 18%, rgba(255,255,255,0.96) 45%, #fff 100%); backdrop-filter:blur(10px); border-radius:0 0 12px 12px; box-shadow:0 -12px 32px rgba(0,0,61,0.06); }
 .choice-picked { font-size:13px; font-style:italic; color:var(--ink-muted); margin:0; padding:8px 0; }
-.member-reaction { display:flex; align-items:baseline; gap:10px; margin:20px 0 8px; padding:14px 18px; background:#4B2FA8; border:1.5px solid #6B4FD8; border-radius:8px; }
-.member-reaction .mr-name { font-size:12px; font-weight:700; letter-spacing:0.1em; color:#fff; text-transform:uppercase; white-space:nowrap; opacity:0.7; }
-.member-reaction .mr-text { font-size:15px; font-style:italic; color:#fff; line-height:1.5; }
+.member-reaction { display:flex !important; align-items:baseline; gap:10px; margin:20px 0 8px; padding:14px 18px; background:#4B2FA8 !important; border:1.5px solid #6B4FD8; border-radius:8px; }
+.member-reaction .mr-name { font-size:12px !important; font-weight:700 !important; letter-spacing:0.1em; color:#ffffff !important; text-transform:uppercase; white-space:nowrap; opacity:0.7; }
+.member-reaction .mr-text { font-size:15px !important; font-style:italic; color:#ffffff !important; line-height:1.5; }
 .save-exit-wrap { text-align:center; padding:18px 0 4px; }
 .save-exit-btn { background:none; border:none; font-family:'Rethink Sans',sans-serif; font-size:11px; letter-spacing:0.08em; color:var(--ink-muted); text-decoration:underline; text-underline-offset:3px; cursor:pointer; padding:4px 8px; transition:color 0.2s; }
 .save-exit-btn:hover { color:var(--ink-soft); }
