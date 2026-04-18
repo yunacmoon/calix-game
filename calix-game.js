@@ -1144,7 +1144,11 @@
           if (vals.length && vals.every(function(v) { return v <= 0; })) isPositive = false;
         }
 
-        if (featuredMember && MEMBER_REACTIONS[featuredMember]) {
+        // 선택지 본문에 이미 featured 멤버 대사가 있으면 리액션 생략
+        var bodyAlreadyHasMember = featuredMember && opt.body &&
+          new RegExp('\\*\\*' + featuredMember + '\\b', 'i').test(opt.body);
+
+        if (featuredMember && MEMBER_REACTIONS[featuredMember] && !bodyAlreadyHasMember) {
           var pool = isPositive
             ? MEMBER_REACTIONS[featuredMember].positive
             : MEMBER_REACTIONS[featuredMember].negative;
