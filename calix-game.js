@@ -1334,7 +1334,7 @@
     const streamEl = document.getElementById('scene-stream');
     if (streamEl) streamEl.scrollTop = 0;
 
-    const BANNER_EPISODES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30];
+    const BANNER_EPISODES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30];
     const BANNER_IMAGES = {
       1: 'Images/04_Banner/EP01_Banner.png',
       2: 'Images/04_Banner/EP02_Banner.png',
@@ -1355,6 +1355,7 @@
       23: 'Images/04_Banner/EP23_Banner.png',
       25: 'Images/04_Banner/EP25_Banner.png',
       26: 'Images/04_Banner/EP26_Banner.png',
+      28: 'Images/04_Banner/EP28_Banner.png',
       6: 'Images/04_Banner/EP06_Banner.png',
       7: 'Images/04_Banner/EP07_Banner.jpeg',
       10: 'Images/04_Banner/EP10_Banner.jpeg',
