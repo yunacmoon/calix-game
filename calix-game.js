@@ -1836,7 +1836,50 @@
         proceedFromRewardPopupToRewardScreen();
       } else {
         var ov = document.getElementById('kofi-overlay');
-        if (ov) { ov.classList.add('show'); return; }
+        if (ov) {
+          var KOFI_MESSAGES = {
+            3: {
+              eyebrow: 'You\'re 3 episodes in ☕',
+              headline: 'Enjoying CALIX so far?',
+              body: 'This is a one-person project. If you\'re having fun, a coffee would genuinely make my day.',
+              btn: 'Sure, buy a coffee ☕',
+              skip: 'Maybe later'
+            },
+            8: {
+              eyebrow: 'Eight episodes deep 🎧',
+              headline: 'Still here. So am I.',
+              body: 'I built this alone — every scene, every choice, every line of code. If CALIX has been worth your time, a coffee keeps it going.',
+              btn: 'Buy me a coffee ☕',
+              skip: 'Not right now'
+            },
+            14: {
+              eyebrow: 'Episode 14. You\'re really here. 🌙',
+              headline: 'This one means a lot to me.',
+              body: 'I wrote CALIX because I needed a story like this to exist. You playing it this far means more than I can explain. If you want to help me keep making it — a coffee goes a long way.',
+              btn: 'I want to support this ☕',
+              skip: 'Keep going for now'
+            },
+            18: {
+              eyebrow: 'Episode 18. Almost at the end. 🥺',
+              headline: 'I made this game for people like you.',
+              body: 'I don\'t say this lightly — I poured everything into CALIX. Late nights, rewrites, moments where I almost stopped. If this story has stayed with you at all... a coffee is how you tell me it was worth it. It really is.',
+              btn: '☕ Buy me a coffee',
+              skip: 'I\'ll think about it'
+            }
+          };
+          var msg = KOFI_MESSAGES[ep] || KOFI_MESSAGES[3];
+          var eyebrow = ov.querySelector('.kofi-eyebrow');
+          var headline = ov.querySelector('.kofi-headline');
+          var body = ov.querySelector('.kofi-body');
+          var btn = ov.querySelector('.kofi-btn');
+          var skip = ov.querySelector('.kofi-skip');
+          if (eyebrow) eyebrow.textContent = msg.eyebrow;
+          if (headline) headline.textContent = msg.headline;
+          if (body) body.textContent = msg.body;
+          if (btn) btn.textContent = msg.btn;
+          if (skip) skip.textContent = msg.skip;
+          ov.classList.add('show'); return;
+        }
         proceedFromRewardPopupToRewardScreen();
       }
       return;
