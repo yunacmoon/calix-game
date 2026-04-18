@@ -971,7 +971,7 @@
 
   function appendOneBeatToStream(beat) {
     if (beat.type === 'member_reaction') {
-      appendStreamBlock('<div class="member-reaction">' + escapeHtml(beat.member) + ' — <em>' + escapeHtml(beat.reaction) + '</em></div>', '');
+      appendStreamBlock('<div class="member-reaction"><span class="mr-name">' + escapeHtml(beat.member) + '</span><span class="mr-text">"' + escapeHtml(beat.reaction) + '"</span></div>', '');
       return;
     }
 
