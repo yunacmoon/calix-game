@@ -1093,7 +1093,7 @@
           '<p class="choice-picked">Selected · ' +
           escapeHtml(toSentenceCase(stripStatTags(opt.label) || opt.label)) +
           '</p>' +
-          '<p class="choice-stat-pct">' + myPct + '%의 플레이어가 같은 선택을 했습니다</p>';
+          '<p class="choice-stat-pct">' + myPct + '% of players made the same choice</p>';
         const sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
         const tail = flowQueue.slice(flowIdx + 1);
         flowQueue = sub.concat(tail);

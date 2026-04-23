@@ -1135,7 +1135,7 @@
           '<p class="choice-picked">Selected · ' +
           escapeHtml(toSentenceCase(stripStatTags(opt.label) || opt.label)) +
           '</p>' +
-          '<p class="choice-stat-pct">' + myPct + '%의 플레이어가 같은 선택을 했습니다</p>';
+          '<p class="choice-stat-pct">' + myPct + '% of players made the same choice</p>';
 
         // 멤버 반응 — featured 멤버 감지 후 효과 기반으로 반응 선택
         // 감정적으로 무거운 에피소드에서는 반응 억제 (분위기 깨짐 방지)
