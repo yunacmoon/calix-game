@@ -362,9 +362,9 @@ body::after {
 .stat-finn { background:#7A9ECC; }
 .stat-rep { background:var(--purple-light); }
 .stat-skill { background:var(--blue); }
-.reward-popup-overlay { position:fixed; inset:0; z-index:1200; background:rgba(253,251,255,0.78); backdrop-filter:blur(12px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.35s; }
+.reward-popup-overlay { position:fixed; inset:0; z-index:1200; background:rgba(253,251,255,0.78); backdrop-filter:blur(12px); display:flex; align-items:flex-start; justify-content:center; padding:24px; overflow-y:auto; opacity:0; pointer-events:none; transition:opacity 0.35s; }
 .reward-popup-overlay.show { opacity:1; pointer-events:auto; }
-.reward-popup { background:linear-gradient(135deg,#F0EAFF 0%,#E8DEFF 25%,#EDD5FF 50%,#DCE8FF 75%,#F2E6FF 100%); background-size:300% 300%; animation:holoReward 6s ease infinite; border:1px solid rgba(151,125,255,0.4); border-radius:16px; padding:40px 32px; text-align:center; max-width:420px; box-shadow:0 8px 32px rgba(151,125,255,0.2), inset 0 1px 0 rgba(255,255,255,0.6); }
+.reward-popup { background:linear-gradient(135deg,#F0EAFF 0%,#E8DEFF 25%,#EDD5FF 50%,#DCE8FF 75%,#F2E6FF 100%); background-size:300% 300%; animation:holoReward 6s ease infinite; border:1px solid rgba(151,125,255,0.4); border-radius:16px; padding:40px 32px; text-align:center; max-width:420px; margin:auto; box-shadow:0 8px 32px rgba(151,125,255,0.2), inset 0 1px 0 rgba(255,255,255,0.6); }
 .reward-label { font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:12px; }
 .coin-amount { font-size:18px; font-weight:700; color:var(--purple-mid); margin-bottom:16px; }
 @keyframes holoReward { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
