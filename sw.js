@@ -1,4 +1,4 @@
-const CACHE = 'calix-v19';
+const CACHE = 'calix-v20';
 const ASSETS = [
   '/',
   '/index.html',

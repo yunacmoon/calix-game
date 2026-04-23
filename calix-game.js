@@ -33,6 +33,7 @@
 
   let flowQueue = [];
   let flowIdx = 0;
+  let choiceBlockIdx = 0;
   let lastNarrationFp = '';
   let lastDialogueDedup = '';
   /** First "the new member" replacement per speaker class within one episode stream. */
@@ -1080,7 +1081,31 @@
     const bar = document.createElement('div');
     bar.className = 'choice-bar choice-bar--sticky';
 
-    beat.options.forEach(function (opt) {
+    // 결정론적 페이크 퍼센트: 에피소드+블록 인덱스 시드 기반, 항상 같은 값 반환
+    function getFakeChoicePercents(epN, blockIdx, numOptions) {
+      function seededRand(seed) {
+        var x = Math.sin(seed + 1) * 10000;
+        return x - Math.floor(x);
+      }
+      var weights = [];
+      for (var i = 0; i < numOptions; i++) {
+        var base = seededRand(epN * 97 + blockIdx * 31 + i * 13);
+        weights.push(0.1 + base * 0.9);
+      }
+      var total = weights.reduce(function(a, b) { return a + b; }, 0);
+      var percents = weights.map(function(w) { return Math.round(w / total * 100); });
+      var diff = 100 - percents.reduce(function(a, b) { return a + b; }, 0);
+      percents[0] += diff;
+      return percents;
+    }
+
+    var choicePercents = getFakeChoicePercents(
+      gameState.currentEpisodeN,
+      choiceBlockIdx++,
+      beat.options.length
+    );
+
+    beat.options.forEach(function (opt, optIdx) {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'choice-btn';
@@ -1105,10 +1130,12 @@
         if (!gameState.episodeChoices[epk]) gameState.episodeChoices[epk] = [];
         gameState.episodeChoices[epk].push({ key: opt.key, label: stripStatTags(opt.label) });
         saveGame();
+        var myPct = choicePercents[optIdx];
         bar.innerHTML =
           '<p class="choice-picked">Selected · ' +
           escapeHtml(toSentenceCase(stripStatTags(opt.label) || opt.label)) +
-          '</p>';
+          '</p>' +
+          '<p class="choice-stat-pct">' + myPct + '%의 플레이어가 같은 선택을 했습니다</p>';
 
         // 멤버 반응 — featured 멤버 감지 후 효과 기반으로 반응 선택
         // 감정적으로 무거운 에피소드에서는 반응 억제 (분위기 깨짐 방지)
@@ -1443,6 +1470,7 @@
 
     flowQueue = buildFlowFromMarkdown(md);
     flowIdx = 0;
+    choiceBlockIdx = 0;
     lastNarrationFp = '';
     lastDialogueDedup = '';
     episodeChoiceStatDelta = {};
