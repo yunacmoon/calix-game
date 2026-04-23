@@ -1194,6 +1194,8 @@
           new RegExp('\\*\\*' + featuredMember + '\\b', 'i').test(opt.body);
         var isHeavyEpisode = NO_REACTION_EPS.indexOf(gameState.currentEpisodeN) !== -1;
 
+        var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
+        var tail = flowQueue.slice(flowIdx + 1);
         if (featuredMember && MEMBER_REACTIONS[featuredMember] && !bodyAlreadyHasMember && !isHeavyEpisode) {
           var pool = isPositive
             ? MEMBER_REACTIONS[featuredMember].positive
@@ -1204,12 +1206,9 @@
             member: featuredMember.charAt(0) + featuredMember.slice(1).toLowerCase(),
             reaction: reaction
           };
-          var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
-          var tail = flowQueue.slice(flowIdx + 1);
-          flowQueue = [reactionBeat].concat(sub).concat(tail);
+          // 반응은 선택지 본문이 끝난 후에 — 앞에 붙이면 동문서답이 됨
+          flowQueue = sub.concat([reactionBeat]).concat(tail);
         } else {
-          var sub = storySegmentToBeats(unwrapChoiceBody(opt.body));
-          var tail = flowQueue.slice(flowIdx + 1);
           flowQueue = sub.concat(tail);
         }
 
