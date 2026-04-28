@@ -1841,7 +1841,7 @@
   }
 
   // ── TEXT MOMENT SYSTEM ──────────────────────────────────────────
-  var MEMBER_COLORS = { KAIN:'#1a1a2e', THEO:'#4a90c9', JAY:'#6b7f6b', FINN:'#8a7a6e' };
+  var MEMBER_COLORS = { KAIN:'#1a1a2e', THEO:'#6B4FD8', JAY:'#6b7f6b', FINN:'#8a7a6e' };
   var MEMBER_INITIALS = { KAIN:'K', THEO:'T', JAY:'J', FINN:'F' };
 
   var TEXT_MOMENTS = {
@@ -2271,6 +2271,7 @@
     });
   }
 
+  window.showTextMoment = showTextMoment;
   window.closeTxtOverlay = function() {
     var ov = document.getElementById('txt-overlay');
     if (ov) ov.classList.remove('show');
