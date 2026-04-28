@@ -368,6 +368,45 @@ body::after {
 .reward-label { font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:var(--purple-mid); margin-bottom:12px; }
 .coin-amount { font-size:18px; font-weight:700; color:var(--purple-mid); margin-bottom:16px; }
 @keyframes holoReward { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+/* ── TEXT MOMENT ── */
+.txt-overlay { position:fixed; inset:0; z-index:1400; background:#f2f2f7; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.4s ease; padding:24px; }
+.txt-overlay.show { opacity:1; pointer-events:auto; }
+
+/* who screen */
+.txt-who { display:flex; flex-direction:column; align-items:center; gap:28px; width:100%; max-width:340px; }
+.txt-who-label { font-family:'Playfair Display',serif; font-size:20px; color:#1c1c1e; text-align:center; line-height:1.5; margin:0; }
+.txt-who-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; width:100%; }
+.txt-who-btn { background:#fff; border:1px solid #e5e5ea; border-radius:14px; padding:18px 12px; font-family:'Rethink Sans',sans-serif; font-size:14px; font-weight:600; color:#1c1c1e; cursor:pointer; transition:background 0.15s, transform 0.15s; letter-spacing:0.04em; }
+.txt-who-btn:active { background:#e5e5ea; transform:scale(0.97); }
+.txt-who-avatar { display:block; width:40px; height:40px; border-radius:50%; margin:0 auto 8px; font-size:16px; font-weight:700; color:#fff; line-height:40px; text-align:center; }
+
+/* phone frame */
+.txt-phone { background:#fff; border-radius:40px; width:100%; max-width:360px; max-height:88vh; display:flex; flex-direction:column; box-shadow:0 24px 64px rgba(0,0,0,0.14); overflow:hidden; }
+.txt-phone-status { display:flex; justify-content:space-between; align-items:center; padding:12px 20px 4px; background:#fff; }
+.txt-status-time { font-size:13px; font-weight:600; color:#1c1c1e; font-family:'Rethink Sans',sans-serif; }
+.txt-status-dots { font-size:10px; color:#8e8e93; letter-spacing:2px; }
+.txt-phone-header { display:flex; align-items:center; gap:12px; padding:10px 20px 14px; border-bottom:1px solid #f2f2f7; }
+.txt-header-avatar { width:44px; height:44px; border-radius:50%; font-size:18px; font-weight:700; color:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.txt-header-name { font-size:16px; font-weight:700; color:#1c1c1e; font-family:'Rethink Sans',sans-serif; margin:0; }
+.txt-header-sub { font-size:12px; color:#8e8e93; font-family:'Rethink Sans',sans-serif; margin:0; }
+.txt-messages { flex:1; overflow-y:auto; padding:16px 16px 8px; display:flex; flex-direction:column; gap:4px; min-height:200px; max-height:380px; }
+.txt-bubble-wrap { display:flex; flex-direction:column; }
+.txt-bubble-wrap.me { align-items:flex-end; }
+.txt-bubble-wrap.them { align-items:flex-start; }
+.txt-bubble { max-width:75%; padding:10px 14px; border-radius:18px; font-family:'Rethink Sans',sans-serif; font-size:15px; line-height:1.4; color:#1c1c1e; animation:bubblePop 0.2s ease; }
+.txt-bubble-wrap.me .txt-bubble { background:#4A90C9; color:#fff; border-bottom-right-radius:4px; }
+.txt-bubble-wrap.them .txt-bubble { background:#e5e5ea; border-bottom-left-radius:4px; }
+.txt-ts { font-size:11px; color:#8e8e93; margin:2px 4px 6px; font-family:'Rethink Sans',sans-serif; }
+.txt-read { font-size:11px; color:#4A90C9; text-align:right; margin:0 4px 8px; font-family:'Rethink Sans',sans-serif; }
+@keyframes bubblePop { from { opacity:0; transform:scale(0.92) translateY(4px); } to { opacity:1; transform:none; } }
+
+/* message choice (draft options) */
+.txt-draft-area { padding:12px 16px 20px; border-top:1px solid #f2f2f7; display:flex; flex-direction:column; gap:8px; }
+.txt-draft-btn { background:#f2f2f7; border:none; border-radius:18px; padding:10px 16px; font-family:'Rethink Sans',sans-serif; font-size:14px; color:#1c1c1e; text-align:left; cursor:pointer; transition:background 0.15s; }
+.txt-draft-btn:active { background:#e5e5ea; }
+.txt-draft-label { font-size:11px; color:#8e8e93; text-align:center; font-family:'Rethink Sans',sans-serif; margin-bottom:2px; }
+.txt-continue-btn { width:calc(100% - 32px); margin:12px 16px 20px; background:#4A90C9; color:#fff; border:none; border-radius:20px; padding:14px; font-family:'Rethink Sans',sans-serif; font-size:14px; font-weight:600; cursor:pointer; letter-spacing:0.04em; }
+.txt-trust-pill { font-size:12px; color:#4A90C9; text-align:center; padding:4px 0 8px; font-family:'Rethink Sans',sans-serif; }
 /* ── KO-FI ── */
 .kofi-overlay { position:fixed; inset:0; z-index:1300; background:rgba(10,6,30,0.72); backdrop-filter:blur(16px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.4s cubic-bezier(0.22,1,0.36,1); }
 .kofi-overlay.show { opacity:1; pointer-events:auto; }
@@ -780,6 +819,29 @@ body::after {
 </div>
 
 <!-- KO-FI INTERSTITIAL -->
+<!-- TEXT MOMENT OVERLAY -->
+<div class="txt-overlay" id="txt-overlay">
+  <div class="txt-who" id="txt-who">
+    <p class="txt-who-label">it's late.<br>who do you text tonight?</p>
+    <div class="txt-who-grid" id="txt-who-grid"></div>
+  </div>
+  <div class="txt-phone" id="txt-phone" style="display:none">
+    <div class="txt-phone-status">
+      <span class="txt-status-time" id="txt-status-time">11:43 PM</span>
+      <span class="txt-status-dots">●●●</span>
+    </div>
+    <div class="txt-phone-header">
+      <div class="txt-header-avatar" id="txt-header-avatar"></div>
+      <div>
+        <p class="txt-header-name" id="txt-header-name"></p>
+        <p class="txt-header-sub">CALIX</p>
+      </div>
+    </div>
+    <div class="txt-messages" id="txt-messages"></div>
+    <div id="txt-bottom"></div>
+  </div>
+</div>
+
 <div class="kofi-overlay" id="kofi-overlay">
   <div class="kofi-card">
     <p class="kofi-eyebrow">You're 3 episodes in ☕</p>

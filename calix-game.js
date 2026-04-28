@@ -1823,6 +1823,14 @@
   let giftUiInitialized = false;
 
   function proceedFromRewardPopupToRewardScreen() {
+    var TEXT_MOMENT_EPS = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29];
+    var ep = gameState.currentEpisodeN;
+    var txtKey = 'calix_txt_ep' + ep;
+    if (TEXT_MOMENT_EPS.indexOf(ep) !== -1 && !localStorage.getItem(txtKey) && TEXT_MOMENTS[ep]) {
+      localStorage.setItem(txtKey, '1');
+      showTextMoment(ep);
+      return;
+    }
     if (!giftShownThisEpisode && shouldOfferGiftScreen()) {
       giftShownThisEpisode = true;
       openGiftScreen();
@@ -1831,6 +1839,450 @@
       if (typeof window.initReward === 'function') window.initReward();
     }
   }
+
+  // ── TEXT MOMENT SYSTEM ──────────────────────────────────────────
+  var MEMBER_COLORS = { KAIN:'#1a1a2e', THEO:'#4a90c9', JAY:'#6b7f6b', FINN:'#8a7a6e' };
+  var MEMBER_INITIALS = { KAIN:'K', THEO:'T', JAY:'J', FINN:'F' };
+
+  var TEXT_MOMENTS = {
+    2: {
+      KAIN: { time:'11:44 PM',
+        options:[
+          { label:"you don't have to watch me that closely",
+            convo:[
+              {f:'me', t:"you don't have to watch me that closely"},
+              {f:'them', t:"who said i was", ms:1400},
+              {f:'me', t:"you were. during the run-through", ms:700},
+              {f:'them', t:"i watch everyone", ms:1600},
+              {f:'me', t:"not like that", ms:700},
+              {f:'read', time:'11:48 PM'}
+            ], fx:{KAIN_TRUST:1} },
+          { label:"i've been thinking about what you said",
+            convo:[
+              {f:'me', t:"i've been thinking about what you said"},
+              {f:'them', t:"which part", ms:1000},
+              {f:'me', t:"about not holding back", ms:700},
+              {f:'them', t:"and?", ms:1200},
+              {f:'me', t:"i think you were right", ms:700},
+              {f:'them', t:"i know", ms:1400},
+              {f:'them', t:"get some sleep", ms:600},
+              {f:'read', time:'11:51 PM'}
+            ], fx:{KAIN_TRUST:1} }
+        ]},
+      THEO: { time:'11:38 PM',
+        options:[
+          { label:"you barely ate today",
+            convo:[
+              {f:'me', t:"you barely ate today"},
+              {f:'them', t:"i ate!!", ms:900},
+              {f:'me', t:"half a bowl doesn't count", ms:700},
+              {f:'them', t:"okay but i was nervous okay", ms:1800},
+              {f:'me', t:"about what", ms:600},
+              {f:'them', t:"you were watching and i kept messing up the timing", ms:2000},
+              {f:'me', t:"i wasn't judging", ms:700},
+              {f:'them', t:"i know. that almost made it worse", ms:1600},
+              {f:'read', time:'11:43 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"today was rough",
+            convo:[
+              {f:'me', t:"today was rough"},
+              {f:'them', t:"yeah", ms:800},
+              {f:'them', t:"you okay?", ms:500},
+              {f:'me', t:"i think so", ms:700},
+              {f:'them', t:"you think so or you are", ms:1200},
+              {f:'me', t:"working on it", ms:600},
+              {f:'them', t:"okay. i'm up if you need anything", ms:1500},
+              {f:'them', t:"literally. i'm not asleep", ms:500},
+              {f:'read', time:'11:42 PM'}
+            ], fx:{THEO_TRUST:1} }
+        ]},
+      JAY: { time:'11:55 PM',
+        options:[
+          { label:"the song you were humming in the hallway",
+            convo:[
+              {f:'me', t:"the song you were humming in the hallway"},
+              {f:'them', t:"didn't realize i was", ms:2000},
+              {f:'me', t:"you were. around 9", ms:700},
+              {f:'them', t:"...", ms:2500},
+              {f:'them', t:"something i'm writing", ms:600},
+              {f:'me', t:"will i hear it someday", ms:700},
+              {f:'them', t:"maybe", ms:1800},
+              {f:'them', t:"depends", ms:400},
+              {f:'read', time:'12:02 AM'}
+            ], fx:{JAY_TRUST:1} },
+          { label:"do you actually like it here",
+            convo:[
+              {f:'me', t:"do you actually like it here"},
+              {f:'them', t:"yeah", ms:1800},
+              {f:'me', t:"that was fast", ms:600},
+              {f:'them', t:"i don't say things i don't mean", ms:1400},
+              {f:'me', t:"i know", ms:500},
+              {f:'them', t:"then why ask", ms:1200},
+              {f:'me', t:"wanted to hear you say it", ms:700},
+              {f:'them', t:"...", ms:2000},
+              {f:'read', time:'12:04 AM'}
+            ], fx:{JAY_TRUST:2} }
+        ]},
+      FINN: { time:'11:47 PM',
+        options:[
+          { label:"what were you photographing during cooldown",
+            convo:[
+              {f:'me', t:"what were you photographing during cooldown"},
+              {f:'them', t:"the room when it empties", ms:1600},
+              {f:'me', t:"why then", ms:600},
+              {f:'them', t:"the light changes. and people leave things", ms:1800},
+              {f:'me', t:"what kind of things", ms:600},
+              {f:'them', t:"towels. water bottles. the shape of where someone was standing", ms:2200},
+              {f:'me', t:"that's a strange thing to notice", ms:700},
+              {f:'them', t:"you noticed me noticing", ms:1400},
+              {f:'read', time:'11:54 PM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"you've been watching me",
+            convo:[
+              {f:'me', t:"you've been watching me"},
+              {f:'them', t:"everyone watches everyone here", ms:1500},
+              {f:'me', t:"not the way you do", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"you're interesting to watch", ms:700},
+              {f:'me', t:"why", ms:500},
+              {f:'them', t:"you're still figuring out who you are in the room. it's honest", ms:2400},
+              {f:'read', time:'11:52 PM'}
+            ], fx:{FINN_TRUST:2} }
+        ]}
+    },
+    5: {
+      KAIN: { time:'12:07 AM',
+        options:[
+          { label:"i heard you in the studio at 2am last night",
+            convo:[
+              {f:'me', t:"i heard you in the studio at 2am last night"},
+              {f:'them', t:"you were awake", ms:1600},
+              {f:'me', t:"couldn't sleep", ms:600},
+              {f:'them', t:"same", ms:1200},
+              {f:'me', t:"what were you working on", ms:600},
+              {f:'them', t:"something that isn't done yet", ms:1800},
+              {f:'me', t:"can i hear it when it is", ms:700},
+              {f:'them', t:"maybe", ms:2000},
+              {f:'read', time:'12:11 AM'}
+            ], fx:{KAIN_TRUST:1} },
+          { label:"you looked tired today",
+            convo:[
+              {f:'me', t:"you looked tired today"},
+              {f:'them', t:"i'm fine", ms:1000},
+              {f:'me', t:"i didn't ask if you were fine", ms:600},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i'm tired", ms:700},
+              {f:'me', t:"yeah", ms:500},
+              {f:'them', t:"don't make it a thing", ms:1300},
+              {f:'me', t:"i'm not. sleep well", ms:600},
+              {f:'read', time:'12:09 AM'}
+            ], fx:{KAIN_TRUST:2} }
+        ]},
+      THEO: { time:'11:52 PM',
+        options:[
+          { label:"the playlist you played today. send it",
+            convo:[
+              {f:'me', t:"the playlist you played today. send it"},
+              {f:'them', t:"!!!!!", ms:800},
+              {f:'them', t:"[playlist: theo's 3am mix 🌙]", ms:400},
+              {f:'them', t:"track 4 is the one. you'll know when it hits", ms:1000},
+              {f:'me', t:"this is making me feel things i don't have words for", ms:1400},
+              {f:'them', t:"EXACTLY. that's the whole point", ms:900},
+              {f:'them', t:"okay we're the same person", ms:500},
+              {f:'read', time:'11:58 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"you cover for everyone. you know that",
+            convo:[
+              {f:'me', t:"you cover for everyone. you know that"},
+              {f:'them', t:"what do you mean", ms:1200},
+              {f:'me', t:"when practice gets tense. you always step in", ms:700},
+              {f:'them', t:"someone has to", ms:1400},
+              {f:'me', t:"it takes a lot out of you doesn't it", ms:700},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"sometimes yeah", ms:700},
+              {f:'them', t:"thanks for noticing", ms:500},
+              {f:'read', time:'11:57 PM'}
+            ], fx:{THEO_TRUST:2} }
+        ]},
+      JAY: { time:'12:18 AM',
+        options:[
+          { label:"i read what you left on the piano",
+            convo:[
+              {f:'me', t:"i read what you left on the piano"},
+              {f:'them', t:"that wasn't for anyone", ms:1600},
+              {f:'me', t:"i know. i'm sorry", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"what did you think", ms:800},
+              {f:'me', t:"it was the most honest thing i've read in a long time", ms:900},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"okay", ms:600},
+              {f:'read', time:'12:23 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"you never explain yourself",
+            convo:[
+              {f:'me', t:"you never explain yourself"},
+              {f:'them', t:"no", ms:1400},
+              {f:'me', t:"does that ever get lonely", ms:700},
+              {f:'them', t:"...", ms:2800},
+              {f:'them', t:"yeah", ms:600},
+              {f:'me', t:"i get it", ms:500},
+              {f:'them', t:"i know you do", ms:1800},
+              {f:'read', time:'12:22 AM'}
+            ], fx:{JAY_TRUST:2} }
+        ]},
+      FINN: { time:'11:49 PM',
+        options:[
+          { label:"show me one",
+            convo:[
+              {f:'me', t:"show me one"},
+              {f:'them', t:"one what", ms:1200},
+              {f:'me', t:"photo. from today", ms:500},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"[photo: the practice room. late. one light still on. a jacket on the floor]", ms:800},
+              {f:'me', t:"is that my jacket", ms:700},
+              {f:'them', t:"you left it", ms:1200},
+              {f:'them', t:"i liked the way it looked there", ms:500},
+              {f:'read', time:'11:55 PM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"you know more than you say",
+            convo:[
+              {f:'me', t:"you know more than you say"},
+              {f:'them', t:"everyone does", ms:1400},
+              {f:'me', t:"you more than most", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"i don't say things unless they matter", ms:900},
+              {f:'me', t:"what matters to you", ms:600},
+              {f:'them', t:"right now?", ms:1600},
+              {f:'them', t:"this conversation", ms:500},
+              {f:'read', time:'11:56 PM'}
+            ], fx:{FINN_TRUST:2} }
+        ]}
+    },
+    8: {
+      KAIN: { time:'11:58 PM',
+        options:[
+          { label:"good show tonight",
+            convo:[
+              {f:'me', t:"good show tonight"},
+              {f:'them', t:"you held the formation", ms:1400},
+              {f:'me', t:"is that all you noticed", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"no", ms:600},
+              {f:'me', t:"what else", ms:500},
+              {f:'them', t:"you looked like you belonged there", ms:1800},
+              {f:'them', t:"don't make it weird", ms:400},
+              {f:'read', time:'12:03 AM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"the last chorus. right before it hit. you looked at me",
+            convo:[
+              {f:'me', t:"the last chorus. right before it hit. you looked at me"},
+              {f:'them', t:"i look at everyone", ms:1400},
+              {f:'me', t:"kain", ms:500},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"yeah. i looked at you", ms:900},
+              {f:'read', time:'12:05 AM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'11:44 PM',
+        options:[
+          { label:"i saw you crying backstage",
+            convo:[
+              {f:'me', t:"i saw you crying backstage"},
+              {f:'them', t:"i was not crying", ms:900},
+              {f:'me', t:"theo", ms:400},
+              {f:'them', t:"okay fine i was a little", ms:1200},
+              {f:'me', t:"it was a good show", ms:600},
+              {f:'them', t:"it really was", ms:1000},
+              {f:'them', t:"we really did that", ms:500},
+              {f:'me', t:"we really did", ms:500},
+              {f:'read', time:'11:49 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"you were incredible tonight",
+            convo:[
+              {f:'me', t:"you were incredible tonight"},
+              {f:'them', t:"stop it", ms:800},
+              {f:'me', t:"i mean it", ms:500},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"i felt it tonight. like really felt it", ms:900},
+              {f:'me', t:"i could tell", ms:500},
+              {f:'them', t:"could you", ms:1000},
+              {f:'me', t:"you were different. good different", ms:700},
+              {f:'them', t:"that means a lot coming from you", ms:1400},
+              {f:'read', time:'11:52 PM'}
+            ], fx:{THEO_TRUST:2} }
+        ]},
+      JAY: { time:'12:11 AM',
+        options:[
+          { label:"i watched you during the bridge. you closed your eyes",
+            convo:[
+              {f:'me', t:"i watched you during the bridge. you closed your eyes"},
+              {f:'them', t:"i do that when it gets real", ms:1800},
+              {f:'me', t:"what makes it real", ms:600},
+              {f:'them', t:"when the room stops being a room", ms:2000},
+              {f:'me', t:"what does it become", ms:600},
+              {f:'them', t:"i don't have a word for it yet", ms:2200},
+              {f:'read', time:'12:16 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"write something about tonight",
+            convo:[
+              {f:'me', t:"write something about tonight"},
+              {f:'them', t:"already started", ms:1400},
+              {f:'me', t:"what's it about", ms:600},
+              {f:'them', t:"all five of us. the part right before the lights came on", ms:2200},
+              {f:'me', t:"can i read it when it's done", ms:700},
+              {f:'them', t:"yeah", ms:1600},
+              {f:'them', t:"you can", ms:400},
+              {f:'read', time:'12:15 AM'}
+            ], fx:{JAY_TRUST:3} }
+        ]},
+      FINN: { time:'11:53 PM',
+        options:[
+          { label:"did you get it. the shot you were waiting for",
+            convo:[
+              {f:'me', t:"did you get it. the shot you were waiting for"},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"how did you know i was waiting for something", ms:900},
+              {f:'me', t:"the way you were holding the camera", ms:700},
+              {f:'them', t:"yeah", ms:1600},
+              {f:'them', t:"i got it", ms:400},
+              {f:'read', time:'11:58 PM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"what did tonight look like through your lens",
+            convo:[
+              {f:'me', t:"what did tonight look like through your lens"},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"warm. a little chaotic. real", ms:900},
+              {f:'me', t:"was i in any of them", ms:600},
+              {f:'them', t:"most of them", ms:1600},
+              {f:'me', t:"finn", ms:400},
+              {f:'them', t:"you have good instincts on stage. it's worth documenting", ms:2000},
+              {f:'read', time:'11:59 PM'}
+            ], fx:{FINN_TRUST:2} }
+        ]}
+    }
+  };
+
+  function showTextMoment(ep) {
+    var ov = document.getElementById('txt-overlay');
+    var whoDiv = document.getElementById('txt-who');
+    var phoneDiv = document.getElementById('txt-phone');
+    if (!ov) return;
+    whoDiv.style.display = 'flex';
+    phoneDiv.style.display = 'none';
+    var grid = document.getElementById('txt-who-grid');
+    grid.innerHTML = '';
+    var members = ['KAIN','THEO','JAY','FINN'];
+    var names = { KAIN:'Kain', THEO:'Theo', JAY:'Jay', FINN:'Finn' };
+    members.forEach(function(m) {
+      var btn = document.createElement('button');
+      btn.className = 'txt-who-btn';
+      var av = document.createElement('span');
+      av.className = 'txt-who-avatar';
+      av.style.background = MEMBER_COLORS[m];
+      av.textContent = MEMBER_INITIALS[m];
+      btn.appendChild(av);
+      btn.appendChild(document.createTextNode(names[m]));
+      btn.onclick = function() { startTextConvo(ep, m); };
+      grid.appendChild(btn);
+    });
+    ov.classList.add('show');
+  }
+
+  function startTextConvo(ep, member) {
+    var data = TEXT_MOMENTS[ep] && TEXT_MOMENTS[ep][member];
+    if (!data) return;
+    var whoDiv = document.getElementById('txt-who');
+    var phoneDiv = document.getElementById('txt-phone');
+    var names = { KAIN:'Kain', THEO:'Theo', JAY:'Jay', FINN:'Finn' };
+    whoDiv.style.display = 'none';
+    phoneDiv.style.display = 'flex';
+    document.getElementById('txt-status-time').textContent = data.time;
+    var av = document.getElementById('txt-header-avatar');
+    av.textContent = MEMBER_INITIALS[member];
+    av.style.background = MEMBER_COLORS[member];
+    document.getElementById('txt-header-name').textContent = names[member];
+    var msgs = document.getElementById('txt-messages');
+    msgs.innerHTML = '';
+    var bottom = document.getElementById('txt-bottom');
+    bottom.innerHTML = '';
+    // show draft options
+    var draftArea = document.createElement('div');
+    draftArea.className = 'txt-draft-area';
+    var lbl = document.createElement('p');
+    lbl.className = 'txt-draft-label';
+    lbl.textContent = 'tap to send';
+    draftArea.appendChild(lbl);
+    data.options.forEach(function(opt, i) {
+      var btn = document.createElement('button');
+      btn.className = 'txt-draft-btn';
+      btn.textContent = opt.label;
+      btn.onclick = function() {
+        draftArea.remove();
+        playTextConvo(opt, member, msgs, bottom);
+      };
+      draftArea.appendChild(btn);
+    });
+    bottom.appendChild(draftArea);
+  }
+
+  function playTextConvo(opt, member, msgs, bottom) {
+    var beats = opt.convo;
+    var delay = 400;
+    beats.forEach(function(beat) {
+      if (beat.f === 'read') {
+        delay += 1000;
+        (function(d, b) {
+          setTimeout(function() {
+            var r = document.createElement('p');
+            r.className = 'txt-read';
+            r.textContent = 'read ' + b.time;
+            msgs.appendChild(r);
+            msgs.scrollTop = msgs.scrollHeight;
+            // show continue after read
+            setTimeout(function() {
+              applyDeltas(opt.fx);
+              var trustLabel = Object.keys(opt.fx || {}).map(function(k) {
+                var v = opt.fx[k];
+                var lbl = {KAIN_TRUST:'Kain',THEO_TRUST:'Theo',JAY_TRUST:'Jay',FINN_TRUST:'Finn'}[k] || k;
+                return (v > 0 ? '+' : '') + v + ' ' + lbl;
+              }).join('  ');
+              bottom.innerHTML =
+                (trustLabel ? '<p class="txt-trust-pill">' + trustLabel + '</p>' : '') +
+                '<button class="txt-continue-btn" onclick="closeTxtOverlay()">continue →</button>';
+            }, 800);
+          }, d);
+        })(delay, beat);
+        return;
+      }
+      delay += (beat.ms || 700);
+      (function(d, b) {
+        setTimeout(function() {
+          var wrap = document.createElement('div');
+          wrap.className = 'txt-bubble-wrap ' + (b.f === 'me' ? 'me' : 'them');
+          var bubble = document.createElement('div');
+          bubble.className = 'txt-bubble';
+          bubble.textContent = b.t;
+          wrap.appendChild(bubble);
+          msgs.appendChild(wrap);
+          msgs.scrollTop = msgs.scrollHeight;
+        }, d);
+      })(delay, beat);
+      delay += 200;
+    });
+  }
+
+  window.closeTxtOverlay = function() {
+    var ov = document.getElementById('txt-overlay');
+    if (ov) ov.classList.remove('show');
+    if (!giftShownThisEpisode && shouldOfferGiftScreen()) {
+      giftShownThisEpisode = true;
+      openGiftScreen();
+    } else {
+      if (typeof go === 'function') go(6);
+      if (typeof window.initReward === 'function') window.initReward();
+    }
+  };
+  // ── END TEXT MOMENT ─────────────────────────────────────────────
 
   function shouldOfferGiftScreen() {
     return false;
