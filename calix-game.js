@@ -2159,6 +2159,788 @@
               {f:'read', time:'11:59 PM'}
             ], fx:{FINN_TRUST:2} }
         ]}
+    },
+    11: {
+      KAIN: { time:'11:56 PM',
+        options:[
+          { label:"i think i annoyed you today",
+            convo:[
+              {f:'me', t:"i think i annoyed you today"},
+              {f:'them', t:"you didn't", ms:1200},
+              {f:'me', t:"you went quiet after the run-through", ms:700},
+              {f:'them', t:"i go quiet when i'm thinking", ms:1600},
+              {f:'me', t:"what were you thinking about", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"you're harder to read than i expected", ms:1200},
+              {f:'read', time:'11:59 PM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"do you ever get tired of being the one who holds everything together",
+            convo:[
+              {f:'me', t:"do you ever get tired of being the one who holds everything together"},
+              {f:'them', t:"sometimes", ms:1800},
+              {f:'me', t:"tonight?", ms:600},
+              {f:'them', t:"tonight was fine", ms:1400},
+              {f:'me', t:"kain", ms:400},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"yeah. tonight.", ms:800},
+              {f:'read', time:'12:02 AM'}
+            ], fx:{KAIN_TRUST:2} }
+        ]},
+      THEO: { time:'11:49 PM',
+        options:[
+          { label:"you were off today. what happened",
+            convo:[
+              {f:'me', t:"you were off today. what happened"},
+              {f:'them', t:"i wasn't off", ms:900},
+              {f:'me', t:"you were", ms:500},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"i had a call with my mom before practice", ms:1400},
+              {f:'me', t:"is everything okay", ms:600},
+              {f:'them', t:"yeah. just a lot. you know?", ms:1600},
+              {f:'me', t:"i know", ms:500},
+              {f:'them', t:"thanks for noticing. really", ms:1200},
+              {f:'read', time:'11:55 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"you don't have to perform for me",
+            convo:[
+              {f:'me', t:"you don't have to perform for me"},
+              {f:'them', t:"what do you mean", ms:1200},
+              {f:'me', t:"the thing you do. being on. i don't need it", ms:700},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"is it that obvious", ms:900},
+              {f:'me', t:"only to me", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"that's either really comforting or kind of terrifying", ms:1100},
+              {f:'read', time:'11:54 PM'}
+            ], fx:{THEO_TRUST:3} }
+        ]},
+      JAY: { time:'12:08 AM',
+        options:[
+          { label:"what are you writing lately",
+            convo:[
+              {f:'me', t:"what are you writing lately"},
+              {f:'them', t:"things", ms:1600},
+              {f:'me', t:"about", ms:500},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"what it feels like to not be alone in a room", ms:1800},
+              {f:'me', t:"did that change recently", ms:600},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'read', time:'12:13 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"you've been quieter than usual",
+            convo:[
+              {f:'me', t:"you've been quieter than usual"},
+              {f:'them', t:"i'm always quiet", ms:1400},
+              {f:'me', t:"quieter than that", ms:500},
+              {f:'them', t:"...", ms:2800},
+              {f:'them', t:"i'm working something out", ms:1200},
+              {f:'me', t:"in your head or on paper", ms:600},
+              {f:'them', t:"both", ms:1000},
+              {f:'them', t:"you'll know when it's done", ms:600},
+              {f:'read', time:'12:15 AM'}
+            ], fx:{JAY_TRUST:2} }
+        ]},
+      FINN: { time:'11:58 PM',
+        options:[
+          { label:"you've been carrying that camera everywhere lately",
+            convo:[
+              {f:'me', t:"you've been carrying that camera everywhere lately"},
+              {f:'them', t:"i always do", ms:1400},
+              {f:'me', t:"more than before", ms:500},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"there's more worth keeping lately", ms:1600},
+              {f:'me', t:"like what", ms:500},
+              {f:'them', t:"moments i don't want to forget", ms:1400},
+              {f:'me', t:"finn", ms:400},
+              {f:'them', t:"go to sleep", ms:800},
+              {f:'read', time:'12:03 AM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"what do you see when you look at me",
+            convo:[
+              {f:'me', t:"what do you see when you look at me"},
+              {f:'them', t:"...", ms:3000},
+              {f:'them', t:"someone who's still becoming", ms:1800},
+              {f:'me', t:"is that good", ms:600},
+              {f:'them', t:"it's rare", ms:1400},
+              {f:'read', time:'12:01 AM'}
+            ], fx:{FINN_TRUST:3} }
+        ]}
+    },
+    14: {
+      KAIN: { time:'12:04 AM',
+        options:[
+          { label:"today was different",
+            convo:[
+              {f:'me', t:"today was different"},
+              {f:'them', t:"fansigns always are", ms:1400},
+              {f:'me', t:"not what i meant", ms:600},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i know", ms:1000},
+              {f:'me', t:"the way you were with them. i didn't expect that", ms:700},
+              {f:'them', t:"what did you expect", ms:1600},
+              {f:'me', t:"less warmth", ms:500},
+              {f:'them', t:"i know how to give people what they need", ms:1800},
+              {f:'them', t:"it's not the same as doing it for free", ms:500},
+              {f:'read', time:'12:09 AM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"someone gave you a letter and you read it right there",
+            convo:[
+              {f:'me', t:"someone gave you a letter and you read it right there"},
+              {f:'them', t:"i always read them there", ms:1400},
+              {f:'me', t:"your face changed", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"she wrote that i looked like someone worth waiting for", ms:1800},
+              {f:'me', t:"...", ms:800},
+              {f:'them', t:"don't", ms:1200},
+              {f:'me', t:"i wasn't going to say anything", ms:600},
+              {f:'them', t:"good", ms:800},
+              {f:'read', time:'12:11 AM'}
+            ], fx:{KAIN_TRUST:2} }
+        ]},
+      THEO: { time:'11:38 PM',
+        options:[
+          { label:"how are you still standing",
+            convo:[
+              {f:'me', t:"how are you still standing"},
+              {f:'them', t:"adrenaline and spite", ms:700},
+              {f:'me', t:"theo", ms:400},
+              {f:'them', t:"love!! adrenaline and love!", ms:900},
+              {f:'me', t:"better", ms:400},
+              {f:'them', t:"today was so much", ms:1600},
+              {f:'them', t:"in a good way. all of it", ms:600},
+              {f:'me', t:"you were incredible with them", ms:600},
+              {f:'them', t:"they were incredible. i just showed up", ms:1400},
+              {f:'read', time:'11:44 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"you cried at the table",
+            convo:[
+              {f:'me', t:"you cried at the table"},
+              {f:'them', t:"the fan was crying!! it's contagious!", ms:800},
+              {f:'me', t:"you were already crying before she sat down", ms:700},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"okay yeah", ms:900},
+              {f:'them', t:"it just hit me all at once that this is real", ms:1400},
+              {f:'me', t:"it's real", ms:500},
+              {f:'them', t:"yeah", ms:1000},
+              {f:'them', t:"we're really doing this", ms:500},
+              {f:'read', time:'11:42 PM'}
+            ], fx:{THEO_TRUST:2} }
+        ]},
+      JAY: { time:'12:14 AM',
+        options:[
+          { label:"did anyone write to you about your music",
+            convo:[
+              {f:'me', t:"did anyone write to you about your music"},
+              {f:'them', t:"a few", ms:1600},
+              {f:'me', t:"what did that feel like", ms:600},
+              {f:'them', t:"...", ms:3000},
+              {f:'them', t:"like being understood by someone you've never met", ms:2000},
+              {f:'me', t:"that's the whole point of it isn't it", ms:700},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'them', t:"i forget sometimes", ms:600},
+              {f:'read', time:'12:19 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"you were uncomfortable today",
+            convo:[
+              {f:'me', t:"you were uncomfortable today"},
+              {f:'them', t:"crowds", ms:1200},
+              {f:'me', t:"but you stayed present the whole time", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"they came for us", ms:1400},
+              {f:'me', t:"for you", ms:500},
+              {f:'them', t:"for all of us", ms:1200},
+              {f:'them', t:"i can be uncomfortable and still show up", ms:800},
+              {f:'read', time:'12:21 AM'}
+            ], fx:{JAY_TRUST:2} }
+        ]},
+      FINN: { time:'11:47 PM',
+        options:[
+          { label:"how many did you take today",
+            convo:[
+              {f:'me', t:"how many did you take today"},
+              {f:'them', t:"photos?", ms:1000},
+              {f:'me', t:"yeah", ms:400},
+              {f:'them', t:"a lot", ms:1400},
+              {f:'me', t:"of what", ms:500},
+              {f:'them', t:"the fans mostly. the way they look when they see you all", ms:2000},
+              {f:'me', t:"and", ms:400},
+              {f:'them', t:"you. when you didn't know i was watching", ms:1600},
+              {f:'read', time:'11:53 PM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"today felt like proof",
+            convo:[
+              {f:'me', t:"today felt like proof"},
+              {f:'them', t:"of what", ms:1400},
+              {f:'me', t:"that this is worth it", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"yeah", ms:800},
+              {f:'them', t:"i got a shot of all five of us. the exact moment we all laughed at the same time", ms:2400},
+              {f:'me', t:"i want to see it", ms:600},
+              {f:'them', t:"someday", ms:1200},
+              {f:'read', time:'11:52 PM'}
+            ], fx:{FINN_TRUST:2} }
+        ]}
+    },
+    17: {
+      KAIN: { time:'11:48 PM',
+        options:[
+          { label:"you pushed us hard today",
+            convo:[
+              {f:'me', t:"you pushed us hard today"},
+              {f:'them', t:"the stage is harder", ms:1200},
+              {f:'me', t:"i know", ms:500},
+              {f:'them', t:"do you", ms:1600},
+              {f:'me', t:"yes", ms:400},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"you kept up", ms:1000},
+              {f:'me', t:"was that surprising", ms:600},
+              {f:'them', t:"no", ms:1400},
+              {f:'read', time:'11:54 PM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"what are you looking for when you watch me",
+            convo:[
+              {f:'me', t:"what are you looking for when you watch me"},
+              {f:'them', t:"gaps", ms:1400},
+              {f:'me', t:"and", ms:400},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"less gaps lately", ms:1200},
+              {f:'me', t:"is that your version of a compliment", ms:700},
+              {f:'them', t:"it's an observation", ms:1400},
+              {f:'me', t:"kain", ms:400},
+              {f:'them', t:"yes. it's a compliment.", ms:1000},
+              {f:'read', time:'11:56 PM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'12:22 AM',
+        options:[
+          { label:"i'm exhausted and i can't sleep",
+            convo:[
+              {f:'me', t:"i'm exhausted and i can't sleep"},
+              {f:'them', t:"same", ms:600},
+              {f:'them', t:"my body is tired but my brain didn't get the memo", ms:1200},
+              {f:'me', t:"what are you thinking about", ms:600},
+              {f:'them', t:"everything. nothing. you", ms:1600},
+              {f:'me', t:"me", ms:400},
+              {f:'them', t:"yeah. you were really on today", ms:1200},
+              {f:'them', t:"like something clicked", ms:500},
+              {f:'read', time:'12:27 AM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"thank you for keeping the energy up today",
+            convo:[
+              {f:'me', t:"thank you for keeping the energy up today"},
+              {f:'them', t:"that's literally just my personality", ms:800},
+              {f:'me', t:"it's more than that", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i need the group to be okay", ms:1400},
+              {f:'them', t:"if everyone's okay i'm okay", ms:600},
+              {f:'me', t:"what about just you", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"still figuring that one out", ms:1200},
+              {f:'read', time:'12:26 AM'}
+            ], fx:{THEO_TRUST:2} }
+        ]},
+      JAY: { time:'12:28 AM',
+        options:[
+          { label:"you stayed after everyone left",
+            convo:[
+              {f:'me', t:"you stayed after everyone left"},
+              {f:'them', t:"yeah", ms:1600},
+              {f:'me', t:"why", ms:500},
+              {f:'them', t:"i wanted to feel the stage empty", ms:2000},
+              {f:'me', t:"what does that feel like", ms:600},
+              {f:'them', t:"honest", ms:1400},
+              {f:'them', t:"like it's not performing. just existing in the space", ms:1000},
+              {f:'read', time:'12:34 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"the song you played at the end of rehearsal",
+            convo:[
+              {f:'me', t:"the song you played at the end of rehearsal"},
+              {f:'them', t:"i didn't think anyone heard", ms:1800},
+              {f:'me', t:"i heard", ms:500},
+              {f:'them', t:"...", ms:2600},
+              {f:'me', t:"it was yours", ms:600},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'me', t:"it was really good", ms:600},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"thanks", ms:800},
+              {f:'read', time:'12:36 AM'}
+            ], fx:{JAY_TRUST:3} }
+        ]},
+      FINN: { time:'11:57 PM',
+        options:[
+          { label:"you were behind the lens all day",
+            convo:[
+              {f:'me', t:"you were behind the lens all day"},
+              {f:'them', t:"good place to be", ms:1400},
+              {f:'me', t:"you never get tired of it", ms:600},
+              {f:'them', t:"no", ms:1200},
+              {f:'me', t:"why not", ms:500},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"the camera gives me permission to see", ms:1800},
+              {f:'me', t:"you'd see anyway", ms:600},
+              {f:'them', t:"yeah. but this way it's not strange", ms:1400},
+              {f:'read', time:'12:03 AM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"finn",
+            convo:[
+              {f:'me', t:"finn"},
+              {f:'them', t:"yeah", ms:1200},
+              {f:'me', t:"nothing. just wanted to say your name", ms:700},
+              {f:'them', t:"...", ms:3000},
+              {f:'them', t:"okay", ms:800},
+              {f:'read', time:'12:01 AM'}
+            ], fx:{FINN_TRUST:3} }
+        ]}
+    },
+    20: {
+      KAIN: { time:'1:14 AM',
+        options:[
+          { label:"are you okay",
+            convo:[
+              {f:'me', t:"are you okay"},
+              {f:'them', t:"i'm fine", ms:1000},
+              {f:'me', t:"i didn't ask if you were fine", ms:600},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"no", ms:800},
+              {f:'me', t:"okay", ms:500},
+              {f:'them', t:"that's all you're going to say", ms:1600},
+              {f:'me', t:"you don't need me to fix it. you need someone to know", ms:800},
+              {f:'them', t:"...", ms:3000},
+              {f:'them', t:"yeah", ms:600},
+              {f:'read', time:'1:19 AM'}
+            ], fx:{KAIN_TRUST:3} },
+          { label:"we'll get through this",
+            convo:[
+              {f:'me', t:"we'll get through this"},
+              {f:'them', t:"you don't know that", ms:1400},
+              {f:'me', t:"no", ms:500},
+              {f:'me', t:"but i'm not going anywhere", ms:400},
+              {f:'them', t:"...", ms:3200},
+              {f:'them', t:"why", ms:900},
+              {f:'me', t:"you know why", ms:600},
+              {f:'them', t:"...", ms:2800},
+              {f:'read', time:'1:21 AM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'1:02 AM',
+        options:[
+          { label:"talk to me",
+            convo:[
+              {f:'me', t:"talk to me"},
+              {f:'them', t:"i don't know how to say it", ms:2000},
+              {f:'me', t:"you don't have to say it right", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"i'm scared we're going to lose each other to this", ms:1800},
+              {f:'me', t:"we won't", ms:500},
+              {f:'them', t:"how do you know", ms:1200},
+              {f:'me', t:"because you'd never let that happen", ms:700},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"i really wouldn't", ms:1000},
+              {f:'read', time:'1:08 AM'}
+            ], fx:{THEO_TRUST:3} },
+          { label:"you've been holding everyone together again",
+            convo:[
+              {f:'me', t:"you've been holding everyone together again"},
+              {f:'them', t:"someone has to", ms:1200},
+              {f:'me', t:"it doesn't have to be you every time", ms:600},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"if i stop i'm scared it all falls apart", ms:1800},
+              {f:'me', t:"it won't", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"stay on the phone with me?", ms:1400},
+              {f:'me', t:"yeah", ms:400},
+              {f:'read', time:'1:11 AM'}
+            ], fx:{THEO_TRUST:3} }
+        ]},
+      JAY: { time:'12:58 AM',
+        options:[
+          { label:"are you writing",
+            convo:[
+              {f:'me', t:"are you writing"},
+              {f:'them', t:"trying", ms:1400},
+              {f:'me', t:"it's not coming", ms:600},
+              {f:'them', t:"no", ms:1200},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"when things are this heavy i can't find the words yet", ms:2000},
+              {f:'me', t:"you will", ms:500},
+              {f:'them', t:"i know", ms:1600},
+              {f:'them', t:"i just have to wait for it to settle", ms:800},
+              {f:'read', time:'1:04 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"i keep thinking about what you said",
+            convo:[
+              {f:'me', t:"i keep thinking about what you said"},
+              {f:'them', t:"which part", ms:1400},
+              {f:'me', t:"about not being alone in a room anymore", ms:700},
+              {f:'them', t:"...", ms:2800},
+              {f:'them', t:"still true", ms:1000},
+              {f:'me', t:"good", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"yeah. good.", ms:800},
+              {f:'read', time:'1:06 AM'}
+            ], fx:{JAY_TRUST:3} }
+        ]},
+      FINN: { time:'1:08 AM',
+        options:[
+          { label:"it's loud in my head tonight",
+            convo:[
+              {f:'me', t:"it's loud in my head tonight"},
+              {f:'them', t:"i know", ms:1200},
+              {f:'me', t:"how", ms:500},
+              {f:'them', t:"you text me at 1am", ms:1400},
+              {f:'me', t:"...", ms:600},
+              {f:'them', t:"what do you need", ms:1600},
+              {f:'me', t:"i don't know", ms:500},
+              {f:'them', t:"okay. i'm here.", ms:1200},
+              {f:'read', time:'1:12 AM'}
+            ], fx:{FINN_TRUST:3} },
+          { label:"do you ever feel like things are about to break",
+            convo:[
+              {f:'me', t:"do you ever feel like things are about to break"},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'me', t:"does it scare you", ms:600},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"things that break can be put back", ms:1800},
+              {f:'me', t:"not always the same way", ms:600},
+              {f:'them', t:"no", ms:1200},
+              {f:'them', t:"but sometimes better", ms:600},
+              {f:'read', time:'1:13 AM'}
+            ], fx:{FINN_TRUST:2} }
+        ]}
+    },
+    23: {
+      KAIN: { time:'12:41 AM',
+        options:[
+          { label:"i didn't mean to push so hard today",
+            convo:[
+              {f:'me', t:"i didn't mean to push so hard today"},
+              {f:'them', t:"you should've", ms:1400},
+              {f:'me', t:"what", ms:500},
+              {f:'them', t:"pushed back. harder.", ms:1600},
+              {f:'me', t:"i didn't want to fight with you", ms:700},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"i know. that's not a bad thing.", ms:1800},
+              {f:'them', t:"get some sleep", ms:600},
+              {f:'read', time:'12:46 AM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"you scared me today",
+            convo:[
+              {f:'me', t:"you scared me today"},
+              {f:'them', t:"i know", ms:1200},
+              {f:'me', t:"do you", ms:500},
+              {f:'them', t:"i saw your face", ms:1400},
+              {f:'me', t:"...", ms:700},
+              {f:'them', t:"i'm sorry", ms:2200},
+              {f:'me', t:"...", ms:600},
+              {f:'me', t:"thank you", ms:400},
+              {f:'them', t:"don't make it a thing", ms:1000},
+              {f:'them', t:"but. yeah.", ms:400},
+              {f:'read', time:'12:48 AM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'12:33 AM',
+        options:[
+          { label:"that was the hardest day we've had",
+            convo:[
+              {f:'me', t:"that was the hardest day we've had"},
+              {f:'them', t:"yeah", ms:1200},
+              {f:'them', t:"are you okay", ms:500},
+              {f:'me', t:"i will be", ms:600},
+              {f:'them', t:"i will be too", ms:1400},
+              {f:'me', t:"i know", ms:500},
+              {f:'them', t:"can i tell you something", ms:1600},
+              {f:'me', t:"yeah", ms:400},
+              {f:'them', t:"i'm really glad you're in this group", ms:1200},
+              {f:'them', t:"even on days like today", ms:400},
+              {f:'read', time:'12:38 AM'}
+            ], fx:{THEO_TRUST:3} },
+          { label:"i keep replaying it",
+            convo:[
+              {f:'me', t:"i keep replaying it"},
+              {f:'them', t:"me too", ms:1000},
+              {f:'me', t:"what do you keep coming back to", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"the part where you stood there and didn't run", ms:1600},
+              {f:'me', t:"where would i go", ms:600},
+              {f:'them', t:"a lot of people would've left", ms:1400},
+              {f:'me', t:"i'm not a lot of people", ms:600},
+              {f:'them', t:"no", ms:1200},
+              {f:'them', t:"you really aren't", ms:500},
+              {f:'read', time:'12:40 AM'}
+            ], fx:{THEO_TRUST:3} }
+        ]},
+      JAY: { time:'12:51 AM',
+        options:[
+          { label:"i don't know how to feel about today",
+            convo:[
+              {f:'me', t:"i don't know how to feel about today"},
+              {f:'them', t:"you don't have to yet", ms:1800},
+              {f:'me', t:"when does it get easier to know", ms:600},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"when you write it down", ms:1400},
+              {f:'me', t:"i'm not a writer", ms:600},
+              {f:'them', t:"you don't have to be", ms:1200},
+              {f:'them', t:"just put the words somewhere they can't follow you", ms:800},
+              {f:'read', time:'12:57 AM'}
+            ], fx:{JAY_TRUST:2} },
+          { label:"will you write about today",
+            convo:[
+              {f:'me', t:"will you write about today"},
+              {f:'them', t:"probably", ms:1400},
+              {f:'me', t:"what angle", ms:500},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"five people who care about each other and still managed to stay in the room", ms:2200},
+              {f:'me', t:"that's the whole story isn't it", ms:700},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'them', t:"i think so", ms:500},
+              {f:'read', time:'12:59 AM'}
+            ], fx:{JAY_TRUST:3} }
+        ]},
+      FINN: { time:'12:44 AM',
+        options:[
+          { label:"you were quiet during the whole thing",
+            convo:[
+              {f:'me', t:"you were quiet during the whole thing"},
+              {f:'them', t:"i was listening", ms:1400},
+              {f:'me', t:"what did you hear", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"five people who are actually in it", ms:1600},
+              {f:'me', t:"that's one way to see it", ms:600},
+              {f:'them', t:"it's the right way", ms:1200},
+              {f:'read', time:'12:49 AM'}
+            ], fx:{FINN_TRUST:2} },
+          { label:"did you take any photos today",
+            convo:[
+              {f:'me', t:"did you take any photos today"},
+              {f:'them', t:"no", ms:1400},
+              {f:'me', t:"why not", ms:500},
+              {f:'them', t:"some things aren't mine to keep", ms:1800},
+              {f:'me', t:"...", ms:700},
+              {f:'them', t:"today was yours. all five of you.", ms:1600},
+              {f:'me', t:"finn", ms:400},
+              {f:'them', t:"yeah", ms:1000},
+              {f:'read', time:'12:50 AM'}
+            ], fx:{FINN_TRUST:3} }
+        ]}
+    },
+    26: {
+      KAIN: { time:'11:38 PM',
+        options:[
+          { label:"things feel different lately",
+            convo:[
+              {f:'me', t:"things feel different lately"},
+              {f:'them', t:"yeah", ms:1600},
+              {f:'me', t:"good different", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i think so", ms:1200},
+              {f:'me', t:"you think so", ms:500},
+              {f:'them', t:"yes", ms:1000},
+              {f:'them', t:"good different.", ms:400},
+              {f:'read', time:'11:43 PM'}
+            ], fx:{KAIN_TRUST:2} },
+          { label:"i feel like i can breathe again",
+            convo:[
+              {f:'me', t:"i feel like i can breathe again"},
+              {f:'them', t:"same", ms:1400},
+              {f:'me', t:"that's the most i've heard from you in days", ms:700},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"i've been saving it", ms:1200},
+              {f:'me', t:"for what", ms:500},
+              {f:'them', t:"for when it was worth it", ms:1600},
+              {f:'me', t:"...", ms:600},
+              {f:'them', t:"it's worth it", ms:1000},
+              {f:'read', time:'11:44 PM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'11:29 PM',
+        options:[
+          { label:"practice felt good today",
+            convo:[
+              {f:'me', t:"practice felt good today"},
+              {f:'them', t:"RIGHT??", ms:700},
+              {f:'them', t:"we were actually laughing", ms:800},
+              {f:'me', t:"i know. it's been a while", ms:600},
+              {f:'them', t:"too long", ms:1000},
+              {f:'them', t:"i missed this", ms:600},
+              {f:'me', t:"me too", ms:500},
+              {f:'them', t:"okay i'm not going to be emotional about this", ms:1400},
+              {f:'them', t:"i'm a little emotional about this", ms:400},
+              {f:'read', time:'11:34 PM'}
+            ], fx:{THEO_TRUST:2} },
+          { label:"you smiled the whole way home",
+            convo:[
+              {f:'me', t:"you smiled the whole way home"},
+              {f:'them', t:"did i", ms:900},
+              {f:'me', t:"the whole way", ms:500},
+              {f:'them', t:"...", ms:1400},
+              {f:'them', t:"i can't help it when things are good", ms:1200},
+              {f:'me', t:"things are good", ms:500},
+              {f:'them', t:"yeah", ms:800},
+              {f:'them', t:"they really are", ms:400},
+              {f:'read', time:'11:33 PM'}
+            ], fx:{THEO_TRUST:2} }
+        ]},
+      JAY: { time:'11:52 PM',
+        options:[
+          { label:"i've been reading what you gave me",
+            convo:[
+              {f:'me', t:"i've been reading what you gave me"},
+              {f:'them', t:"and?", ms:1600},
+              {f:'me', t:"i think i understand you better now", ms:700},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"good", ms:800},
+              {f:'me', t:"is that okay", ms:500},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"yeah. it's okay.", ms:1200},
+              {f:'read', time:'11:57 PM'}
+            ], fx:{JAY_TRUST:3} },
+          { label:"are you happy",
+            convo:[
+              {f:'me', t:"are you happy"},
+              {f:'them', t:"...", ms:3200},
+              {f:'them', t:"yeah", ms:800},
+              {f:'me', t:"yeah?", ms:500},
+              {f:'them', t:"i said what i said", ms:1400},
+              {f:'read', time:'11:49 PM'}
+            ], fx:{JAY_TRUST:2} }
+        ]},
+      FINN: { time:'11:55 PM',
+        options:[
+          { label:"you developed the photo",
+            convo:[
+              {f:'me', t:"you developed the photo"},
+              {f:'them', t:"yeah", ms:1400},
+              {f:'me', t:"which one", ms:500},
+              {f:'them', t:"the one from the first stage", ms:1600},
+              {f:'me', t:"can i see it", ms:600},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i put it under your door", ms:1200},
+              {f:'me', t:"...", ms:700},
+              {f:'me', t:"finn", ms:300},
+              {f:'them', t:"it's yours. it always was.", ms:1400},
+              {f:'read', time:'12:01 AM'}
+            ], fx:{FINN_TRUST:3} },
+          { label:"can i come up",
+            convo:[
+              {f:'me', t:"can i come up"},
+              {f:'them', t:"where", ms:1200},
+              {f:'me', t:"the roof. are you there", ms:600},
+              {f:'them', t:"yeah", ms:1000},
+              {f:'them', t:"...", ms:1800},
+              {f:'them', t:"yeah", ms:600},
+              {f:'read', time:'11:51 PM'}
+            ], fx:{FINN_TRUST:3} }
+        ]}
+    },
+    29: {
+      KAIN: { time:'12:18 AM',
+        options:[
+          { label:"one more episode",
+            convo:[
+              {f:'me', t:"one more episode"},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"i know", ms:800},
+              {f:'me', t:"how does that feel", ms:600},
+              {f:'them', t:"...", ms:2800},
+              {f:'them', t:"like i don't want to get there too fast", ms:1600},
+              {f:'me', t:"we won't", ms:500},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"no. we won't.", ms:800},
+              {f:'read', time:'12:24 AM'}
+            ], fx:{KAIN_TRUST:3} },
+          { label:"i've been thinking about this year",
+            convo:[
+              {f:'me', t:"i've been thinking about this year"},
+              {f:'them', t:"me too", ms:1400},
+              {f:'me', t:"and", ms:400},
+              {f:'them', t:"...", ms:2600},
+              {f:'them', t:"i don't know who i'd be in this group without you in it", ms:2000},
+              {f:'me', t:"kain", ms:500},
+              {f:'them', t:"don't", ms:1000},
+              {f:'me', t:"i wasn't", ms:500},
+              {f:'them', t:"good", ms:1200},
+              {f:'them', t:"me neither. don't make it weird.", ms:700},
+              {f:'read', time:'12:26 AM'}
+            ], fx:{KAIN_TRUST:3} }
+        ]},
+      THEO: { time:'11:58 PM',
+        options:[
+          { label:"i don't want it to end",
+            convo:[
+              {f:'me', t:"i don't want it to end"},
+              {f:'them', t:"it's not ending", ms:900},
+              {f:'me', t:"the story is", ms:600},
+              {f:'them', t:"the story isn't us", ms:1200},
+              {f:'me', t:"...", ms:700},
+              {f:'them', t:"we exist past the last page", ms:1400},
+              {f:'me', t:"that's a very theo thing to say", ms:600},
+              {f:'them', t:"i have my moments", ms:1000},
+              {f:'them', t:"don't cry. if you cry i'll cry", ms:600},
+              {f:'read', time:'12:03 AM'}
+            ], fx:{THEO_TRUST:3} },
+          { label:"you've meant a lot to me this year",
+            convo:[
+              {f:'me', t:"you've meant a lot to me this year"},
+              {f:'them', t:"...", ms:2400},
+              {f:'them', t:"stop it i'm in the kitchen", ms:900},
+              {f:'me', t:"theo", ms:400},
+              {f:'them', t:"i know okay", ms:1400},
+              {f:'them', t:"you mean a lot to me too", ms:800},
+              {f:'them', t:"a lot a lot", ms:400},
+              {f:'them', t:"now i'm crying in the kitchen", ms:700},
+              {f:'read', time:'12:05 AM'}
+            ], fx:{THEO_TRUST:3} }
+        ]},
+      JAY: { time:'1:34 AM',
+        options:[
+          { label:"are you still awake",
+            convo:[
+              {f:'me', t:"are you still awake"},
+              {f:'them', t:"yeah", ms:1200},
+              {f:'me', t:"what are you doing", ms:500},
+              {f:'them', t:"finishing something", ms:1600},
+              {f:'me', t:"the thing about all five of us", ms:600},
+              {f:'them', t:"...", ms:2200},
+              {f:'them', t:"yeah", ms:800},
+              {f:'me', t:"can i read it tomorrow", ms:600},
+              {f:'them', t:"i'll leave it on the table", ms:1600},
+              {f:'read', time:'1:39 AM'}
+            ], fx:{JAY_TRUST:3} },
+          { label:"what does the last line say",
+            convo:[
+              {f:'me', t:"what does the last line say"},
+              {f:'them', t:"...", ms:2800},
+              {f:'them', t:"i haven't written it yet", ms:1400},
+              {f:'me', t:"why", ms:500},
+              {f:'them', t:"it's not over yet", ms:1600},
+              {f:'me', t:"...", ms:700},
+              {f:'them', t:"you'll know when it is", ms:1200},
+              {f:'read', time:'1:41 AM'}
+            ], fx:{JAY_TRUST:3} }
+        ]},
+      FINN: { time:'12:08 AM',
+        options:[
+          { label:"i've been looking at the photo you gave me",
+            convo:[
+              {f:'me', t:"i've been looking at the photo you gave me"},
+              {f:'them', t:"yeah?", ms:1200},
+              {f:'me', t:"we look like a group", ms:600},
+              {f:'them', t:"you are a group", ms:1400},
+              {f:'me', t:"i know. it's just different seeing it", ms:700},
+              {f:'them', t:"...", ms:2000},
+              {f:'them', t:"that's why i take them", ms:1600},
+              {f:'me', t:"so we can see ourselves", ms:600},
+              {f:'them', t:"so you don't forget", ms:1200},
+              {f:'read', time:'12:13 AM'}
+            ], fx:{FINN_TRUST:3} },
+          { label:"thank you for seeing me",
+            convo:[
+              {f:'me', t:"thank you for seeing me"},
+              {f:'them', t:"...", ms:3400},
+              {f:'them', t:"always", ms:900},
+              {f:'read', time:'12:11 AM'}
+            ], fx:{FINN_TRUST:3} }
+        ]}
     }
   };
 
