@@ -459,6 +459,7 @@ body::after {
 /* ── PHASE 6: FIN ── */
 #phase-fin {
   text-align: center; justify-content: center;
+  padding-bottom: 80px;
 }
 
 .fin-rule {
@@ -483,49 +484,133 @@ body::after {
 }
 .fin-btns {
   display: flex; flex-direction: column; align-items: center; gap: 12px;
-  opacity: 0; animation: fadeUp 0.8s ease 1.3s forwards;
+  opacity: 0; animation: fadeUp 0.8s ease 2.2s forwards;
 }
 .fin-follow {
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
-  margin-top: 40px; padding: 36px 28px 32px;
-  background: linear-gradient(160deg, #0a0a0a 0%, #1a0a2e 100%);
-  border-radius: 20px;
-  opacity: 0; animation: fadeUp 0.8s ease 1.8s forwards;
+  display: flex; flex-direction: column; align-items: center; gap: 0;
+  margin-top: 0; padding: 0;
+  background: none;
+  border-radius: 0;
+  opacity: 0; animation: fadeUp 0.8s ease 1.3s forwards;
+  width: 100%; max-width: 420px;
 }
-.fin-follow-eyebrow {
+
+/* live pill */
+.fin-live-pill {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,80,80,0.35);
+  border-radius: 50px; padding: 5px 14px 5px 10px;
   font-family: 'Rethink Sans', sans-serif;
-  font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
-  color: #69C9D0; margin: 0;
+  font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); margin-bottom: 20px;
 }
-.fin-follow-label {
+.fin-live-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #ff4444;
+  animation: livePulse 1.2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes livePulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,68,68,0.7); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 5px rgba(255,68,68,0); }
+}
+
+/* headline */
+.fin-follow-headline {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 22px; font-weight: 700; color: #ffffff;
-  text-align: center; margin: 0; line-height: 1.4;
+  font-size: clamp(22px, 5vw, 30px); font-weight: 400; font-style: italic;
+  color: #ffffff; text-align: center; line-height: 1.3;
+  margin-bottom: 6px;
 }
-.fin-follow-sub {
+.fin-follow-hl2 {
   font-family: 'Rethink Sans', sans-serif;
-  font-size: 13px; color: rgba(255,255,255,0.5);
-  text-align: center; margin: 0; line-height: 1.6;
+  font-size: 13px; color: rgba(255,255,255,0.45);
+  text-align: center; line-height: 1.6; margin-bottom: 24px;
 }
-.fin-follow-btn {
-  display: flex; align-items: center; gap: 10px;
-  padding: 13px 28px; border-radius: 50px; text-decoration: none;
+
+/* fake notification card */
+.fin-notif-card {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(105,201,208,0.2);
+  border-radius: 14px; padding: 14px 16px;
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 24px; text-align: left;
+}
+.fin-notif-icon {
+  width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
+  background: linear-gradient(135deg, #010101, #69C9D0);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.fin-notif-body { flex: 1; min-width: 0; }
+.fin-notif-handle {
   font-family: 'Rethink Sans', sans-serif;
-  font-size: 13px; font-weight: 600; letter-spacing: 0.08em;
-  transition: opacity 0.2s, transform 0.2s;
-  justify-content: center;
+  font-size: 12px; font-weight: 700; color: #69C9D0;
+  display: block; margin-bottom: 2px;
 }
-.fin-follow-btn:hover { opacity: 0.85; transform: translateY(-2px); }
-.fin-follow-x {
-  background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.6);
-  font-size: 12px; padding: 10px 20px;
+.fin-notif-msg {
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 12px; color: rgba(255,255,255,0.55);
+  display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+.fin-notif-time {
+  font-size: 10px; color: rgba(255,255,255,0.3);
+  flex-shrink: 0; align-self: flex-start; padding-top: 2px;
+}
+
+/* perk pills */
+.fin-perks {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+  margin-bottom: 28px;
+}
+.fin-perk {
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 11px; color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50px; padding: 4px 12px;
+}
+
+/* big tiktok button */
 .fin-follow-tiktok {
-  background: linear-gradient(135deg, #010101 0%, #1a1a2e 50%, #69C9D0 150%);
-  color: #fff; font-size: 15px; padding: 16px 40px;
-  box-shadow: 0 0 32px rgba(105,201,208,0.35);
-  border: 1px solid rgba(105,201,208,0.3);
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 18px 28px; border-radius: 50px; text-decoration: none;
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 16px; font-weight: 700; letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(135deg, #010101 0%, #1a1a2e 60%, #2d4a4d 100%);
+  border: 1px solid rgba(105,201,208,0.45);
+  box-shadow: 0 0 40px rgba(105,201,208,0.3), 0 0 80px rgba(105,201,208,0.12);
+  animation: tikGlow 2.5s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 10px;
 }
+.fin-follow-tiktok:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 60px rgba(105,201,208,0.5), 0 0 100px rgba(105,201,208,0.2);
+}
+@keyframes tikGlow {
+  0%,100% { box-shadow: 0 0 40px rgba(105,201,208,0.3), 0 0 80px rgba(105,201,208,0.12); }
+  50% { box-shadow: 0 0 60px rgba(105,201,208,0.5), 0 0 100px rgba(105,201,208,0.2); }
+}
+.fin-notif-hint {
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 11px; color: rgba(255,255,255,0.25);
+  margin-bottom: 20px; letter-spacing: 0.05em;
+}
+
+/* x button */
+.fin-follow-x {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 22px; border-radius: 50px; text-decoration: none;
+  font-family: 'Rethink Sans', sans-serif;
+  font-size: 12px; color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.fin-follow-x:hover { opacity: 0.7; transform: translateY(-1px); }
 
 /* ── SHARED BUTTONS ── */
 .btn-solid {
@@ -769,22 +854,50 @@ body::after {
   <div class="fin-rule"></div>
   <h1 class="fin-word">Fin.</h1>
   <p class="fin-sub">Season 2 is coming.</p>
-  <div class="fin-btns">
-    <button class="btn-solid" onclick="window.location.href='calix-v6.html'">Play again →</button>
-    <button class="btn-glass" onclick="shareGame()">Share CALIX</button>
-  </div>
+
+  <!-- TikTok CTA — first, dominant -->
   <div class="fin-follow">
-    <p class="fin-follow-eyebrow">Season 2 is coming</p>
-    <p class="fin-follow-label">You'll miss it if you're not following.</p>
-    <p class="fin-follow-sub">New episodes, untold scenes, and behind-the-story content — only on TikTok.</p>
-    <a href="https://tiktok.com/@tartgraphics" target="_blank" rel="noopener" class="fin-follow-btn fin-follow-tiktok">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
-      Follow @tartgraphics
+    <div class="fin-live-pill">
+      <span class="fin-live-dot"></span>
+      <span>posting now</span>
+    </div>
+    <p class="fin-follow-headline">You've been with them<br>for 30 episodes.</p>
+    <p class="fin-follow-hl2">They're not done with you either.</p>
+
+    <div class="fin-notif-card">
+      <div class="fin-notif-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+      </div>
+      <div class="fin-notif-body">
+        <span class="fin-notif-handle">@tartgraphics</span>
+        <span class="fin-notif-msg">Kain's debut night POV — what he didn't say →</span>
+      </div>
+      <span class="fin-notif-time">now</span>
+    </div>
+
+    <div class="fin-perks">
+      <span class="fin-perk">Season 2 first</span>
+      <span class="fin-perk">Behind the scenes</span>
+      <span class="fin-perk">Deleted scenes</span>
+      <span class="fin-perk">Member POVs</span>
+    </div>
+
+    <a href="https://tiktok.com/@tartgraphics" target="_blank" rel="noopener" class="fin-follow-tiktok">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+      Follow @tartgraphics on TikTok
     </a>
-    <a href="https://twitter.com/tartgrahics26" target="_blank" rel="noopener" class="fin-follow-btn fin-follow-x">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      X / Twitter
+    <p class="fin-notif-hint">🔔 turn on notifications so you don't miss it</p>
+
+    <a href="https://twitter.com/tartgrahics26" target="_blank" rel="noopener" class="fin-follow-x">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      also on X / Twitter
     </a>
+  </div>
+
+  <!-- secondary actions -->
+  <div class="fin-btns" style="margin-top: 32px;">
+    <button class="btn-glass" onclick="shareGame()">Share CALIX with a friend</button>
+    <button class="btn-solid" onclick="window.location.href='calix-v6.html'" style="font-size:12px; padding:12px 36px; opacity:0.7;">Play again →</button>
   </div>
 </div>
 
