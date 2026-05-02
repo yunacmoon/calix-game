@@ -16,14 +16,35 @@
   }
 
   // Called when player taps "Unlock Full Story"
-  // Android WebView intercepts this and triggers Play Billing
-  // On web (non-Android), shows a fallback message
-  window.calixRequestPurchase = function () {
-    if (window.Android && typeof window.Android.requestPurchase === 'function') {
-      window.Android.requestPurchase('calix_full_game');
-    } else {
-      alert('Full game unlock is available on the Android app.\nDownload CALIX on Google Play!');
+  // Uses Digital Goods API (TWA/Play Billing) when available
+  window.calixRequestPurchase = async function () {
+    // TWA + Google Play Billing via Digital Goods API
+    if ('getDigitalGoodsService' in window) {
+      try {
+        const service = await window.getDigitalGoodsService('https://play.google.com/billing');
+        const details = await service.getDetails(['calix_full_game']);
+        if (!details || details.length === 0) {
+          alert('Product not found. Please try again later.');
+          return;
+        }
+        const paymentRequest = new PaymentRequest(
+          [{ supportedMethods: 'https://play.google.com/billing', data: { sku: 'calix_full_game' } }],
+          { total: { label: 'CALIX Full Story', amount: { currency: details[0].price.currency, value: details[0].price.value } } }
+        );
+        const response = await paymentRequest.show();
+        await response.complete('success');
+        // Acknowledge purchase via service
+        await service.acknowledge(response.details.token, 'onetime');
+        window.calixUnlockPremium();
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          alert('Purchase failed. Please try again.');
+        }
+      }
+      return;
     }
+    // Fallback: web browser (not in TWA)
+    alert('Full game unlock is available on the Android app.\nDownload CALIX on Google Play!');
   };
 
   // Called by Android Play Billing after successful purchase
