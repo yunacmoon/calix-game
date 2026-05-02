@@ -949,10 +949,12 @@ body::after {
     const db = getFirestore(app);
     const provider = new GoogleAuthProvider();
 
+    const SAVE_KEY = 'calix_save_v1';
+
     // ── Save game state to Firestore ──
     async function saveToCloud(user) {
       try {
-        const raw = localStorage.getItem('calixSave');
+        const raw = localStorage.getItem(SAVE_KEY);
         if (!raw) return;
         await setDoc(doc(db, 'saves', user.uid), { save: raw, updatedAt: Date.now() });
       } catch(e) { console.warn('[CALIX] Cloud save failed', e); }
@@ -964,13 +966,12 @@ body::after {
         const snap = await getDoc(doc(db, 'saves', user.uid));
         if (snap.exists()) {
           const cloudSave = snap.data().save;
-          const local = localStorage.getItem('calixSave');
-          // Use cloud save if it has more progress
+          const local = localStorage.getItem(SAVE_KEY);
           if (cloudSave) {
             const cloudState = JSON.parse(cloudSave);
             const localState = local ? JSON.parse(local) : {};
             if ((cloudState.unlockedThrough || 0) >= (localState.unlockedThrough || 0)) {
-              localStorage.setItem('calixSave', cloudSave);
+              localStorage.setItem(SAVE_KEY, cloudSave);
               if (typeof window.calixReloadState === 'function') window.calixReloadState();
             }
           }
