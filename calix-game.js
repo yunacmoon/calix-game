@@ -3927,5 +3927,14 @@
       }
     }
     window.showScreen(0);
+
+    // Dismiss splash screen
+    var splash = document.getElementById('splash-screen');
+    if (splash) {
+      setTimeout(function() {
+        splash.style.opacity = '0';
+        setTimeout(function() { splash.style.display = 'none'; }, 800);
+      }, 1200);
+    }
   });
 })();

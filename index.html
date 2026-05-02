@@ -610,6 +610,29 @@ body::after {
 </head>
 <body>
 
+<!-- SPLASH SCREEN -->
+<div id="splash-screen" style="
+  position:fixed; inset:0; z-index:99999;
+  background:linear-gradient(160deg, #0d0818 0%, #1a0a3d 50%, #0a1020 100%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:1rem; transition:opacity 0.8s ease; opacity:1;
+">
+  <h1 style="
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2.8rem,10vw,4.5rem);
+    font-weight:500; letter-spacing:0.15em;
+    color:#fff; margin:0;
+    text-shadow:0 0 40px rgba(151,125,255,0.5);
+  ">CALIX</h1>
+  <p style="
+    font-family:'Rethink Sans',sans-serif;
+    font-size:clamp(0.8rem,3vw,1rem);
+    color:rgba(200,184,255,0.7);
+    letter-spacing:0.2em; text-transform:uppercase;
+    margin:0;
+  ">A K-pop Simulation</p>
+</div>
+
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-left">
