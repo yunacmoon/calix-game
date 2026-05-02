@@ -1375,6 +1375,9 @@
       });
     }
 
+    // Cloud save (Firebase)
+    if (typeof window.calixCloudSave === 'function') window.calixCloudSave();
+
     showRewardPopup();
   }
 

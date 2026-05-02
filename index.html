@@ -617,6 +617,7 @@ body::after {
     <div class="nav-brand">CALIX</div>
   </div>
   <div class="nav-right">
+    <button id="btn-auth" style="background:transparent;border:1px solid rgba(151,125,255,0.4);color:#977DFF;border-radius:999px;padding:4px 14px;font-size:0.75rem;cursor:pointer;font-family:'Rethink Sans',sans-serif;">Sign in</button>
     <div class="nav-step" id="nav-step">01 / 07</div>
     <div class="nav-arrows">
       <button class="nav-btn" id="btn-back" onclick="navBack()" disabled>←</button>
@@ -925,6 +926,84 @@ body::after {
 </div>
 
   <script src="calix-game.js"></script>
+
+  <!-- ── FIREBASE ── -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js';
+    import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
+      from 'https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js';
+    import { getFirestore, doc, getDoc, setDoc }
+      from 'https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBUXKpyPsZYGekZ-sjbaFX0HacKTjeKavk",
+      authDomain: "calix-acc88.firebaseapp.com",
+      projectId: "calix-acc88",
+      storageBucket: "calix-acc88.firebasestorage.app",
+      messagingSenderId: "334810333037",
+      appId: "1:334810333037:web:9f59f74517b2e9f7f62464"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const provider = new GoogleAuthProvider();
+
+    // ── Save game state to Firestore ──
+    async function saveToCloud(user) {
+      try {
+        const raw = localStorage.getItem('calixSave');
+        if (!raw) return;
+        await setDoc(doc(db, 'saves', user.uid), { save: raw, updatedAt: Date.now() });
+      } catch(e) { console.warn('[CALIX] Cloud save failed', e); }
+    }
+
+    // ── Load game state from Firestore ──
+    async function loadFromCloud(user) {
+      try {
+        const snap = await getDoc(doc(db, 'saves', user.uid));
+        if (snap.exists()) {
+          const cloudSave = snap.data().save;
+          const local = localStorage.getItem('calixSave');
+          // Use cloud save if it has more progress
+          if (cloudSave) {
+            const cloudState = JSON.parse(cloudSave);
+            const localState = local ? JSON.parse(local) : {};
+            if ((cloudState.unlockedThrough || 0) >= (localState.unlockedThrough || 0)) {
+              localStorage.setItem('calixSave', cloudSave);
+              if (typeof window.calixReloadState === 'function') window.calixReloadState();
+            }
+          }
+        }
+      } catch(e) { console.warn('[CALIX] Cloud load failed', e); }
+    }
+
+    // ── Update nav login button ──
+    function updateAuthUI(user) {
+      const btn = document.getElementById('btn-auth');
+      if (!btn) return;
+      if (user) {
+        btn.textContent = user.displayName ? user.displayName.split(' ')[0] : 'Account';
+        btn.title = 'Sign out';
+        btn.onclick = () => signOut(auth);
+      } else {
+        btn.textContent = 'Sign in';
+        btn.title = 'Sign in with Google to save progress';
+        btn.onclick = () => signInWithPopup(auth, provider);
+      }
+    }
+
+    // ── Auto-save every episode complete ──
+    window.calixCloudSave = function() {
+      if (auth.currentUser) saveToCloud(auth.currentUser);
+    };
+
+    // ── Auth state listener ──
+    onAuthStateChanged(auth, (user) => {
+      updateAuthUI(user);
+      if (user) loadFromCloud(user);
+    });
+  </script>
 
   <!-- ── PWA INSTALL BANNER ── -->
   <div id="pwa-banner" style="
