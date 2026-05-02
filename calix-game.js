@@ -1285,6 +1285,15 @@
     gameState.unlockedThrough = Math.max(gameState.unlockedThrough || 1, gameState.currentEpisodeN + 1);
     saveGame();
     if (!pendingReward.coins) renderStatsSidebar();
+
+    // Google Analytics: episode complete tracking
+    if (typeof gtag === 'function') {
+      gtag('event', 'episode_complete', {
+        episode_number: gameState.currentEpisodeN,
+        episode_label: 'ep' + String(gameState.currentEpisodeN).padStart(2, '0')
+      });
+    }
+
     showRewardPopup();
   }
 
@@ -1418,6 +1427,14 @@
 
   function startEpisode(n) {
     clearSceneStream();
+
+    // Google Analytics: episode start tracking
+    if (typeof gtag === 'function') {
+      gtag('event', 'episode_start', {
+        episode_number: n,
+        episode_label: 'ep' + String(n).padStart(2, '0')
+      });
+    }
 
     const entry = episodesIndex.find(function (e) {
       return e.n === n;
