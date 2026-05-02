@@ -11,7 +11,14 @@
   const PAYWALL_EPISODE = 4; // ep 4+ requires premium unlock
   const PREMIUM_KEY = 'calix_premium_unlocked';
 
+  function isRunningInTWA() {
+    // Digital Goods API only exists in TWA (Android Play context)
+    return 'getDigitalGoodsService' in window;
+  }
+
   function isPremiumUnlocked() {
+    // Web users always have full access — paywall only applies in Android TWA
+    if (!isRunningInTWA()) return true;
     return localStorage.getItem(PREMIUM_KEY) === 'true';
   }
 
