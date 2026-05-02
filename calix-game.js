@@ -6,6 +6,63 @@
   const SCRIPTS = BASE + 'scripts/';
 
   const TRUST_KEYS = ['KAIN_TRUST', 'THEO_TRUST', 'JAY_TRUST', 'FINN_TRUST'];
+
+  // ── Paywall ──────────────────────────────────────────────────────────────
+  const PAYWALL_EPISODE = 4; // ep 4+ requires premium unlock
+  const PREMIUM_KEY = 'calix_premium_unlocked';
+
+  function isRunningInTWA() {
+    // Digital Goods API only exists in TWA (Android Play context)
+    return 'getDigitalGoodsService' in window;
+  }
+
+  function isPremiumUnlocked() {
+    // Web users always have full access — paywall only applies in Android TWA
+    if (!isRunningInTWA()) return true;
+    return localStorage.getItem(PREMIUM_KEY) === 'true';
+  }
+
+  // Called when player taps "Unlock Full Story"
+  // Uses Digital Goods API (TWA/Play Billing) when available
+  window.calixRequestPurchase = async function () {
+    // TWA + Google Play Billing via Digital Goods API
+    if ('getDigitalGoodsService' in window) {
+      try {
+        const service = await window.getDigitalGoodsService('https://play.google.com/billing');
+        const details = await service.getDetails(['calix_full_game']);
+        if (!details || details.length === 0) {
+          alert('Product not found. Please try again later.');
+          return;
+        }
+        const paymentRequest = new PaymentRequest(
+          [{ supportedMethods: 'https://play.google.com/billing', data: { sku: 'calix_full_game' } }],
+          { total: { label: 'CALIX Full Story', amount: { currency: details[0].price.currency, value: details[0].price.value } } }
+        );
+        const response = await paymentRequest.show();
+        await response.complete('success');
+        // Acknowledge purchase via service
+        await service.acknowledge(response.details.token, 'onetime');
+        window.calixUnlockPremium();
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          alert('Purchase failed. Please try again.');
+        }
+      }
+      return;
+    }
+    // Fallback: web browser (not in TWA)
+    alert('Full game unlock is available on the Android app.\nDownload CALIX on Google Play!');
+  };
+
+  // Called by Android Play Billing after successful purchase
+  window.calixUnlockPremium = function () {
+    localStorage.setItem(PREMIUM_KEY, 'true');
+    // Resume the episode the player was trying to enter
+    if (gameState.currentEpisodeN >= PAYWALL_EPISODE) {
+      startEpisode(gameState.currentEpisodeN);
+    }
+  };
+  // ─────────────────────────────────────────────────────────────────────────
   const STAT_MAX = {
     KAIN_TRUST: 15,
     THEO_TRUST: 15,
@@ -682,6 +739,30 @@
     if (typeof go === 'function') go(6);
     if (typeof window.initReward === 'function') window.initReward();
   };
+
+  function renderPaywall() {
+    clearSceneStream();
+    const stream = document.getElementById('scene-stream');
+    if (!stream) return;
+    stream.innerHTML =
+      '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;padding:2rem;text-align:center;gap:1.2rem;">' +
+      '<div style="font-size:2.4rem;">🔒</div>' +
+      '<h2 style="font-family:\'Playfair Display\',serif;font-size:1.6rem;color:#977DFF;margin:0;">Episode ' + PAYWALL_EPISODE + ' and beyond</h2>' +
+      '<p style="color:#c8b8ff;font-size:0.97rem;max-width:320px;line-height:1.6;margin:0;">' +
+      'Episodes 1–3 are free.<br>Unlock the full CALIX story — all 30 episodes, every ending, every heart-flutter moment.' +
+      '</p>' +
+      '<div style="background:rgba(151,125,255,0.08);border:1px solid rgba(151,125,255,0.25);border-radius:12px;padding:1rem 1.4rem;max-width:300px;">' +
+      '<div style="color:#fff;font-size:0.85rem;line-height:1.8;">' +
+      '✦ 27 more episodes<br>' +
+      '✦ All 4 member endings<br>' +
+      '✦ Exclusive photocards &amp; rewards<br>' +
+      '✦ One-time purchase · No subscription' +
+      '</div>' +
+      '</div>' +
+      '<button type="button" onclick="calixRequestPurchase()" style="background:linear-gradient(135deg,#977DFF,#6B4FD8);color:#fff;border:none;border-radius:999px;padding:0.85rem 2.2rem;font-size:1rem;font-weight:600;cursor:pointer;letter-spacing:0.03em;box-shadow:0 0 24px rgba(151,125,255,0.4);">Unlock Full Story</button>' +
+      '<button type="button" onclick="episodeLockedContinue()" style="background:transparent;color:#977DFF;border:none;font-size:0.85rem;cursor:pointer;text-decoration:underline;">← Back to overview</button>' +
+      '</div>';
+  }
 
   function renderEpisodeLocked(reason) {
     clearSceneStream();
@@ -1427,6 +1508,12 @@
 
   function startEpisode(n) {
     clearSceneStream();
+
+    // Paywall: ep 4+ requires premium unlock
+    if (n >= PAYWALL_EPISODE && !isPremiumUnlocked()) {
+      renderPaywall();
+      return;
+    }
 
     // Google Analytics: episode start tracking
     if (typeof gtag === 'function') {
