@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.tartgraphics.calix",
+    "sha256_cert_fingerprints": [
+      "DB:5B:63:3B:22:5C:13:B0:36:BA:A4:31:F9:55:25:D3:52:8A:1E:08:FD:22:E4:26:2F:DF:D6:12:30:6C:7C:47"
+    ]
+  }
+}]
