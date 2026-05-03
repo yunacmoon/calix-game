@@ -3340,12 +3340,35 @@
       delay += (beat.ms || 700);
       (function(d, b) {
         setTimeout(function() {
+          var isMe = b.f === 'me';
           var wrap = document.createElement('div');
-          wrap.className = 'txt-bubble-wrap ' + (b.f === 'me' ? 'me' : 'them');
+          wrap.className = 'txt-bubble-wrap ' + (isMe ? 'me' : 'them');
+
+          // Avatar
+          var av = document.createElement('img');
+          av.className = 'txt-avatar';
+          if (isMe) {
+            var cname = (gameState.candidateName || 'ALEX');
+            var cmap = { ALEX: 'Alex', YOOJIN: 'Yoojin', GREY: 'Grey' };
+            av.src = 'Images/02_Candidates/' + (cmap[cname] || 'Alex') + '_1.png';
+            av.alt = cmap[cname] || 'Alex';
+          } else {
+            var mmap = { KAIN: 'Kain', THEO: 'Theo', JAY: 'Jay', FINN: 'Finn' };
+            av.src = 'Images/01_Current members/' + (mmap[member] || member) + '_Intro.png';
+            av.alt = mmap[member] || member;
+          }
+
           var bubble = document.createElement('div');
           bubble.className = 'txt-bubble';
           bubble.textContent = b.t;
-          wrap.appendChild(bubble);
+
+          if (isMe) {
+            wrap.appendChild(bubble);
+            wrap.appendChild(av);
+          } else {
+            wrap.appendChild(av);
+            wrap.appendChild(bubble);
+          }
           msgs.appendChild(wrap);
           msgs.scrollTop = msgs.scrollHeight;
         }, d);
