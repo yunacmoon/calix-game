@@ -3347,15 +3347,17 @@
           // Avatar
           var av = document.createElement('img');
           av.className = 'txt-avatar';
+          var AVATAR_FILES = {
+            ALEX: 'Alex_Avatar.png', YOOJIN: 'Yoojin_avatar.png', GREY: 'Grey_Avatar.png',
+            KAIN: 'Kain_Avatar.png', THEO: 'Theo_avatar.png', JAY: 'Jay_Avatar.png', FINN: 'Finn_Avatar.png'
+          };
           if (isMe) {
             var cname = (gameState.candidateName || 'ALEX');
-            var cmap = { ALEX: 'Alex', YOOJIN: 'Yoojin', GREY: 'Grey' };
-            av.src = 'Images/02_Candidates/' + (cmap[cname] || 'Alex') + '_1.png';
-            av.alt = cmap[cname] || 'Alex';
+            av.src = 'Images/10_Avatar/' + (AVATAR_FILES[cname] || 'Alex_Avatar.png');
+            av.alt = cname;
           } else {
-            var mmap = { KAIN: 'Kain', THEO: 'Theo', JAY: 'Jay', FINN: 'Finn' };
-            av.src = 'Images/01_Current members/' + (mmap[member] || member) + '_Intro.png';
-            av.alt = mmap[member] || member;
+            av.src = 'Images/10_Avatar/' + (AVATAR_FILES[member] || 'Kain_Avatar.png');
+            av.alt = member;
           }
 
           var bubble = document.createElement('div');
