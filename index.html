@@ -472,6 +472,7 @@ body::after {
 .gift-opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 .gift-opt { appearance:none; padding:11px 12px; border-radius:12px; border:2px solid rgba(0,0,61,0.1); background:#fafafa; font:inherit; font-size:13px; font-weight:600; color:var(--ink); cursor:pointer; transition:border-color 0.2s, background 0.15s, transform 0.12s; text-align:left; line-height:1.3; }
 .gift-opt-emoji { display:block; font-size:22px; margin-bottom:4px; }
+.gift-opt-img { display:block; width:52px; height:52px; object-fit:contain; margin:0 auto 6px; }
 .gift-opt-name { display:block; }
 .gift-opt.gift-opt--selected { border-color:var(--purple-mid); background:linear-gradient(135deg,#F8F4FF,#EEE6FF); transform:scale(1.02); }
 .gift-opt.gift-opt--cant-afford { opacity:0.45; }
@@ -1020,9 +1021,9 @@ body::after {
             <span class="gift-tier-cost">150 coins</span>
           </div>
           <div class="gift-opts">
-            <button type="button" class="gift-opt" data-gift="headphones" data-cost="150"><span class="gift-opt-emoji">🎧</span><span class="gift-opt-name">Headphones</span></button>
-            <button type="button" class="gift-opt" data-gift="perfume" data-cost="150"><span class="gift-opt-emoji">🫙</span><span class="gift-opt-name">Perfume</span></button>
-            <button type="button" class="gift-opt" data-gift="scarf" data-cost="150"><span class="gift-opt-emoji">🧣</span><span class="gift-opt-name">Scarf</span></button>
+            <button type="button" class="gift-opt" data-gift="headphones" data-cost="150"><img class="gift-opt-img" src="Images/03_Gifts/gift_headphones.png" alt="Headphones"><span class="gift-opt-name">Headphones</span></button>
+            <button type="button" class="gift-opt" data-gift="perfume" data-cost="150"><img class="gift-opt-img" src="Images/03_Gifts/gift_perfume.webp" alt="Perfume"><span class="gift-opt-name">Perfume</span></button>
+            <button type="button" class="gift-opt" data-gift="scarf" data-cost="150"><img class="gift-opt-img" src="Images/03_Gifts/gift_scarf.jpg" alt="Scarf"><span class="gift-opt-name">Scarf</span></button>
           </div>
         </div>
 
