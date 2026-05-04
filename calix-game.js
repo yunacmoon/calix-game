@@ -1736,82 +1736,9 @@
     if (tok) tok.textContent = String(gameState.stats.COINS);
     renderStatsSidebar();
 
-    // === GIFT NUDGE ===
+    // Gift nudge replaced by full gift overlay (openGiftScreen via proceedFromRewardPopupToRewardScreen)
     var nudgeEl = document.getElementById('reward-gift-nudge');
-    if (nudgeEl) {
-      var nudgeMembers = ['KAIN', 'THEO', 'JAY', 'FINN'];
-      var nudgeGifts = ['an iced latte', 'a protein bar 💪', 'some candy 🍬', 'an energy drink ⚡', 'a vitamin jelly 🌟'];
-      var NUDGE_GIFT_IMAGES = {
-        'an iced latte': 'Images/05_Item/Iced_americano.png',
-        'a protein bar 💪': 'Images/05_Item/Protein_bar.avif',
-        'some candy 🍬': 'Images/05_Item/Some_candy.png',
-        'an energy drink ⚡': 'Images/05_Item/Energy_drink.webp',
-        'a vitamin jelly 🌟': 'Images/05_Item/Vitamin_jelly.jpg',
-      };
-      var nudgeMember = episodeFeaturedMember || nudgeMembers[Math.floor(Math.random() * nudgeMembers.length)];
-      var nudgeGift = nudgeGifts[Math.floor(Math.random() * nudgeGifts.length)];
-      var nudgeImgSrc = NUDGE_GIFT_IMAGES[nudgeGift] || '';
-      nudgeEl.style.display = '';
-      nudgeEl.innerHTML = '<div style="margin-top:24px;padding:20px;background:rgba(255,255,255,0.65);border:1.5px solid #7c6aed;border-radius:16px;text-align:center;font-family:\'Rethink Sans\',sans-serif;">'
-        + '<p style="margin:0 0 12px;font-size:18px;color:#3d2f8f;font-weight:500;">Buy ' + nudgeMember + ' ' + nudgeGift + '?</p>'
-        + '<div id="gift-nudge-img" style="width:130px;height:130px;border-radius:16px;overflow:hidden;margin:0 auto 16px;">'
-        + '<img src="' + nudgeImgSrc + '" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">'
-        + '</div>'
-        + '<div id="gift-nudge-btns" style="display:flex;gap:10px;justify-content:center;">'
-        + '<button id="gift-nudge-yes" style="padding:10px 20px;background:#7c6aed;color:#fff;border:none;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Send it! 🎁</button>'
-        + '<button id="gift-nudge-skip" style="padding:10px 20px;background:transparent;color:#7c6aed;border:1.5px solid #7c6aed;border-radius:10px;font-size:14px;cursor:pointer;font-family:\'Rethink Sans\',sans-serif;">Maybe next time</button>'
-        + '</div>'
-        + '<div id="gift-nudge-thanks" style="display:none;font-size:16px;color:#3d2f8f;margin-top:12px;"></div>'
-        + '</div>';
-
-      document.getElementById('gift-nudge-yes').onclick = function() {
-        if ((gameState.stats.COINS || 0) < 50) {
-          document.getElementById('gift-nudge-thanks').style.display = '';
-          document.getElementById('gift-nudge-thanks').textContent = 'Not enough coins 🥲';
-          return;
-        }
-        gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - 50);
-        var affinityKey = nudgeMember + '_AFFINITY';
-        if (gameState.stats[affinityKey] !== undefined) {
-          gameState.stats[affinityKey] = Math.min(100, (gameState.stats[affinityKey] || 0) + 1);
-        }
-        var nudgeThanks = {
-          KAIN: [
-            "Thanks. I'll actually use this.",
-            "You didn't have to. But I'm not giving it back.",
-            "Good timing. I needed this."
-          ],
-          THEO: [
-            "Oh wow — really? You're too kind, seriously.",
-            "I wasn't expecting this at all. Thank you!",
-            "You always know exactly what I need. Thank you 🥹"
-          ],
-          JAY: [
-            "Ayy you already knew what I needed, let's go 🤙",
-            "This is literally perfect right now, thank you!!",
-            "You're the best for real. I needed this 😭"
-          ],
-          FINN: [
-            "Oh my gosh, this is my favorite!! Thank you so much 🥺",
-            "You remembered!! I'm so happy right now 😊",
-            "Ahhh you didn't have to — but I'm so glad you did 🌸"
-          ]
-        };
-        var thankLines = nudgeThanks[nudgeMember] || ['Thank you! ☺️'];
-        var thankLine = thankLines[Math.floor(Math.random() * thankLines.length)];
-        document.getElementById('gift-nudge-btns').style.display = 'none';
-        document.getElementById('gift-nudge-thanks').style.display = '';
-        document.getElementById('gift-nudge-thanks').textContent = nudgeMember + ': ' + thankLine;
-        var coinEl = document.getElementById('rw-tokens');
-        if (coinEl) coinEl.textContent = gameState.stats.COINS || 0;
-        try { saveGame(); } catch(e) {}
-      };
-
-      document.getElementById('gift-nudge-skip').onclick = function() {
-        nudgeEl.style.display = 'none';
-      };
-    }
-    // === END GIFT NUDGE ===
+    if (nudgeEl) nudgeEl.style.display = 'none';
   }
 
   window.initReward = initRewardCalix;
@@ -5919,7 +5846,7 @@
   // ── END TEXT MOMENT ─────────────────────────────────────────────
 
   function shouldOfferGiftScreen() {
-    return false;
+    return true;
   }
 
   function giftCurrentCost() {
