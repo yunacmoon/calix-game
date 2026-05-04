@@ -1801,7 +1801,7 @@
 
   const GIFT_COST_SMALL = 50;
   const GIFT_COST_MEANINGFUL = 150;
-  const GIFT_MEANINGFUL_KEYS = ['polaroid','flowers','vinyl','journal'];
+  const GIFT_MEANINGFUL_KEYS = ['headphones','perfume','scarf'];
   const SPECIAL_EP_UNLOCKS = { 10: 500, 20: 800 };  // ep → coins needed
   const GIFT_THANK_YOU = {
     KAIN: {
@@ -1809,40 +1809,36 @@
       candy:    ["I'll eat it after practice. Thanks.", "Leaving some for you.", "You keep doing this."],
       energy:   ["Good. I needed one of these.", "You knew I was dragging today.", "This'll keep me going. Thank you."],
       vitamin:  ["I keep forgetting to take these. Thanks.", "You actually pay attention. I noticed.", "...This was thoughtful."],
-      polaroid: ["...Where did you get this printed.", "I don't really keep things. I'm keeping this.", "I didn't think you'd notice that moment. But you did."],
-      flowers:  ["I don't know what to do with these. But I like them.", "Nobody's given me flowers before. This is strange.", "...They're from you. So I'll keep them."],
-      vinyl:    ["How did you know I had a record player.", "I've been looking for this one.", "...This means something. You know that, right."],
-      journal:  ["I'll use it. I mean that.", "You think I have things worth writing down.", "...Yeah. I do. Thank you."],
+      headphones: ["I've been using the same pair for three years.", "...These are good. You have a better eye than I gave you credit for.", "I don't usually let people pick things for me. This is an exception."],
+      perfume:    ["...Where did you find this.", "I don't wear things like this often. But I will.", "You picked this. That means something."],
+      scarf:      ["It's the right weight.", "I'll actually use this. I don't say that to be polite.", "...You thought about me outside of practice. I didn't expect that."],
     },
     THEO: {
       coffee:   ["Wait — this is for me? Genuinely, thank you.", "I was dying for this. How did you know.", "You didn't have to. But I'm really glad you did."],
       candy:    ["You and snacks. Best combination.", "These are my favorites. You actually noticed that.", "I hadn't said anything but I was starving. Thank you."],
       energy:   ["I was literally about to crash. How did you know!!", "You're a lifesaver. Genuinely.", "I could cry. I needed this so badly."],
       vitamin:  ["You're taking care of me 🥺 I love that.", "Nobody thinks about this stuff. You do.", "You actually noticed I forget these every day!!"],
-      polaroid: ["...This is us. This is actually us.", "I'm putting this on my wall right now. Right now.", "I didn't even know this was taken. I love it so much."],
-      flowers:  ["THESE ARE SO PRETTY THANK YOU", "I'm going to press one and keep it forever.", "Nobody's ever given me flowers. I'm going to cry a little."],
-      vinyl:    ["Wait this is the one I said I wanted!!! You remembered!!", "I've literally been looking for this.", "You actually listened. Thank you thank you thank you."],
-      journal:  ["I'll fill this with all the things I can't say out loud.", "Starting with what today felt like. With you in it.", "You think I have things worth keeping. That means a lot."],
+      headphones: ["WAIT ARE THESE FOR ME", "I've been wanting these for so long you have no idea!!", "I'm wearing these right now. Thank you thank you thank you."],
+      perfume:    ["This smells incredible. How did you even choose this.", "I'm going to think of you every time I wear it 🥺", "You actually picked this for me specifically. I can tell."],
+      scarf:      ["It's so soft!!! I'm wearing it immediately.", "You thought about keeping me warm. I can't handle that.", "This is the color I would've picked myself. How did you know."],
     },
     JAY: {
       coffee:   ["Oh — thanks. You didn't have to.", "I'll drink it. Really, thank you.", "Didn't expect this. That was thoughtful."],
       candy:    ["We should eat together sometime. I'm serious.", "I hadn't eaten yet. How did you know that.", "Thanks. And I mean that, not just saying it."],
       energy:   ["...I needed this. Thank you.", "You noticed I was fading. That's observant.", "I'll owe you one. I mean that."],
       vitamin:  ["You thought about my health. That's — yeah. Thank you.", "I keep meaning to take these.", "...That was thoughtful. More than you know."],
-      polaroid: ["...I don't usually keep photos.", "This one I will. It's the angle.", "Where did you find this. I thought no one had it."],
-      flowers:  ["I wasn't expecting this.", "...I'll put them somewhere I'll see them.", "Dried ones last longer. You knew that."],
-      vinyl:    ["This is — you found this.", "I've had this on a list for two years.", "...Thank you. Genuinely."],
-      journal:  ["I already have three. Now I have four.", "The blank ones are the hardest.", "...I'll write something for you in it. Eventually."],
+      headphones: ["...I needed a new pair. You didn't know that.", "Good sound. You chose well.", "I'll use these when I need to be somewhere else for a while. Thank you."],
+      perfume:    ["This is understated. I appreciate that.", "...I'll remember you picked this.", "You have a quiet kind of taste. This suits it."],
+      scarf:      ["Practical. Good weight.", "...I'll wear it. I mean that.", "You thought about something small and got it right. That's not nothing."],
     },
     FINN: {
       coffee:   ["This is so thoughtful. Thank you, seriously.", "You got this for me? That actually means a lot.", "I needed this more than you know. Thank you."],
       candy:    ["How did you know I liked these? This is really kind.", "You thought of me. I don't take that lightly.", "I'd been thinking about these all day. Did you just know?"],
       energy:   ["You saw I was tired even when I didn't say anything.", "Thank you. Really.", "I'll remember you gave me this."],
       vitamin:  ["You noticed. That's the part that gets me.", "I'll take it right now. Watch.", "...You take care of people quietly. I see that."],
-      polaroid: ["...This is one of mine. How did you get a print of this.", "I took this on the first week. You kept it.", "I didn't know you had this. I'm glad you do."],
-      flowers:  ["I want to photograph these before they dry completely.", "...You gave me something worth keeping.", "I'll press one. Put it in the film case I always carry."],
-      vinyl:    ["I have a player in my room. Nobody knows that.", "This one I've been meaning to find for a while.", "...You know things about me I haven't said out loud."],
-      journal:  ["I use mine for contact sheets. Can I use this one for words?", "...I have things I want to say. Maybe now I will.", "You gave me somewhere to put things. Thank you."],
+      headphones: ["I'll use these when I'm shooting. The ones I had were starting to go.", "...You noticed something I never said out loud.", "Good choice. I mean that specifically."],
+      perfume:    ["I'm careful about scent. This one is right.", "...I'll keep this. It'll last a while.", "You chose something quiet. I noticed that about you too."],
+      scarf:      ["I'll wear this on the early calls. It gets cold before the sun's up.", "...Thank you. Genuinely.", "You thought about what I might actually need. That's the part that gets me."],
     },
   };
   const GIFT_MEMBER_LABEL = { KAIN: 'Kain', THEO: 'Theo', JAY: 'Jay', FINN: 'Finn' };
