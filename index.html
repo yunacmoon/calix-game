@@ -490,6 +490,44 @@ body::after {
 #gift-msg-name { font-size:13px; font-weight:600; color:var(--ink-soft); margin:0 0 8px 4px; }
 .gift-imessage-bubble { display:inline-block; max-width:100%; background:#1c1c1e; color:#fff; border-radius:18px; border-bottom-left-radius:4px; padding:14px 16px; font-size:16px; line-height:1.45; box-shadow:0 2px 8px rgba(0,0,0,0.12); margin-bottom:20px; }
 #gift-btn-continue { width:100%; margin:0 24px 24px; width:calc(100% - 48px); }
+
+/* ── Special Episode Unlock Overlay ──────────────────────────── */
+.special-ep-overlay { position:fixed; inset:0; z-index:1500; background:rgba(10,6,30,0.92); backdrop-filter:blur(20px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.45s cubic-bezier(0.22,1,0.36,1); }
+.special-ep-overlay.show { opacity:1; pointer-events:auto; }
+.special-ep-unlock-card { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:22px; padding:32px 24px; max-width:360px; width:100%; text-align:center; color:#fff; }
+.special-ep-eyebrow { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.45); margin:0 0 14px; }
+.special-ep-unlock-ep-title { font-size:22px; font-weight:600; margin:0 0 8px; color:#fff; letter-spacing:-0.01em; }
+.special-ep-unlock-subtitle { font-size:14px; color:rgba(255,255,255,0.6); margin:0 0 6px; line-height:1.55; }
+.special-ep-unlock-cost { font-size:13px; color:#c9b8ff; margin:0 0 26px; }
+.special-ep-member-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:18px; }
+.special-ep-member-btn { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); border-radius:14px; padding:14px 8px 10px; color:#e8e0ff; font-size:13px; font-weight:500; cursor:pointer; transition:background 0.2s, border-color 0.2s; display:flex; flex-direction:column; align-items:center; gap:8px; }
+.special-ep-member-btn:hover { background:rgba(200,180,255,0.14); border-color:rgba(200,180,255,0.4); }
+.special-ep-member-btn img { width:54px; height:54px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.15); }
+.special-ep-skip-btn { background:none; border:none; color:rgba(255,255,255,0.35); font-size:13px; cursor:pointer; padding:8px 16px; text-decoration:underline; }
+
+/* ── Special Episode Reader ──────────────────────────────────── */
+.special-ep-reader { position:fixed; inset:0; z-index:1600; background:#0e0b1a; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.5s; }
+.special-ep-reader.show { opacity:1; pointer-events:auto; }
+.special-ep-reader-header { display:flex; align-items:center; gap:12px; padding:max(18px,env(safe-area-inset-top)) 20px 12px; border-bottom:1px solid rgba(255,255,255,0.07); flex-shrink:0; }
+.special-ep-close { background:none; border:none; color:rgba(255,255,255,0.45); font-size:20px; line-height:1; cursor:pointer; padding:2px 8px; }
+.special-ep-reader-label { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35); flex:1; }
+.special-ep-reader-body { flex:1; overflow-y:auto; padding:28px 24px 16px; color:#fff; -webkit-overflow-scrolling:touch; }
+.sep-narr { color:rgba(255,255,255,0.5); font-style:italic; font-size:15px; line-height:1.75; margin:0 0 18px; }
+.sep-them { margin:0 0 20px; }
+.sep-them-name { display:block; font-size:10px; letter-spacing:0.13em; text-transform:uppercase; color:#c9b8ff; margin-bottom:4px; }
+.sep-them-text { font-size:16px; color:#e8e0ff; line-height:1.6; }
+.sep-you { color:rgba(255,255,255,0.65); font-style:italic; font-size:15px; line-height:1.6; margin:0 0 18px; text-align:right; padding-left:40px; }
+.special-ep-reader-footer { padding:12px 20px max(20px,env(safe-area-inset-bottom)); border-top:1px solid rgba(255,255,255,0.07); flex-shrink:0; }
+.special-ep-choices { display:flex; flex-direction:column; gap:10px; }
+.special-ep-choice-btn { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.14); border-radius:13px; padding:14px 16px; color:#e8e0ff; font-size:14px; line-height:1.45; cursor:pointer; text-align:left; transition:background 0.2s, border-color 0.2s; width:100%; }
+.special-ep-choice-btn:hover { background:rgba(200,180,255,0.12); border-color:rgba(200,180,255,0.35); }
+.special-ep-continue-btn { width:100%; background:none; border:none; color:rgba(255,255,255,0.3); font-size:13px; cursor:pointer; padding:12px; text-align:center; letter-spacing:0.06em; }
+.special-ep-end-screen { text-align:center; padding:48px 0 24px; }
+.special-ep-end-screen h3 { color:#c9b8ff; font-size:20px; font-weight:400; margin:0 0 10px; letter-spacing:0.02em; }
+.special-ep-end-screen .sep-narr { font-size:14px; margin-bottom:28px; }
+.special-ep-end-btn { background:rgba(200,180,255,0.12); border:1px solid rgba(200,180,255,0.28); border-radius:13px; padding:14px 36px; color:#e8e0ff; font-size:15px; cursor:pointer; transition:background 0.2s; }
+.special-ep-end-btn:hover { background:rgba(200,180,255,0.2); }
+
 .candidate-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1007,6 +1045,48 @@ body::after {
       <button type="button" class="btn-solid" id="gift-btn-continue">Continue →</button>
     </div>
 
+  </div>
+</div>
+
+<!-- Special Episode: Member Picker -->
+<div class="special-ep-overlay" id="special-ep-unlock-overlay" aria-hidden="true">
+  <div class="special-ep-unlock-card">
+    <p class="special-ep-eyebrow">✨ Special Episode Unlocked</p>
+    <h2 class="special-ep-unlock-ep-title" id="special-ep-unlock-ep-title">The Long Drive</h2>
+    <p class="special-ep-unlock-subtitle" id="special-ep-unlock-subtitle">A day off. The road to Incheon. Choose who you spend it with.</p>
+    <p class="special-ep-unlock-cost" id="special-ep-unlock-cost"></p>
+    <div class="special-ep-member-grid">
+      <button type="button" class="special-ep-member-btn" onclick="pickSpecialEpisodeMember('kain')">
+        <img src="Images/01_Current members/Kain_Intro.png" alt="Kain">
+        <span>Kain</span>
+      </button>
+      <button type="button" class="special-ep-member-btn" onclick="pickSpecialEpisodeMember('theo')">
+        <img src="Images/01_Current members/Theo_Intro.png" alt="Theo">
+        <span>Theo</span>
+      </button>
+      <button type="button" class="special-ep-member-btn" onclick="pickSpecialEpisodeMember('jay')">
+        <img src="Images/01_Current members/Jay_Intro.png" alt="Jay">
+        <span>Jay</span>
+      </button>
+      <button type="button" class="special-ep-member-btn" onclick="pickSpecialEpisodeMember('finn')">
+        <img src="Images/01_Current members/Finn_Intro.png" alt="Finn">
+        <span>Finn</span>
+      </button>
+    </div>
+    <button type="button" class="special-ep-skip-btn" onclick="skipSpecialEpisodeUnlock()">Maybe later</button>
+  </div>
+</div>
+
+<!-- Special Episode: Reader -->
+<div class="special-ep-reader" id="special-ep-reader" aria-hidden="true">
+  <div class="special-ep-reader-header">
+    <button type="button" class="special-ep-close" onclick="closeSpecialEpReader()">✕</button>
+    <span class="special-ep-reader-label" id="special-ep-reader-label">Special Episode</span>
+  </div>
+  <div class="special-ep-reader-body" id="special-ep-reader-body"></div>
+  <div class="special-ep-reader-footer" id="special-ep-reader-footer">
+    <div class="special-ep-choices" id="special-ep-choices" style="display:none"></div>
+    <button type="button" class="special-ep-continue-btn" id="special-ep-continue">tap to continue</button>
   </div>
 </div>
 

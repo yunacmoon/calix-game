@@ -1865,8 +1865,7 @@
       giftShownThisEpisode = true;
       openGiftScreen();
     } else {
-      if (typeof go === 'function') go(6);
-      if (typeof window.initReward === 'function') window.initReward();
+      finishEpisodeFlow();
     }
   }
 
@@ -5839,8 +5838,7 @@
       giftShownThisEpisode = true;
       openGiftScreen();
     } else {
-      if (typeof go === 'function') go(6);
-      if (typeof window.initReward === 'function') window.initReward();
+      finishEpisodeFlow();
     }
   };
   // ── END TEXT MOMENT ─────────────────────────────────────────────
@@ -5848,6 +5846,316 @@
   function shouldOfferGiftScreen() {
     return true;
   }
+
+  // ── SPECIAL EPISODE SYSTEM ──────────────────────────────────────────
+
+  var SPECIAL_EP_CONFIG = {
+    10: { title: 'The Long Drive', subtitle: 'A day off. The road to Incheon. Choose who you spend it with.', reward: 200 },
+    20: { title: 'Seongsu', subtitle: 'A free afternoon. Seongsu-dong. Choose who you spend it with.', reward: 300 }
+  };
+
+  var _specialEpSegments = [];
+  var _specialEpIdx = 0;
+  var _specialEpInOption = false;
+  var _specialEpOptionLines = [];
+
+  function finishEpisodeFlow() {
+    if (checkAndShowSpecialEpisodeUnlock()) return;
+    if (typeof go === 'function') go(6);
+    if (typeof window.initReward === 'function') window.initReward();
+  }
+
+  function checkAndShowSpecialEpisodeUnlock() {
+    var ep = Number(gameState.currentEpisodeN || 0);
+    var unlockCost = SPECIAL_EP_UNLOCKS[ep];
+    if (!unlockCost) return false;
+    var unlockKey = 'calix_special_ep' + ep + '_unlocked';
+    if (localStorage.getItem(unlockKey)) return false;
+    var coins = gameState.stats.COINS || 0;
+    if (coins < unlockCost) return false;
+    showSpecialEpisodeMemberPicker(ep);
+    return true;
+  }
+
+  function showSpecialEpisodeMemberPicker(ep) {
+    var cfg = SPECIAL_EP_CONFIG[ep] || {};
+    var ov = document.getElementById('special-ep-unlock-overlay');
+    if (!ov) return;
+    var titleEl = document.getElementById('special-ep-unlock-ep-title');
+    var subEl = document.getElementById('special-ep-unlock-subtitle');
+    var costEl = document.getElementById('special-ep-unlock-cost');
+    if (titleEl) titleEl.textContent = cfg.title || ('Special Episode ' + ep);
+    if (subEl) subEl.textContent = cfg.subtitle || '';
+    if (costEl) costEl.textContent = '🪙 ' + (SPECIAL_EP_UNLOCKS[ep] || 0) + ' coins to unlock';
+    ov.setAttribute('data-ep', String(ep));
+    ov.classList.add('show');
+    ov.setAttribute('aria-hidden', 'false');
+  }
+
+  window.pickSpecialEpisodeMember = function (member) {
+    var ov = document.getElementById('special-ep-unlock-overlay');
+    if (!ov) return;
+    var ep = parseInt(ov.getAttribute('data-ep'), 10);
+    ov.classList.remove('show');
+    ov.setAttribute('aria-hidden', 'true');
+    var cost = SPECIAL_EP_UNLOCKS[ep] || 0;
+    var prev = {};
+    Object.keys(gameState.stats).forEach(function (k) { prev[k] = gameState.stats[k]; });
+    gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - cost);
+    localStorage.setItem('calix_special_ep' + ep + '_unlocked', '1');
+    gameState._specialEpPendingReward = (SPECIAL_EP_CONFIG[ep] || {}).reward || 0;
+    try { saveGame(); } catch (e) { /* ignore */ }
+    try { renderStatsSidebar(prev); } catch (e) { /* ignore */ }
+    launchSpecialEpisode(ep, member.toLowerCase());
+  };
+
+  window.skipSpecialEpisodeUnlock = function () {
+    var ov = document.getElementById('special-ep-unlock-overlay');
+    if (ov) { ov.classList.remove('show'); ov.setAttribute('aria-hidden', 'true'); }
+    if (typeof go === 'function') go(6);
+    if (typeof window.initReward === 'function') window.initReward();
+  };
+
+  function launchSpecialEpisode(ep, memberLower) {
+    var epStr = ep < 10 ? '0' + ep : String(ep);
+    var fname = 'Context/scripts/ep_bonus' + epStr + '_' + memberLower + '.md';
+    var reader = document.getElementById('special-ep-reader');
+    var body = document.getElementById('special-ep-reader-body');
+    if (body) body.innerHTML = '<p style="color:rgba(255,255,255,0.4);text-align:center;padding-top:60px;font-style:italic;">Loading…</p>';
+    if (reader) { reader.classList.add('show'); reader.setAttribute('aria-hidden', 'false'); }
+    fetch(fname)
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function (md) {
+        var cfg = SPECIAL_EP_CONFIG[ep] || {};
+        var labelEl = document.getElementById('special-ep-reader-label');
+        if (labelEl) labelEl.textContent = cfg.title || 'Special Episode';
+        _specialEpSegments = parseSpecialEpisodeMd(md);
+        _specialEpIdx = 0;
+        _specialEpInOption = false;
+        renderSpecialEpCurrent();
+      })
+      .catch(function (e) {
+        console.error('Special episode load failed', fname, e);
+        if (reader) { reader.classList.remove('show'); reader.setAttribute('aria-hidden', 'true'); }
+        if (typeof go === 'function') go(6);
+        if (typeof window.initReward === 'function') window.initReward();
+      });
+  }
+
+  function parseSpecialEpisodeMd(md) {
+    var segments = [];
+    var lines = md.split('\n');
+    var i = 0;
+    while (i < lines.length) {
+      var trimmed = lines[i].trim();
+      if (/^##\s/.test(trimmed)) {
+        var title = trimmed.replace(/^##\s+/, '');
+        var sectionLines = [];
+        i++;
+        while (i < lines.length && !/^##\s/.test(lines[i].trim())) {
+          sectionLines.push(lines[i]);
+          i++;
+        }
+        if (/^SCENE DIRECTION NOTES/.test(title)) {
+          // skip director notes
+        } else if (/^CHOICE\s+\d+/i.test(title)) {
+          var opts = parseSpecialEpOptions(sectionLines);
+          if (opts.length >= 2) segments.push({ type: 'choice', title: title, options: opts });
+        } else {
+          segments.push({ type: 'scene', title: title, lines: sectionLines });
+        }
+      } else {
+        i++;
+      }
+    }
+    return segments;
+  }
+
+  function parseSpecialEpOptions(lines) {
+    var options = [];
+    var currentLabel = null;
+    var currentLines = [];
+    for (var i = 0; i < lines.length; i++) {
+      var t = lines[i].trim();
+      if (/^\*\*OPTION\s+[AB]\*\*:/i.test(t)) {
+        if (currentLabel !== null) {
+          options.push({ label: currentLabel, lines: currentLines.slice() });
+          currentLines = [];
+        }
+        currentLabel = t.replace(/^\*\*OPTION\s+[AB]\*\*:\s*/i, '').replace(/^\*+|\*+$/g, '').trim();
+      } else if (currentLabel !== null) {
+        if (/^---+$/.test(t) && currentLines.filter(function (l) { return l.trim(); }).length === 0) continue;
+        currentLines.push(lines[i]);
+      }
+    }
+    if (currentLabel !== null && currentLines.length) {
+      options.push({ label: currentLabel, lines: currentLines.slice() });
+    }
+    return options;
+  }
+
+  function renderSpecialEpLines(lines) {
+    var html = '';
+    function esc(s) {
+      return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+    for (var i = 0; i < lines.length; i++) {
+      var raw = lines[i];
+      var t = raw.trim();
+      if (!t || /^---+$/.test(t)) continue;
+
+      // > **NAME:** text
+      var mQuoteDialogue = t.match(/^>\s+\*\*([A-Z]+)\*\*:\s*(.*)/);
+      if (mQuoteDialogue) {
+        var name = mQuoteDialogue[1];
+        var text = mQuoteDialogue[2].replace(/^"(.*)"$/, '$1').replace(/^\*+|\*+$/g, '').trim();
+        if (name === 'YOU') {
+          html += '<p class="sep-you">' + esc(text) + '</p>';
+        } else if (name === 'NARRATION') {
+          // skip the label line; following > lines are narration
+        } else {
+          var displayName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+          html += '<div class="sep-them"><span class="sep-them-name">' + esc(displayName) + '</span><span class="sep-them-text">' + esc(text) + '</span></div>';
+        }
+        continue;
+      }
+
+      // > *narration* or > plain
+      if (/^>\s+/.test(t)) {
+        var inner = t.replace(/^>\s+/, '').replace(/^\*+|\*+$/g, '').trim();
+        if (inner) html += '<p class="sep-narr">' + esc(inner) + '</p>';
+        continue;
+      }
+
+      // **NAME:** "dialogue" (non-blockquote)
+      var mDialogue = t.match(/^\*\*([A-Z]+)\*\*:\s*(.*)/);
+      if (mDialogue) {
+        var name2 = mDialogue[1];
+        if (name2 === 'NARRATION') continue;
+        var text2 = mDialogue[2].replace(/^"(.*)"$/, '$1').trim();
+        if (name2 === 'YOU') {
+          html += '<p class="sep-you">' + esc(text2) + '</p>';
+        } else {
+          var displayName2 = name2.charAt(0).toUpperCase() + name2.slice(1).toLowerCase();
+          html += '<div class="sep-them"><span class="sep-them-name">' + esc(displayName2) + '</span><span class="sep-them-text">' + esc(text2) + '</span></div>';
+        }
+        continue;
+      }
+
+      // *narration* (italic stage direction at top level)
+      if (/^\*[^*]/.test(t) || (t.startsWith('*') && t.endsWith('*'))) {
+        var narr = t.replace(/^\*+|\*+$/g, '').trim();
+        if (narr && !/^\*\*/.test(raw.trim())) {
+          html += '<p class="sep-narr">' + esc(narr) + '</p>';
+        }
+        continue;
+      }
+
+      // **bold text** only (bold headers – skip)
+      if (/^\*\*.*\*\*$/.test(t)) continue;
+    }
+    return html;
+  }
+
+  function renderSpecialEpCurrent() {
+    var body = document.getElementById('special-ep-reader-body');
+    var choicesDiv = document.getElementById('special-ep-choices');
+    var continueBtn = document.getElementById('special-ep-continue');
+    if (!body) return;
+
+    if (_specialEpIdx >= _specialEpSegments.length) {
+      // End screen
+      var reward = gameState._specialEpPendingReward || 0;
+      if (reward) {
+        gameState.stats.COINS = (gameState.stats.COINS || 0) + reward;
+        gameState._specialEpPendingReward = 0;
+        try { saveGame(); } catch (e) { /* ignore */ }
+      }
+      body.innerHTML = '<div class="special-ep-end-screen">' +
+        '<p class="sep-narr" style="font-size:22px;margin-bottom:12px">✦</p>' +
+        '<h3>— End of Special Episode —</h3>' +
+        (reward ? '<p class="sep-narr">+' + reward + ' coins earned</p>' : '') +
+        '<button class="special-ep-end-btn" onclick="window.closeSpecialEpReader()">Continue</button>' +
+        '</div>';
+      if (choicesDiv) choicesDiv.style.display = 'none';
+      if (continueBtn) continueBtn.style.display = 'none';
+      body.scrollTop = 0;
+      return;
+    }
+
+    var seg = _specialEpSegments[_specialEpIdx];
+
+    if (_specialEpInOption) {
+      var optHtml = renderSpecialEpLines(_specialEpOptionLines);
+      body.innerHTML = optHtml || '<p class="sep-narr">…</p>';
+      body.scrollTop = 0;
+      if (choicesDiv) choicesDiv.style.display = 'none';
+      if (continueBtn) {
+        continueBtn.style.display = 'block';
+        continueBtn.textContent = 'continue';
+        continueBtn.onclick = function () {
+          _specialEpInOption = false;
+          _specialEpIdx++;
+          renderSpecialEpCurrent();
+        };
+      }
+      return;
+    }
+
+    if (seg.type === 'scene') {
+      var sceneHtml = renderSpecialEpLines(seg.lines);
+      if (!sceneHtml.trim()) {
+        _specialEpIdx++;
+        renderSpecialEpCurrent();
+        return;
+      }
+      body.innerHTML = sceneHtml;
+      body.scrollTop = 0;
+      if (choicesDiv) choicesDiv.style.display = 'none';
+      if (continueBtn) {
+        continueBtn.style.display = 'block';
+        continueBtn.textContent = 'continue';
+        continueBtn.onclick = function () {
+          _specialEpIdx++;
+          renderSpecialEpCurrent();
+        };
+      }
+    } else if (seg.type === 'choice') {
+      body.innerHTML = '';
+      body.scrollTop = 0;
+      if (choicesDiv) {
+        choicesDiv.style.display = 'flex';
+        choicesDiv.innerHTML = '';
+        seg.options.forEach(function (opt) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'special-ep-choice-btn';
+          btn.textContent = opt.label;
+          btn.onclick = (function (o) {
+            return function () {
+              _specialEpInOption = true;
+              _specialEpOptionLines = o.lines;
+              renderSpecialEpCurrent();
+            };
+          })(opt);
+          choicesDiv.appendChild(btn);
+        });
+      }
+      if (continueBtn) continueBtn.style.display = 'none';
+    }
+  }
+
+  window.closeSpecialEpReader = function () {
+    var reader = document.getElementById('special-ep-reader');
+    if (reader) { reader.classList.remove('show'); reader.setAttribute('aria-hidden', 'true'); }
+    if (typeof go === 'function') go(6);
+    if (typeof window.initReward === 'function') window.initReward();
+  };
+
+  // ── END SPECIAL EPISODE SYSTEM ──────────────────────────────────────
 
   function giftCurrentCost() {
     if (!giftPickType) return 0;
@@ -6059,16 +6367,14 @@
     if (skipEl) {
       skipEl.onclick = function () {
         hideGiftOverlay();
-        if (typeof go === 'function') go(6);
-        if (typeof window.initReward === 'function') window.initReward();
+        finishEpisodeFlow();
       };
     }
     var contEl = document.getElementById('gift-btn-continue');
     if (contEl) {
       contEl.onclick = function () {
         hideGiftOverlay();
-        if (typeof go === 'function') go(6);
-        if (typeof window.initReward === 'function') window.initReward();
+        finishEpisodeFlow();
       };
     }
   }

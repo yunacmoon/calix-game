@@ -1,11 +1,19 @@
-const CACHE = 'calix-v33';
+const CACHE = 'calix-v34';
 const ASSETS = [
   '/',
   '/index.html',
   '/calix-game.js',
   '/manifest.json',
   '/icon-192.png',
-  '/icon-512.png'
+  '/icon-512.png',
+  '/Context/scripts/ep_bonus10_kain.md',
+  '/Context/scripts/ep_bonus10_theo.md',
+  '/Context/scripts/ep_bonus10_jay.md',
+  '/Context/scripts/ep_bonus10_finn.md',
+  '/Context/scripts/ep_bonus20_kain.md',
+  '/Context/scripts/ep_bonus20_theo.md',
+  '/Context/scripts/ep_bonus20_jay.md',
+  '/Context/scripts/ep_bonus20_finn.md'
 ];
 
 self.addEventListener('install', function(e) {
