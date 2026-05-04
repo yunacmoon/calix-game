@@ -433,7 +433,7 @@
           title: String(beat.title).replace(/\*\*/g, ''),
           options: beat.options.map(function (o) {
             return Object.assign({}, o, {
-              label: String(o.label).replace(/\*\*/g, ''),
+              label: String(o.label).replace(/\*\*/g, '').replace(/^\*|\*$/g, '').trim(),
               body: String(o.body).replace(/\*\*/g, ''),
             });
           }),
