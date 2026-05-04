@@ -5861,14 +5861,18 @@
     if (typeof window.initReward === 'function') window.initReward();
   }
 
+  // Trust required to unlock each special episode (any single member must reach this)
+  var SPECIAL_EP_TRUST_REQ = { 10: 8, 20: 12 };
+
   function checkAndShowSpecialEpisodeUnlock() {
     var ep = Number(gameState.currentEpisodeN || 0);
-    var unlockCost = SPECIAL_EP_UNLOCKS[ep];
-    if (!unlockCost) return false;
+    var trustReq = SPECIAL_EP_TRUST_REQ[ep];
+    if (!trustReq) return false;
     var unlockKey = 'calix_special_ep' + ep + '_unlocked';
     if (localStorage.getItem(unlockKey)) return false;
-    var coins = gameState.stats.COINS || 0;
-    if (coins < unlockCost) return false;
+    var trustKeys = ['KAIN_TRUST', 'THEO_TRUST', 'JAY_TRUST', 'FINN_TRUST'];
+    var meetsReq = trustKeys.some(function (k) { return (gameState.stats[k] || 0) >= trustReq; });
+    if (!meetsReq) return false;
     showSpecialEpisodeMemberPicker(ep);
     return true;
   }
@@ -5882,7 +5886,7 @@
     var costEl = document.getElementById('special-ep-unlock-cost');
     if (titleEl) titleEl.textContent = cfg.title || ('Special Episode ' + ep);
     if (subEl) subEl.textContent = cfg.subtitle || '';
-    if (costEl) costEl.textContent = '🪙 ' + (SPECIAL_EP_UNLOCKS[ep] || 0) + ' coins to unlock';
+    if (costEl) costEl.textContent = '✨ Unlocked through trust';
     ov.setAttribute('data-ep', String(ep));
     ov.classList.add('show');
     ov.setAttribute('aria-hidden', 'false');
@@ -5894,14 +5898,10 @@
     var ep = parseInt(ov.getAttribute('data-ep'), 10);
     ov.classList.remove('show');
     ov.setAttribute('aria-hidden', 'true');
-    var cost = SPECIAL_EP_UNLOCKS[ep] || 0;
-    var prev = {};
-    Object.keys(gameState.stats).forEach(function (k) { prev[k] = gameState.stats[k]; });
-    gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - cost);
+    // No coin deduction — trust-based unlock is free
     localStorage.setItem('calix_special_ep' + ep + '_unlocked', '1');
     gameState._specialEpPendingReward = (SPECIAL_EP_CONFIG[ep] || {}).reward || 0;
     try { saveGame(); } catch (e) { /* ignore */ }
-    try { renderStatsSidebar(prev); } catch (e) { /* ignore */ }
     launchSpecialEpisode(ep, member.toLowerCase());
   };
 
@@ -6237,15 +6237,14 @@
   function refreshGiftUnlockTeaser() {
     var teaser = document.getElementById('gift-unlock-teaser');
     if (!teaser) return;
-    var coins = gameState.stats.COINS || 0;
-    var ep = gameState.currentEpisodeN || 1;
-    // Find the next special episode unlock that hasn't been used yet
-    var targetEp = null, targetCost = null;
-    var epKeys = Object.keys(SPECIAL_EP_UNLOCKS).map(Number).sort(function(a,b){return a-b;});
+    // Find the next special episode that hasn't been unlocked yet
+    var targetEp = null, targetTrustReq = null;
+    var epKeys = Object.keys(SPECIAL_EP_TRUST_REQ).map(Number).sort(function(a,b){return a-b;});
     for (var i = 0; i < epKeys.length; i++) {
       var k = epKeys[i];
-      var unlockKey = 'calix_special_ep' + k + '_unlocked';
-      if (!localStorage.getItem(unlockKey)) { targetEp = k; targetCost = SPECIAL_EP_UNLOCKS[k]; break; }
+      if (!localStorage.getItem('calix_special_ep' + k + '_unlocked')) {
+        targetEp = k; targetTrustReq = SPECIAL_EP_TRUST_REQ[k]; break;
+      }
     }
     if (!targetEp) { teaser.classList.remove('active'); return; }
     teaser.classList.add('active');
@@ -6254,16 +6253,19 @@
     var fillEl = document.getElementById('gift-unlock-fill');
     var remEl = document.getElementById('gift-unlock-remaining');
     if (titleEl) titleEl.textContent = 'Special Episode ' + targetEp;
-    if (coins >= targetCost) {
-      if (subEl) subEl.textContent = 'You have enough coins! Unlock it on the episode screen.';
+    // Find highest trust across all members
+    var trustKeys = ['KAIN_TRUST', 'THEO_TRUST', 'JAY_TRUST', 'FINN_TRUST'];
+    var maxTrust = Math.max.apply(null, trustKeys.map(function(k) { return gameState.stats[k] || 0; }));
+    var pct = Math.min(100, Math.round((maxTrust / targetTrustReq) * 100));
+    if (maxTrust >= targetTrustReq) {
+      if (subEl) subEl.textContent = 'Your bond is strong enough. Finish episode ' + targetEp + ' to unlock.';
       if (fillEl) fillEl.style.width = '100%';
       if (remEl) remEl.textContent = '✓ Ready to unlock';
     } else {
-      var pct = Math.min(100, Math.round((coins / targetCost) * 100));
-      var rem = targetCost - coins;
-      if (subEl) subEl.textContent = 'Save ' + targetCost + ' coins to unlock a bonus episode';
+      var rem = targetTrustReq - maxTrust;
+      if (subEl) subEl.textContent = 'Build trust to unlock a special episode';
       if (fillEl) fillEl.style.width = pct + '%';
-      if (remEl) remEl.textContent = rem + ' coins to go';
+      if (remEl) remEl.textContent = rem + ' more trust needed';
     }
   }
 
