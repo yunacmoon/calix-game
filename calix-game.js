@@ -1928,6 +1928,7 @@
   let giftPickMember = null;
   let giftPickType = null;
   let giftUiInitialized = false;
+  let lastTxtMember = null;  // member chosen in the most recent text moment
 
   function proceedFromRewardPopupToRewardScreen() {
     var TEXT_MOMENT_EPS = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
@@ -5799,6 +5800,7 @@
   function startTextConvo(ep, member) {
     var data = TEXT_MOMENTS[ep] && TEXT_MOMENTS[ep][member];
     if (!data) return;
+    lastTxtMember = member;  // remember who was texted for the gift screen
     var whoDiv = document.getElementById('txt-who');
     var phoneDiv = document.getElementById('txt-phone');
     var names = { KAIN:'Kain', THEO:'Theo', JAY:'Jay', FINN:'Finn' };
@@ -5994,6 +5996,13 @@
     if (pick) pick.classList.remove('gift-phase--hidden');
     resetGiftPickerUi();
     refreshGiftMemberCells();
+    // Pre-select the member the player just texted
+    if (lastTxtMember) {
+      var preCell = document.querySelector('.gift-member-cell[data-member="' + lastTxtMember + '"]');
+      if (preCell && !preCell.disabled) {
+        preCell.click();
+      }
+    }
     var ov = document.getElementById('gift-overlay');
     if (ov) {
       ov.classList.add('show');
