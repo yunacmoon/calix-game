@@ -990,7 +990,7 @@
     if (!badge) return;
     var display = candidateDisplayName();
     badge.innerHTML =
-      '<span id="nav-identity-name"><strong>You\'re ' +
+      '<span id="nav-identity-name"><strong>' +
       escapeHtml(display) +
       '</strong></span>';
   }
@@ -5862,7 +5862,7 @@
   }
 
   // Trust required to unlock each special episode (any single member must reach this)
-  var SPECIAL_EP_TRUST_REQ = { 10: 8, 20: 12 };
+  var SPECIAL_EP_TRUST_REQ = { 10: 5, 20: 10 };
 
   function checkAndShowSpecialEpisodeUnlock() {
     var ep = Number(gameState.currentEpisodeN || 0);
@@ -6663,9 +6663,9 @@
     const ns = document.getElementById('nav-step');
     if (ns) ns.textContent = stepLabels[idx];
     const bb = document.getElementById('btn-back');
-    if (bb) bb.disabled = idx === 0;
+    if (bb) bb.disabled = idx === 0 || idx >= 5;  // no back from episode/reward screens
     const bf = document.getElementById('btn-fwd');
-    if (bf) bf.disabled = idx === screens.length - 1;
+    if (bf) bf.disabled = idx >= 5;  // no forward arrow from episode/reward screens
     syncNavIdentity();
     const ds = document.getElementById('dev-select');
     if (ds) ds.value = idx;
