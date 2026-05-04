@@ -1872,55 +1872,50 @@
     }, 380);
   };
 
-  const GIFT_COST = 100;
+  const GIFT_COST_SMALL = 50;
+  const GIFT_COST_MEANINGFUL = 150;
+  const GIFT_MEANINGFUL_KEYS = ['polaroid','flowers','vinyl','journal'];
+  const SPECIAL_EP_UNLOCKS = { 10: 500, 20: 800 };  // ep → coins needed
   const GIFT_THANK_YOU = {
     KAIN: {
-      coffee: [
-        "Thanks. I needed this.",
-        "...You didn't have to do that.",
-        "Good timing. I was running low.",
-      ],
-      snacks: [
-        "I'll eat it after practice. Thanks.",
-        "Leaving some for you.",
-        "You keep doing this.",
-      ],
+      coffee:   ["Thanks. I needed this.", "...You didn't have to do that.", "Good timing. I was running low."],
+      candy:    ["I'll eat it after practice. Thanks.", "Leaving some for you.", "You keep doing this."],
+      energy:   ["Good. I needed one of these.", "You knew I was dragging today.", "This'll keep me going. Thank you."],
+      vitamin:  ["I keep forgetting to take these. Thanks.", "You actually pay attention. I noticed.", "...This was thoughtful."],
+      polaroid: ["...Where did you get this printed.", "I don't really keep things. I'm keeping this.", "I didn't think you'd notice that moment. But you did."],
+      flowers:  ["I don't know what to do with these. But I like them.", "Nobody's given me flowers before. This is strange.", "...They're from you. So I'll keep them."],
+      vinyl:    ["How did you know I had a record player.", "I've been looking for this one.", "...This means something. You know that, right."],
+      journal:  ["I'll use it. I mean that.", "You think I have things worth writing down.", "...Yeah. I do. Thank you."],
     },
     THEO: {
-      coffee: [
-        "Wait — this is for me? Genuinely, thank you.",
-        "I was dying for this. How did you know.",
-        "You didn't have to. But I'm really glad you did.",
-      ],
-      snacks: [
-        "You and snacks. Best combination.",
-        "These are my favorites. You actually noticed that.",
-        "I hadn't said anything but I was starving. Thank you.",
-      ],
+      coffee:   ["Wait — this is for me? Genuinely, thank you.", "I was dying for this. How did you know.", "You didn't have to. But I'm really glad you did."],
+      candy:    ["You and snacks. Best combination.", "These are my favorites. You actually noticed that.", "I hadn't said anything but I was starving. Thank you."],
+      energy:   ["I was literally about to crash. How did you know!!", "You're a lifesaver. Genuinely.", "I could cry. I needed this so badly."],
+      vitamin:  ["You're taking care of me 🥺 I love that.", "Nobody thinks about this stuff. You do.", "You actually noticed I forget these every day!!"],
+      polaroid: ["...This is us. This is actually us.", "I'm putting this on my wall right now. Right now.", "I didn't even know this was taken. I love it so much."],
+      flowers:  ["THESE ARE SO PRETTY THANK YOU", "I'm going to press one and keep it forever.", "Nobody's ever given me flowers. I'm going to cry a little."],
+      vinyl:    ["Wait this is the one I said I wanted!!! You remembered!!", "I've literally been looking for this.", "You actually listened. Thank you thank you thank you."],
+      journal:  ["I'll fill this with all the things I can't say out loud.", "Starting with what today felt like. With you in it.", "You think I have things worth keeping. That means a lot."],
     },
     JAY: {
-      coffee: [
-        "Oh — thanks. You didn't have to.",
-        "I'll drink it. Really, thank you.",
-        "Didn't expect this. That was thoughtful.",
-      ],
-      snacks: [
-        "We should eat together sometime. I'm serious.",
-        "I hadn't eaten yet. How did you know that.",
-        "Thanks. And I mean that, not just saying it.",
-      ],
+      coffee:   ["Oh — thanks. You didn't have to.", "I'll drink it. Really, thank you.", "Didn't expect this. That was thoughtful."],
+      candy:    ["We should eat together sometime. I'm serious.", "I hadn't eaten yet. How did you know that.", "Thanks. And I mean that, not just saying it."],
+      energy:   ["...I needed this. Thank you.", "You noticed I was fading. That's observant.", "I'll owe you one. I mean that."],
+      vitamin:  ["You thought about my health. That's — yeah. Thank you.", "I keep meaning to take these.", "...That was thoughtful. More than you know."],
+      polaroid: ["...I don't usually keep photos.", "This one I will. It's the angle.", "Where did you find this. I thought no one had it."],
+      flowers:  ["I wasn't expecting this.", "...I'll put them somewhere I'll see them.", "Dried ones last longer. You knew that."],
+      vinyl:    ["This is — you found this.", "I've had this on a list for two years.", "...Thank you. Genuinely."],
+      journal:  ["I already have three. Now I have four.", "The blank ones are the hardest.", "...I'll write something for you in it. Eventually."],
     },
     FINN: {
-      coffee: [
-        "This is so thoughtful. Thank you, seriously.",
-        "You got this for me? That actually means a lot.",
-        "I needed this more than you know. Thank you.",
-      ],
-      snacks: [
-        "How did you know I liked these? This is really kind.",
-        "You thought of me. I don't take that lightly.",
-        "I'd been thinking about these all day. Did you just know?",
-      ],
+      coffee:   ["This is so thoughtful. Thank you, seriously.", "You got this for me? That actually means a lot.", "I needed this more than you know. Thank you."],
+      candy:    ["How did you know I liked these? This is really kind.", "You thought of me. I don't take that lightly.", "I'd been thinking about these all day. Did you just know?"],
+      energy:   ["You saw I was tired even when I didn't say anything.", "Thank you. Really.", "I'll remember you gave me this."],
+      vitamin:  ["You noticed. That's the part that gets me.", "I'll take it right now. Watch.", "...You take care of people quietly. I see that."],
+      polaroid: ["...This is one of mine. How did you get a print of this.", "I took this on the first week. You kept it.", "I didn't know you had this. I'm glad you do."],
+      flowers:  ["I want to photograph these before they dry completely.", "...You gave me something worth keeping.", "I'll press one. Put it in the film case I always carry."],
+      vinyl:    ["I have a player in my room. Nobody knows that.", "This one I've been meaning to find for a while.", "...You know things about me I haven't said out loud."],
+      journal:  ["I use mine for contact sheets. Can I use this one for words?", "...I have things I want to say. Maybe now I will.", "You gave me somewhere to put things. Thank you."],
     },
   };
   const GIFT_MEMBER_LABEL = { KAIN: 'Kain', THEO: 'Theo', JAY: 'Jay', FINN: 'Finn' };
@@ -5927,9 +5922,31 @@
     return false;
   }
 
+  function giftCurrentCost() {
+    if (!giftPickType) return 0;
+    return GIFT_MEANINGFUL_KEYS.indexOf(giftPickType) !== -1 ? GIFT_COST_MEANINGFUL : GIFT_COST_SMALL;
+  }
+
   function updateGiftConfirmState() {
     var btn = document.getElementById('gift-btn-confirm');
-    if (btn) btn.disabled = !(giftPickMember && giftPickType);
+    var err = document.getElementById('gift-insufficient');
+    var cost = giftCurrentCost();
+    var coins = gameState.stats.COINS || 0;
+    var canAfford = cost > 0 && coins >= cost;
+    var ready = !!(giftPickMember && giftPickType);
+    if (btn) {
+      btn.disabled = !ready || !canAfford;
+      btn.textContent = ready ? 'Send gift — ' + cost + ' coins' : 'Send gift';
+    }
+    if (err) {
+      if (ready && !canAfford) err.classList.add('show');
+      else err.classList.remove('show');
+    }
+    // dim opts player can't afford
+    document.querySelectorAll('.gift-opt').forEach(function(el) {
+      var c = parseInt(el.getAttribute('data-cost') || '0', 10);
+      el.classList.toggle('gift-opt--cant-afford', c > coins);
+    });
   }
 
   function refreshGiftMemberCells() {
@@ -5986,6 +6003,39 @@
     resetGiftPickerUi();
   }
 
+  function refreshGiftUnlockTeaser() {
+    var teaser = document.getElementById('gift-unlock-teaser');
+    if (!teaser) return;
+    var coins = gameState.stats.COINS || 0;
+    var ep = gameState.currentEpisodeN || 1;
+    // Find the next special episode unlock that hasn't been used yet
+    var targetEp = null, targetCost = null;
+    var epKeys = Object.keys(SPECIAL_EP_UNLOCKS).map(Number).sort(function(a,b){return a-b;});
+    for (var i = 0; i < epKeys.length; i++) {
+      var k = epKeys[i];
+      var unlockKey = 'calix_special_ep' + k + '_unlocked';
+      if (!localStorage.getItem(unlockKey)) { targetEp = k; targetCost = SPECIAL_EP_UNLOCKS[k]; break; }
+    }
+    if (!targetEp) { teaser.classList.remove('active'); return; }
+    teaser.classList.add('active');
+    var titleEl = document.getElementById('gift-unlock-title');
+    var subEl = document.getElementById('gift-unlock-sub');
+    var fillEl = document.getElementById('gift-unlock-fill');
+    var remEl = document.getElementById('gift-unlock-remaining');
+    if (titleEl) titleEl.textContent = 'Special Episode ' + targetEp;
+    if (coins >= targetCost) {
+      if (subEl) subEl.textContent = 'You have enough coins! Unlock it on the episode screen.';
+      if (fillEl) fillEl.style.width = '100%';
+      if (remEl) remEl.textContent = '✓ Ready to unlock';
+    } else {
+      var pct = Math.min(100, Math.round((coins / targetCost) * 100));
+      var rem = targetCost - coins;
+      if (subEl) subEl.textContent = 'Save ' + targetCost + ' coins to unlock a bonus episode';
+      if (fillEl) fillEl.style.width = pct + '%';
+      if (remEl) remEl.textContent = rem + ' coins to go';
+    }
+  }
+
   function openGiftScreen() {
     gameState.lastGiftEpisode = Number(gameState.currentEpisodeN || gameState.lastGiftEpisode || 0) || 0;
     try { saveGame(); } catch (e) { /* ignore */ }
@@ -5996,6 +6046,13 @@
     if (pick) pick.classList.remove('gift-phase--hidden');
     resetGiftPickerUi();
     refreshGiftMemberCells();
+    // Update coin display
+    var coinDisplay = document.getElementById('gift-coin-display');
+    if (coinDisplay) coinDisplay.textContent = '🪙 ' + (gameState.stats.COINS || 0);
+    // Update unlock teaser
+    refreshGiftUnlockTeaser();
+    // Update afford states
+    updateGiftConfirmState();
     // Pre-select the member the player just texted
     if (lastTxtMember) {
       var preCell = document.querySelector('.gift-member-cell[data-member="' + lastTxtMember + '"]');
@@ -6044,30 +6101,30 @@
       confirmBtn.addEventListener('click', function () {
         if (!giftPickMember || !giftPickType) return;
         if (giftPickMember === gameState.lastGiftMember) return;
-        if ((gameState.stats.COINS || 0) < GIFT_COST) return;
+        var cost = giftCurrentCost();
+        if ((gameState.stats.COINS || 0) < cost) return;
 
         // Prevent double-purchase on rapid clicks.
         confirmBtn.disabled = true;
 
         var memberKey = String(giftPickMember || '').trim();
         var giftKey = String(giftPickType || '').trim();
+        var isMeaningful = GIFT_MEANINGFUL_KEYS.indexOf(giftKey) !== -1;
 
         var prev = {};
-        Object.keys(gameState.stats).forEach(function (k) {
-          prev[k] = gameState.stats[k];
-        });
+        Object.keys(gameState.stats).forEach(function (k) { prev[k] = gameState.stats[k]; });
 
-        gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - GIFT_COST);
+        gameState.stats.COINS = Math.max(0, (gameState.stats.COINS || 0) - cost);
         var tKey = memberKey + '_TRUST';
         if (gameState.stats[tKey] !== undefined) {
-          gameState.stats[tKey] = clampStat(tKey, (gameState.stats[tKey] || 0) + 1);
+          var trustGain = isMeaningful ? 2 : 1;
+          gameState.stats[tKey] = clampStat(tKey, (gameState.stats[tKey] || 0) + trustGain);
         }
         gameState.lastGiftMember = memberKey;
 
         try { saveGame(); } catch (e) { /* ignore */ }
         try { renderStatsSidebar(prev); } catch (e) { /* ignore */ }
 
-        // Always advance UI to thank-you, even if sidebar rendering fails.
         showGiftThanks(memberKey, giftKey);
       });
     }

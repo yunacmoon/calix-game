@@ -430,41 +430,66 @@ body::after {
 .kofi-skip { background:none; border:none; font-size:13px; color:#aaa; cursor:pointer; padding:4px 8px; }
 .rw-photocard-img { display:block; width:180px; aspect-ratio:3/4; object-fit:cover; border-radius:12px; margin:0 auto 8px; box-shadow:0 8px 28px rgba(107,79,216,0.22), 0 2px 8px rgba(0,0,61,0.10); }
 .rw-accessory-label { font-family:'Playfair Display',serif; font-size:16px; color:var(--ink-soft); margin-top:10px; line-height:1.4; }
-.gift-overlay { position:fixed; inset:0; z-index:1250; background:rgba(253,251,255,0.82); backdrop-filter:blur(14px); display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.35s; }
+/* ── Gift overlay ─────────────────────────────────── */
+.gift-overlay { position:fixed; inset:0; z-index:1250; background:rgba(253,251,255,0.82); backdrop-filter:blur(14px); display:flex; align-items:center; justify-content:center; padding:16px; opacity:0; pointer-events:none; transition:opacity 0.35s; }
 .gift-overlay.show { opacity:1; pointer-events:auto; }
-.gift-panel { background:#fff; border:1px solid rgba(151,125,255,0.35); border-radius:18px; padding:32px 28px; max-width:440px; width:100%; box-shadow:0 12px 40px rgba(80,60,120,0.12); }
-.gift-panel h2 { font-size:13px; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-muted); margin:0 0 8px; font-weight:600; }
-.gift-panel .gift-lead { font-size:15px; color:var(--ink-soft); margin:0 0 20px; line-height:1.55; }
+.gift-panel { background:#fff; border:1px solid rgba(151,125,255,0.3); border-radius:20px; padding:0; max-width:440px; width:100%; box-shadow:0 16px 48px rgba(80,60,120,0.14); overflow:hidden; max-height:90vh; overflow-y:auto; }
 .gift-phase--hidden { display:none !important; }
-.gift-member-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:20px; }
-.gift-member-cell { appearance:none; border:2px solid rgba(0,0,61,0.1); border-radius:14px; padding:0; overflow:hidden; cursor:pointer; background:#fafafa; transition:border-color 0.2s, opacity 0.2s; }
+
+/* coin balance bar */
+.gift-coin-bar { display:flex; align-items:center; justify-content:space-between; padding:18px 24px 14px; border-bottom:1px solid rgba(0,0,61,0.07); }
+.gift-coin-bar-label { font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-muted); font-weight:600; }
+.gift-coin-bar-val { font-size:22px; font-weight:700; color:var(--ink); font-family:'Playfair Display',serif; letter-spacing:-0.01em; }
+
+/* special unlock teaser */
+.gift-unlock-teaser { margin:16px 20px; background:linear-gradient(135deg,#f5f0ff,#ebe3ff); border:1.5px solid rgba(151,125,255,0.35); border-radius:14px; padding:14px 16px; display:none; }
+.gift-unlock-teaser.active { display:block; }
+.gift-unlock-top { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+.gift-unlock-icon { font-size:20px; flex-shrink:0; }
+.gift-unlock-title { font-size:13px; font-weight:700; color:#3d2080; margin:0 0 2px; }
+.gift-unlock-sub { font-size:12px; color:#6b4fcc; margin:0; line-height:1.4; }
+.gift-unlock-track { height:6px; background:rgba(151,125,255,0.2); border-radius:99px; overflow:hidden; margin-bottom:6px; }
+.gift-unlock-fill { height:100%; background:linear-gradient(90deg,#977DFF,#6B4FD8); border-radius:99px; transition:width 0.5s ease; }
+.gift-unlock-remaining { font-size:11px; color:#7c5fcc; margin:0; text-align:right; }
+.gift-unlock-done { font-size:13px; font-weight:700; color:#3d2080; text-align:center; padding:4px 0 2px; }
+
+/* select phase body */
+.gift-select-body { padding:20px 24px 24px; }
+.gift-select-body h2 { font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-muted); margin:0 0 16px; font-weight:600; }
+
+/* member grid */
+.gift-member-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:20px; }
+.gift-member-cell { appearance:none; border:2px solid rgba(0,0,61,0.1); border-radius:14px; padding:0; overflow:hidden; cursor:pointer; background:#fafafa; transition:border-color 0.2s, opacity 0.2s, transform 0.15s; }
 .gift-member-cell img { display:block; width:100%; aspect-ratio:1; object-fit:cover; }
-.gift-member-cell.gift-member--selected { border-color:var(--purple-mid); box-shadow:0 0 0 2px rgba(151,125,255,0.25); }
-.gift-member-cell.gift-member--blocked { opacity:0.38; cursor:not-allowed; pointer-events:none; }
-.gift-opts { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; }
-.gift-opt { flex:1; min-width:120px; padding:12px 14px; border-radius:12px; border:2px solid rgba(0,0,61,0.12); background:#fff; font:inherit; font-size:14px; font-weight:600; color:var(--ink); cursor:pointer; transition:border-color 0.2s, background 0.2s; }
-.gift-opt .gift-opt-meta { display:block; font-size:12px; font-weight:500; color:var(--ink-muted); margin-top:4px; }
-.gift-opt.gift-opt--selected { border-color:var(--purple-mid); background:linear-gradient(135deg,#F8F4FF,#F0EAFF); }
-#gift-btn-confirm { width:100%; }
-#gift-btn-skip {
-  width:100%;
-  margin-top:14px;
-  padding:14px 20px;
-  background:transparent;
-  border:1px solid rgba(0,0,61,0.12);
-  border-radius:12px;
-  font:inherit;
-  font-size:14px;
-  font-weight:500;
-  color:var(--ink-soft);
-  cursor:pointer;
-  transition:border-color 0.2s, color 0.2s;
-}
+.gift-member-cell.gift-member--selected { border-color:var(--purple-mid); box-shadow:0 0 0 3px rgba(151,125,255,0.22); transform:scale(1.03); }
+.gift-member-cell.gift-member--blocked { opacity:0.32; cursor:not-allowed; pointer-events:none; }
+
+/* tier sections */
+.gift-tier-section { margin-bottom:16px; }
+.gift-tier-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.gift-tier-name { font-size:12px; font-weight:700; color:var(--ink-soft); letter-spacing:0.06em; text-transform:uppercase; }
+.gift-tier-cost { font-size:12px; font-weight:600; color:var(--purple-mid); background:rgba(151,125,255,0.12); padding:3px 9px; border-radius:99px; }
+.gift-opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.gift-opt { appearance:none; padding:11px 12px; border-radius:12px; border:2px solid rgba(0,0,61,0.1); background:#fafafa; font:inherit; font-size:13px; font-weight:600; color:var(--ink); cursor:pointer; transition:border-color 0.2s, background 0.15s, transform 0.12s; text-align:left; line-height:1.3; }
+.gift-opt-emoji { display:block; font-size:22px; margin-bottom:4px; }
+.gift-opt-name { display:block; }
+.gift-opt.gift-opt--selected { border-color:var(--purple-mid); background:linear-gradient(135deg,#F8F4FF,#EEE6FF); transform:scale(1.02); }
+.gift-opt.gift-opt--cant-afford { opacity:0.45; }
+
+/* insufficient coins */
+.gift-insufficient { font-size:13px; color:#c0392b; background:#fff5f5; border:1px solid #fcc; border-radius:10px; padding:10px 14px; margin:0 0 14px; display:none; text-align:center; }
+.gift-insufficient.show { display:block; }
+
+/* confirm / skip buttons */
+#gift-btn-confirm { width:100%; margin-bottom:0; }
+#gift-btn-skip { width:100%; margin-top:12px; padding:14px 20px; background:transparent; border:1px solid rgba(0,0,61,0.1); border-radius:12px; font:inherit; font-size:14px; font-weight:500; color:var(--ink-soft); cursor:pointer; transition:border-color 0.2s, color 0.2s; }
 #gift-btn-skip:hover { border-color:rgba(151,125,255,0.4); color:var(--purple-mid); }
-.gift-thanks-inner { text-align:left; }
+
+/* thanks phase */
+.gift-thanks-inner { text-align:left; padding:24px 24px 8px; }
 #gift-msg-name { font-size:13px; font-weight:600; color:var(--ink-soft); margin:0 0 8px 4px; }
 .gift-imessage-bubble { display:inline-block; max-width:100%; background:#1c1c1e; color:#fff; border-radius:18px; border-bottom-left-radius:4px; padding:14px 16px; font-size:16px; line-height:1.45; box-shadow:0 2px 8px rgba(0,0,0,0.12); margin-bottom:20px; }
-#gift-btn-continue { width:100%; margin-top:8px; }
+#gift-btn-continue { width:100%; margin:0 24px 24px; width:calc(100% - 48px); }
 .candidate-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -901,22 +926,79 @@ body::after {
 <!-- GIFT (between episode reward popup and reward screen) -->
 <div class="gift-overlay" id="gift-overlay" aria-hidden="true">
   <div class="gift-panel">
-    <div id="gift-phase-select">
-      <h2>Send a gift</h2>
-      <p class="gift-lead">Pick a member and a gift. Each costs 100 coins.</p>
-      <div class="gift-member-grid">
-        <button type="button" class="gift-member-cell" data-member="KAIN"><img src="Images/01_Current members/Kain_Intro.png" alt="Kain"></button>
-        <button type="button" class="gift-member-cell" data-member="THEO"><img src="Images/01_Current members/Theo_Intro.png" alt="Theo"></button>
-        <button type="button" class="gift-member-cell" data-member="JAY"><img src="Images/01_Current members/Jay_Intro.png" alt="Jay"></button>
-        <button type="button" class="gift-member-cell" data-member="FINN"><img src="Images/01_Current members/Finn_Intro.png" alt="Finn"></button>
-      </div>
-      <div class="gift-opts">
-        <button type="button" class="gift-opt" data-gift="coffee">Coffee<span class="gift-opt-meta">100 coins</span></button>
-        <button type="button" class="gift-opt" data-gift="snacks">Snacks<span class="gift-opt-meta">100 coins</span></button>
-      </div>
-      <button type="button" class="btn-solid" id="gift-btn-confirm" disabled>Confirm</button>
-      <button type="button" id="gift-btn-skip">Maybe next time</button>
+
+    <!-- Coin balance -->
+    <div class="gift-coin-bar">
+      <span class="gift-coin-bar-label">Your coins</span>
+      <span class="gift-coin-bar-val" id="gift-coin-display">🪙 0</span>
     </div>
+
+    <!-- Special episode unlock teaser -->
+    <div class="gift-unlock-teaser" id="gift-unlock-teaser">
+      <div class="gift-unlock-top">
+        <span class="gift-unlock-icon">🔓</span>
+        <div>
+          <p class="gift-unlock-title" id="gift-unlock-title">Special Episode 10</p>
+          <p class="gift-unlock-sub" id="gift-unlock-sub">Save up to unlock a bonus episode</p>
+        </div>
+      </div>
+      <div class="gift-unlock-track">
+        <div class="gift-unlock-fill" id="gift-unlock-fill" style="width:0%"></div>
+      </div>
+      <p class="gift-unlock-remaining" id="gift-unlock-remaining"></p>
+    </div>
+
+    <!-- Select phase -->
+    <div id="gift-phase-select">
+      <div class="gift-select-body">
+        <h2>Send a gift</h2>
+
+        <!-- Member grid -->
+        <div class="gift-member-grid">
+          <button type="button" class="gift-member-cell" data-member="KAIN"><img src="Images/01_Current members/Kain_Intro.png" alt="Kain"></button>
+          <button type="button" class="gift-member-cell" data-member="THEO"><img src="Images/01_Current members/Theo_Intro.png" alt="Theo"></button>
+          <button type="button" class="gift-member-cell" data-member="JAY"><img src="Images/01_Current members/Jay_Intro.png" alt="Jay"></button>
+          <button type="button" class="gift-member-cell" data-member="FINN"><img src="Images/01_Current members/Finn_Intro.png" alt="Finn"></button>
+        </div>
+
+        <!-- Small gifts: 50 coins -->
+        <div class="gift-tier-section">
+          <div class="gift-tier-header">
+            <span class="gift-tier-name">Small gift</span>
+            <span class="gift-tier-cost">50 coins</span>
+          </div>
+          <div class="gift-opts">
+            <button type="button" class="gift-opt" data-gift="candy" data-cost="50"><span class="gift-opt-emoji">🍬</span><span class="gift-opt-name">Candy</span></button>
+            <button type="button" class="gift-opt" data-gift="coffee" data-cost="50"><span class="gift-opt-emoji">☕</span><span class="gift-opt-name">Coffee</span></button>
+            <button type="button" class="gift-opt" data-gift="energy" data-cost="50"><span class="gift-opt-emoji">⚡</span><span class="gift-opt-name">Energy drink</span></button>
+            <button type="button" class="gift-opt" data-gift="vitamin" data-cost="50"><span class="gift-opt-emoji">🌟</span><span class="gift-opt-name">Vitamin jelly</span></button>
+          </div>
+        </div>
+
+        <!-- Meaningful gifts: 150 coins -->
+        <div class="gift-tier-section">
+          <div class="gift-tier-header">
+            <span class="gift-tier-name">Meaningful gift</span>
+            <span class="gift-tier-cost">150 coins</span>
+          </div>
+          <div class="gift-opts">
+            <button type="button" class="gift-opt" data-gift="polaroid" data-cost="150"><span class="gift-opt-emoji">📸</span><span class="gift-opt-name">Polaroid print</span></button>
+            <button type="button" class="gift-opt" data-gift="flowers" data-cost="150"><span class="gift-opt-emoji">🌸</span><span class="gift-opt-name">Dried flowers</span></button>
+            <button type="button" class="gift-opt" data-gift="vinyl" data-cost="150"><span class="gift-opt-emoji">🎵</span><span class="gift-opt-name">Vinyl record</span></button>
+            <button type="button" class="gift-opt" data-gift="journal" data-cost="150"><span class="gift-opt-emoji">📓</span><span class="gift-opt-name">Leather journal</span></button>
+          </div>
+        </div>
+
+        <!-- Not enough coins error -->
+        <p class="gift-insufficient" id="gift-insufficient">Not enough coins for this gift 🥲</p>
+
+        <!-- Buttons -->
+        <button type="button" class="btn-solid" id="gift-btn-confirm" disabled>Send gift</button>
+        <button type="button" id="gift-btn-skip">Maybe next time</button>
+      </div>
+    </div>
+
+    <!-- Thanks phase -->
     <div id="gift-phase-thanks" class="gift-phase--hidden">
       <div class="gift-thanks-inner">
         <p id="gift-msg-name"></p>
@@ -924,6 +1006,7 @@ body::after {
       </div>
       <button type="button" class="btn-solid" id="gift-btn-continue">Continue →</button>
     </div>
+
   </div>
 </div>
 
