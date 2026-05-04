@@ -410,10 +410,11 @@ body::after {
 @keyframes bubblePop { from { opacity:0; transform:scale(0.92) translateY(4px); } to { opacity:1; transform:none; } }
 
 /* message choice (draft options) */
-.txt-draft-area { padding:12px 16px 20px; border-top:1px solid #f2f2f7; display:flex; flex-direction:column; gap:8px; }
-.txt-draft-btn { background:#f2f2f7; border:none; border-radius:18px; padding:10px 16px; font-family:'Rethink Sans',sans-serif; font-size:14px; color:#1c1c1e; text-align:left; cursor:pointer; transition:background 0.15s; }
-.txt-draft-btn:active { background:#e5e5ea; }
-.txt-draft-label { font-size:11px; color:#8e8e93; text-align:center; font-family:'Rethink Sans',sans-serif; margin-bottom:2px; }
+.txt-draft-area { padding:12px 16px 20px; border-top:1px solid #f2f2f7; display:flex; flex-direction:column; gap:6px; }
+.txt-draft-label { font-size:14px; color:#8e8e93; text-align:center; font-family:'Rethink Sans',sans-serif; margin-bottom:8px; letter-spacing:0.02em; }
+.txt-draft-bubble-wrap { display:flex; justify-content:flex-end; }
+.txt-draft-bubble { background:#e8e3ff; border:1.5px solid #977DFF; border-radius:18px 18px 4px 18px; padding:12px 18px; font-family:'Rethink Sans',sans-serif; font-size:16px; color:#3d2080; text-align:left; cursor:pointer; transition:background 0.15s, transform 0.1s; max-width:85%; line-height:1.45; }
+.txt-draft-bubble:active { background:#d4caff; transform:scale(0.98); }
 .txt-continue-btn { width:calc(100% - 32px); margin:12px 16px 20px; background:#6B4FD8; color:#fff; border:none; border-radius:20px; padding:14px; font-family:'Rethink Sans',sans-serif; font-size:14px; font-weight:600; cursor:pointer; letter-spacing:0.04em; }
 .txt-trust-pill { font-size:12px; color:#6B4FD8; text-align:center; padding:4px 0 8px; font-family:'Rethink Sans',sans-serif; }
 /* ── KO-FI ── */

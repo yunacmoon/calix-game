@@ -5818,7 +5818,7 @@
     draftArea.className = 'txt-draft-area';
     var lbl = document.createElement('p');
     lbl.className = 'txt-draft-label';
-    lbl.textContent = '뭐라고 텍스트 보낼래?';
+    lbl.textContent = 'What do you want to text?';
     draftArea.appendChild(lbl);
     data.options.forEach(function(opt, i) {
       var wrap = document.createElement('div');
