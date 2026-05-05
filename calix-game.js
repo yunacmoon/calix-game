@@ -6794,6 +6794,18 @@
         return;
       }
     }
+    // URL preview param: ?preview=special10&member=finn
+    var urlParams = new URLSearchParams(window.location.search);
+    var preview = urlParams.get('preview');
+    var previewMember = (urlParams.get('member') || 'finn').toLowerCase();
+    if (preview === 'special10' || preview === 'special20') {
+      var previewEp = preview === 'special10' ? 10 : 20;
+      var splash2 = document.getElementById('splash-screen');
+      if (splash2) splash2.style.display = 'none';
+      setTimeout(function() { launchSpecialEpisode(previewEp, previewMember); }, 300);
+      return;
+    }
+
     window.showScreen(0);
 
     // Dismiss splash screen
