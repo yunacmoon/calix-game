@@ -32,7 +32,7 @@
 
 *You stare at the screen.*
 
-> **THEO:** i have a car and a playlist and i really really want 회
+> **THEO:** i have a car and a playlist and i really really want raw fish
 > **THEO:** please say yes i've been thinking about this since tuesday
 
 *You get dressed.*
@@ -114,7 +114,7 @@
 >
 > *A small pause. A different gear.*
 >
-> **THEO:** "The 회 is really fresh. Like. Actually fresh. And they give you so much."
+> **THEO:** "The raw fish is really fresh. Like. Actually fresh. And they give you so much."
 >
 > **YOU:** "Is that why we're going?"
 >
@@ -155,7 +155,7 @@
 >
 > *He's still for almost a full minute. That's longer than usual.*
 
-**THEO:** "Okay. 회 time."
+**THEO:** "Okay. raw fish time."
 
 ---
 
@@ -163,7 +163,7 @@
 
 *The restaurant is small. Eight tables. A tank of fish near the entrance. The owner comes out and Theo immediately compliments something about the setup and the owner looks pleased.*
 
-*The 회 comes out on a wide platter — white flesh, bright against the ice, sesame leaves, fermented soybean paste.*
+*The raw fish comes out on a wide platter — white flesh, bright against the ice, sesame leaves, fermented soybean paste.*
 
 *Theo eats immediately. And with enthusiasm.*
 

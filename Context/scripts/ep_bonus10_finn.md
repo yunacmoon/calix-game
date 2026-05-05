@@ -150,7 +150,7 @@
 
 ## SCENE 3 — THE RESTAURANT
 
-*The restaurant is small. Eight tables. He orders 회 without deliberating — he's been here before, he knows what's good.*
+*The restaurant is small. Eight tables. He orders raw fish without deliberating — he's been here before, he knows what's good.*
 
 *The platter comes out. Wide, cold, fresh.*
 

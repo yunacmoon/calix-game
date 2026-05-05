@@ -167,7 +167,7 @@
 
 ## SCENE 3 — THE RESTAURANT
 
-*The restaurant is small. Eight tables. He orders without looking at the menu — he's clearly thought about this. The 회 comes out on a wide platter, fresh, cold.*
+*The restaurant is small. Eight tables. He orders without looking at the menu — he's clearly thought about this. The raw fish comes out on a wide platter, fresh, cold.*
 
 *He eats carefully. He pays attention to what he's eating in a way that feels deliberate, like everything else he does.*
 

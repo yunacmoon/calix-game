@@ -507,27 +507,36 @@ body::after {
 .special-ep-skip-btn { background:none; border:none; color:rgba(255,255,255,0.35); font-size:13px; cursor:pointer; padding:8px 16px; text-decoration:underline; }
 
 /* ── Special Episode Reader ──────────────────────────────────── */
-.special-ep-reader { position:fixed; inset:0; z-index:1600; background:#0e0b1a; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.5s; }
+/* ── Special Episode Reader — Light mode ────────────────────── */
+.special-ep-reader { position:fixed; inset:0; z-index:1600; background:#fdfcff; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.5s; }
 .special-ep-reader.show { opacity:1; pointer-events:auto; }
-.special-ep-reader-header { display:flex; align-items:center; gap:12px; padding:max(18px,env(safe-area-inset-top)) 20px 12px; border-bottom:1px solid rgba(255,255,255,0.07); flex-shrink:0; }
-.special-ep-close { background:none; border:none; color:rgba(255,255,255,0.45); font-size:20px; line-height:1; cursor:pointer; padding:2px 8px; }
-.special-ep-reader-label { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(255,255,255,0.35); flex:1; }
-.special-ep-reader-body { flex:1; overflow-y:auto; padding:28px 24px 16px; color:#fff; -webkit-overflow-scrolling:touch; }
-.sep-narr { color:rgba(255,255,255,0.5); font-style:italic; font-size:15px; line-height:1.75; margin:0 0 18px; }
-.sep-them { margin:0 0 20px; }
-.sep-them-name { display:block; font-size:10px; letter-spacing:0.13em; text-transform:uppercase; color:#c9b8ff; margin-bottom:4px; }
-.sep-them-text { font-size:16px; color:#e8e0ff; line-height:1.6; }
-.sep-you { color:rgba(255,255,255,0.65); font-style:italic; font-size:15px; line-height:1.6; margin:0 0 18px; text-align:right; padding-left:40px; }
-.special-ep-reader-footer { padding:12px 20px max(20px,env(safe-area-inset-bottom)); border-top:1px solid rgba(255,255,255,0.07); flex-shrink:0; }
+/* Falling stars */
+.special-ep-stars { position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:0; }
+.sep-star { position:absolute; top:-20px; color:rgba(151,125,255,0.2); animation:sep-star-fall linear infinite; }
+@keyframes sep-star-fall { 0%{transform:translateY(0) rotate(0deg);opacity:0} 8%{opacity:1} 88%{opacity:1} 100%{transform:translateY(110vh) rotate(180deg);opacity:0} }
+/* Header */
+.special-ep-reader-header { position:relative; z-index:1; display:flex; align-items:center; gap:12px; padding:max(18px,env(safe-area-inset-top)) 20px 12px; border-bottom:1px solid rgba(107,79,216,0.1); flex-shrink:0; background:rgba(253,252,255,0.92); backdrop-filter:blur(8px); }
+.special-ep-close { background:none; border:none; color:rgba(26,26,46,0.35); font-size:20px; line-height:1; cursor:pointer; padding:2px 8px; }
+.special-ep-reader-label { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(26,26,46,0.28); flex:1; }
+/* Body */
+.special-ep-reader-body { flex:1; overflow-y:auto; padding:32px 28px 20px; -webkit-overflow-scrolling:touch; position:relative; z-index:1; }
+.sep-narr { color:rgba(26,26,46,0.42); font-style:italic; font-size:16px; line-height:1.85; margin:0 0 22px; }
+.sep-them { margin:0 0 26px; }
+.sep-them-name { display:block; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#7B5FD8; margin-bottom:6px; font-weight:600; }
+.sep-them-text { font-size:20px; color:#1a1a2e; line-height:1.6; font-weight:400; }
+.sep-you { color:rgba(26,26,46,0.48); font-style:italic; font-size:17px; line-height:1.65; margin:0 0 22px; text-align:right; padding-left:48px; }
+/* Footer */
+.special-ep-reader-footer { position:relative; z-index:1; padding:12px 20px max(20px,env(safe-area-inset-bottom)); border-top:1px solid rgba(107,79,216,0.1); flex-shrink:0; background:rgba(253,252,255,0.92); backdrop-filter:blur(8px); }
 .special-ep-choices { display:flex; flex-direction:column; gap:10px; }
-.special-ep-choice-btn { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.14); border-radius:13px; padding:14px 16px; color:#e8e0ff; font-size:14px; line-height:1.45; cursor:pointer; text-align:left; transition:background 0.2s, border-color 0.2s; width:100%; }
-.special-ep-choice-btn:hover { background:rgba(200,180,255,0.12); border-color:rgba(200,180,255,0.35); }
-.special-ep-continue-btn { width:100%; background:none; border:none; color:rgba(255,255,255,0.3); font-size:13px; cursor:pointer; padding:12px; text-align:center; letter-spacing:0.06em; }
-.special-ep-end-screen { text-align:center; padding:48px 0 24px; }
-.special-ep-end-screen h3 { color:#c9b8ff; font-size:20px; font-weight:400; margin:0 0 10px; letter-spacing:0.02em; }
-.special-ep-end-screen .sep-narr { font-size:14px; margin-bottom:28px; }
-.special-ep-end-btn { background:rgba(200,180,255,0.12); border:1px solid rgba(200,180,255,0.28); border-radius:13px; padding:14px 36px; color:#e8e0ff; font-size:15px; cursor:pointer; transition:background 0.2s; }
-.special-ep-end-btn:hover { background:rgba(200,180,255,0.2); }
+.special-ep-choice-btn { background:rgba(107,79,216,0.05); border:1.5px solid rgba(107,79,216,0.18); border-radius:13px; padding:16px 18px; color:#1a1a2e; font-size:16px; line-height:1.5; cursor:pointer; text-align:left; transition:background 0.2s, border-color 0.2s; width:100%; }
+.special-ep-choice-btn:hover { background:rgba(107,79,216,0.1); border-color:rgba(107,79,216,0.3); }
+.special-ep-continue-btn { width:100%; background:none; border:none; color:rgba(26,26,46,0.22); font-size:13px; cursor:pointer; padding:12px; text-align:center; letter-spacing:0.07em; }
+/* End screen */
+.special-ep-end-screen { text-align:center; padding:56px 0 24px; }
+.special-ep-end-screen h3 { color:#7B5FD8; font-size:22px; font-weight:400; margin:0 0 12px; letter-spacing:0.02em; }
+.special-ep-end-screen .sep-narr { font-size:15px; margin-bottom:32px; }
+.special-ep-end-btn { background:rgba(107,79,216,0.07); border:1.5px solid rgba(107,79,216,0.22); border-radius:13px; padding:14px 40px; color:#1a1a2e; font-size:16px; cursor:pointer; transition:background 0.2s; }
+.special-ep-end-btn:hover { background:rgba(107,79,216,0.14); }
 
 .candidate-grid {
   display: grid;
@@ -1079,6 +1088,7 @@ body::after {
 
 <!-- Special Episode: Reader -->
 <div class="special-ep-reader" id="special-ep-reader" aria-hidden="true">
+  <div class="special-ep-stars" id="special-ep-stars"></div>
   <div class="special-ep-reader-header">
     <button type="button" class="special-ep-close" onclick="closeSpecialEpReader()">✕</button>
     <span class="special-ep-reader-label" id="special-ep-reader-label">Special Episode</span>

@@ -5919,6 +5919,7 @@
     var body = document.getElementById('special-ep-reader-body');
     if (body) body.innerHTML = '<p style="color:rgba(255,255,255,0.4);text-align:center;padding-top:60px;font-style:italic;">Loading…</p>';
     if (reader) { reader.classList.add('show'); reader.setAttribute('aria-hidden', 'false'); }
+    initSpecialEpStars();
     fetch(fname)
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -5981,7 +5982,7 @@
           options.push({ label: currentLabel, lines: currentLines.slice() });
           currentLines = [];
         }
-        currentLabel = t.replace(/^\*\*OPTION\s+[AB]\*\*:\s*/i, '').replace(/^\*+|\*+$/g, '').trim();
+        currentLabel = t.replace(/^\*\*OPTION\s+[AB]\*\*:\s*/i, '').replace(/^\*+|\*+$/g, '').replace(/^"+|"+$/g, '').trim();
       } else if (currentLabel !== null) {
         if (/^---+$/.test(t) && currentLines.filter(function (l) { return l.trim(); }).length === 0) continue;
         currentLines.push(lines[i]);
@@ -5998,62 +5999,79 @@
     function esc(s) {
       return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
+    function clean(s) {
+      // strip outer double-quotes and asterisks
+      return s.replace(/^["]+|["]+$/g, '').replace(/^\*+|\*+$/g, '').trim();
+    }
+    function mName(k) {
+      return k.charAt(0).toUpperCase() + k.slice(1).toLowerCase();
+    }
+    function emitDialogue(name, text) {
+      if (!text) return;
+      if (name === 'YOU') {
+        html += '<p class="sep-you">' + esc(text) + '</p>';
+      } else {
+        html += '<div class="sep-them"><span class="sep-them-name">' + esc(mName(name)) + '</span><span class="sep-them-text">' + esc(text) + '</span></div>';
+      }
+    }
+
     for (var i = 0; i < lines.length; i++) {
-      var raw = lines[i];
-      var t = raw.trim();
-      if (!t || /^---+$/.test(t)) continue;
+      var t = lines[i].trim();
+      if (!t || /^-{3,}$/.test(t)) continue;
 
-      // > **NAME:** text
-      var mQuoteDialogue = t.match(/^>\s+\*\*([A-Z]+)\*\*:\s*(.*)/);
-      if (mQuoteDialogue) {
-        var name = mQuoteDialogue[1];
-        var text = mQuoteDialogue[2].replace(/^"(.*)"$/, '$1').replace(/^\*+|\*+$/g, '').trim();
-        if (name === 'YOU') {
-          html += '<p class="sep-you">' + esc(text) + '</p>';
-        } else if (name === 'NARRATION') {
-          // skip the label line; following > lines are narration
-        } else {
-          var displayName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-          html += '<div class="sep-them"><span class="sep-them-name">' + esc(displayName) + '</span><span class="sep-them-text">' + esc(text) + '</span></div>';
+      // ── Blockquote lines (start with >) ──────────────────────
+      if (t.charAt(0) === '>') {
+        var bInner = t.replace(/^>\s*/, '');
+        // > **NAME:** dialogue
+        var bm = bInner.match(/^\*\*([A-Z]+)\*\*:?\s*(.*)/);
+        if (bm) {
+          var bName = bm[1], bText = clean(bm[2]);
+          if (bName !== 'NARRATION') emitDialogue(bName, bText);
+        } else if (bInner.trim()) {
+          // > *narration* or > plain text
+          var bNarr = bInner.replace(/^\*+|\*+$/g, '').trim();
+          if (bNarr) html += '<p class="sep-narr">' + esc(bNarr) + '</p>';
         }
         continue;
       }
 
-      // > *narration* or > plain
-      if (/^>\s+/.test(t)) {
-        var inner = t.replace(/^>\s+/, '').replace(/^\*+|\*+$/g, '').trim();
-        if (inner) html += '<p class="sep-narr">' + esc(inner) + '</p>';
+      // ── Top-level **NAME:** dialogue ──────────────────────────
+      var dm = t.match(/^\*\*([A-Z]+)\*\*:?\s*(.*)/);
+      if (dm) {
+        var dName = dm[1], dText = clean(dm[2]);
+        if (dName !== 'NARRATION') emitDialogue(dName, dText);
         continue;
       }
 
-      // **NAME:** "dialogue" (non-blockquote)
-      var mDialogue = t.match(/^\*\*([A-Z]+)\*\*:\s*(.*)/);
-      if (mDialogue) {
-        var name2 = mDialogue[1];
-        if (name2 === 'NARRATION') continue;
-        var text2 = mDialogue[2].replace(/^"(.*)"$/, '$1').trim();
-        if (name2 === 'YOU') {
-          html += '<p class="sep-you">' + esc(text2) + '</p>';
-        } else {
-          var displayName2 = name2.charAt(0).toUpperCase() + name2.slice(1).toLowerCase();
-          html += '<div class="sep-them"><span class="sep-them-name">' + esc(displayName2) + '</span><span class="sep-them-text">' + esc(text2) + '</span></div>';
-        }
-        continue;
-      }
-
-      // *narration* (italic stage direction at top level)
-      if (/^\*[^*]/.test(t) || (t.startsWith('*') && t.endsWith('*'))) {
+      // ── *stage direction* (single asterisk wrap) ──────────────
+      if (t.charAt(0) === '*' && t.charAt(1) !== '*') {
         var narr = t.replace(/^\*+|\*+$/g, '').trim();
-        if (narr && !/^\*\*/.test(raw.trim())) {
-          html += '<p class="sep-narr">' + esc(narr) + '</p>';
-        }
+        if (narr) html += '<p class="sep-narr">' + esc(narr) + '</p>';
         continue;
       }
 
-      // **bold text** only (bold headers – skip)
-      if (/^\*\*.*\*\*$/.test(t)) continue;
+      // ── Anything else that isn't a markdown header ────────────
+      if (!t.startsWith('#') && !/^\*\*.*\*\*$/.test(t)) {
+        html += '<p class="sep-narr">' + esc(t) + '</p>';
+      }
     }
     return html;
+  }
+
+  function initSpecialEpStars() {
+    var el = document.getElementById('special-ep-stars');
+    if (!el || el.childElementCount > 0) return;
+    for (var i = 0; i < 28; i++) {
+      var s = document.createElement('span');
+      s.className = 'sep-star';
+      s.textContent = Math.random() > 0.5 ? '✦' : '✧';
+      s.style.left = (Math.random() * 100) + '%';
+      s.style.fontSize = (5 + Math.random() * 9) + 'px';
+      s.style.animationDuration = (5 + Math.random() * 10) + 's';
+      s.style.animationDelay = (-Math.random() * 14) + 's';
+      s.style.opacity = (0.15 + Math.random() * 0.4);
+      el.appendChild(s);
+    }
   }
 
   function renderSpecialEpCurrent() {

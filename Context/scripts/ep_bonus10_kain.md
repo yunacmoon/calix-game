@@ -153,7 +153,7 @@
 
 *The restaurant is small. Eight tables. A tank of fish near the entrance. The owner recognizes something about Kain — the posture, maybe, or the face — and starts to say something, then decides against it. Kain nods once. They're seated in the back.*
 
-*The 회 comes out on a wide platter — white flesh, bright against the ice, sesame leaves, fermented soybean paste, the sharp smell of the sea.*
+*The raw fish comes out on a wide platter — white flesh, bright against the ice, sesame leaves, fermented soybean paste, the sharp smell of the sea.*
 
 *Kain eats methodically. He wraps a piece in a leaf, precise.*
 
