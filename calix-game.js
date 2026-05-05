@@ -6006,12 +6006,22 @@
     function mName(k) {
       return k.charAt(0).toUpperCase() + k.slice(1).toLowerCase();
     }
+    var MEMBER_AVATARS = {
+      KAIN: 'Images/01_Current members/Kain_Intro.png',
+      THEO: 'Images/01_Current members/Theo_Intro.png',
+      JAY:  'Images/01_Current members/Jay_Intro.png',
+      FINN: 'Images/01_Current members/Finn_Intro.png'
+    };
     function emitDialogue(name, text) {
       if (!text) return;
       if (name === 'YOU') {
         html += '<p class="sep-you">' + esc(text) + '</p>';
       } else {
-        html += '<div class="sep-them"><span class="sep-them-name">' + esc(mName(name)) + '</span><span class="sep-them-text">' + esc(text) + '</span></div>';
+        var src = MEMBER_AVATARS[name] || '';
+        var avatar = src
+          ? '<img class="sep-them-avatar" src="' + src + '" alt="' + esc(mName(name)) + '">'
+          : '<span class="sep-them-avatar" style="background:#e0d8ff;display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:#7B5FD8;">' + esc(name.charAt(0)) + '</span>';
+        html += '<div class="sep-them">' + avatar + '<span class="sep-them-text">' + esc(text) + '</span></div>';
       }
     }
 
